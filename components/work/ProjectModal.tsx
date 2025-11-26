@@ -154,15 +154,19 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                                     <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-sm">{project.overview}</p>
                                 </div>
 
-                                <div>
-                                    <h3 className="text-lg font-bold text-charcoal dark:text-cream mb-2">The Challenge</h3>
-                                    <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-sm">{project.problem}</p>
-                                </div>
+                                {project.problem && (
+                                    <div>
+                                        <h3 className="text-lg font-bold text-charcoal dark:text-cream mb-2">The Challenge</h3>
+                                        <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-sm">{project.problem}</p>
+                                    </div>
+                                )}
 
-                                <div>
-                                    <h3 className="text-lg font-bold text-charcoal dark:text-cream mb-2">The Solution</h3>
-                                    <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-sm">{project.solution}</p>
-                                </div>
+                                {project.solution && (
+                                    <div>
+                                        <h3 className="text-lg font-bold text-charcoal dark:text-cream mb-2">The Solution</h3>
+                                        <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-sm">{project.solution}</p>
+                                    </div>
+                                )}
 
                                 {/* Tech Stack */}
                                 <div>

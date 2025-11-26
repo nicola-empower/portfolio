@@ -7,7 +7,7 @@ export type Project = {
     thumbnail: string; // image path
     gallery?: string[]; // multiple images for deep dive
     year: string;
-    type: "webapp" | "script" | "automation" | "case-study";
+    type: "webapp" | "script" | "automation" | "case-study" | "website";
     techStack: string[]; // e.g. ["Next.js", "Apps Script"]
     status: "live" | "demo" | "internal" | "coming-soon";
     liveUrl?: string;
@@ -15,8 +15,8 @@ export type Project = {
     demoUrl?: string;
     audiences: Audience[];
     overview: string;
-    problem: string;
-    solution: string;
+    problem?: string;
+    solution?: string;
     contributions: string[];
     highlights: string[];
 };
