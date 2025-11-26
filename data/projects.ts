@@ -249,7 +249,7 @@ export const projects: Project[] = [
     slug: "aura",
     title: "AURA",
     shortTagline: "Cinematic Personal Branding Platform",
-    thumbnail: "/projects/aurathumbnail.jpg",
+    thumbnail: "/projects/aurathumbnail.png",
     year: "2025",
     type: "website",
     techStack: ["React + Vite", "Framer Motion", "Lenis Scroll", "CSS Grid"],
