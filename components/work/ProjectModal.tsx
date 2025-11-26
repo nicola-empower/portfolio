@@ -131,7 +131,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 px-4 py-2 bg-charcoal text-cream rounded-lg font-medium hover:bg-charcoal/90 transition-colors"
                                         >
-                                            <ExternalLink size={16} /> Live Demo
+                                            <ExternalLink size={16} /> {project.type === "website" ? "View Live Site" : "Live Demo"}
                                         </a>
                                     )}
                                     {project.demoUrl && (

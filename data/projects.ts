@@ -167,7 +167,7 @@ export const projects: Project[] = [
     type: "webapp",
     techStack: ["Next.js 15", "Chart.js", "Financial Logic"],
     status: "live",
-    liveUrl: "https://finance-ninja-nine.vercel.app/",
+    liveUrl: "https://finance-ninja-5183.vercel.app/",
     audiences: ["client"],
     overview: "A personal finance dashboard for self-employed individuals to track income and forecast UK taxes.",
     problem: "Freelancers often face financial anxiety due to unclear tax obligations and cash flow visibility.",
@@ -245,6 +245,21 @@ export const projects: Project[] = [
   },
 
   // --- TIER 5: LEGACY / INTERNAL / CASE STUDIES ---
+  {
+    slug: "aura",
+    title: "AURA",
+    shortTagline: "Cinematic Personal Branding Platform",
+    thumbnail: "/projects/aurathumbnail.jpg",
+    year: "2025",
+    type: "website",
+    techStack: ["React + Vite", "Framer Motion", "Lenis Scroll", "CSS Grid"],
+    status: "live",
+    liveUrl: "https://aura-nine-ochre.vercel.app/",
+    audiences: ["client", "general"],
+    overview: "A high-performance, editorial-style digital platform designed to translate personal presence into code. Features a custom 'Midnight & Champagne' design system with cinema-grade video backgrounds and seamless scroll interactions.",
+    contributions: ["Motion Design Architecture", "Responsive Video Pipeline", "UI/UX Engineering"],
+    highlights: ["Parallax Video Spines", "Infinite Marquee", "Glassmorphism UI"],
+  },
   {
     slug: "global-logistics-planner",
     title: "Global Logistics Planner",
