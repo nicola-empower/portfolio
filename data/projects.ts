@@ -6,7 +6,7 @@ export const projects: Project[] = [
     slug: "empower-hub",
     title: "Empower Hub",
     shortTagline: "Full-Stack SaaS Client Management Platform",
-    thumbnail: "/projects/empower-hub.jpg",
+    thumbnail: "/projects/empower-hub.jpg", 
     year: "2024",
     type: "webapp",
     techStack: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
@@ -73,7 +73,9 @@ export const projects: Project[] = [
     slug: "empower-command-centre",
     title: "Empower Command Centre",
     shortTagline: "AI-Driven SaaS Monitoring Dashboard",
-    thumbnail: "/Commandcenterthumbnail.png",
+    thumbnail: "/Commandcentrethumbnail.png",
+    gallery: [
+      "/Commandcentrethumbnail.png"],
     year: "2025",
     type: "webapp",
     techStack: ["Next.js 15", "Chart.js", "Gemini AI"],
@@ -180,6 +182,8 @@ export const projects: Project[] = [
     title: "VAAssist",
     shortTagline: "Virtual Assistant Productivity Platform",
     thumbnail: "/Vaassist.png",
+     gallery: [
+      "/Vaassist.png"],
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "SaaS Architecture"],
@@ -197,6 +201,8 @@ export const projects: Project[] = [
     title: "My Travel Planner",
     shortTagline: "Adventure & Itinerary Manager",
     thumbnail: "/Mytravelplannerthumbnail.png",
+     gallery: [
+      "/Mytravelplannerthumbnail.png"],
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "Firebase", "Styled Components"],
@@ -214,6 +220,8 @@ export const projects: Project[] = [
     title: "Automation Feasibility Grader",
     shortTagline: "ROI Calculator & Process Auditor",
     thumbnail: "/Autograderthumbnail.png",
+     gallery: [
+      "/Autograderthumbnail.png"],
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "React", "Tailwind CSS"],
@@ -250,6 +258,8 @@ export const projects: Project[] = [
     title: "AURA",
     shortTagline: "Cinematic Personal Branding Platform",
     thumbnail: "/aurathumbnail.png",
+     gallery: [
+      "/aurathumbnail.png"],
     year: "2025",
     type: "website",
     techStack: ["React + Vite", "Framer Motion", "Lenis Scroll", "CSS Grid"],
@@ -349,9 +359,9 @@ export const projects: Project[] = [
     slug: "vowsuite",
     title: "VowSuite",
     shortTagline: "White-Label Wedding SaaS Platform",
-    thumbnail: "/vowsuitethumbnail.png", // Remember to update this filename
+    thumbnail: "/vowsuitethumbnail.png", 
     gallery: [
-      "/vowsuite-dashboard.png" // Remember to update this filename
+      "/vowsuitethumbnail.png" 
     ],
     year: "2025",
     type: "webapp",
@@ -421,6 +431,8 @@ export const projects: Project[] = [
     title: "Client Portal & Onboarding Suite",
     shortTagline: "Secure Project Operations Ecosystem",
     thumbnail: "/clientportalthumbnail.png",
+     gallery: [
+      "/clientportalthumbnail.png"],
     year: "2024",
     type: "webapp",
     techStack: ["Next.js 14", "Tailwind CSS v4", "Framer Motion", "TypeScript"],
@@ -507,7 +519,7 @@ export const projects: Project[] = [
     shortTagline: "Interactive React Showcase",
     thumbnail: "/Portfoliov1thumbnail.png", // Update this
     gallery: [
-      "/legacy-portfolio-hero.png" // Update this
+      "/Portfoliov1thumbnail.png" // Update this
     ],
     year: "2024",
     type: "webapp",
