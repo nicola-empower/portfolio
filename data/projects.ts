@@ -6,7 +6,20 @@ export const projects: Project[] = [
     slug: "empower-hub",
     title: "Empower Hub",
     shortTagline: "Full-Stack SaaS Client Management Platform",
-    thumbnail: "/projects/empower-hub.jpg", 
+    thumbnail: "/Screenshot 2025-11-27 134016.png",
+    gallery: [
+      "/Screenshot 2025-11-27 134016.png",
+      "/Screenshot 2025-11-27 134044.png",
+      "/Screenshot 2025-11-27 134205.png",
+      "/Screenshot 2025-11-27 134222.png",
+      "/Screenshot 2025-11-27 134326.png",
+      "/Screenshot 2025-11-27 134343.png",
+      "/Screenshot 2025-11-27 134457.png",
+      "/Screenshot 2025-11-27 134518.png",
+      "/Screenshot 2025-11-27 134550.png",
+      "/Screenshot 2025-11-27 134609.png",
+      "/Screenshot 2025-11-27 134633.png"
+    ],
     year: "2024",
     type: "webapp",
     techStack: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
@@ -25,6 +38,7 @@ export const projects: Project[] = [
     shortTagline: "Secure Legal Evidence Archive",
     thumbnail: "/Danathumbnail.png",
     gallery: [
+      "/Danathumbnail.png",
       "/Danadashboard.png",
       "/Danadashboard (2).png",
       "/Danadashboard (3).png",
@@ -53,6 +67,7 @@ export const projects: Project[] = [
     shortTagline: "Family Care Coordination Dashboard",
     thumbnail: "/Medisyncthumbnail.png",
     gallery: [
+      "/Medisyncthumbnail.png",
       "/Medisyncdashboard.png",
       "/Medisyncfall.png",
       "/Medisyncseizure.png"
@@ -96,6 +111,7 @@ export const projects: Project[] = [
     shortTagline: "Intelligent Field Service Management",
     thumbnail: "/Tradeprothumbnail.png",
     gallery: [
+      "/Tradeprothumbnail.png",
       "/Tradesprodashboard.png",
       "/Tradesprodashboard (2).png",
       "/Tradesprodashboard (3).png",
@@ -121,6 +137,7 @@ export const projects: Project[] = [
     shortTagline: "AI-Assisted Travel Platform",
     thumbnail: "/Voyagerthumbnail.png",
     gallery: [
+      "/Voyagerthumbnail.png",
       "/Voyagerdashboard.png"
     ],
     year: "2025",
@@ -140,6 +157,9 @@ export const projects: Project[] = [
     title: "Social Genie",
     shortTagline: "AI-Powered Content Planning Module",
     thumbnail: "/projects/social-genie.jpg",
+    gallery: [
+      "/projects/social-genie.jpg"
+    ],
     year: "2024",
     type: "webapp",
     techStack: ["Gemini API", "Workflow Automation", "Next.js"],
@@ -160,6 +180,7 @@ export const projects: Project[] = [
     shortTagline: "Financial Data Tracking & Tax Forecasting",
     thumbnail: "/Financeninjathumbnail.png",
     gallery: [
+      "/Financeninjathumbnail.png",
       "/Financeninjadashboard.png",
       "/Financeninjasavings.png",
       "/Financeninjatransactions.png",
@@ -182,8 +203,8 @@ export const projects: Project[] = [
     title: "VAAssist",
     shortTagline: "Virtual Assistant Productivity Platform",
     thumbnail: "/Vaassistthumbnail.png",
-     gallery: [
-      "/Vaassistthumbnail.png","Vaassistclients.png", "Vaassistcontentplanner.png", "Vaassistdashboard.png", "Vaassistdocument (2).png","Vaassistdocument.png", "Vaassisttasks.png", "Vaassisttimetracker.png"],
+    gallery: [
+      "/Vaassistthumbnail.png", "Vaassistclients.png", "Vaassistcontentplanner.png", "Vaassistdashboard.png", "Vaassistdocument (2).png", "Vaassistdocument.png", "Vaassisttasks.png", "Vaassisttimetracker.png"],
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "SaaS Architecture"],
@@ -201,7 +222,7 @@ export const projects: Project[] = [
     title: "My Travel Planner",
     shortTagline: "Adventure & Itinerary Manager",
     thumbnail: "/Mytravelplannerthumbnail.png",
-     gallery: [
+    gallery: [
       "/Mytravelplannerthumbnail.png"],
     year: "2025",
     type: "webapp",
@@ -220,7 +241,7 @@ export const projects: Project[] = [
     title: "Automation Feasibility Grader",
     shortTagline: "ROI Calculator & Process Auditor",
     thumbnail: "/Autograderthumbnail.png",
-     gallery: [
+    gallery: [
       "/Autograderthumbnail.png"],
     year: "2025",
     type: "webapp",
@@ -239,6 +260,9 @@ export const projects: Project[] = [
     title: "Website Health Checker",
     shortTagline: "Lead Funnel Tool",
     thumbnail: "/Websitehealththumbnail.png",
+    gallery: [
+      "/Websitehealththumbnail.png"
+    ],
     year: "2024",
     type: "webapp",
     techStack: ["Next.js", "PageSpeed API"],
@@ -258,7 +282,7 @@ export const projects: Project[] = [
     title: "AURA",
     shortTagline: "Cinematic Personal Branding Platform",
     thumbnail: "/aurathumbnail.png",
-     gallery: [
+    gallery: [
       "/aurathumbnail.png"],
     year: "2025",
     type: "website",
@@ -275,6 +299,9 @@ export const projects: Project[] = [
     title: "Global Logistics Planner",
     shortTagline: "Real-Time Resource Manager",
     thumbnail: "/Globallogisticsthumbnail.png",
+    gallery: [
+      "/Globallogisticsthumbnail.png"
+    ],
     year: "2024",
     type: "webapp",
     techStack: ["Firebase", "Complex Data Modelling"],
@@ -292,6 +319,9 @@ export const projects: Project[] = [
     title: "Automated Invoice Process",
     shortTagline: "Google Apps Script Workflow",
     thumbnail: "/invoicethumbnail.png",
+    gallery: [
+      "/invoicethumbnail.png"
+    ],
     year: "2024",
     type: "automation",
     techStack: ["Google Apps Script", "Process Automation"],
@@ -309,6 +339,9 @@ export const projects: Project[] = [
     title: "Inbox Zero Transformation",
     shortTagline: "Email Automation Engine",
     thumbnail: "/inboxzerothumbnail.png",
+    gallery: [
+      "/inboxzerothumbnail.png"
+    ],
     year: "2024",
     type: "case-study",
     techStack: ["Google Apps Script", "Gmail API"],
@@ -326,6 +359,9 @@ export const projects: Project[] = [
     title: "Automated Lead Generation",
     shortTagline: "Python-Powered Automation",
     thumbnail: "/Leadgenhumbnail.png",
+    gallery: [
+      "/Leadgenhumbnail.png"
+    ],
     year: "2024",
     type: "case-study",
     techStack: ["Python", "Data Scraping"],
@@ -343,6 +379,9 @@ export const projects: Project[] = [
     title: "Event Proposal Generator",
     shortTagline: "Sales Automation",
     thumbnail: "/Event proposal.png",
+    gallery: [
+      "/Event proposal.png"
+    ],
     year: "2024",
     type: "webapp",
     techStack: ["Bespoke Web App", "Document Assembly"],
@@ -359,9 +398,9 @@ export const projects: Project[] = [
     slug: "vowsuite",
     title: "VowSuite",
     shortTagline: "White-Label Wedding SaaS Platform",
-    thumbnail: "/vowsuitethumbnail.png", 
+    thumbnail: "/vowsuitethumbnail.png",
     gallery: [
-      "/vowsuitethumbnail.png" 
+      "/vowsuitethumbnail.png"
     ],
     year: "2025",
     type: "webapp",
@@ -380,6 +419,9 @@ export const projects: Project[] = [
     title: "Quote Command",
     shortTagline: "Dynamic Trades Profit Calculator",
     thumbnail: "/quotecommandthumbnail.png",
+    gallery: [
+      "/quotecommandthumbnail.png"
+    ],
     year: "2024",
     type: "webapp",
     techStack: ["Client-Side Logic", "React"],
@@ -397,6 +439,9 @@ export const projects: Project[] = [
     title: "Dashboard Auth Prototype",
     shortTagline: "Authentication & Protected Routes",
     thumbnail: "/Dasthboardhumbnail.png",
+    gallery: [
+      "/Dasthboardhumbnail.png"
+    ],
     year: "2024",
     type: "webapp",
     techStack: ["React", "Vite", "Authentication"],
@@ -414,7 +459,7 @@ export const projects: Project[] = [
     title: "Client Portal & Onboarding Suite",
     shortTagline: "Secure Project Operations Ecosystem",
     thumbnail: "/clientportalthumbnail.png",
-     gallery: [
+    gallery: [
       "/clientportalthumbnail.png"],
     year: "2024",
     type: "webapp",
@@ -433,6 +478,9 @@ export const projects: Project[] = [
     title: "Empower Sync",
     shortTagline: "Intelligent Booking & Life Logic",
     thumbnail: "/projects/empower-sync.jpg",
+    gallery: [
+      "/projects/empower-sync.jpg"
+    ],
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "Stripe API", "Calendar Logic"],
@@ -450,6 +498,9 @@ export const projects: Project[] = [
     title: "ISA Time Machine",
     shortTagline: "HD Investment Simulator",
     thumbnail: "/Isathumbnail.png",
+    gallery: [
+      "/Isathumbnail.png"
+    ],
     year: "2025",
     type: "webapp",
     techStack: ["Chart.js", "Tailwind CSS", "Financial Data"],
@@ -467,6 +518,9 @@ export const projects: Project[] = [
     title: "Automation ROI Calculator",
     shortTagline: "Asset vs. Rental Cost Visualiser",
     thumbnail: "/autoroithumbnail.png",
+    gallery: [
+      "/autoroithumbnail.png"
+    ],
     year: "2025",
     type: "webapp",
     techStack: ["Chart.js", "React", "Financial Modelling"],
@@ -484,6 +538,9 @@ export const projects: Project[] = [
     title: "Subscription Slayer",
     shortTagline: "Recurring Expense Auditor",
     thumbnail: "/subscriptionslayerthumbnail.png",
+    gallery: [
+      "/subscriptionslayerthumbnail.png"
+    ],
     year: "2025",
     type: "webapp",
     techStack: ["Client-Side Logic", "Chart.js", "Regex Parsing"],
@@ -500,9 +557,9 @@ export const projects: Project[] = [
     slug: "legacy-portfolio",
     title: "v1 Developer Portfolio",
     shortTagline: "Interactive React Showcase",
-    thumbnail: "/Portfoliov1thumbnail.png", // Update this
+    thumbnail: "/Portfoliov1thumbnail.png",
     gallery: [
-      "/Portfoliov1thumbnail.png" // Update this
+      "/Portfoliov1thumbnail.png"
     ],
     year: "2024",
     type: "webapp",
@@ -521,7 +578,9 @@ export const projects: Project[] = [
     title: "Empower Virtual Assistant Services",
     shortTagline: "General Admin & Support",
     thumbnail: "/empowervathumbnail.png",
-    gallery: [],
+    gallery: [
+      "/empowervathumbnail.png"
+    ],
     year: "2025",
     type: "website",
     techStack: ["Web Design", "CMS"],
@@ -537,7 +596,9 @@ export const projects: Project[] = [
     title: "Empower Automation",
     shortTagline: "Time Freedom & ROI",
     thumbnail: "/empowerautothumbnail.png",
-    gallery: [],
+    gallery: [
+      "/empowerautothumbnail.png"
+    ],
     year: "2025",
     type: "website",
     techStack: ["Web Design", "Google Apps Script Integration"],
@@ -553,7 +614,9 @@ export const projects: Project[] = [
     title: "Empower Digital Solutions",
     shortTagline: "Custom Code & Scale",
     thumbnail: "/empowerdigitalthumbnail.png",
-    gallery: [],
+    gallery: [
+      "/empowerdigitalthumbnail.png"
+    ],
     year: "2025",
     type: "website",
     techStack: ["Web Development", "Custom Code"],
@@ -569,6 +632,9 @@ export const projects: Project[] = [
     title: "The Zen Den",
     shortTagline: "Minimalist Wellness Studio Platform",
     thumbnail: "/Zendenthumbnail.png",
+    gallery: [
+      "/Zendenthumbnail.png"
+    ],
     year: "2025",
     type: "website",
     techStack: ["Next.js 14", "TypeScript", "Tailwind CSS v4", "Framer Motion"],
@@ -576,14 +642,17 @@ export const projects: Project[] = [
     liveUrl: "https://zen-den-azure.vercel.app/",
     audiences: ["client"],
     overview: "A high-performance studio website built with a 'Japanese-Scandi' aesthetic. The project focuses on advanced responsive layouts—specifically transforming complex data tables into mobile-friendly stacks without losing information—and uses soft-load transitions for a calming user experience.",
-    contributions: ["Mobile-First UX Architecture", "Complex Data Grids", "Design System Implementation"], // Aligned with "Key Features"
-    highlights: ["Visual Intensity Indicators", "Zero Layout Shift", "Sticky Mobile Interactions"], // Matches the README highlights
+    contributions: ["Mobile-First UX Architecture", "Complex Data Grids", "Design System Implementation"],
+    highlights: ["Visual Intensity Indicators", "Zero Layout Shift", "Sticky Mobile Interactions"],
   },
-{
+  {
     slug: "bistro-44",
     title: "Bistro 44",
     shortTagline: "Atmospheric Dining & Reservation Platform",
     thumbnail: "/bistro44thumbnail.png",
+    gallery: [
+      "/bistro44thumbnail.png"
+    ],
     year: "2025",
     type: "website",
     techStack: ["Next.js 14", "Tailwind CSS v4", "Framer Motion", "Zod Validation"],
