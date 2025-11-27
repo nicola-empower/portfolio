@@ -73,7 +73,7 @@ export const projects: Project[] = [
     slug: "empower-command-centre",
     title: "Empower Command Centre",
     shortTagline: "AI-Driven SaaS Monitoring Dashboard",
-    thumbnail: "/Commandcentertumbnail.png",
+    thumbnail: "/Commandcenterthumbnail.png",
     year: "2025",
     type: "webapp",
     techStack: ["Next.js 15", "Chart.js", "Gemini AI"],
@@ -196,7 +196,7 @@ export const projects: Project[] = [
     slug: "my-travel-planner",
     title: "My Travel Planner",
     shortTagline: "Adventure & Itinerary Manager",
-    thumbnail: "/MyTravelplannerthumbnail.png",
+    thumbnail: "/Mytravelplannerthumbnail.png",
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "Firebase", "Styled Components"],
@@ -349,7 +349,7 @@ export const projects: Project[] = [
     slug: "vowsuite",
     title: "VowSuite",
     shortTagline: "White-Label Wedding SaaS Platform",
-    thumbnail: "/vowsuite-thumbnail.png", // Remember to update this filename
+    thumbnail: "/vowsuitethumbnail.png", // Remember to update this filename
     gallery: [
       "/vowsuite-dashboard.png" // Remember to update this filename
     ],
