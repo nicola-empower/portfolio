@@ -73,7 +73,7 @@ export const projects: Project[] = [
     slug: "empower-command-centre",
     title: "Empower Command Centre",
     shortTagline: "AI-Driven SaaS Monitoring Dashboard",
-    thumbnail: "/command centre.png",
+    thumbnail: "/Commandcentertumbnail.png",
     year: "2025",
     type: "webapp",
     techStack: ["Next.js 15", "Chart.js", "Gemini AI"],
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     slug: "trade-pro",
     title: "TradePro",
     shortTagline: "Intelligent Field Service Management",
-    thumbnail: "/Tradesprothumbnail.png",
+    thumbnail: "/Tradeprothumbnail.png",
     gallery: [
       "/Tradesprodashboard.png",
       "/Tradesprodashboard (2).png",
@@ -196,7 +196,7 @@ export const projects: Project[] = [
     slug: "my-travel-planner",
     title: "My Travel Planner",
     shortTagline: "Adventure & Itinerary Manager",
-    thumbnail: "/Travel planner.png",
+    thumbnail: "/MyTravelplannerthumbnail.png",
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "Firebase", "Styled Components"],
@@ -213,7 +213,7 @@ export const projects: Project[] = [
     slug: "automation-grader",
     title: "Automation Feasibility Grader",
     shortTagline: "ROI Calculator & Process Auditor",
-    thumbnail: "/Autograder.png",
+    thumbnail: "/Autograderthumbnail.png",
     year: "2025",
     type: "webapp",
     techStack: ["Next.js", "React", "Tailwind CSS"],
@@ -230,7 +230,7 @@ export const projects: Project[] = [
     slug: "website-health-checker",
     title: "Website Health Checker",
     shortTagline: "Lead Funnel Tool",
-    thumbnail: "/Website health checker.png",
+    thumbnail: "/Websitehealththumbnail.png",
     year: "2024",
     type: "webapp",
     techStack: ["Next.js", "PageSpeed API"],
@@ -264,7 +264,7 @@ export const projects: Project[] = [
     slug: "global-logistics-planner",
     title: "Global Logistics Planner",
     shortTagline: "Real-Time Resource Manager",
-    thumbnail: "/global logistics planner.png",
+    thumbnail: "/Globallogisticsthumbnail.png",
     year: "2024",
     type: "webapp",
     techStack: ["Firebase", "Complex Data Modelling"],
@@ -505,7 +505,7 @@ export const projects: Project[] = [
     slug: "legacy-portfolio",
     title: "v1 Developer Portfolio",
     shortTagline: "Interactive React Showcase",
-    thumbnail: "/legacy-portfolio-thumb.png", // Update this
+    thumbnail: "/Portfoliov1thumbnail.png", // Update this
     gallery: [
       "/legacy-portfolio-hero.png" // Update this
     ],
@@ -572,16 +572,16 @@ export const projects: Project[] = [
   {
     slug: "zen-den",
     title: "The Zen Den",
-    shortTagline: "Minimalist Wellness Studio Platform", 
+    shortTagline: "Minimalist Wellness Studio Platform",
     thumbnail: "/Zendenthumbnail.png",
     year: "2025",
     type: "website",
-    techStack: ["Next.js 14", "TypeScript", "Tailwind CSS v4", "Framer Motion"], 
+    techStack: ["Next.js 14", "TypeScript", "Tailwind CSS v4", "Framer Motion"],
     status: "live",
     liveUrl: "https://zen-den-azure.vercel.app/",
     audiences: ["client"],
     overview: "A high-performance studio website built with a 'Japanese-Scandi' aesthetic. The project focuses on advanced responsive layouts—specifically transforming complex data tables into mobile-friendly stacks without losing information—and uses soft-load transitions for a calming user experience.",
-    contributions: ["Mobile-First UX Architecture", "Complex Data Grids", "Design System Implementation"], 
-    highlights: ["Visual Intensity Indicators", "Zero Layout Shift", "Sticky Mobile Interactions"], 
+    contributions: ["Mobile-First UX Architecture", "Complex Data Grids", "Design System Implementation"], // Aligned with "Key Features"
+    highlights: ["Visual Intensity Indicators", "Zero Layout Shift", "Sticky Mobile Interactions"], // Matches the README highlights
   },
 ];
