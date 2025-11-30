@@ -2,36 +2,7 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   // --- TIER 1: HEAVY LIFTERS (Architecture & Security) ---
-  {
-    slug: "empower-hub",
-    title: "Empower Hub",
-    shortTagline: "Full-Stack SaaS Client Management Platform",
-    thumbnail: "/Screenshot 2025-11-27 134016.png",
-    gallery: [
-      "/Screenshot 2025-11-27 134016.png",
-      "/Screenshot 2025-11-27 134044.png",
-      "/Screenshot 2025-11-27 134205.png",
-      "/Screenshot 2025-11-27 134222.png",
-      "/Screenshot 2025-11-27 134326.png",
-      "/Screenshot 2025-11-27 134343.png",
-      "/Screenshot 2025-11-27 134457.png",
-      "/Screenshot 2025-11-27 134518.png",
-      "/Screenshot 2025-11-27 134550.png",
-      "/Screenshot 2025-11-27 134609.png",
-      "/Screenshot 2025-11-27 134633.png"
-    ],
-    year: "2024",
-    type: "webapp",
-    techStack: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
-    status: "demo",
-    liveUrl: "https://icon-eraser-87714674.figma.site/",
-    audiences: ["client", "recruiter"],
-    overview: "A comprehensive SaaS platform that functions as a 'Business Operating System' for service providers.",
-    problem: "Small businesses struggle with 'tool scatter'—managing clients in email, projects in Trello, and invoices in Xero, leading to fragmented data.",
-    solution: "A unified Single Source of Truth integrating CRM, project management, and invoicing into one secure, real-time dashboard.",
-    contributions: ["System Architecture", "Frontend Development", "Backend Integration"],
-    highlights: ["Real-time updates", "Secure authentication", "Responsive design"],
-  },
+
   {
     slug: "ai-wedding-planner",
     title: "The Ultimate Wedding Planner",
@@ -219,26 +190,6 @@ export const projects: Project[] = [
     solution: "A 'Human-in-the-Loop' AI agent that generates realistic itineraries and pricing based on natural language inputs.",
     contributions: ["Business Strategy", "AI Integration"],
     highlights: ["Personalised Itineraries", "Real-time Pricing", "AI Recommendations"],
-  },
-  {
-    slug: "social-genie",
-    title: "Social Genie",
-    shortTagline: "AI-Powered Content Planning Module",
-    thumbnail: "/projects/social-genie.jpg",
-    gallery: [
-      "/projects/social-genie.jpg"
-    ],
-    year: "2024",
-    type: "webapp",
-    techStack: ["Gemini API", "Workflow Automation", "Next.js"],
-    status: "live",
-    liveUrl: "https://social-genie.vercel.app/",
-    audiences: ["client", "general"],
-    overview: "An AI-powered tool to help creators plan and generate social media content in their own voice.",
-    problem: "Content creators struggle with consistency and maintaining a personal brand voice at scale.",
-    solution: "An AI assistant that suggests topics, generates captions based on brand personality and schedules posts.",
-    contributions: ["Full-Stack AI Integration", "Workflow Automation"],
-    highlights: ["AI Content Generation", "LinkedIn Integration", "Tone Matching"],
   },
 
   // --- TIER 4: LIVE UTILITIES & CALCULATORS ---
@@ -541,26 +492,7 @@ export const projects: Project[] = [
   },
 
   // --- TIER 6: IN DEVELOPMENT / COMING SOON ---
-  {
-    slug: "empower-sync",
-    title: "Empower Sync",
-    shortTagline: "Intelligent Booking & Life Logic",
-    thumbnail: "/projects/empower-sync.jpg",
-    gallery: [
-      "/projects/empower-sync.jpg"
-    ],
-    year: "2025",
-    type: "webapp",
-    techStack: ["Next.js", "Stripe API", "Calendar Logic"],
-    status: "coming-soon",
-    liveUrl: "#",
-    audiences: ["client", "general"],
-    overview: "A custom booking platform that integrates professional availability with personal 'life logic'.",
-    problem: "Standard scheduling tools don't automatically account for personal commitments like school runs or physio without manual blocking.",
-    solution: "A smart calendar system that automatically hides availability based on personal rules ('Life Logic') and handles up-front payments.",
-    contributions: ["Calendar Logic", "Payment Integration"],
-    highlights: ["Life/Work Sync", "Stripe Integration", "Admin 'God View'"],
-  },
+ 
   {
     slug: "isa-time-machine",
     title: "ISA Time Machine",
