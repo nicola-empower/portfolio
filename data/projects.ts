@@ -583,13 +583,13 @@ export const projects: Project[] = [
     ],
     year: "2025",
     type: "website",
-    techStack: ["Web Design", "CMS"],
+   techStack: ["Astro", "React Islands", "PDF Generation", "Framer Motion"],
     status: "live",
-    liveUrl: "https://empowervaservices.co.uk",
+    liveUrl: "https://virtual-assistant-services-7ynr.vercel.app/",
     audiences: ["client"],
-    overview: "The digital storefront for my Virtual Assistant business. Targeted at busy professionals needing to stop juggling tasks, it highlights general admin duties and offers a friendly, reliable support system.",
-    contributions: ["Web Design", "Branding", "Content Writing"],
-    highlights: ["Service Breakdown", "Client Onboarding Flow"],
+    overview: "A functional web application that serves as both a high-performance marketing site and a client-side operational command center. Built with Astro's Islands Architecture, it showcases the ability to integrate complex, stateful tools (like a time logger and PDF generators) into a static, SEO-friendly environment. Localized for the UK market.",
+    contributions: ["Hybrid Astro/React Architecture", "PDF Generation Pipeline", "Admin Suite Component Design"],
+    highlights: ["Interactive Eisenhower Matrix", "Automated PDF Document Generation", "Client Intake Wizard", "High-Performance SEO (Astro)"],
   },
   {
     slug: "empower-automation",
@@ -613,9 +613,9 @@ export const projects: Project[] = [
     slug: "empower-digital",
     title: "Empower Digital Solutions",
     shortTagline: "Custom Code & Scale",
-    thumbnail: "/empowerdigitalthumbnail.png",
+    thumbnail: "/empowerdigitalithumbnail.png",
     gallery: [
-      "/empowerdigitalthumbnail.png"
+      "/empowerdigitalithumbnail.png"
     ],
     year: "2025",
     type: "website",
