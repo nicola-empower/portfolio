@@ -54,16 +54,22 @@ export function Footer() {
                         </h4>
                         <nav className="flex flex-col gap-3">
                             <Link
-                                href="#"
+                                href="https://empowervaservices.co.uk"
                                 className="font-sans text-charcoal/80 dark:text-cream/80 hover:text-rose dark:hover:text-rose transition-colors"
                             >
-                                Empower VA Services
+                                Empower Virtual Assistant Services
                             </Link>
                             <Link
-                                href="#"
+                                href="https://empowerautomations.co.uk"
                                 className="font-sans text-charcoal/80 dark:text-cream/80 hover:text-rose dark:hover:text-rose transition-colors"
                             >
                                 Empower Automation
+                            </Link>
+                            <Link
+                                href="https://empowerdigitalsolutions.co.uk"
+                                className="font-sans text-charcoal/80 dark:text-cream/80 hover:text-rose dark:hover:text-rose transition-colors"
+                            >
+                                Empower Digital Solutions
                             </Link>
                         </nav>
                     </div>
