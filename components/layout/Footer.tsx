@@ -60,7 +60,7 @@ export function Footer() {
                                 Empower Virtual Assistant Services
                             </Link>
                             <Link
-                                href="https://empowerautomations.co.uk"
+                                href="https://empowerautomation.co.uk"
                                 className="font-sans text-charcoal/80 dark:text-cream/80 hover:text-rose dark:hover:text-rose transition-colors"
                             >
                                 Empower Automation
