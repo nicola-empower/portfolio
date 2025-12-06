@@ -2,7 +2,26 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   // --- TIER 1: HEAVY LIFTERS (Architecture & Security) ---
-
+{
+    slug: "designforge-ai",
+    title: "Design Forge AI",
+    shortTagline: "GenAI Interface & Blueprint Engine",
+    thumbnail: "/designforge-thumbnail.png",
+    gallery: [
+      "/designforgethumbnail.png"
+    ],
+    year: "2025",
+    type: "webapp",
+    techStack: ["React 19", "Google GenAI SDK", "TypeScript", "Tailwind CSS"],
+    status: "live",
+    demoUrl: "https://designforge-ai.vercel.app/",
+    audiences: ["client", "general"],
+    overview: "A comprehensive web design visualisation tool powered by Google's Gemini 3 Pro. It bridges the gap between concept and code by generating layouts, assets, and technical specs instantly.",
+    problem: "Conceptualising web interfaces, checking accessibility, and creating high-fidelity assets usually requires multiple disjointed tools, slowing down the 'idea-to-code' pipeline.",
+    solution: "An interactive AI playground that enables real-time layout editing, proactive WCAG accessibility monitoring, and custom asset generation using Nano Banana models.",
+    contributions: ["AI Model Integration", "Full-Stack Architecture", "Complex State Management"],
+    highlights: ["Gemini 3 Pro Assistant", "Nano Banana Image Studio", "Automated Tailwind Config Export"],
+  },
   {
     slug: "ai-wedding-planner",
     title: "The Ultimate Wedding Planner",
@@ -181,7 +200,7 @@ export const projects: Project[] = [
     ],
     year: "2025",
     type: "webapp",
-    techStack: ["Next.js 16", "Gemini 1.5 Flash", "Service Design"],
+    techStack: ["Next.js 16", "Gemini 2.5 Flash", "Service Design"],
     status: "live",
     liveUrl: "https://voyager-next.vercel.app/",
     audiences: ["general", "client"],
