@@ -6,7 +6,7 @@ export const projects: Project[] = [
     slug: "designforge-ai",
     title: "Design Forge AI",
     shortTagline: "GenAI Interface & Blueprint Engine",
-    thumbnail: "/designforge-thumbnail.png",
+    thumbnail: "/designforgethumbnail.png",
     gallery: [
       "/designforgethumbnail.png"
     ],
