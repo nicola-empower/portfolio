@@ -1,6 +1,6 @@
 # Nicola's Digital Solutions Portfolio
 
-A modern, high-performance portfolio website built to showcase a diverse range of digital solutions, from full-stack SaaS applications to automated business workflows. This project itself serves as a demonstration of modern web development practices, featuring a "Calm Technology" aesthetic, dynamic interactions, and a robust architecture.
+A modern, high-performance portfolio website built to showcase a diverse range of digital solutions, from full-stack SaaS applications to automated business workflows. This project itself serves as a demonstration of modern web development practices, featuring a "Calm Technology" aesthetic, dynamic interactions, and a robust architecture. 
 
 ##  Tech Stack
 
@@ -60,3 +60,5 @@ To run this project locally:
 ##  Design Philosophy
 
 The design follows a "Business Operating System" metaphor, presenting complex information in a structured, clean, and professional manner. It utilizes a sophisticated color palette (Charcoal, Cream, Rose, Sage) to convey trust and competence.
+
+Nicola Berry
