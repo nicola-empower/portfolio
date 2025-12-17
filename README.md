@@ -1,6 +1,7 @@
 # Nicola's Digital Solutions Portfolio
 
-A modern, high-performance portfolio website built to showcase a diverse range of digital solutions, from full-stack SaaS applications to automated business workflows. This project itself serves as a demonstration of modern web development practices, featuring a "Calm Technology" aesthetic, dynamic interactions, and a robust architecture. 
+A modern, high-performance portfolio website built to showcase a diverse range of digital solutions, from full-stack SaaS applications to automated business workflows. This project itself serves as a demonstration of modern web development practices, featuring a "Calm Technology" aesthetic, dynamic interactions, and a robust architecture.
+<img width="2832" height="1515" alt="image" src="https://github.com/user-attachments/assets/1aec5f77-05dc-4256-9fdf-4d596abe72fa" />
 
 ##  Tech Stack
 
