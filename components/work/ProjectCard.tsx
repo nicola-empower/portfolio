@@ -36,16 +36,17 @@ export function ProjectCard({ project }: { project: Project }) {
                     {/* Thumbnail */}
                     <div className="relative aspect-[4/3] overflow-hidden bg-taupe/10">
                         {project.thumbnail && !project.thumbnail.includes("placeholder") ? (
-                            src = { project.thumbnail }
+                            <Image
+                                src={project.thumbnail}
                                 alt={project.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                         ) : (
-                        <div className="absolute inset-0 flex items-center justify-center text-charcoal/20 dark:text-cream/20">
-                            <TypeIcon size={48} />
-                        </div>
+                            <div className="absolute inset-0 flex items-center justify-center text-charcoal/20 dark:text-cream/20">
+                                <TypeIcon size={48} />
+                            </div>
                         )}
 
                         {/* Overlay */}
