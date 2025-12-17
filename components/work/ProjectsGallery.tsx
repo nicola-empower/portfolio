@@ -3,16 +3,12 @@
 import { useState, useMemo } from "react";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
-import { ProjectModal } from "./ProjectModal";
-import { Project } from "@/types";
 import { Search, Filter } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function ProjectsGallery() {
     const [selectedCategory, setSelectedCategory] = useState<string>("all");
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Extract unique categories (types)
     const categories = ["all", ...Array.from(new Set(projects.map((p) => p.type)))];
@@ -32,20 +28,6 @@ export function ProjectsGallery() {
         });
     }, [selectedCategory, searchQuery]);
 
-    const openModal = (project: Project) => {
-        setSelectedProject(project);
-        setIsModalOpen(true);
-        // Optional: Update URL without reload
-        window.history.pushState({}, "", `?project=${project.slug}`);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-        setTimeout(() => setSelectedProject(null), 300); // Wait for animation
-        // Reset URL
-        window.history.pushState({}, "", window.location.pathname);
-    };
-
     return (
         <div className="w-full">
             {/* Controls Header */}
@@ -58,8 +40,8 @@ export function ProjectsGallery() {
                             key={category}
                             onClick={() => setSelectedCategory(category)}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
-                                    ? "bg-charcoal text-cream dark:bg-cream dark:text-charcoal shadow-md"
-                                    : "bg-white/50 dark:bg-white/5 text-charcoal/70 dark:text-cream/70 hover:bg-white dark:hover:bg-white/10"
+                                ? "bg-charcoal text-cream dark:bg-cream dark:text-charcoal shadow-md"
+                                : "bg-white/50 dark:bg-white/5 text-charcoal/70 dark:text-cream/70 hover:bg-white dark:hover:bg-white/10"
                                 }`}
                         >
                             {category.charAt(0).toUpperCase() + category.slice(1).replace("-", " ")}
@@ -80,15 +62,13 @@ export function ProjectsGallery() {
                 </div>
             </div>
 
-            {/* Masonry-style Grid (using CSS columns for true masonry if needed, or simple grid) */}
-            {/* Using simple grid for now, but configured for responsiveness */}
+            {/* Masonry-style Grid */}
             <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
                 {filteredProjects.length > 0 ? (
                     filteredProjects.map((project) => (
                         <ProjectCard
                             key={project.slug}
                             project={project}
-                            onClick={() => openModal(project)}
                         />
                     ))
                 ) : (
@@ -104,13 +84,6 @@ export function ProjectsGallery() {
                     </div>
                 )}
             </div>
-
-            {/* Modal */}
-            <ProjectModal
-                project={selectedProject}
-                isOpen={isModalOpen}
-                onClose={closeModal}
-            />
         </div>
     );
 }

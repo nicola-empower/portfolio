@@ -40,8 +40,8 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-xs font-bold uppercase tracking-wider text-charcoal/50 dark:text-cream/50 mb-1">Email</p>
-                                    <a href="mailto:nicola@empowerdigitalsolutions.co.uk" className="font-serif text-xl text-charcoal dark:text-cream hover:text-rose transition-colors">
-                                        nicola@empowerdigitalsolutions.co.uk
+                                    <a href="mailto:connect@nicolaberry.uk" className="font-serif text-xl text-charcoal dark:text-cream hover:text-rose transition-colors">
+                                        connect@nicolaberry.uk
                                     </a>
                                 </div>
                             </div>

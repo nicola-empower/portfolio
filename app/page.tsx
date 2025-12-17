@@ -8,7 +8,7 @@ import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-cream dark:bg-plum-dark transition-colors duration-500">
+    <main id="main-content" className="min-h-screen bg-cream dark:bg-plum-dark transition-colors duration-500">
       <Hero />
       <TechStack />
       <Services />

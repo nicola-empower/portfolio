@@ -17,9 +17,38 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Empower Digital Solutions",
-  description: "Building Your Digital Authority",
+import { sharedMetadata, siteConfig } from "./shared-metadata";
+import Script from "next/script";
+
+export const metadata: Metadata = sharedMetadata;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.url}/#website`,
+      "url": siteConfig.url,
+      "name": siteConfig.title,
+      "description": siteConfig.description,
+      "publisher": {
+        "@id": `${siteConfig.url}/#person`
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteConfig.url}/#person`,
+      "name": "Nicola Berry",
+      "url": siteConfig.url,
+      "jobTitle": "Full Stack Engineer & Automation Architect",
+      "description": siteConfig.description,
+      "image": siteConfig.ogImage,
+      "sameAs": [
+        "https://github.com/nicola-empower",
+        "https://linkedin.com/in/nicola-berry", // Update if needed
+      ]
+    }
+  ]
 };
 
 import { Footer } from "@/components/layout/Footer";
@@ -44,7 +73,19 @@ export default function RootLayout({
           <div className="fixed top-6 right-6 z-40">
             <ThemeToggle />
           </div>
+          <a
+            href="#main-content"
+            className="fixed top-4 left-4 z-50 -translate-y-[150%] focus:translate-y-0 bg-charcoal text-cream px-4 py-2 rounded-md font-bold transition-transform duration-300"
+          >
+            Skip to content
+          </a>
           {children}
+          <Script
+            id="json-ld"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            strategy="afterInteractive"
+          />
           <Footer />
           <Analytics />
         </ThemeProvider>
