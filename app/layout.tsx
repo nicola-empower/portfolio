@@ -86,6 +86,18 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             strategy="afterInteractive"
           />
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-8HMX25HCMV"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-8HMX25HCMV');
+            `}
+          </Script>
           <Footer />
           <Analytics />
         </ThemeProvider>
