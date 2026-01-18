@@ -3,6 +3,27 @@ import { Project } from "@/types";
 export const projects: Project[] = [
   // --- TIER 1: HEAVY LIFTERS (Architecture & Security) ---
   {
+    slug: "script-vault",
+    title: "Script Vault v1.0",
+    shortTagline: "Secure, Organized Database for Google Apps Script Snippets",
+    thumbnail: "/script-vault-main.png",
+    gallery: [
+      "/script-vault-main.png",
+      "/script-vault-internal.png"
+    ],
+    year: "2025",
+    type: "webapp",
+    techStack: ["Astro", "React 19", "TailwindCSS v4", "Google Apps Script", "OpenAI"],
+    status: "live",
+    demoUrl: "", // Internal tool
+    audiences: ["dev", "client"],
+    overview: "A private, centralised showcase of custom automation scripts, AI agents, and business process optimisations developed for scalable enterprise operations. This 'High-Tech, High-Touch' platform leverages Google Apps Script, AI models and reactive web frameworks to eliminate manual bottlenecks.",
+    problem: "Scalable enterprise operations require diverse automation tools. From AI assistants to expense trackers, that are often scattered, undocumented, or difficult to manage centrally.",
+    solution: "A unified 'Vault' acting as a High-Tech repository for intelligent agents and operational tools. It features a reactive UI for browsing solutions, integrated documentation for every script, and showcases the power of Autonomous AI Agents alongside practical business automations.",
+    contributions: ["AI Agent Integration", "Centralised Automation Architecture", "Reactive UI Design"],
+    highlights: ["AI Executive Assistant", "Vision Expense Tracker", "Recruiter Bot", "Sentiment Analysis Engine"],
+  },
+  {
     slug: "designforge-ai",
     title: "Design Forge AI",
     shortTagline: "GenAI Interface & Blueprint Engine",
