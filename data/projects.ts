@@ -3,6 +3,50 @@ import { Project } from "@/types";
 export const projects: Project[] = [
   // --- TIER 1: HEAVY LIFTERS (Architecture & Security) ---
   {
+    slug: "the-salon",
+    title: "The Salon OS",
+    shortTagline: "Enterprise-Grade Beauty Operating System",
+    thumbnail: "/the-salon-og.png",
+    gallery: [
+      "/hero.png",
+      "/upcoming-appointments.png",
+      "/ai-analysis.png",
+      "/ai-recommendations.png"
+    ],
+    year: "2026",
+    type: "webapp",
+    techStack: ["Astro", "React", "Gemini AI", "Glassmorphism UI"],
+    status: "live",
+    demoUrl: "https://salon-smoky-tau.vercel.app/",
+    audiences: ["client", "dev"],
+    overview: "A comprehensive Salon Operating System (OS) designed to transform a luxury salon's operations. It combines cutting-edge AI utility with a premium, aesthetic-first interface to drive conversions and secure recurring revenue.",
+    problem: "Salons leak revenue through missed upsells, unoptimised walk-in availability, and untracked cash tips. Staff retention is low due to burnout and lack of commission visibility.",
+    solution: "A unified platform featuring a Walk-In Triage Dashboard, Real-Time Financial Sync for tips/revenue, and an AI 'Digital Dermatologist' that scans clients to build custom retail shopping lists.",
+    contributions: ["Full Stack Architecture", "AI Vision Integration", "Operational Logic Design"],
+    highlights: ["Walk-In Triage Dashboard", "AI Digital Dermatologist", "Real-Time Tip Sync", "Staff Welfare Guard"],
+  },
+  {
+    slug: "the-gym",
+    title: "The Gym OS",
+    shortTagline: "High-Performance Fitness Management Platform",
+    thumbnail: "/thegymthumbnail.png",
+    gallery: [
+      "/thegymthumbnail.png",
+      "/thegymdashboard.png"
+    ],
+    year: "2026",
+    type: "webapp",
+    techStack: ["Astro", "React", "Framer Motion", "IoT Integration"],
+    status: "live",
+    demoUrl: "https://the-gym-swart.vercel.app/",
+    audiences: ["client", "dev"],
+    overview: "A comprehensive Gym Management Operating System (GymOS) designed to transform fitness facility operations. Built with a focus on member UX and operational efficiency, it features IoT-ready tracking and AI-driven retention tools.",
+    problem: "Equipment downtime frustrates members, class capacity is unoptimised (empty off-peak slots), and 'at-risk' members churn silently without intervention.",
+    solution: "A 'Digital Twin' Equipment Tracker to flag repairs instantly, Capacity Heatmaps to optimise class schedules, and a Retention AI Engine that flags absent members for re-engagement.",
+    contributions: ["IoT Dashboard Architecture", "AI Retention Logic", "Motion UI Engineering"],
+    highlights: ["Equipment 'Digital Twin' Tracker", "Class Capacity Heatmaps", "Retention Risk AI", "AI Workout Generator"],
+  },
+  {
     slug: "script-vault",
     title: "Script Vault v1.0",
     shortTagline: "Secure, Organized Database for Google Apps Script Snippets",
