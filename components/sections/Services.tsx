@@ -8,7 +8,7 @@ const services = [
     {
         title: "Custom Code",
         description:
-            "Tailored frontend solutions built from scratch to match your unique brand identity and requirements.",
+            "Custom full-stack solutions built from scratch to match your unique brand identity and requirements.",
         icon: Code,
     },
     {
@@ -27,14 +27,14 @@ const services = [
 
 export function Services() {
     return (
-        <section id="services" className="py-24 bg-cream dark:bg-plum-dark transition-colors duration-500 relative overflow-hidden">
+        <section id="services" className="py-24 bg-background transition-colors duration-500 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal dark:text-cream mb-4">
-                        Our Expertise
+                    <h2 className="font-serif text-4xl md:text-5xl font-bold text-heading mb-4">
+                        My Expertise
                     </h2>
-                    <p className="font-sans text-lg text-charcoal/70 dark:text-cream/70 max-w-2xl mx-auto">
-                        We blend creativity with technical precision to deliver digital solutions that empower your business.
+                    <p className="font-sans text-lg text-foreground/70 max-w-2xl mx-auto">
+                        I blend creativity with technical precision to deliver digital solutions that empower your business.
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@ export function Services() {
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
                             <GlassCard className="h-full flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
-                                <div className="w-16 h-16 rounded-full bg-rose/20 flex items-center justify-center mb-6 text-charcoal dark:text-cream relative overflow-hidden">
+                                <div className="w-16 h-16 rounded-full bg-accent-primary/10 flex items-center justify-center mb-6 text-accent-primary relative overflow-hidden">
                                     {service.title === "Automation & Scripting" ? (
                                         <div className="relative w-full h-full flex items-center justify-center">
                                             <motion.div
@@ -68,7 +68,7 @@ export function Services() {
                                             </motion.div>
                                             {/* Success Checkmark Animation */}
                                             <motion.div
-                                                className="absolute inset-0 flex items-center justify-center bg-sage/20"
+                                                className="absolute inset-0 flex items-center justify-center bg-accent-secondary/20"
                                                 initial={{ opacity: 0, scale: 0.5 }}
                                                 whileHover={{ opacity: 1, scale: 1 }}
                                                 transition={{ duration: 0.3, delay: 0.1 }}
@@ -83,7 +83,7 @@ export function Services() {
                                                     strokeWidth="2"
                                                     strokeLinecap="round"
                                                     strokeLinejoin="round"
-                                                    className="text-charcoal dark:text-cream"
+                                                    className="text-accent-primary"
                                                 >
                                                     <polyline points="20 6 9 17 4 12" />
                                                 </svg>
@@ -93,10 +93,10 @@ export function Services() {
                                         <service.icon size={32} strokeWidth={1.5} />
                                     )}
                                 </div>
-                                <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream mb-4">
+                                <h3 className="font-serif text-2xl font-bold text-heading mb-4">
                                     {service.title}
                                 </h3>
-                                <p className="font-sans text-charcoal/80 dark:text-cream/80 leading-relaxed">
+                                <p className="font-sans text-foreground/80 leading-relaxed">
                                     {service.description}
                                 </p>
                             </GlassCard>

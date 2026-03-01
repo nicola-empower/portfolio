@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
-import { CustomCursor } from "@/components/ui/CustomCursor";
-
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
+import { sharedMetadata, siteConfig } from "./shared-metadata";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
@@ -17,10 +18,10 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-import { sharedMetadata, siteConfig } from "./shared-metadata";
-import Script from "next/script";
-
-export const metadata: Metadata = sharedMetadata;
+export const metadata: Metadata = {
+  ...sharedMetadata,
+  alternates: { canonical: siteConfig.url },
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -31,27 +32,60 @@ const jsonLd = {
       "url": siteConfig.url,
       "name": siteConfig.title,
       "description": siteConfig.description,
-      "publisher": {
-        "@id": `${siteConfig.url}/#person`
-      }
+      "publisher": { "@id": `${siteConfig.url}/#person` }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://empowerdigitalsolutions.co.uk/#website",
+      "url": "https://empowerdigitalsolutions.co.uk",
+      "name": "Empower Digital Solutions",
+      "description": "Custom web applications, automation & AI-powered digital solutions for businesses.",
+      "publisher": { "@id": `${siteConfig.url}/#person` }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://empowerdigitalsolutions.co.uk/#organization",
+      "name": "Empower Digital Solutions",
+      "url": "https://empowerdigitalsolutions.co.uk",
+      "founder": { "@id": `${siteConfig.url}/#person` },
+      "sameAs": [
+        "https://empowerdigitalsolutions.co.uk",
+        "https://empowerautomation.co.uk",
+        "https://empowervaservices.co.uk",
+        "https://www.linkedin.com/in/empowervaservices",
+        "https://www.instagram.com/digital_solutions.empower/",
+        "https://www.instagram.com/empower_va",
+        "https://www.instagram.com/empower_automation",
+        "https://www.facebook.com/p/Empower-Virtual-Assistant-Services-61577917603562/",
+        "https://www.bark.com/en/gb/company/empower-digital-solutions/4XPD2p/",
+        "https://maps.app.goo.gl/9amYiQY4XCVV5gZX6"
+      ]
     },
     {
       "@type": "Person",
       "@id": `${siteConfig.url}/#person`,
       "name": "Nicola Berry",
       "url": siteConfig.url,
-      "jobTitle": "Full Stack Engineer & Automation Architect",
+      "jobTitle": "Principal Digital Architect & Technical Founder",
       "description": siteConfig.description,
       "image": siteConfig.ogImage,
+      "worksFor": { "@id": "https://empowerdigitalsolutions.co.uk/#organization" },
       "sameAs": [
+        siteConfig.url,
+        "https://empowerdigitalsolutions.co.uk",
+        "https://empowerautomation.co.uk",
+        "https://empowervaservices.co.uk",
         "https://github.com/nicola-empower",
-        "https://linkedin.com/in/nicola-berry", // Update if needed
+        "https://www.linkedin.com/in/empowervaservices",
+        "https://www.facebook.com/nicola.berry.39",
+        "https://www.instagram.com/nicolllaaaaa",
+        "https://contra.com/nicola_berry_g6tufqdn",
+        "https://portfolio.empowervaservices.co.uk",
+        "https://empowervaservices.co.uk/portfolio"
       ]
     }
   ]
 };
-
-import { Footer } from "@/components/layout/Footer";
 
 export default function RootLayout({
   children,
@@ -59,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-GB" suppressHydrationWarning>
       <body
         className={`${playfair.variable} ${inter.variable} antialiased font-sans transition-colors duration-500`}
       >
@@ -69,13 +103,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CustomCursor />
           <div className="fixed top-6 right-6 z-40">
             <ThemeToggle />
           </div>
           <a
             href="#main-content"
-            className="fixed top-4 left-4 z-50 -translate-y-[150%] focus:translate-y-0 bg-charcoal text-cream px-4 py-2 rounded-md font-bold transition-transform duration-300"
+            className="fixed top-4 left-4 z-50 -translate-y-[150%] focus:translate-y-0 bg-heading text-background px-4 py-2 rounded-md font-bold transition-transform duration-300"
           >
             Skip to content
           </a>
@@ -84,7 +117,7 @@ export default function RootLayout({
             id="json-ld"
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
           />
           <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-8HMX25HCMV"

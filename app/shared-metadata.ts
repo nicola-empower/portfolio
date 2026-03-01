@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const siteConfig = {
-    title: "Nicola Berry | Full Stack Engineer & Automation Architect",
-    description: "Specializing in high-performance web applications, bespoke automation systems, and digital transformation for agencies and businesses.",
-    url: "https://nicolaberry.dev", // Replace with actual production URL if different
-    ogImage: "https://nicolaberry.dev/og-image.jpg", // We need to ensure this image exists
-    twitterHandle: "@nicola_empower", // Replace or remove if not applicable
+    title: "Nicola Berry | Principal Digital Architect | Operations Engineer",
+    description: "Strategic Systems Architect specialized in high-performance digital ecosystems, automated operations, and custom Command & Control planes.",
+    url: "https://nicolaberry.uk",
+    ogImage: "https://nicolaberry.uk/og-image.jpg",
+    twitterHandle: "@nicola_empower",
 };
 
 export const sharedMetadata: Metadata = {
@@ -16,14 +16,24 @@ export const sharedMetadata: Metadata = {
     },
     description: siteConfig.description,
     keywords: [
-        "Full Stack Developer",
+        "Principal Digital Architect Scotland",
+        "Technical Founder UK",
+        "Freelance Full Stack Developer Scotland",
+        "Operations Engineer",
+        "Solutions Architect",
         "Automation Architect",
-        "Next.js",
-        "React",
+        "Next.js Developer",
+        "React Developer",
         "TypeScript",
-        "Google Apps Script",
-        "Web Development",
-        "Digital Transformation",
+        "SaaS Builder",
+        "AI Automation",
+        "Business Automation",
+        "Web Application Development",
+        "Digital Estate",
+        "Empower Digital Solutions",
+        "Nicola Berry Developer",
+        "Scotland Web Developer",
+        "Custom Web App UK",
     ],
     authors: [{ name: "Nicola Berry", url: siteConfig.url }],
     creator: "Nicola Berry",
@@ -40,7 +50,7 @@ export const sharedMetadata: Metadata = {
                 url: siteConfig.ogImage,
                 width: 1200,
                 height: 630,
-                alt: "Nicola Berry - Full Stack Engineer & Automation Architect",
+                alt: "Nicola Berry - Principal Digital Architect | Operations Engineer | Technical Founder",
             },
         ],
     },

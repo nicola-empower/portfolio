@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function About() {
     return (
-        <section id="about" className="py-24 bg-cream dark:bg-plum-dark transition-colors duration-500 overflow-hidden">
+        <section id="about" className="py-24 bg-background transition-colors duration-500 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
                     {/* Image Placeholder Side */}
@@ -17,18 +17,18 @@ export function About() {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2 relative"
                     >
-                        <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-taupe/10 relative group">
+                        <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-accent-secondary/10 relative group">
                             <Image
-                                src="/portfolio.jpg"
-                                alt="Nicola - Empower Digital Solutions"
+                                src="/nicola_professional.jpg"
+                                alt="Nicola Berry - Principal Digital Architect"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             {/* Decorative Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-tr from-rose/20 to-sage/20 mix-blend-multiply dark:mix-blend-screen opacity-30 group-hover:opacity-10 transition-opacity duration-500" />
+                            <div className="absolute inset-0 bg-gradient-to-tr from-accent-primary/10 to-accent-secondary/10 mix-blend-multiply dark:mix-blend-screen opacity-30 group-hover:opacity-10 transition-opacity duration-500" />
 
                             {/* Border Frame */}
-                            <div className="absolute inset-4 border border-cream/50 dark:border-white/10 rounded-xl z-10" />
+                            <div className="absolute inset-4 border border-background/50 dark:border-white/10 rounded-xl z-10" />
                         </div>
 
                         {/* Floating Badge */}
@@ -37,14 +37,14 @@ export function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4, duration: 0.6 }}
-                            className="absolute -bottom-6 -right-6 bg-white/80 dark:bg-charcoal/80 backdrop-blur-md p-6 rounded-xl shadow-lg border border-white/20 hidden md:block"
+                            className="absolute -bottom-6 -right-6 bg-white/80 dark:bg-background/80 backdrop-blur-md p-6 rounded-xl shadow-lg border border-white/20 hidden md:block"
                         >
-                            <div className="flex items-center gap-3 text-charcoal dark:text-cream">
-                                <div className="p-2 bg-rose/10 rounded-full">
-                                    <Globe size={20} className="text-rose" />
+                            <div className="flex items-center gap-3 text-heading">
+                                <div className="p-2 bg-accent-primary/10 rounded-full">
+                                    <Globe size={20} className="text-accent-primary" />
                                 </div>
                                 <div>
-                                    <p className="text-xs font-bold uppercase tracking-wider text-charcoal/60 dark:text-cream/60">Serving</p>
+                                    <p className="text-xs font-bold uppercase tracking-wider text-foreground/60">Serving</p>
                                     <p className="font-serif font-bold">Globally</p>
                                 </div>
                             </div>
@@ -59,34 +59,34 @@ export function About() {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2"
                     >
-                        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal dark:text-cream mb-8 leading-tight">
+                        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-heading mb-8 leading-tight">
                             More Than Code. <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose to-taupe">
+                            <span className="text-accent-primary">
                                 I Build Freedom.
                             </span>
                         </h2>
 
-                        <div className="space-y-6 text-lg text-charcoal/80 dark:text-cream/80 font-sans leading-relaxed">
+                        <div className="space-y-6 text-lg text-foreground font-sans leading-relaxed">
                             <p>
-                                Hi, I'm Nicola. I founded <span className="font-bold text-charcoal dark:text-cream">Empower Digital Solutions</span> because I believe technology should serve you, not the other way around.
+                                Hi, I&apos;m Nicola. I founded <span className="font-bold text-heading">Empower Digital Solutions</span> because I believe technology should serve you, not the other way around.
                             </p>
                             <p>
-                                I don't just build websites; I engineer digital ecosystems. Whether it's a bespoke web application, a custom automation script to save you hours of admin, or a high-performance portfolio, my goal is simple: to give you your time back.
+                                I don&apos;t just build websites; I engineer digital ecosystems. Whether it&apos;s a bespoke web application, a custom automation script to save you hours of admin, or a high-performance portfolio, my goal is simple: to give you your time back.
                             </p>
                             <p>
-                                As a developer, I blend technical precision with a supportive, human approach. No jargon, no confusion—just powerful results delivered with clarity and care.
+                                As a developer, I blend technical precision with a supportive, human approach. No jargon, no confusion, just powerful results delivered with clarity and care.
                             </p>
                         </div>
 
-                        <div className="mt-10 pt-8 border-t border-charcoal/10 dark:border-cream/10 flex items-center gap-2 text-charcoal/60 dark:text-cream/60">
-                            <MapPin size={18} />
+                        <div className="mt-10 pt-8 border-t border-foreground/10 flex items-center gap-2 text-foreground/60">
+                            <MapPin size={18} className="text-accent-primary" />
                             <span className="text-sm font-medium tracking-wide uppercase">
                                 Based in: Scotland, Serving Globally
                             </span>
                         </div>
 
                         <div className="mt-6">
-                            <a href="/cv" className="inline-flex items-center gap-2 text-rose hover:text-rose/80 font-medium transition-colors group">
+                            <a href="/cv" className="inline-flex items-center gap-2 text-accent-primary hover:text-accent-primary/80 font-medium transition-colors group">
                                 <span>View Full CV</span>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">
                                     <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

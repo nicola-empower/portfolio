@@ -144,16 +144,16 @@ const allTechs = [...techs, ...techs, ...techs, ...techs];
 
 export function TechStack() {
     return (
-        <section className="py-10 bg-cream dark:bg-plum-dark transition-colors duration-500 overflow-hidden border-y border-charcoal/5 dark:border-cream/5">
+        <section className="py-10 bg-background dark:bg-[#0d0d0d] transition-colors duration-500 overflow-hidden border-y border-heading/5 dark:border-foreground/5">
             <div className="container mx-auto px-6 text-center mb-6">
-                <p className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-rose dark:text-rose">
+                <p className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-accent-primary">
                     Powered by modern architecture
                 </p>
             </div>
 
             <div className="relative flex overflow-hidden">
-                <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-cream dark:from-plum-dark to-transparent z-10" />
-                <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-cream dark:from-plum-dark to-transparent z-10" />
+                <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background dark:from-[#0d0d0d] to-transparent z-10" />
+                <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background dark:from-[#0d0d0d] to-transparent z-10" />
 
                 <motion.div
                     className="flex items-center gap-16 md:gap-24 whitespace-nowrap"
@@ -173,12 +173,12 @@ export function TechStack() {
                         >
                             <svg
                                 viewBox={tech.viewBox}
-                                className="w-8 h-8 transition-colors fill-current text-plum-dark dark:text-cream"
+                                className="w-8 h-8 transition-colors fill-current text-heading dark:text-foreground"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path d={tech.path} />
                             </svg>
-                            <span className="font-sans font-medium text-lg hidden md:block text-rose dark:text-rose">
+                            <span className="font-sans font-medium text-lg hidden md:block text-accent-primary">
                                 {tech.name}
                             </span>
                         </div>

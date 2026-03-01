@@ -89,7 +89,7 @@ export function ProjectShowcase({ project }: ProjectShowcaseProps) {
                             className="transform md:-rotate-y-12 md:rotate-x-6 md:shadow-2xl md:skew-y-2"
                         >
                             <div className="w-full h-full bg-zinc-900 p-6 flex flex-col">
-                                <div className="w-full h-40 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center">
+                                <div className="w-full h-40 bg-gradient-to-r from-accent-secondary to-accent-primary rounded-xl mb-4 relative overflow-hidden flex items-center justify-center">
                                     <div className="text-white font-bold text-2xl px-4 text-center">
                                         {project.title}
                                     </div>

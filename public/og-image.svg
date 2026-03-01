@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Dark background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120008"/>
+      <stop offset="100%" stop-color="#1e0010"/>
+    </linearGradient>
+    <!-- Glow blob top-left -->
+    <radialGradient id="glow1" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#5B0024" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#120008" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Glow blob bottom-right -->
+    <radialGradient id="glow2" cx="100%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#3d0018" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#120008" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Accent line gradient -->
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5B0024"/>
+      <stop offset="50%" stop-color="#c994a4"/>
+      <stop offset="100%" stop-color="#5B0024" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow blobs -->
+  <ellipse cx="0" cy="0" rx="500" ry="400" fill="url(#glow1)"/>
+  <ellipse cx="1200" cy="630" rx="500" ry="400" fill="url(#glow2)"/>
+
+  <!-- Subtle grid lines for texture -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Top-right corner bracket accent -->
+  <g stroke="#5B0024" stroke-width="2" fill="none" opacity="0.6">
+    <polyline points="1130,40 1160,40 1160,70"/>
+  </g>
+  <!-- Bottom-left corner bracket accent -->
+  <g stroke="#5B0024" stroke-width="2" fill="none" opacity="0.6">
+    <polyline points="70,590 40,590 40,560"/>
+  </g>
+
+  <!-- Accent horizontal rule -->
+  <rect x="80" y="290" width="300" height="2" fill="url(#lineGrad)"/>
+
+  <!-- Eyebrow label -->
+  <text x="80" y="268" font-family="Georgia, serif" font-size="15" letter-spacing="6" fill="#c994a4" opacity="0.9" text-transform="uppercase">PORTFOLIO</text>
+
+  <!-- Main name -->
+  <text x="80" y="380" font-family="Georgia, serif" font-size="86" font-weight="bold" fill="#ffffff" letter-spacing="-2">Nicola Berry</text>
+
+  <!-- Title -->
+  <text x="82" y="432" font-family="Arial, sans-serif" font-size="22" fill="#e8dde0" opacity="0.7" letter-spacing="1">
+    Principal Digital Architect  ·  Technical Founder  ·  Scotland
+  </text>
+
+  <!-- Tag pills row -->
+  <!-- Pill 1 -->
+  <rect x="82" y="470" width="160" height="36" rx="18" fill="#5B0024" fill-opacity="0.5" stroke="#c994a4" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="162" y="493" font-family="Arial, sans-serif" font-size="13" fill="#e8dde0" text-anchor="middle" letter-spacing="1">Full-Stack Dev</text>
+  <!-- Pill 2 -->
+  <rect x="256" y="470" width="150" height="36" rx="18" fill="#5B0024" fill-opacity="0.5" stroke="#c994a4" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="331" y="493" font-family="Arial, sans-serif" font-size="13" fill="#e8dde0" text-anchor="middle" letter-spacing="1">AI Automation</text>
+  <!-- Pill 3 -->
+  <rect x="420" y="470" width="110" height="36" rx="18" fill="#5B0024" fill-opacity="0.5" stroke="#c994a4" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="475" y="493" font-family="Arial, sans-serif" font-size="13" fill="#e8dde0" text-anchor="middle" letter-spacing="1">SaaS Builder</text>
+
+  <!-- Domain / URL bottom right -->
+  <text x="1120" y="590" font-family="Arial, sans-serif" font-size="18" fill="#c994a4" opacity="0.8" text-anchor="end" letter-spacing="1">nicolaberry.uk</text>
+
+  <!-- Decorative vertical accent bar on right side -->
+  <rect x="1100" y="80" width="2" height="180" fill="#5B0024" opacity="0.4" rx="1"/>
+  <rect x="1100" y="80" width="2" height="60" fill="#c994a4" opacity="0.8" rx="1"/>
+
+  <!-- Small logo mark / monogram top-left -->
+  <text x="80" y="88" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#c994a4" opacity="0.9">NB</text>
+  <rect x="80" y="95" width="36" height="2" fill="#5B0024" rx="1"/>
+</svg>

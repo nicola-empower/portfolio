@@ -1,65 +1,78 @@
-# Nicola's Digital Solutions Portfolio
+# Nicola Berry — Portfolio
 
-A modern, high-performance portfolio website built to showcase a diverse range of digital solutions, from full-stack SaaS applications to automated business workflows. This project itself serves as a demonstration of modern web development practices, featuring a "Calm Technology" aesthetic, dynamic interactions, and a robust architecture.
-<img width="2832" height="1515" alt="image" src="https://github.com/user-attachments/assets/1aec5f77-05dc-4256-9fdf-4d596abe72fa" />
+A high-performance portfolio website showcasing digital solutions across full-stack development, AI automation, and business systems. Built to demonstrate modern web development practices and serves as both a professional profile and a live proof of capability.
 
-##  Tech Stack
+🌐 **Live:** [nicolaberry.uk](https://nicolaberry.uk)
 
-This portfolio is built on the bleeding edge of the React ecosystem:
+---
 
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Library**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Theming**: [next-themes](https://github.com/pacocoursey/next-themes) for seamless Dark/Light mode switching.
+## Tech Stack
 
-##  Features
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Library:** [React 19](https://react.dev/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) with `@theme inline` semantic tokens
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Theming:** [next-themes](https://github.com/pacocoursey/next-themes) — persistent dark/light mode
+- **Forms:** [Formspree](https://formspree.io/) for contact form submissions
 
-- **Dynamic Project Gallery**: A data-driven grid layout that filters and displays projects based on their category (Web App, Automation, Case Study).
-- **Deep Dive Modals**: Interactive modals that allow users to explore projects in detail (Problem, Solution, Tech Stack, Gallery) without leaving the main page.
-- **Responsive Design**: Fully responsive layout that adapts gracefully from mobile devices to large desktop screens.
-- **Dark Mode Support**: Built-in dark mode with persistent state preferences.
-- **Calm Technology Aesthetic**: Designed with a focus on readability, whitespace, and subtle animations to reduce cognitive load.
+---
 
-##  Getting Started
+## Features
 
-To run this project locally:
+- **Project Gallery** — Data-driven, filterable grid (Web App, Automation, Case Study, Website)
+- **Project Deep Dives** — Full detail pages per project with problem/solution/tech/gallery sections
+- **Strategic Analysis Page** — Market valuation and demand analysis for the digital estate
+- **CV Page** — Interactive professional CV with experience, education, languages and superpowers
+- **Dark / Light Mode** — Seamless switching with the Diner brand palette (deep maroon dark bg, warm cream light bg)
+- **SEO Structured Data** — Schema.org JSON-LD with `Person`, `Organization`, and `WebSite` nodes, including cross-site `sameAs` entity linking to empower digital properties
+- **Responsive** — Fully adaptive from mobile to widescreen
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/nicola-empower/portfolio.git
-    cd portfolio
-    ```
+---
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    # or
-    yarn install
-    # or
-    pnpm install
-    ```
+## Brand Palette
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
+| Token | Light | Dark |
+|---|---|---|
+| Background | `#e5d4d6` (warm cream) | `#120008` (deep maroon-black) |
+| Heading | `#1a1a1a` | `#ffffff` |
+| Foreground | `#6b7280` | `#e8dde0` |
+| Accent Primary | `#5B0024` (Diner Red) | `#c994a4` (dusty rose) |
 
-4.  **Open your browser:**
-    Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+---
 
-##  Project Structure
+## Getting Started
 
-- **`app/`**: Contains the Next.js App Router pages and layouts.
-- **`components/`**: Reusable UI components, organized by feature (e.g., `work/`, `ui/`).
-    - **`work/ProjectCard.tsx`**: Individual project card component.
-    - **`work/ProjectModal.tsx`**: The deep-dive modal component.
-- **`data/projects.ts`**: The single source of truth for all project data. Adding a new project here automatically updates the gallery.
-- **`types/`**: TypeScript definitions for the project data structures.
+```bash
+git clone https://github.com/nicola-empower/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
 
-##  Design Philosophy
+Open [http://localhost:3000](http://localhost:3000).
 
-The design follows a "Business Operating System" metaphor, presenting complex information in a structured, clean, and professional manner. It utilizes a sophisticated color palette (Charcoal, Cream, Rose, Sage) to convey trust and competence.
+---
 
-Nicola Berry
+## Project Structure
+
+```
+app/              # Next.js App Router pages & layouts
+  layout.tsx      # Root layout with JSON-LD structured data
+  globals.css     # Tailwind v4 @theme tokens + CSS vars
+  analysis/       # Strategic valuation analysis page
+  cv/             # Interactive CV page
+components/
+  sections/       # Page sections (Hero, Services, Process, Contact…)
+  work/           # ProjectCard, ProjectModal
+  ui/             # Shared UI (Button, GlassCard, ContactForm, ThemeToggle)
+  layout/         # Navbar, Footer
+data/
+  projects.ts     # Single source of truth for all project data
+types/            # TypeScript definitions
+```
+
+---
+
+**Nicola Berry** — Principal Digital Architect | Operations Engineer | Technical Founder  
+[nicolaberry.uk](https://nicolaberry.uk) · [empowerdigitalsolutions.co.uk](https://empowerdigitalsolutions.co.uk)

@@ -3,55 +3,58 @@
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
 
+const inputClass = [
+    "w-full rounded-lg px-4 py-3 text-sm transition-all",
+    "bg-white border border-heading/15 text-heading placeholder:text-heading/35",
+    "dark:bg-white/5 dark:border-white/10 dark:text-white dark:placeholder:text-white/30",
+    "focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary",
+].join(" ");
+
+const labelClass = "block text-xs font-bold uppercase tracking-widest text-heading/50 dark:text-white/50 mb-2";
+
 export function ContactForm() {
     return (
-        <GlassCard className="p-8 md:p-12">
+        <GlassCard className="p-8 md:p-12 bg-white/60 dark:bg-white/3 backdrop-blur-md">
             <form action="https://formspree.io/f/mblkwkpp" method="POST" className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                        <label htmlFor="name" className="text-sm font-medium text-charcoal/70 dark:text-cream/70 uppercase tracking-wide">
-                            Name
-                        </label>
+                    <div>
+                        <label htmlFor="name" className={labelClass}>Name</label>
                         <input
                             type="text"
                             id="name"
                             name="name"
                             required
-                            className="w-full bg-white/50 dark:bg-charcoal/50 border border-charcoal/10 dark:border-cream/10 rounded-lg px-4 py-3 text-charcoal dark:text-cream focus:outline-none focus:border-rose focus:ring-1 focus:ring-rose transition-all placeholder:text-charcoal/30 dark:placeholder:text-cream/30"
+                            className={inputClass}
                             placeholder="Jane Doe"
                         />
                     </div>
-                    <div className="space-y-2">
-                        <label htmlFor="email" className="text-sm font-medium text-charcoal/70 dark:text-cream/70 uppercase tracking-wide">
-                            Email
-                        </label>
+                    <div>
+                        <label htmlFor="email" className={labelClass}>Email</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
                             required
-                            className="w-full bg-white/50 dark:bg-charcoal/50 border border-charcoal/10 dark:border-cream/10 rounded-lg px-4 py-3 text-charcoal dark:text-cream focus:outline-none focus:border-rose focus:ring-1 focus:ring-rose transition-all placeholder:text-charcoal/30 dark:placeholder:text-cream/30"
+                            className={inputClass}
                             placeholder="jane@example.com"
                         />
                     </div>
                 </div>
 
-                <div className="space-y-2">
-                    <label htmlFor="projectType" className="text-sm font-medium text-charcoal/70 dark:text-cream/70 uppercase tracking-wide">
-                        Project Type
-                    </label>
+                <div>
+                    <label htmlFor="projectType" className={labelClass}>Project Type</label>
                     <div className="relative">
                         <select
                             id="projectType"
                             name="projectType"
-                            className="w-full bg-white/50 dark:bg-charcoal/50 border border-charcoal/10 dark:border-cream/10 rounded-lg px-4 py-3 text-charcoal dark:text-cream focus:outline-none focus:border-rose focus:ring-1 focus:ring-rose transition-all appearance-none cursor-pointer"
+                            className={inputClass + " appearance-none cursor-pointer pr-10"}
                         >
                             <option value="Custom Web App">Custom Web App</option>
                             <option value="Website">Website</option>
                             <option value="Automation">Automation</option>
                             <option value="Other">Other</option>
                         </select>
-                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-charcoal/50 dark:text-cream/50">
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-heading/40 dark:text-white/40">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 4L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
@@ -59,21 +62,23 @@ export function ContactForm() {
                     </div>
                 </div>
 
-                <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-charcoal/70 dark:text-cream/70 uppercase tracking-wide">
-                        Message
-                    </label>
+                <div>
+                    <label htmlFor="message" className={labelClass}>Message</label>
                     <textarea
                         id="message"
                         name="message"
-                        rows={4}
-                        className="w-full bg-white/50 dark:bg-charcoal/50 border border-charcoal/10 dark:border-cream/10 rounded-lg px-4 py-3 text-charcoal dark:text-cream focus:outline-none focus:border-rose focus:ring-1 focus:ring-rose transition-all placeholder:text-charcoal/30 dark:placeholder:text-cream/30 resize-none"
+                        rows={5}
+                        className={inputClass + " resize-none"}
                         placeholder="Tell me about your project..."
                     />
                 </div>
 
-                <div className="pt-4">
-                    <Button type="submit" size="lg" className="w-full md:w-auto rounded-full px-8">
+                <div className="pt-2">
+                    <Button
+                        type="submit"
+                        size="lg"
+                        className="w-full md:w-auto rounded-full px-10 bg-accent-primary text-white hover:opacity-90 transition-opacity"
+                    >
                         Send Enquiry
                     </Button>
                 </div>

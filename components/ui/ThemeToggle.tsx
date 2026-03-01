@@ -23,11 +23,11 @@ export function ThemeToggle() {
     return (
         <button
             onClick={() => setTheme(isDark ? "light" : "dark")}
-            className="relative w-16 h-8 rounded-full bg-taupe/30 dark:bg-plum-light/50 backdrop-blur-sm border border-charcoal/10 dark:border-cream/10 p-1 transition-colors duration-500 focus:outline-none"
+            className="relative w-16 h-8 rounded-full bg-accent-secondary/30 dark:bg-accent-primary/20 backdrop-blur-sm border border-heading/10 dark:border-foreground/10 p-1 transition-colors duration-500 focus:outline-none"
             aria-label="Toggle Theme"
         >
             <motion.div
-                className="w-6 h-6 rounded-full bg-cream shadow-sm flex items-center justify-center text-charcoal"
+                className="w-6 h-6 rounded-full bg-background shadow-sm flex items-center justify-center text-heading"
                 layout
                 transition={{ type: "spring", stiffness: 700, damping: 30 }}
                 style={{
