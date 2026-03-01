@@ -4,7 +4,7 @@ export const siteConfig = {
     title: "Nicola Berry | Principal Digital Architect | Operations Engineer",
     description: "Strategic Systems Architect specialized in high-performance digital ecosystems, automated operations, and custom Command & Control planes.",
     url: "https://nicolaberry.uk",
-    ogImage: "https://nicolaberry.uk/og-image.jpg",
+    ogImage: "https://nicolaberry.uk/og-image.png",
     twitterHandle: "@nicola_empower",
 };
 
