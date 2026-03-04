@@ -17,7 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "yearly",
             priority: 1,
         },
-        // Add other static routes if they exist
+        {
+            url: `${siteConfig.url}/analysis`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
         ...projectUrls,
     ];
 }

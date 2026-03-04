@@ -1,0 +1,14 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0A0A0A" />
+  <defs>
+    <radialGradient id="paint0_radial_coming_soon" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 300) rotate(90) scale(300 400)">
+      <stop stop-color="#D0021B" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#paint0_radial_coming_soon)"/>
+  <rect x="250" y="250" width="300" height="100" rx="12" stroke="#D0021B" stroke-opacity="0.2" fill="#D0021B" fill-opacity="0.05"/>
+  <text x="400" y="308" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.9" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="24" letter-spacing="0.1em">COMING SOON</text>
+  <text x="400" y="335" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.4" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Project in Development</text>
+  <circle cx="400" cy="300" r="150" stroke="#D0021B" stroke-opacity="0.05" stroke-width="0.5"/>
+</svg>
