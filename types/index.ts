@@ -19,4 +19,6 @@ export type Project = {
     solution?: string;
     contributions: string[];
     highlights: string[];
+    featured?: boolean;
+    tier?: number;
 };

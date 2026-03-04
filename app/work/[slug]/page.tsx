@@ -2,8 +2,9 @@ import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ExternalLink, Github, ArrowRight, Layout, Code, Zap, FileText, Globe } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, ArrowRight, Layout, Code, Zap, FileText, Globe, Lightbulb } from "lucide-react";
 import { Metadata } from "next";
+import Silk from "@/components/ui/Silk";
 
 // Force static generation for all projects
 export function generateStaticParams() {
@@ -82,20 +83,26 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
             <article className="container mx-auto px-6">
                 {/* Header Section */}
-                <header className="mb-16 max-w-4xl">
-                    <div className="flex items-center gap-3 mb-6">
-                        <span className="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-white dark:bg-white/10 text-charcoal dark:text-cream rounded-full border border-charcoal/5 dark:border-white/5 flex items-center gap-2">
+                <header className="mb-20 max-w-5xl relative">
+                    <div className="absolute -top-24 -left-24 w-64 h-64 bg-rose/10 blur-[100px] rounded-full pointer-events-none" />
+
+                    <div className="flex items-center gap-3 mb-8">
+                        <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] bg-white dark:bg-white/10 text-charcoal dark:text-cream rounded-full border border-charcoal/5 dark:border-white/5 flex items-center gap-2 shadow-sm">
                             <TypeIcon size={14} />
                             {project.type.replace("-", " ")}
                         </span>
-                        <span className="text-charcoal/40 dark:text-cream/40">•</span>
-                        <span className="font-mono text-sm text-charcoal/60 dark:text-cream/60">{project.year}</span>
+                        <span className="text-charcoal/20 dark:text-cream/20">•</span>
+                        <span className="font-mono text-sm font-bold text-charcoal/40 dark:text-cream/40 uppercase tracking-widest">{project.year}</span>
                     </div>
 
-                    <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal dark:text-cream mb-6 leading-tight">
-                        {project.title}
+                    <h1 className="font-serif text-6xl md:text-8xl font-bold text-charcoal dark:text-cream mb-8 leading-[1.1] tracking-tight">
+                        {project.title.split(" ").map((word, i) => (
+                            <span key={i} className={i % 2 === 1 ? "italic text-rose block md:inline" : "block md:inline"}>
+                                {word}{" "}
+                            </span>
+                        ))}
                     </h1>
-                    <p className="font-sans text-xl md:text-2xl text-charcoal/60 dark:text-cream/60 max-w-2xl leading-relaxed">
+                    <p className="font-sans text-xl md:text-3xl text-charcoal/60 dark:text-cream/60 max-w-3xl leading-relaxed font-light">
                         {project.shortTagline}
                     </p>
                 </header>
@@ -193,37 +200,56 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                             )}
                         </div>
 
-                        {/* Text Content */}
                         <div className="prose prose-lg dark:prose-invert max-w-none">
-                            <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream mb-6">Overview</h3>
-                            <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-lg">
+                            <h3 className="font-serif font-bold text-charcoal dark:text-cream mb-8 opacity-20 uppercase tracking-[0.2em] text-sm">Overview</h3>
+                            <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-xl font-light mb-16">
                                 {project.overview}
                             </p>
 
-                            <div className="grid md:grid-cols-2 gap-12 mt-16">
+                            <div className="grid md:grid-cols-2 gap-12 mt-20">
                                 {project.problem && (
-                                    <div>
-                                        <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream mb-4 flex items-center gap-3">
-                                            <span className="w-8 h-8 rounded-full bg-rose/10 flex items-center justify-center text-rose text-sm">1</span>
-                                            The Challenge
+                                    <div className="p-8 rounded-3xl bg-charcoal/5 dark:bg-white/5 border border-charcoal/5 dark:border-white/5">
+                                        <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream mb-6 flex items-center gap-4">
+                                            <span className="w-10 h-10 rounded-full bg-rose/10 flex items-center justify-center text-rose text-base font-bold italic">Challenge</span>
                                         </h3>
-                                        <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-base">
+                                        <p className="text-charcoal/70 dark:text-cream/70 leading-relaxed text-lg">
                                             {project.problem}
                                         </p>
                                     </div>
                                 )}
 
                                 {project.solution && (
-                                    <div>
-                                        <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream mb-4 flex items-center gap-3">
-                                            <span className="w-8 h-8 rounded-full bg-sage/20 flex items-center justify-center text-sage text-sm">2</span>
-                                            The Solution
+                                    <div className="p-8 rounded-3xl bg-rose/5 dark:bg-rose/10 border border-rose/10 dark:border-rose/20">
+                                        <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream mb-6 flex items-center gap-4">
+                                            <span className="w-10 h-10 rounded-full bg-rose/20 flex items-center justify-center text-rose text-base font-bold italic">Solution</span>
                                         </h3>
-                                        <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-base">
+                                        <p className="text-charcoal/70 dark:text-cream/70 leading-relaxed text-lg">
                                             {project.solution}
                                         </p>
                                     </div>
                                 )}
+                            </div>
+
+                            {/* Strategic Value Section */}
+                            <div className="mt-20 p-10 rounded-4xl bg-accent-secondary/30 dark:bg-white/5 text-accent-primary dark:text-cream relative overflow-hidden group border border-accent-secondary/50 dark:border-white/10">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-rose/20 blur-[80px] rounded-full group-hover:bg-rose/30 transition-colors" />
+                                <div className="relative z-10">
+                                    <div className="flex items-center gap-3 mb-6 text-accent-primary">
+                                        <Lightbulb size={24} />
+                                        <span className="uppercase tracking-[0.3em] font-bold text-xs">Strategic Intelligence</span>
+                                    </div>
+                                    <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Business Impact & Scalability</h3>
+                                    <p className="text-accent-primary/80 dark:text-cream/70 text-lg md:text-xl leading-relaxed max-w-3xl mb-10">
+                                        This project isn&apos;t just code; it&apos;s a strategic asset designed to eliminate operational friction and drive measurable conversion. By focusing on {project.techStack[0]} {project.techStack[1] ? `and ${project.techStack[1]}` : ""}, we ensured a foundation that scales with enterprise demand.
+                                    </p>
+                                    <div className="flex flex-wrap gap-4">
+                                        {project.highlights.map((highlight, i) => (
+                                            <div key={i} className="px-5 py-2.5 bg-accent-primary/10 dark:bg-white/10 rounded-full text-sm font-bold border border-accent-primary/20 dark:border-white/5 hover:bg-accent-primary/20 transition-colors">
+                                                {highlight}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -231,9 +257,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                         {project.gallery && project.gallery.length > 0 && (
                             <div className="space-y-8 pt-12 border-t border-charcoal/5 dark:border-white/5">
                                 <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream">Gallery</h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                                     {project.gallery.map((img, idx) => (
-                                        <div key={idx} className="relative aspect-[4/3] rounded-xl overflow-hidden border border-charcoal/5 dark:border-white/5 bg-taupe/10 hover:shadow-lg transition-shadow">
+                                        <div key={idx} className="relative aspect-4/3 rounded-xl overflow-hidden border border-charcoal/5 dark:border-white/5 bg-taupe/10 hover:shadow-lg transition-shadow">
                                             <Image
                                                 src={img}
                                                 alt={`${project.title} gallery image ${idx + 1}`}

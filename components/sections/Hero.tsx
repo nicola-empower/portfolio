@@ -7,50 +7,10 @@ import Link from "next/link";
 export function Hero() {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background transition-colors duration-500">
-            {/* Animated Background Blobs */}
-            <div className="absolute inset-0 w-full h-full pointer-events-none">
-                <motion.div
-                    className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-accent-primary/10 rounded-full blur-3xl mix-blend-multiply dark:mix-blend-screen"
-                    animate={{
-                        x: [0, 100, 0],
-                        y: [0, 50, 0],
-                        scale: [1, 1.1, 1],
-                    }}
-                    transition={{
-                        duration: 20,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                    }}
-                />
-                <motion.div
-                    className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-accent-secondary/10 rounded-full blur-3xl mix-blend-multiply dark:mix-blend-screen"
-                    animate={{
-                        x: [0, -100, 0],
-                        y: [0, -50, 0],
-                        scale: [1, 1.2, 1],
-                    }}
-                    transition={{
-                        duration: 25,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                    }}
-                />
-                <motion.div
-                    className="absolute top-[20%] right-[20%] w-[400px] h-[400px] bg-accent-primary/5 rounded-full blur-3xl mix-blend-multiply dark:mix-blend-screen"
-                    animate={{
-                        x: [0, 50, 0],
-                        y: [0, 100, 0],
-                        scale: [1, 0.9, 1],
-                    }}
-                    transition={{
-                        duration: 18,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                    }}
-                />
-            </div>
+            {/* Clean Premium Background */}
+            <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_0%,rgba(208,2,27,0.05),transparent_70%)] pointer-events-none" />
+            <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_80%_80%,rgba(208,2,27,0.03),transparent_50%)] pointer-events-none" />
 
-            {/* Content */}
             <div className="relative z-10 container mx-auto px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

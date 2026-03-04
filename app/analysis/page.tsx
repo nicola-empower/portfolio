@@ -34,23 +34,27 @@ interface Project {
 }
 
 const projects: Project[] = [
-    { id: 24, name: "Empower VA (Agency Engine)", category: "Agency Engine", license: "£299 - £499", exit: "£15,000 - £30,000", marketability: "Very High", platform: "Acquire.com", icon: Briefcase },
-    { id: 16, name: "Automation OS", category: "Agency OS", license: "£499", exit: "£12,000 - £25,000", marketability: "Very High", platform: "Acquire.com", icon: Layers },
+    { id: 24, name: "Empower VA Engine", category: "Agency Engine", license: "£299 - £499", exit: "£15,000 - £30,000", marketability: "Very High", platform: "Acquire.com", icon: Briefcase },
+    { id: 16, name: "Empower Command Centre", category: "Digital Intel", license: "£399 - £599", exit: "£15,000 - £25,000", marketability: "Very High", platform: "Acquire.com", icon: Layers },
     { id: 17, name: "Social Genie", category: "AI SaaS", license: "£199 - £325", exit: "£12,000 - £20,000", marketability: "Very High", platform: "Acquire.com", icon: Zap },
-    { id: 25, name: "Digital Solutions (Sales Funnel)", category: "Sales Funnel", license: "N/A", exit: "£10,000 - £20,000", marketability: "Very High", platform: "Acquire.com", icon: ExternalLink },
+    { id: 15, name: "RECLAIM", category: "Executive OS", license: "£299 - £499", exit: "£25,000 - £40,000+", marketability: "Very High", platform: "Acquire.com", icon: ShieldCheck },
+    { id: 34, name: "Independent Me", category: "Mobile Impact", license: "£199 - £399", exit: "£20,000 - £40,000", marketability: "Extreme", platform: "Acquire.com / SEN", icon: Compass },
+    { id: 18, name: "VowSuite SaaS", category: "Wedding SaaS", license: "£299 - £499", exit: "£18,000 - £28,000+", marketability: "Very High", platform: "Acquire.com", icon: Layout },
+    { id: 25, name: "Empower Digital Solutions", category: "Sales Funnel", license: "N/A", exit: "£10,000 - £20,000", marketability: "Very High", platform: "Acquire.com", icon: ExternalLink },
+    { id: 36, name: "Nano Brand", category: "Agency Studio", license: "£399+", exit: "£15,000 - £25,000+", marketability: "Extreme", platform: "Acquire.com", icon: Zap },
+    { id: 33, name: "Ultimate Planner", category: "AI B2C SaaS", license: "£199 - £325", exit: "£12,000 - £20,000", marketability: "Very High", platform: "Acquire.com", icon: ShoppingBag },
+    { id: 20, name: "Trades Booking", category: "Vertical SaaS", license: "£219 - £349", exit: "£7,000 - £12,000", marketability: "Very High", platform: "Acquire.com", icon: Wrench },
     { id: 14, name: "Liam's Match Day", category: "Independence", license: "£149 - £249", exit: "£10,000 - £15,000", marketability: "Very High", platform: "Acquire.com", icon: Heart },
     { id: 7, name: "OpsCommand", category: "Business OS", license: "£319 - £449", exit: "£12,000 - £24,000", marketability: "Very High", platform: "Acquire.com", icon: Layout },
     { id: 1, name: "The Gym (GymOS)", category: "Enterprise SaaS", license: "£319 - £475", exit: "£6,500 - £12,000+", marketability: "Very High", platform: "Acquire.com", icon: BarChart },
-    { id: 18, name: "VowSuite", category: "Wedding SaaS", license: "£249 - £399", exit: "£8,000 - £15,000", marketability: "Very High", platform: "Acquire.com", icon: Layout },
-    { id: 20, name: "Trades Booking", category: "Vertical SaaS", license: "£219 - £349", exit: "£7,000 - £12,000", marketability: "Very High", platform: "Acquire.com", icon: Wrench },
-    { id: 9, name: "Empower Command Centre", category: "Digital Intel", license: "£399", exit: "£8,000 - £16,000", marketability: "High", platform: "Acquire.com", icon: Layers },
+    { id: 28, name: "Medical-Dental OS", category: "Enterprise SaaS", license: "£399+", exit: "£15,000 - £25,000", marketability: "Very High", platform: "Acquire.com", icon: ShieldCheck },
+    { id: 9, name: "Marie's Wedding", category: "Keepsake Hub", license: "£149", exit: "£8,000 - £12,000", marketability: "High", platform: "Lemon Squeezy", icon: Heart },
+    { id: 10, name: "PAX (Visual Engine)", category: "Visual/AI", license: "£199", exit: "£4,000 - £10,000", marketability: "High", platform: "Acquire.com", icon: Zap },
     { id: 19, name: "Urban Stay", category: "PropTech SaaS", license: "£179 - £289", exit: "£6,000 - £10,000", marketability: "Very High", platform: "Acquire.com", icon: Target },
     { id: 26, name: "Project Voyager", category: "Travel AI", license: "£149 - £189", exit: "£5,000 - £8,000", marketability: "High", platform: "Acquire.com", icon: Globe },
     { id: 2, name: "The Salon (Salon OS)", category: "Enterprise SaaS", license: "£239 - £399", exit: "£4,000 - £8,000", marketability: "Very High", platform: "Acquire.com", icon: Heart },
-    { id: 10, name: "PAX (Visual Engine)", category: "Visual/AI", license: "£199", exit: "£4,000 - £10,000", marketability: "High", platform: "Acquire.com", icon: Zap },
-    { id: 15, name: "Reclaim", category: "Wellness", license: "£89 - £149", exit: "£5,000 - £7,500", marketability: "High", platform: "Lemon Squeezy", icon: ShieldCheck },
     { id: 27, name: "My Travel Planner", category: "Personal OS", license: "£59 - £89", exit: "£4,000 - £7,000", marketability: "Very High", platform: "Lemon Squeezy", icon: Compass },
-    { id: 12, name: "ContentFlow Pro", category: "Social Suite", license: "£159 - £249", exit: "£3,200 - £6,000", marketability: "Very High", platform: "Lemon Squeezy", icon: ExternalLink },
+    { id: 12, name: "ContentFlow Pro", category: "Social Suite", license: "£159 - £249", exit: "£6,000 - £12,000", marketability: "Very High", platform: "Lemon Squeezy", icon: ExternalLink },
     { id: 8, name: "LeadFlow", category: "Marketing Tool", license: "£99 - £149", exit: "£2,800 - £4,800", marketability: "High", platform: "Lemon Squeezy", icon: TrendingUp },
     { id: 11, name: "Project Dana (v2)", category: "Safety Tech", license: "£120", exit: "£4,000+", marketability: "Impact", platform: "Support Hub", icon: ShieldCheck },
     { id: 13, name: "Trades Hub", category: "Template Bundle", license: "£249", exit: "£4,000 - £8,000", marketability: "High", platform: "Lemon Squeezy", icon: Wrench },
@@ -61,8 +65,12 @@ const projects: Project[] = [
     { id: 5, name: "VAAssist", category: "Vertical SaaS", license: "£79 - £119", exit: "£1,200 - £2,800", marketability: "High", platform: "Lemon Squeezy", icon: Target },
     { id: 23, name: "Sub Slayer", category: "Micro-SaaS", license: "£29 - £49", exit: "£2,000 - £4,000", marketability: "High", platform: "Lemon Squeezy", icon: TrendingUp },
     { id: 6, name: "Finance Ninja", category: "Finance", license: "£39 - £65", exit: "£800 - £1,600", marketability: "Med-High", platform: "Lemon Squeezy", icon: TrendingUp },
-    { id: 28, name: "Medical-Dental OS", category: "Enterprise SaaS", license: "£399+", exit: "£15,000 - £25,000", marketability: "Very High", platform: "Acquire.com", icon: ShieldCheck },
-    { id: 29, name: "Pets-Vets OS", category: "Vertical SaaS", license: "£249+", exit: "£10,000 - £18,000", marketability: "High", platform: "Acquire.com", icon: Heart }
+    { id: 31, name: "Plumbing SPA", category: "Trade Landing", license: "£129 - £189", exit: "£4,000 - £7,000", marketability: "High", platform: "Lemon Squeezy", icon: Wrench },
+    { id: 37, name: "Joiner Suite", category: "Vertical B2B", license: "£219 - £349", exit: "£6,000 - £12,000", marketability: "Very High", platform: "Acquire.com", icon: Wrench },
+    { id: 35, name: "Oracle Bridge", category: "Automation", license: "N/A", exit: "£12,000 - £20,000", marketability: "Very High", platform: "Acquire.com", icon: Zap },
+    { id: 32, name: "Client Portal", category: "SaaS Utility", license: "£199 - £349", exit: "£5,000 - £9,000", marketability: "Very High", platform: "Acquire.com", icon: Layout },
+    { id: 29, name: "Pets-Vets OS", category: "Vertical SaaS", license: "£249+", exit: "£10,000 - £18,000", marketability: "High", platform: "Acquire.com", icon: Heart },
+    { id: 30, name: "Empower Automation", category: "Agency Ops", license: "£399", exit: "£15,000 - £25,000", marketability: "Very High", platform: "Acquire.com", icon: Layers }
 ];
 
 const categories = ['All', ...Array.from(new Set(projects.map(p => p.category)))];
@@ -96,7 +104,7 @@ export default function StrategicAnalysisPage() {
                         </h1>
                         <p className="text-foreground/70 text-lg flex items-center gap-2">
                             <span className="w-8 h-[2px] bg-accent-primary"></span>
-                            32+ Projects | Authority Portfolio | Feb 2026
+                            37+ Projects | Authority Portfolio | Feb 2026
                         </p>
                     </div>
                     <div className="bg-white/50 dark:bg-accent-primary/5 backdrop-blur-sm p-6 rounded-3xl border border-accent-secondary/30 shadow-sm flex items-center gap-5 min-w-[280px]">
@@ -105,7 +113,7 @@ export default function StrategicAnalysisPage() {
                         </div>
                         <div>
                             <p className="text-xs text-foreground/50 uppercase font-bold tracking-widest">Total Portfolio Exit</p>
-                            <p className="text-3xl font-bold text-heading">£310k - £500k+</p>
+                            <p className="text-3xl font-bold text-heading">£612k - £1.2M+</p>
                         </div>
                     </div>
                 </motion.div>
