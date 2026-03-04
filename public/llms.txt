@@ -1,6 +1,6 @@
 # Nicola Berry – Full Stack Engineer & Automation Architect
 
-> High‑performance web applications, bespoke automation systems, and digital transformation services for agencies and businesses, built with Next.js, React, and modern tooling.[web:3]
+> High‑performance web applications, mobile applications, web design, bespoke automation systems, and digital transformation services for agencies and businesses, built with Next.js, Astro, Ruby on Rails 8, and modern tooling.
 
 This file helps AI agents and large language models understand and use the content at https://www.nicolaberry.uk for answering questions about my services, skills, and approach.
 
@@ -18,7 +18,7 @@ This file helps AI agents and large language models understand and use the conte
 ## Content priorities
 
 - Focus on:
-  - Service descriptions (custom code, web applications, automation & scripting).
+  - Service descriptions (custom code, web applications, mobile applications, web design, automation & scripting).
   - How I work (discovery, build, empower steps and emphasis on clarity, low jargon, and support).
   - My role in building digital ecosystems and automation that gives clients time back.
 
