@@ -17,18 +17,23 @@ export function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-heading mb-6 tracking-tight">
-                        Build Your <br />
-                        <span className="italic text-accent-primary">
-                            Digital Authority.
-                        </span>
-                        <br />
-                        <span className="text-3xl md:text-5xl block mt-4 font-normal opacity-80 text-heading text-balance max-w-4xl mx-auto">
+                    <div className="flex justify-center mb-6">
+                        <span className="px-4 py-2 bg-accent-primary/5 border border-accent-primary/20 text-accent-primary rounded-full text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
                             Principal Digital Architect | Operations Engineer | Technical Founder
                         </span>
+                    </div>
+                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-heading mb-6 tracking-tight">
+                        Engineering <br />
+                        <span className="italic text-accent-primary">
+                            Total Freedom.
+                        </span>
+                        <br />
+                        <span className="text-3xl md:text-4xl block mt-6 font-normal opacity-80 text-heading text-balance max-w-4xl mx-auto leading-tight">
+                            I build software out of sheer necessity to solve profound human bottlenecks.
+                        </span>
                     </h1>
-                    <p className="font-sans text-lg md:text-xl text-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-                        High-impact platforms engineered for flawless performance. Friendly support, powerful code.
+                    <p className="font-sans text-lg md:text-xl text-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
+                        From automating away 16-hour administrative nightmares to architecting secure lifelines for those who need them most, I don't just write code - I engineer time, autonomy, and peace.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link href="#contact">

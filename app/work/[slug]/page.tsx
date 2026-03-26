@@ -1,10 +1,12 @@
 import { projects } from "@/data/projects";
+import { journals } from "@/data/journals";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink, Github, ArrowRight, Layout, Code, Zap, FileText, Globe, Lightbulb } from "lucide-react";
 import { Metadata } from "next";
 import Silk from "@/components/ui/Silk";
+import FadeIn from "@/components/ui/FadeIn";
 
 // Force static generation for all projects
 export function generateStaticParams() {
@@ -12,6 +14,7 @@ export function generateStaticParams() {
         slug: project.slug,
     }));
 }
+
 
 import { sharedMetadata, siteConfig } from "@/app/shared-metadata";
 
@@ -60,6 +63,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         notFound();
     }
 
+    const relatedJournal = project.relatedJournalSlug ? journals.find(j => j.slug === project.relatedJournalSlug) : null;
+
     // Find next project for navigation
     const currentIndex = projects.findIndex((p) => p.slug === slug);
     const nextProject = currentIndex !== -1 && currentIndex < projects.length - 1
@@ -86,25 +91,31 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 <header className="mb-20 max-w-5xl relative">
                     <div className="absolute -top-24 -left-24 w-64 h-64 bg-rose/10 blur-[100px] rounded-full pointer-events-none" />
 
-                    <div className="flex items-center gap-3 mb-8">
-                        <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] bg-white dark:bg-white/10 text-charcoal dark:text-cream rounded-full border border-charcoal/5 dark:border-white/5 flex items-center gap-2 shadow-sm">
-                            <TypeIcon size={14} />
-                            {project.type.replace("-", " ")}
-                        </span>
-                        <span className="text-charcoal/20 dark:text-cream/20">•</span>
-                        <span className="font-mono text-sm font-bold text-charcoal/40 dark:text-cream/40 uppercase tracking-widest">{project.year}</span>
-                    </div>
-
-                    <h1 className="font-serif text-6xl md:text-8xl font-bold text-charcoal dark:text-cream mb-8 leading-[1.1] tracking-tight">
-                        {project.title.split(" ").map((word, i) => (
-                            <span key={i} className={i % 2 === 1 ? "italic text-rose block md:inline" : "block md:inline"}>
-                                {word}{" "}
+                    <FadeIn delay={0.1}>
+                        <div className="flex items-center gap-3 mb-8">
+                            <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] bg-white dark:bg-white/10 text-charcoal dark:text-cream rounded-full border border-charcoal/5 dark:border-white/5 flex items-center gap-2 shadow-sm">
+                                <TypeIcon size={14} />
+                                {project.type.replace("-", " ")}
                             </span>
-                        ))}
-                    </h1>
-                    <p className="font-sans text-xl md:text-3xl text-charcoal/60 dark:text-cream/60 max-w-3xl leading-relaxed font-light">
-                        {project.shortTagline}
-                    </p>
+                            <span className="text-charcoal/20 dark:text-cream/20">•</span>
+                            <span className="font-mono text-sm font-bold text-charcoal/40 dark:text-cream/40 uppercase tracking-widest">{project.year}</span>
+                        </div>
+                    </FadeIn>
+
+                    <FadeIn delay={0.2}>
+                        <h1 className="font-serif text-6xl md:text-8xl font-bold text-charcoal dark:text-cream mb-8 leading-[1.1] tracking-tight">
+                            {project.title.split(" ").map((word, i) => (
+                                <span key={i} className={i % 2 === 1 ? "italic text-rose block md:inline" : "block md:inline"}>
+                                    {word}{" "}
+                                </span>
+                            ))}
+                        </h1>
+                    </FadeIn>
+                    <FadeIn delay={0.3}>
+                        <p className="font-sans text-xl md:text-3xl text-charcoal/60 dark:text-cream/60 max-w-3xl leading-relaxed font-light">
+                            {project.shortTagline}
+                        </p>
+                    </FadeIn>
                 </header>
 
                 {/* Main Content Layout */}
@@ -165,46 +176,81 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                         </div>
 
                         {/* Contributions */}
-                        <div>
-                            <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-charcoal/40 dark:text-cream/40 mb-6 border-b border-charcoal/5 dark:border-white/5 pb-2">
-                                My Role
-                            </h3>
-                            <ul className="space-y-3">
-                                {project.contributions.map((item, i) => (
-                                    <li key={i} className="flex items-start gap-3 text-charcoal/80 dark:text-cream/80 text-sm leading-relaxed">
-                                        <span className="w-1.5 h-1.5 mt-1.5 rounded-full bg-rose shrink-0" />
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                        <FadeIn delay={0.4}>
+                            <div>
+                                <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-charcoal/40 dark:text-cream/40 mb-6 border-b border-charcoal/5 dark:border-white/5 pb-2">
+                                    My Role
+                                </h3>
+                                <ul className="space-y-3">
+                                    {project.contributions.map((item, i) => (
+                                        <li key={i} className="flex items-start gap-3 text-charcoal/80 dark:text-cream/80 text-sm leading-relaxed">
+                                            <span className="w-1.5 h-1.5 mt-1.5 rounded-full bg-rose shrink-0" />
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </FadeIn>
                     </aside>
 
                     {/* Main Content */}
                     <div className="lg:col-span-8 space-y-16">
 
                         {/* Hero Image */}
-                        <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl shadow-charcoal/5 border border-charcoal/5 dark:border-white/5 bg-taupe/10">
-                            {project.thumbnail && !project.thumbnail.includes("placeholder") ? (
-                                <Image
-                                    src={project.thumbnail}
-                                    alt={project.title}
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                />
-                            ) : (
-                                <div className="absolute inset-0 flex items-center justify-center text-charcoal/20">
-                                    <TypeIcon size={64} />
-                                </div>
-                            )}
-                        </div>
+                        <FadeIn delay={0.3} y={40}>
+                            <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl shadow-charcoal/5 border border-charcoal/5 dark:border-white/5 bg-taupe/10">
+                                {project.thumbnail && !project.thumbnail.includes("placeholder") ? (
+                                    <Image
+                                        src={project.thumbnail}
+                                        alt={project.title}
+                                        fill
+                                        className="object-cover"
+                                        priority
+                                    />
+                                ) : (
+                                    <div className="absolute inset-0 flex items-center justify-center text-charcoal/20">
+                                        <TypeIcon size={64} />
+                                    </div>
+                                )}
+                            </div>
+                        </FadeIn>
 
                         <div className="prose prose-lg dark:prose-invert max-w-none">
-                            <h3 className="font-serif font-bold text-charcoal dark:text-cream mb-8 opacity-20 uppercase tracking-[0.2em] text-sm">Overview</h3>
-                            <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-xl font-light mb-16">
-                                {project.overview}
-                            </p>
+                            <FadeIn delay={0.1} y={20}>
+                                <h3 className="font-serif font-bold text-charcoal dark:text-cream mb-8 opacity-20 uppercase tracking-[0.2em] text-sm">Overview</h3>
+                                <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-xl font-light mb-16">
+                                    {project.overview}
+                                </p>
+                            </FadeIn>
+
+                            {/* The Origin Story */}
+                            {project.theWhy && (
+                                <FadeIn delay={0.1}>
+                                    <div className="mb-20 pl-8 md:pl-12 border-l-4 border-rose/30 relative">
+                                        <div className="absolute -left-5 -top-4 text-rose opacity-20 font-serif text-8xl leading-none select-none">"</div>
+                                        <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream mb-6">The Origin Story</h3>
+                                        <p className="text-charcoal/70 dark:text-cream/70 leading-relaxed text-xl italic font-serif">
+                                            {project.theWhy}
+                                        </p>
+                                    </div>
+                                </FadeIn>
+                            )}
+
+                            {/* The Results / Core Impact */}
+                            {project.results && (
+                                <FadeIn delay={0.1}>
+                                    <div className="mb-20 p-10 rounded-3xl bg-charcoal text-cream shadow-xl border border-white/5 relative overflow-hidden">
+                                        <div className="absolute top-0 right-0 w-64 h-64 bg-rose/20 blur-[80px] rounded-full point-events-none" />
+                                        <h3 className="font-serif text-2xl font-bold mb-6 flex items-center gap-4 relative z-10">
+                                            <span className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-rose text-base font-bold italic shadow-inner">ROI</span>
+                                            Real-World Impact
+                                        </h3>
+                                        <p className="text-cream/90 leading-relaxed text-lg font-medium relative z-10">
+                                            {project.results}
+                                        </p>
+                                    </div>
+                                </FadeIn>
+                            )}
 
                             <div className="grid md:grid-cols-2 gap-12 mt-20">
                                 {project.problem && (
@@ -230,27 +276,46 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                 )}
                             </div>
 
-                            {/* Strategic Value Section */}
-                            <div className="mt-20 p-10 rounded-4xl bg-accent-secondary/30 dark:bg-white/5 text-accent-primary dark:text-cream relative overflow-hidden group border border-accent-secondary/50 dark:border-white/10">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-rose/20 blur-[80px] rounded-full group-hover:bg-rose/30 transition-colors" />
-                                <div className="relative z-10">
-                                    <div className="flex items-center gap-3 mb-6 text-accent-primary">
-                                        <Lightbulb size={24} />
-                                        <span className="uppercase tracking-[0.3em] font-bold text-xs">Strategic Intelligence</span>
-                                    </div>
-                                    <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Business Impact & Scalability</h3>
-                                    <p className="text-accent-primary/80 dark:text-cream/70 text-lg md:text-xl leading-relaxed max-w-3xl mb-10">
-                                        This project isn&apos;t just code; it&apos;s a strategic asset designed to eliminate operational friction and drive measurable conversion. By focusing on {project.techStack[0]} {project.techStack[1] ? `and ${project.techStack[1]}` : ""}, we ensured a foundation that scales with enterprise demand.
-                                    </p>
-                                    <div className="flex flex-wrap gap-4">
-                                        {project.highlights.map((highlight, i) => (
-                                            <div key={i} className="px-5 py-2.5 bg-accent-primary/10 dark:bg-white/10 rounded-full text-sm font-bold border border-accent-primary/20 dark:border-white/5 hover:bg-accent-primary/20 transition-colors">
-                                                {highlight}
+                            {relatedJournal && (
+                                <FadeIn delay={0.1}>
+                                    <div className="mt-12 mb-8 p-8 rounded-3xl bg-charcoal/5 dark:bg-white/5 border border-charcoal/10 dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 hover:shadow-lg transition-shadow">
+                                        <div>
+                                            <div className="flex items-center gap-2 text-rose mb-3">
+                                                <FileText size={16} />
+                                                <span className="text-xs font-bold tracking-widest uppercase">Technical Journal</span>
                                             </div>
-                                        ))}
+                                            <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream leading-tight">{relatedJournal.title}</h3>
+                                        </div>
+                                        <Link href={`/journal/${relatedJournal.slug}`} className="shrink-0 px-6 py-3 bg-rose text-white rounded-xl font-bold hover:bg-rose/80 transition-colors flex items-center gap-2">
+                                            Read Journal <ArrowRight size={16} />
+                                        </Link>
+                                    </div>
+                                </FadeIn>
+                            )}
+
+                            {/* Strategic Value Section */}
+                            <FadeIn delay={0.2} y={30}>
+                                <div className="mt-20 p-10 rounded-4xl bg-accent-secondary/30 dark:bg-white/5 text-accent-primary dark:text-cream relative overflow-hidden group border border-accent-secondary/50 dark:border-white/10">
+                                    <div className="absolute top-0 right-0 w-64 h-64 bg-rose/20 blur-[80px] rounded-full group-hover:bg-rose/30 transition-colors" />
+                                    <div className="relative z-10">
+                                        <div className="flex items-center gap-3 mb-6 text-accent-primary">
+                                            <Lightbulb size={24} />
+                                            <span className="uppercase tracking-[0.3em] font-bold text-xs">Strategic Intelligence</span>
+                                        </div>
+                                        <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Business Impact & Scalability</h3>
+                                        <p className="text-accent-primary/80 dark:text-cream/70 text-lg md:text-xl leading-relaxed max-w-3xl mb-10">
+                                            This project isn&apos;t just code; it&apos;s a strategic asset designed to eliminate operational friction and drive measurable conversion. By focusing on {project.techStack[0]} {project.techStack[1] ? `and ${project.techStack[1]}` : ""}, we ensured a foundation that scales with enterprise demand.
+                                        </p>
+                                        <div className="flex flex-wrap gap-4">
+                                            {project.highlights.map((highlight, i) => (
+                                                <div key={i} className="px-5 py-2.5 bg-accent-primary/10 dark:bg-white/10 rounded-full text-sm font-bold border border-accent-primary/20 dark:border-white/5 hover:bg-accent-primary/20 transition-colors">
+                                                    {highlight}
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </FadeIn>
                         </div>
 
                         {/* Gallery */}

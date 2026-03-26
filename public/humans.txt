@@ -1,0 +1,11 @@
+/* TEAM */
+Principal Digital Architect: Nicola Berry
+Contact: [EMAIL_ADDRESS]
+
+
+/* SITE */
+Standards: HTML5, CSS3, ES6
+Components: React, Next.js (App Router), Framer Motion, Tailwind CSS
+Architecture: Serverless Edge Generation, Static Export Optimization
+Philosophy: Calm Technology, Mission-Driven Solutions
+Location: Scotland, UK

@@ -17,7 +17,7 @@ export function About() {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2 relative"
                     >
-                        <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-accent-secondary/10 relative group">
+                        <div className="aspect-4/5 rounded-2xl overflow-hidden bg-accent-secondary/10 relative group">
                             <Image
                                 src="/nicola_professional.jpg"
                                 alt="Nicola Berry - Principal Digital Architect"
@@ -25,7 +25,7 @@ export function About() {
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             {/* Decorative Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-tr from-accent-primary/10 to-accent-secondary/10 mix-blend-multiply dark:mix-blend-screen opacity-30 group-hover:opacity-10 transition-opacity duration-500" />
+                            <div className="absolute inset-0 bg-linear-to-tr from-accent-primary/10 to-accent-secondary/10 mix-blend-multiply dark:mix-blend-screen opacity-30 group-hover:opacity-10 transition-opacity duration-500" />
 
                             {/* Border Frame */}
                             <div className="absolute inset-4 border border-background/50 dark:border-white/10 rounded-xl z-10" />
@@ -60,21 +60,21 @@ export function About() {
                         className="w-full md:w-1/2"
                     >
                         <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-heading mb-8 leading-tight">
-                            More Than Code. <br />
+                            Built from <br />
                             <span className="text-accent-primary">
-                                I Build Freedom.
+                                Visceral Necessity.
                             </span>
                         </h2>
 
                         <div className="space-y-6 text-lg text-foreground font-sans leading-relaxed">
                             <p>
-                                Hi, I&apos;m Nicola. I founded <span className="font-bold text-heading">Empower Digital Solutions</span> because I believe technology should serve you, not the other way around.
+                                Hi, I&apos;m Nicola. I am the founder of <span className="font-bold text-heading">Empower Digital Solutions</span>, but more importantly, I am a builder forced by circumstance to engineer my own solutions.
                             </p>
                             <p>
-                                I don&apos;t just build websites; I engineer digital ecosystems. Whether it&apos;s a bespoke web application, a custom automation script to save you hours of admin, or a high-performance portfolio, my goal is simple: to give you your time back.
+                                Every piece of software I create is born from a genuine need. Whether I am building a &quot;shared brain&quot; to survive the overwhelming cognitive load of being the default family carer, architecting covert evidence-gathering networks for domestic abuse survivors, or automating away 16 hours of a client&apos;s weekly administrative nightmare - I build tools that fundamentally change how people experience their day-to-day lives.
                             </p>
                             <p>
-                                As a developer, I blend technical precision with a supportive, human approach. No jargon, no confusion, just powerful results delivered with clarity and care.
+                                I don&apos;t just write sterile corporate code. I leverage advanced technology - from AI translation engines to immutable metadata vaults - to aggressively reclaim time, autonomy, and peace for my clients and myself.
                             </p>
                         </div>
 

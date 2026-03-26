@@ -1,26 +1,26 @@
 "use client";
 
 import { GlassCard } from "@/components/ui/GlassCard";
-import { Code, AppWindow, Workflow } from "lucide-react";
+import { Compass, Cpu, Workflow } from "lucide-react";
 import { motion } from "framer-motion";
 
 const services = [
     {
-        title: "Custom Code",
+        title: "System Architecture & Audits",
         description:
-            "Custom full-stack solutions built from scratch to match your unique brand identity and requirements.",
-        icon: Code,
+            "I evaluate your existing operations to design resilient, scalable data pipelines and custom applications, curing legacy technical debt.",
+        icon: Cpu,
     },
     {
-        title: "Web Applications",
+        title: "Fractional Technical Partner",
         description:
-            "Robust, scalable web apps powered by Next.js and React for seamless user experiences.",
-        icon: AppWindow,
+            "I act as your strategic consultant to architect your technical roadmap, build your MVPs, and ensure your business scales without friction.",
+        icon: Compass,
     },
     {
-        title: "Automation & Scripting",
+        title: "Operational AI Automation",
         description:
-            "Streamline your workflows with custom scripts and automation tools to save time and reduce errors.",
+            "I identify severe administrative bottlenecks and replace them with zero-cost serverless AI automations, decisively reclaiming your time.",
         icon: Workflow,
     },
 ];
@@ -31,10 +31,10 @@ export function Services() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="font-serif text-4xl md:text-5xl font-bold text-heading mb-4">
-                        My Expertise
+                        Strategic Capabilities
                     </h2>
                     <p className="font-sans text-lg text-foreground/70 max-w-2xl mx-auto">
-                        I blend creativity with technical precision to deliver digital solutions that empower your business.
+                        I step into broken operational environments and architect high-performance, resilient ecosystems that give you your life back.
                     </p>
                 </div>
 
@@ -49,7 +49,7 @@ export function Services() {
                         >
                             <GlassCard className="h-full flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
                                 <div className="w-16 h-16 rounded-full bg-accent-primary/10 flex items-center justify-center mb-6 text-accent-primary relative overflow-hidden">
-                                    {service.title === "Automation & Scripting" ? (
+                                    {service.title === "Operational AI Automation" ? (
                                         <div className="relative w-full h-full flex items-center justify-center">
                                             <motion.div
                                                 initial={{ x: -10, opacity: 0 }}

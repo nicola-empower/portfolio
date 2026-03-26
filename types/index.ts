@@ -15,10 +15,13 @@ export type Project = {
     demoUrl?: string;
     audiences: Audience[];
     overview: string;
+    theWhy?: string;
     problem?: string;
     solution?: string;
+    results?: string;
     contributions: string[];
     highlights: string[];
     featured?: boolean;
     tier?: number;
+    relatedJournalSlug?: string;
 };
