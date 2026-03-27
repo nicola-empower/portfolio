@@ -5,7 +5,7 @@ export interface Journal {
     readTime: string;
     topic: string;
     excerpt: string;
-    content: string[]; 
+    content: string[];
     relatedProjectSlug?: string;
 }
 
@@ -170,7 +170,7 @@ export const journals: Journal[] = [
         content: [
             "The typical Small-to-Medium Enterprise (SME) runs on a chaotic web of five different SaaS platforms that refuse to speak to one another. The business owner ends up acting as a human API, manually copying data across tabs.",
             "When I architect an OpsCommand dashboard, the objective is never just 'building a portal.' It is about orchestrating a rescue mission. By writing custom middleware to bridge these legacy gaps, the fragmented ecosystem is consolidated into a singular, unshakeable source of truth.",
-            "Once data is centralized, the cognitive load on the founder vanishes. They no longer ask what happened yesterday; the dashboard tells them what is going to happen tomorrow."
+            "Once data is centralised, the cognitive load on the founder vanishes. They no longer ask what happened yesterday; the dashboard tells them what is going to happen tomorrow."
         ]
     },
     {

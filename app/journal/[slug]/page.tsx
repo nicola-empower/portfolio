@@ -104,7 +104,7 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
                     <div className="bg-accent-secondary/5 dark:bg-white/5 border border-foreground/10 rounded-2xl p-8 md:p-12 text-center text-balance overflow-hidden">
                         <h3 className="font-serif text-3xl font-bold text-heading dark:text-foreground mb-4">Are you facing an operational bottleneck?</h3>
                         <p className="font-sans text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
-                            I specialize in tearing down complex administrative debt and replacing it with frictionless, resilient workflows. Let&apos;s engineer your freedom.
+                            I specialise in tearing down complex administrative debt and replacing it with frictionless, resilient workflows. Let&apos;s engineer your freedom.
                         </p>
                         <Link href="/#contact" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-accent-primary text-black shadow hover:bg-accent-primary/90 h-12 px-8 py-2">
                             Start the Conversation

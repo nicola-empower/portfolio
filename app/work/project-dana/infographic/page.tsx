@@ -1,17 +1,17 @@
 'use client';
 
 import React from 'react';
-import { 
-  Chart as ChartJS, 
-  CategoryScale, 
-  LinearScale, 
-  PointElement, 
-  LineElement, 
-  BarElement, 
-  Title, 
-  Tooltip, 
-  Legend, 
-  Filler 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
 } from 'chart.js';
 import { Line, Bar } from 'react-chartjs-2';
 import { Github, Mail, Shield, Zap, Search, Eye, FileText, Layout, Info } from 'lucide-react';
@@ -123,11 +123,14 @@ const InfographicPage = () => {
           <h1 className="text-4xl md:text-6xl font-extrabold text-diner-dark mb-4 tracking-tight">
             ChefAI / Project DANA <span className="text-[#E91E63] italic">v2</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl font-medium text-diner-red">
+          <h2 className="text-2xl md:text-3xl font-medium text-diner-red mb-2">
             The "Hidden in Plain Sight" Security Model
           </h2>
-          <p className="max-w-3xl mx-auto text-lg text-slate-500 mt-6 leading-relaxed">
-            A forensic-ready stealth application disguised as a premium culinary assistant, 
+          <p className="text-sm font-bold tracking-widest uppercase text-diner-red/70 mb-6">
+            Digital Archive and Narrative Assistant
+          </p>
+          <p className="max-w-3xl mx-auto text-lg text-slate-500 leading-relaxed">
+            A forensic-ready stealth application disguised as a premium culinary assistant,
             designed to protect survivors through AI-driven deniability and legal translation.
           </p>
         </div>
@@ -143,8 +146,8 @@ const InfographicPage = () => {
               The Core Problem: A Legal Paradox
             </h3>
             <p className="text-slate-600 mb-10 text-lg leading-relaxed max-w-4xl">
-              Survivors must prove a <strong className="text-diner-dark">"Course of Conduct"</strong> (a pattern of abuse) and 
-              <strong className="text-diner-dark"> "Impact on the Child"</strong> (for family court), but the very act of documenting this evidence is dangerous. 
+              Survivors must prove a <strong className="text-diner-dark">"Course of Conduct"</strong> (a pattern of abuse) and
+              <strong className="text-diner-dark"> "Impact on the Child"</strong> (for family court), but the very act of documenting this evidence is dangerous.
               Project DANA solves this by existing as a <strong>Dual-State Application</strong>.
             </p>
             <div className="bg-white rounded-2xl p-8 shadow-inner flex flex-col md:flex-row justify-around items-center gap-8 border border-slate-100">
@@ -171,7 +174,7 @@ const InfographicPage = () => {
             Innovation 1: Triple-State Security
           </h3>
           <p className="text-slate-600 mb-10 text-lg leading-relaxed">
-            A simple password isn't safe. The app uses a behavioral security model. 
+            A simple password isn't safe. The app uses a behavioral security model.
             Different, non-obvious inputs render entirely different applications, providing plausible deniability.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -209,39 +212,39 @@ const InfographicPage = () => {
         </section>
 
         {/* Workflow Section */}
-        <section className="md:col-span-2 bg-diner-red rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+        <section className="md:col-span-2 bg-diner-red rounded-3xl p-8 md:p-12 text-white! shadow-2xl relative overflow-hidden">
           <div className="absolute bottom-0 left-0 w-full h-1 bg-[#E91E63]"></div>
-          <h3 className="text-3xl font-bold mb-6 flex items-center gap-3">
+          <h3 className="text-3xl font-bold mb-6 flex items-center gap-3 text-white!">
             <Zap className="w-8 h-8 text-[#E91E63]" />
             Innovation 2: The "Empowerment" Workflow
           </h3>
-          <p className="text-white/70 mb-12 text-lg leading-relaxed max-w-3xl">
-            The app bridges the "translation gap" between a survivor's raw experience and the objective 
+          <p className="text-white/80! mb-12 text-lg leading-relaxed max-w-3xl">
+            The app bridges the "translation gap" between a survivor's raw experience and the objective
             language required by courts. It uses AI for suggestions, but prioritises human agency.
           </p>
           <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6 pb-6">
             <div className="flex-1 bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-              <span className="inline-flex items-center justify-center w-10 h-10 bg-white/20 text-white rounded-full font-black text-sm mb-4">01</span>
-              <p className="font-bold text-lg mb-2">Raw Input</p>
-              <p className="text-sm text-white/50">User logs emotional entries under pressure.</p>
+              <span className="inline-flex items-center justify-center w-10 h-10 bg-white/20 text-white! rounded-full font-black text-sm mb-4">01</span>
+              <p className="font-bold text-lg mb-2 text-white!">Raw Input</p>
+              <p className="text-sm text-white/70!">User logs emotional entries under pressure.</p>
             </div>
-            <div className="lg:rotate-0 rotate-90 flex justify-center text-white/20"><Zap className="w-8 h-8" /></div>
+            <div className="lg:rotate-0 rotate-90 flex justify-center text-white/40"><Zap className="w-8 h-8" /></div>
             <div className="flex-1 bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors shadow-xl ring-1 ring-[#E91E63]/30">
-              <span className="inline-flex items-center justify-center w-10 h-10 bg-[#E91E63] text-white rounded-full font-black text-sm mb-4">02</span>
-              <p className="font-bold text-lg mb-2">Sensing</p>
-              <p className="text-sm text-white/50">AI detects pattern velocity and risk escalation.</p>
+              <span className="inline-flex items-center justify-center w-10 h-10 bg-[#E91E63] text-white! rounded-full font-black text-sm mb-4">02</span>
+              <p className="font-bold text-lg mb-2 text-white!">Sensing</p>
+              <p className="text-sm text-white/70!">AI detects pattern velocity and risk escalation.</p>
             </div>
-            <div className="lg:rotate-0 rotate-90 flex justify-center text-white/20"><Zap className="w-8 h-8" /></div>
+            <div className="lg:rotate-0 rotate-90 flex justify-center text-white/40"><Zap className="w-8 h-8" /></div>
             <div className="flex-1 bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-              <span className="inline-flex items-center justify-center w-10 h-10 bg-white/20 text-white rounded-full font-black text-sm mb-4">03</span>
-              <p className="font-bold text-lg mb-2">Translation</p>
-              <p className="text-sm text-white/50">AI maps entries to Coercive Control identifiers.</p>
+              <span className="inline-flex items-center justify-center w-10 h-10 bg-white/20 text-white! rounded-full font-black text-sm mb-4">03</span>
+              <p className="font-bold text-lg mb-2 text-white!">Translation</p>
+              <p className="text-sm text-white/70!">AI maps entries to Coercive Control identifiers.</p>
             </div>
-            <div className="lg:rotate-0 rotate-90 flex justify-center text-white/20"><Zap className="w-8 h-8" /></div>
+            <div className="lg:rotate-0 rotate-90 flex justify-center text-white/40"><Zap className="w-8 h-8" /></div>
             <div className="flex-1 bg-white/10 border-2 border-[#E91E63] rounded-2xl p-6 shadow-[0_0_30px_rgba(233,30,99,0.2)]">
-              <span className="inline-flex items-center justify-center w-10 h-10 bg-[#E91E63] text-white rounded-full font-black text-sm mb-4">04</span>
-              <p className="font-bold text-lg mb-2">Forensic Export</p>
-              <p className="text-sm text-white/50">Immutable logs converted to Witness Statements.</p>
+              <span className="inline-flex items-center justify-center w-10 h-10 bg-[#E91E63] text-white! rounded-full font-black text-sm mb-4">04</span>
+              <p className="font-bold text-lg mb-2 text-white!">Forensic Export</p>
+              <p className="text-sm text-white/70!">Immutable logs converted to Witness Statements.</p>
             </div>
           </div>
         </section>
@@ -249,10 +252,10 @@ const InfographicPage = () => {
         {/* Charts Sections */}
         <section className="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100 shadow-sm">
           <h3 className="text-2xl font-bold text-diner-red mb-3 leading-tight">
-            Data Insight:<br/>"Course of Conduct"
+            Data Insight:<br />"Course of Conduct"
           </h3>
           <p className="text-slate-500 mb-8 text-sm font-medium">
-            Proving a <strong>pattern</strong> of abuse. Visualization of escalation over time for criminal law contexts.
+            Proving a <strong>pattern</strong> of abuse. Visualisation of escalation over time for criminal law contexts.
           </p>
           <div className="h-[300px] w-full bg-white rounded-2xl p-6 shadow-inner relative">
             <Line data={escalationData} options={escalationOptions} />
@@ -261,7 +264,7 @@ const InfographicPage = () => {
 
         <section className="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100 shadow-sm">
           <h3 className="text-2xl font-bold text-diner-red mb-3 leading-tight">
-            Data Insight:<br/>Child Welfare Impact
+            Data Insight:<br />Child Welfare Impact
           </h3>
           <p className="text-slate-500 mb-8 text-sm font-medium">
             Family Court focus: Objective logging of a child's state after contact sessions.
@@ -314,7 +317,7 @@ const InfographicPage = () => {
               { label: 'Framer Motion', color: '#8E24AA' },
               { label: 'PWA (Service Workers)', color: '#5B0024' }
             ].map((tech) => (
-              <span 
+              <span
                 key={tech.label}
                 className="px-6 py-2 rounded-xl text-white font-bold text-sm shadow-sm"
                 style={{ backgroundColor: tech.color }}
