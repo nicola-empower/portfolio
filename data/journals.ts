@@ -53,6 +53,7 @@ export const journals: Journal[] = [
             "For Project Dana v2 (ChefAI), I evolved this into an entirely functional service. The 'Surface Layer' is a polished recipe finder powered by TheMealDB API. The user has a valid, verifiable reason to be typing at length (inputting grocery lists, meal plans, or pantry inventories).",
             "I also implemented 'Ghost Notifications.' Standard push notifications are a vulnerability; an abuser might see an alert from a 'Safety App.' In v2, security alerts and safety plan reminders are hidden inside what appear to be standard marketing deals for ingredients or cookware.",
             "Once inside the vault—triggered by a specific recipe search like 'Blueberry Pancakes'—the architecture shifts. The AI engine doesn't just store data; it performs 'Legally-Aligned Translation,' parsing raw emotional logs into sterile evidence indicators calibrated for Scottish Coercive Control laws.",
+            "I have detailed the full technical and financial scaling requirements for this tool in the [Project DANA Funding & Development Roadmap](/work/project-dana/proposal).",
             "True security in these environments is about active social camouflage. The application must not only encrypt the data but also provide the user with a legitimate, scrutinized 'Day in the Life' digital trail that masks their sanctuary."
         ]
     },

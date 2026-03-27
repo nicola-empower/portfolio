@@ -204,6 +204,8 @@ export const projects: Project[] = [
     techStack: ["Next.js 15", "TypeScript", "Tailwind CSS v4", "Google Gemini 2.5 Pro", "TheMealDB API"],
     status: "live",
     liveUrl: "https://project-dana.vercel.app/",
+    proposalUrl: "/work/project-dana/proposal",
+    infographicUrl: '/work/project-dana/infographic',
     audiences: ["client", "dev", "general"],
     overview: "A sophisticated, dual-purpose 'SafeHaven' application designed to protect domestic abuse survivors through the principle of plausible deniability. Disguised as 'ChefAI'—a fully functional, high-end recipe finder—it conceals a secure evidence vault and legal alignment engine.",
     theWhy: "Project Dana was built out of a direct need for survival. Having experienced severe coercive control and financial abuse, I realized that the hardest part of securing a conviction is proving the 'pattern of behavior' without alerting the abuser. Abusers monitor phones, and they know about 'secret calculator' apps. You need a reason to be typing paragraphs of text. v2 (ChefAI) takes this to a professional level, hiding the sanctuary inside a functional service that even includes 'Ghost Notifications'—security alerts disguised as food marketing deals.",
@@ -211,7 +213,7 @@ export const projects: Project[] = [
     solution: "A 'Hidden in Plain Sight' architecture. The 'ChefAI' surface layer is a polished, working recipe application that stands up to scrutiny. Specific 'Stealth Triggers' (e.g., searching for 'Blueberry Pancakes') unlock the Secure Vault. Within the vault, an AI Legal Engine analyzes logs for indicators of Coercive Control according to Scottish Law, while a Child Welfare Tracker monitors handover timeliness and distress flags. The system enables one-click exports of structured forensic reports ready for family court and police.",
     results: "This platform successfully demonstrates how AI can act as a digital diplomat and forensic auditor. By translating emotional logs into legally-aligned evidence while preserving the raw truth, it empowers survivors to break the cycle of gaslighting with empirical data.",
     contributions: ["Covert Decoy Architecture (v2)", "Scottish Coercive Control Law Analysis Engine", "Ghost Notification Protocol", "Forensic Data Metadata Tracking"],
-    highlights: ["'ChefAI' Functional Decoy", "AI Law Alignment (Coercive Control)", "Ghost Notifications & News Feed", "Child Welfare Tracker", "One-Click Forensic Export"],
+    highlights: ["'ChefAI' Functional Decoy", "AI Law Alignment (Coercive Control)", "Ghost Notifications & News Feed", "Funding & Development Roadmap", "One-Click Forensic Export"],
     featured: true,
     tier: 1,
   },
@@ -316,7 +318,7 @@ export const projects: Project[] = [
   {
     slug: "trade-pro",
     relatedJournalSlug: "trade-industry-digitalisation",
-    title: "TradePro Automation Stack",
+    title: "Intelligent Field Service Management",
     shortTagline: "Intelligent Field Service Management",
     thumbnail: "/Tradeprothumbnail.png",
     gallery: [

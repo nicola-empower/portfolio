@@ -137,7 +137,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                 </a>
                             )}
 
-                            <div className="flex gap-4">
+                            <div className="flex flex-col gap-4">
                                 {project.repoUrl && (
                                     <a
                                         href={project.repoUrl}
@@ -147,6 +147,24 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                     >
                                         <Github size={18} /> Repository
                                     </a>
+                                )}
+                                {project.proposalUrl && (
+                                    <Link
+                                        href={project.proposalUrl}
+                                        className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white border-2 border-rose-500/20 text-rose-600 font-bold hover:bg-rose-50 hover:border-rose-500/40 transition-all shadow-sm group"
+                                    >
+                                        <FileText size={18} className="group-hover:scale-110 transition-transform" />
+                                        <span>View Funding Roadmap</span>
+                                    </Link>
+                                )}
+                                {project.infographicUrl && (
+                                    <Link
+                                        href={project.infographicUrl}
+                                        className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white border-2 border-purple-500/20 text-purple-600 font-bold hover:bg-purple-50 hover:border-purple-500/40 transition-all shadow-sm group"
+                                    >
+                                        <Layout size={18} className="group-hover:scale-110 transition-transform" />
+                                        <span>View Technical Infographic</span>
+                                    </Link>
                                 )}
                                 {project.demoUrl && (
                                     <a

@@ -24,4 +24,6 @@ export type Project = {
     featured?: boolean;
     tier?: number;
     relatedJournalSlug?: string;
+    proposalUrl?: string; // Strategic Funding Roadmap
+    infographicUrl?: string; // Component Architecture Infographic
 };
