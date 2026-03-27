@@ -50,8 +50,10 @@ export const journals: Journal[] = [
         content: [
             "In enterprise security, we talk about Zero Trust and end-to-end encryption. But for survivors of domestic abuse, the threat isn't a hacker intercepting a packet - it's an abuser standing behind them demanding to see their phone.",
             "Existing 'covert' apps often disguise themselves as calculators or weather apps. Abusers know this. Furthermore, if a victim is frantically typing an evidence log into a 'weather app,' it immediately raises suspicion. You need a reason to be typing.",
-            "For Project Dana, I architected an entirely functional AI Meal Planner. The user has a valid, verifiable reason to be typing paragraphs of text. Specific, innocuous search terms unlock the encrypted gratitude journal to log love-bombing, while other terms unlock the immutable database for logging physical abuse.",
-            "True security in these environments isn't just about data encryption; it is about social camouflage. The application must provide absolute plausible deniability."
+            "For Project Dana v2 (ChefAI), I evolved this into an entirely functional service. The 'Surface Layer' is a polished recipe finder powered by TheMealDB API. The user has a valid, verifiable reason to be typing at length (inputting grocery lists, meal plans, or pantry inventories).",
+            "I also implemented 'Ghost Notifications.' Standard push notifications are a vulnerability; an abuser might see an alert from a 'Safety App.' In v2, security alerts and safety plan reminders are hidden inside what appear to be standard marketing deals for ingredients or cookware.",
+            "Once inside the vault—triggered by a specific recipe search like 'Blueberry Pancakes'—the architecture shifts. The AI engine doesn't just store data; it performs 'Legally-Aligned Translation,' parsing raw emotional logs into sterile evidence indicators calibrated for Scottish Coercive Control laws.",
+            "True security in these environments is about active social camouflage. The application must not only encrypt the data but also provide the user with a legitimate, scrutinized 'Day in the Life' digital trail that masks their sanctuary."
         ]
     },
     {
