@@ -23,7 +23,7 @@ export default function NotFound() {
                 </h1>
 
                 <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-lg mx-auto leading-relaxed">
-                    The tactical route you're looking for doesn't exist. Let's get you back to the command center.
+                    The tactical route you're looking for doesn't exist. Let's get you back to the command centre.
                 </p>
 
                 <Link href="/">
@@ -31,7 +31,7 @@ export default function NotFound() {
                         size="lg"
                         className="bg-[#D0021B] hover:bg-[#B00218] text-white border-none px-10 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(208,2,27,0.3)]"
                     >
-                        Return to Command Center
+                        Return to Command Centre
                     </Button>
                 </Link>
             </div>

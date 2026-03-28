@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "CV — Nicola Berry | Principal Digital Architect",
+    title: "CV - Nicola Berry | Principal Digital Architect",
     description:
-        "Professional CV for Nicola Berry — Principal Digital Architect, Operations Engineer, and Technical Founder based in Scotland. Full-stack development, AI automation, and business systems.",
+        "Professional CV for Nicola Berry - Principal Digital Architect, Operations Engineer, and Technical Founder based in Scotland. Full-stack development, AI automation, and business systems.",
     keywords: [
         "Nicola Berry CV",
         "Principal Digital Architect CV",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         "Technical Founder portfolio",
     ],
     openGraph: {
-        title: "CV — Nicola Berry",
+        title: "CV - Nicola Berry",
         description:
             "Explore Nicola Berry's professional background, skills, and experience in full-stack development, AI automation and digital architecture.",
         url: "https://nicolaberry.uk/cv",

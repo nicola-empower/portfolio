@@ -11,6 +11,23 @@ export interface Journal {
 
 export const journals: Journal[] = [
     {
+        slug: "tailortrack-ai-privacy-empowerment",
+        relatedProjectSlug: "tailortrack-cv",
+        title: "Architecting Privacy: The TailorTrack AI Empowerment Roadmap",
+        date: "March 27, 2026",
+        readTime: "6 min read",
+        topic: "Privacy Architecture",
+        excerpt: "How 100% local-first storage and stateless AI can transform career prospects for both professionals and students with additional needs.",
+        content: [
+            "In the modern career landscape, your data is your most valuable asset. Yet, most CV builders require you to upload your entire professional history to their servers before they even let you select a template. This is a fundamental privacy failure.",
+            "TailorTrack AI was architected from the ground up to be **Browser-First**. By utilising the browser's local storage and encrypted export protocols, the application ensures that a user's career narrative - including sensitive medical or educational data for those in transition - never leaves their device without explicit intent.",
+            "For the **Independent Me** ecosystem, this architecture is transformative. It allows students to build their **Employment Passports** independently, translating daily placement routines into workplace-ready skills using a stateless AI engine that doesn't 'learn' from or store their personal data.",
+            "We aren't just building a CV tool; we are building an **Empowerment Scaffold**. By providing a secure environment for students to document their growth and for professionals to discreetly tailor their next big move, we return agency to the individual.",
+            "I have detailed the full institutional deployment model and commercial roadmap for this project in the [TailorTrack AI Funding & Development Roadmap](/work/tailortrack-cv/proposal).",
+            "True digital independence is not just about having a login; it's about having a sanctuary where your data belongs to you, and your future is shaped by your own empirical progress."
+        ]
+    },
+    {
         slug: "engineering-freedom-not-code",
         title: "Why I Don't Write Code: Engineering Freedom in the Age of AI",
         date: "March 20, 2026",
@@ -50,11 +67,11 @@ export const journals: Journal[] = [
         content: [
             "In enterprise security, we talk about Zero Trust and end-to-end encryption. But for survivors of domestic abuse, the threat isn't a hacker intercepting a packet - it's an abuser standing behind them demanding to see their phone.",
             "Existing 'covert' apps often disguise themselves as calculators or weather apps. Abusers know this. Furthermore, if a victim is frantically typing an evidence log into a 'weather app,' it immediately raises suspicion. You need a reason to be typing.",
-            "For Project Dana v2 (ChefAI), I evolved this into an entirely functional service. The 'Surface Layer' is a polished recipe finder powered by TheMealDB API. The user has a valid, verifiable reason to be typing at length (inputting grocery lists, meal plans, or pantry inventories).",
-            "I also implemented 'Ghost Notifications.' Standard push notifications are a vulnerability; an abuser might see an alert from a 'Safety App.' In v2, security alerts and safety plan reminders are hidden inside what appear to be standard marketing deals for ingredients or cookware.",
-            "Once inside the vault—triggered by a specific recipe search like 'Blueberry Pancakes'—the architecture shifts. The AI engine doesn't just store data; it performs 'Legally-Aligned Translation,' parsing raw emotional logs into sterile evidence indicators calibrated for Scottish Coercive Control laws.",
+            "For Project Dana v2 (**ChefAI**), I evolved this into an entirely functional service. The **Surface Layer** is a polished recipe finder powered by TheMealDB API. The user has a valid, verifiable reason to be typing at length (inputting grocery lists, meal plans, or pantry inventories).",
+            "I also implemented **Ghost Notifications**. Standard push notifications are a vulnerability; an abuser might see an alert from a 'Safety App.' In v2, security alerts and safety plan reminders are hidden inside what appear to be standard marketing deals for ingredients or cookware.",
+            "Once inside the vault - triggered by a specific recipe search like 'Blueberry Pancakes' - the architecture shifts. The AI engine doesn't just store data; it performs **Legally-Aligned Translation**, parsing raw emotional logs into sterile evidence indicators calibrated for Scottish Coercive Control laws.",
             "I have detailed the full technical and financial scaling requirements for this tool in the [Project DANA Funding & Development Roadmap](/work/project-dana/proposal).",
-            "True security in these environments is about active social camouflage. The application must not only encrypt the data but also provide the user with a legitimate, scrutinized 'Day in the Life' digital trail that masks their sanctuary."
+            "True security in these environments is about active **social camouflage**. The application must not only encrypt the data but also provide the user with a legitimate, scrutinized 'Day in the Life' digital trail that masks their sanctuary."
         ]
     },
     {

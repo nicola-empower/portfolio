@@ -78,7 +78,24 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
                     {journal.content.map((paragraph, index) => (
                         <FadeIn key={index} delay={0.1} y={20}>
                             <p className="font-sans text-foreground/90 leading-loose mb-8">
-                                {paragraph}
+                                {paragraph.split(/(\[.*?\]\(.*?\))|(\*\*.*?\*\*)/g).filter(Boolean).map((part, i) => {
+                                    const linkMatch = part.match(/\[(.*?)\]\((.*?)\)/);
+                                    if (linkMatch) {
+                                        const [_, linkText, href] = linkMatch;
+                                        return (
+                                            <Link key={i} href={href} className="text-accent-primary hover:underline font-bold decoration-2 underline-offset-4 transition-all">
+                                                {linkText}
+                                            </Link>
+                                        );
+                                    }
+                                    
+                                    const boldMatch = part.match(/\*\*(.*?)\*\*/);
+                                    if (boldMatch) {
+                                        return <strong key={i} className="font-bold text-slate-900 dark:text-accent-primary underline decoration-accent-primary/20 decoration-2 underline-offset-4">{boldMatch[1]}</strong>;
+                                    }
+                                    
+                                    return part;
+                                })}
                             </p>
                         </FadeIn>
                     ))}

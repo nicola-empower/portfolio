@@ -148,24 +148,24 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                         <Github size={18} /> Repository
                                     </a>
                                 )}
-                                {project.proposalUrl && (
-                                    <Link
-                                        href={project.proposalUrl}
-                                        className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white border-2 border-rose-500/20 text-rose-600 font-bold hover:bg-rose-50 hover:border-rose-500/40 transition-all shadow-sm group"
-                                    >
-                                        <FileText size={18} className="group-hover:scale-110 transition-transform" />
-                                        <span>View Funding Roadmap</span>
-                                    </Link>
-                                )}
-                                {project.infographicUrl && (
-                                    <Link
-                                        href={project.infographicUrl}
-                                        className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white border-2 border-purple-500/20 text-purple-600 font-bold hover:bg-purple-50 hover:border-purple-500/40 transition-all shadow-sm group"
-                                    >
-                                        <Layout size={18} className="group-hover:scale-110 transition-transform" />
-                                        <span>View Technical Infographic</span>
-                                    </Link>
-                                )}
+                                 {project.proposalUrl && (
+                                     <Link
+                                         href={project.proposalUrl}
+                                         className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white dark:bg-white/5 border-2 border-rose-500/20 text-rose-600 dark:text-rose-400 font-bold hover:bg-rose-50 dark:hover:bg-rose-500/10 hover:border-rose-500/40 transition-all shadow-sm group"
+                                     >
+                                         <FileText size={18} className="group-hover:scale-110 transition-transform" />
+                                         <span>View Funding Roadmap</span>
+                                     </Link>
+                                 )}
+                                 {project.infographicUrl && (
+                                     <Link
+                                         href={project.infographicUrl}
+                                         className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white dark:bg-white/5 border-2 border-purple-500/20 text-purple-600 dark:text-purple-400 font-bold hover:bg-purple-50 dark:hover:bg-purple-500/10 hover:border-purple-500/40 transition-all shadow-sm group"
+                                     >
+                                         <Layout size={18} className="group-hover:scale-110 transition-transform" />
+                                         <span>View Technical Infographic</span>
+                                     </Link>
+                                 )}
                                 {project.demoUrl && (
                                     <a
                                         href={project.demoUrl}
@@ -181,7 +181,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
                         {/* Tech Stack */}
                         <div>
-                            <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-charcoal/40 dark:text-cream/40 mb-6 border-b border-charcoal/5 dark:border-white/5 pb-2">
+                            <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-charcoal/60 dark:text-cream/60 mb-6 border-b border-charcoal/5 dark:border-white/5 pb-2">
                                 Technologies
                             </h3>
                             <div className="flex flex-wrap gap-2">
@@ -196,7 +196,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                         {/* Contributions */}
                         <FadeIn delay={0.4}>
                             <div>
-                                <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-charcoal/40 dark:text-cream/40 mb-6 border-b border-charcoal/5 dark:border-white/5 pb-2">
+                                <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-charcoal/60 dark:text-cream/60 mb-6 border-b border-charcoal/5 dark:border-white/5 pb-2">
                                     My Role
                                 </h3>
                                 <ul className="space-y-3">
@@ -235,7 +235,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
                         <div className="prose prose-lg dark:prose-invert max-w-none">
                             <FadeIn delay={0.1} y={20}>
-                                <h3 className="font-serif font-bold text-charcoal dark:text-cream mb-8 opacity-20 uppercase tracking-[0.2em] text-sm">Overview</h3>
+                                <h3 className="font-serif font-bold text-charcoal dark:text-cream mb-8 opacity-40 dark:opacity-60 uppercase tracking-[0.2em] text-sm">Overview</h3>
                                 <p className="text-charcoal/80 dark:text-cream/80 leading-relaxed text-xl font-light mb-16">
                                     {project.overview}
                                 </p>

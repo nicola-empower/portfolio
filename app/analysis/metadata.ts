@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Strategic Project Analysis — Nicola Berry",
+    title: "Strategic Project Analysis - Nicola Berry",
     description:
         "Market valuation, demand analysis, and exit strategy data for the Empower Digital Solutions portfolio of SaaS applications, automation tools, and web platforms.",
     keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         "Nicola Berry projects",
     ],
     openGraph: {
-        title: "Strategic Project Analysis — Empower Digital Estate",
+        title: "Strategic Project Analysis - Empower Digital Estate",
         description:
             "Market demand analysis and valuation data across the full Empower digital portfolio.",
         url: "https://nicolaberry.uk/analysis",
