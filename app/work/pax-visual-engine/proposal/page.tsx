@@ -92,10 +92,10 @@ export default function PaxProposalPage() {
                         Mission: Sovereignty in the Generative Age
                     </h2>
                     <p className="text-xl mb-8 italic text-foreground/90 leading-relaxed font-serif">
-                        PAX is a high-fidelity visual engine designed to bridge the gap between static generative art and intentional cinematic motion.
+                        Inspired by Katya Varbanova's "Viral Marketing Stars," PAX (the IKEA wardrobe metaphor) was built to bypass the expensive "Prompt Tax" of raw AI generation.
                     </p>
                     <p className="mb-8 leading-relaxed text-lg text-foreground/70">
-                        As digital identity becomes increasingly fluid, PAX provides a sanctuary for consistent, high-fidelity visual expression. By combining the precision of **Flux models** with the analytical 'vision' of **Google Gemini**, PAX allows creators to maintain identity across environments and transition seamlessly into video production—shifting from passive generation to active creative direction.
+                        PAX is a high-fidelity visual engine designed to bridge the gap between static generative art and intentional cinematic motion. By combining the precision of **Flux LoRAs** with the analytical 'vision' of **Google Gemini**, PAX eliminates common AI failure points: "3-armed" generations, warped fingers, and safety compromises. It transforms the complex act of prompt engineering into a "Cher Horowitz" wardrobe experience—where style consistency is a single, surgical button-click away.
                     </p>
 
                     <h2 className="text-3xl text-accent-primary font-bold mb-8 border-b-2 border-accent-primary pb-2 mt-16 font-serif">
@@ -105,17 +105,17 @@ export default function PaxProposalPage() {
                         <div className="border border-card-border border-l-4 border-l-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside">
                             <h3 className="text-lg text-accent-primary font-bold mb-2 font-serif">🎯 Precision</h3>
                             <p className="text-xs text-foreground/60 font-bold uppercase tracking-wider mb-2">Flux + Astria</p>
-                            <p className="text-sm text-foreground/70 leading-relaxed">Fine-tuned models for hyper-realistic portraits and consistent environments.</p>
+                            <p className="text-sm text-foreground/70 leading-relaxed">Fine-tuned identity-consistent LoRAs that anchor facial features across variables.</p>
+                        </div>
+                        <div className="border border-card-border border-l-4 border-l-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside">
+                            <h3 className="text-lg text-accent-primary font-bold mb-2 font-serif">🚿 Hygiene</h3>
+                            <p className="text-xs text-foreground/60 font-bold uppercase tracking-wider mb-2">Automated Sanitization</p>
+                            <p className="text-sm text-foreground/70 leading-relaxed">Hard-coded negative prompting and safety guards to eliminate "3-armed" hallucinations.</p>
                         </div>
                         <div className="border border-card-border border-l-4 border-l-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside">
                             <h3 className="text-lg text-accent-primary font-bold mb-2 font-serif">🎬 Motion</h3>
                             <p className="text-xs text-foreground/60 font-bold uppercase tracking-wider mb-2">Gemini Vision</p>
-                            <p className="text-sm text-foreground/70 leading-relaxed">Intelligent analysis of image context to suggest natural, cinematic movement.</p>
-                        </div>
-                        <div className="border border-card-border border-l-4 border-l-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside">
-                            <h3 className="text-lg text-accent-primary font-bold mb-2 font-serif">🛡️ Security</h3>
-                            <p className="text-xs text-foreground/70 font-bold uppercase tracking-wider mb-2">Local Persistence</p>
-                            <p className="text-sm text-foreground/80 leading-relaxed">Persistent local history and integrated NSFW safeguards for safe creativity.</p>
+                            <p className="text-sm text-foreground/70 leading-relaxed">Intelligent analysis of image physics to suggest natural, cinematic movement.</p>
                         </div>
                     </div>
                 </section>
@@ -203,17 +203,17 @@ export default function PaxProposalPage() {
                         </div>
 
                         {/* Phase 4 */}
-                        <div className="flex border border-card-border rounded-xl overflow-hidden avoid-break-inside">
-                            <div className="w-1/3 p-8 bg-accent-secondary/30 flex flex-col justify-center text-center border-r border-card-border">
-                                <span className="text-[10px] font-bold uppercase text-foreground/70 tracking-widest mb-2">Phase 4</span>
-                                <span className="text-xl font-bold text-foreground">Safety & Polish</span>
-                                <span className="text-2xl text-accent-primary font-bold mt-2">£1,050</span>
+                        <div className="flex border border-card-border rounded-xl overflow-hidden avoid-break-inside border-l-8 border-l-accent-primary">
+                            <div className="w-1/3 p-8 bg-accent-primary flex flex-col justify-center text-center text-background">
+                                <span className="text-[10px] font-bold uppercase opacity-80 tracking-widest mb-2">Phase 4</span>
+                                <span className="text-xl font-bold">Prompt Hygiene</span>
+                                <span className="text-2xl font-bold mt-2">£1,050</span>
                             </div>
                             <div className="w-2/3 p-8 bg-card-bg">
                                 <ul className="space-y-3 text-foreground/70 text-sm">
-                                    <li>Integrated NSFW & Safety Logic Filters</li>
-                                    <li>Advanced Negative Prompting Interface</li>
-                                    <li>Multi-format Export (MP4/WEBP/PNG)</li>
+                                    <li>Automated "Safety Guard" Negative Prompts</li>
+                                    <li>"Cher Horowitz" Multi-format Wardrobe Mapping</li>
+                                    <li>Identity Anchoring Facemark Verification Logic</li>
                                 </ul>
                             </div>
                         </div>

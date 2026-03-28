@@ -14,7 +14,8 @@ import {
   Filler
 } from 'chart.js';
 import { Line, Bar } from 'react-chartjs-2';
-import { Github, Mail, Shield, Zap, Search, Eye, FileText, Layout, Info } from 'lucide-react';
+import { Github, Mail, Shield, Zap, Search, Eye, FileText, Layout, Info, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 import { useTheme } from 'next-themes';
 
 ChartJS.register(
@@ -126,6 +127,24 @@ const InfographicPage = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans transition-colors duration-500 leading-relaxed overflow-x-hidden">
+      <nav className="no-print sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-card-border px-6 py-4 flex justify-between items-center">
+        <div className="flex items-center gap-4">
+          <Link
+            href="/work/project-dana"
+            className="flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors font-medium border-r border-card-border pr-4"
+          >
+            <ArrowLeft size={18} />
+            Back to Project
+          </Link>
+          <Link
+            href="/intelligence"
+            className="flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors font-medium"
+          >
+            System Intelligence
+          </Link>
+        </div>
+      </nav>
+
       <header className="bg-card-bg border-b border-card-border">
         <div className="max-w-7xl mx-auto py-16 px-8 text-center">
           <div className="flex justify-center mb-6">

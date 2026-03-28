@@ -19,6 +19,7 @@
   --color-accent-secondary: var(--accent-secondary);
   --color-card-bg: var(--card-bg);
   --color-card-border: var(--card-border);
+  --color-rose: var(--rose);
 
   /* ── Typography ──────────────────────────────────────── */
   --font-serif: var(--font-serif);
@@ -34,6 +35,7 @@
   --accent-secondary: #feccd5;
   --card-bg: rgba(255, 255, 255, 0.5);
   --card-border: #feccd5;
+  --rose: #E91E63;
 }
 
 /* ── Dark Mode ───────────────────────────────────────────── */
@@ -46,6 +48,7 @@ html.dark {
   --accent-secondary: #1e0510;
   --card-bg: rgba(30, 5, 15, 0.7);
   --card-border: rgba(255, 255, 255, 0.07);
+  --rose: #f06292;
 }
 
 /* ── Base Styles ─────────────────────────────────────────── */

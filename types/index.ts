@@ -28,3 +28,16 @@ export type Project = {
     infographicUrl?: string; // Component Architecture Infographic
     roadmap?: string[]; // Future upgrades / Possible additions
 };
+
+export type IntelligenceDossier = {
+    slug: string;
+    projectSlug: string;
+    title: string;
+    description: string;
+    type: "Proposal" | "Infographic" | "Technical Intelligence" | "Technical Infographic";
+    url: string;
+    date: string;
+    tags: string[];
+    featured?: boolean;
+    category: "Safety" | "Architecture" | "Automation" | "SEN" | "Privacy";
+};

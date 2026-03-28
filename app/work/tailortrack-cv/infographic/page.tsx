@@ -15,7 +15,8 @@ import {
   ArcElement
 } from 'chart.js';
 import { Line, Bar, Doughnut } from 'react-chartjs-2';
-import { Github, Mail, Shield, Zap, Search, Eye, FileText, Layout, Info, UserCheck, Accessibility } from 'lucide-react';
+import { Github, Mail, Shield, Zap, Search, Eye, FileText, Layout, Info, UserCheck, Accessibility, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 import { useTheme } from 'next-themes';
 
 ChartJS.register(
@@ -126,6 +127,24 @@ const InfographicPage = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans transition-colors duration-500 leading-relaxed overflow-x-hidden">
+      <nav className="no-print sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-card-border px-6 py-4 flex justify-between items-center">
+        <div className="flex items-center gap-4">
+          <Link
+            href="/work/tailortrack-cv"
+            className="flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors font-medium border-r border-card-border pr-4"
+          >
+            <ArrowLeft size={18} />
+            Back to Project
+          </Link>
+          <Link
+            href="/intelligence"
+            className="flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors font-medium"
+          >
+            System Intelligence
+          </Link>
+        </div>
+      </nav>
+
       <header className="bg-card-bg border-b border-card-border">
         <div className="max-w-7xl mx-auto py-16 px-8 text-center">
           <div className="flex justify-center mb-6">
@@ -244,22 +263,27 @@ const InfographicPage = () => {
           </div>
         </section>
 
-        {/* Tech Stack */}
-        <section className="md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-card-bg p-8 rounded-3xl border border-card-border">
-            <Layout className="text-accent-primary mb-4" />
-            <h4 className="font-bold mb-2 text-heading">PWA Stealth</h4>
-            <p className="text-sm text-foreground/60">Discreet installation for professional privacy. Offline-ready for placements with low connectivity.</p>
-          </div>
-          <div className="bg-card-bg p-8 rounded-3xl border border-card-border">
-            <FileText className="text-accent-primary mb-4" />
-            <h4 className="font-bold mb-2 text-heading">PDF Forensic Sync</h4>
-            <p className="text-sm text-foreground/60">Industry-standard CV exports that match ATS (Applicant Tracking System) benchmarks.</p>
-          </div>
-          <div className="bg-card-bg p-8 rounded-3xl border border-card-border text-foreground">
-            <UserCheck className="text-accent-primary mb-4" />
-            <h4 className="font-bold mb-2 text-heading">Institutional Audit</h4>
-            <p className="text-sm text-foreground/60">GIRFEC & SHANARRI aligned reporting for school/college compliance requirements.</p>
+        {/* Tech Stack Section */}
+        <section className="md:col-span-2 bg-accent-secondary/10 rounded-3xl p-8 border border-card-border mb-4">
+          <h3 className="text-sm font-bold text-foreground/40 uppercase tracking-widest mb-6">Empowerment Architecture Stack</h3>
+          <div className="flex flex-wrap gap-4">
+            {[
+              { label: 'Next.js 15', color: 'var(--accent-primary)' },
+              { label: 'React 19', color: 'var(--accent-primary)' },
+              { label: 'Tailwind v4', color: 'var(--accent-primary)' },
+              { label: 'Gemini 1.5 Pro', color: 'var(--rose)' },
+              { label: 'Zustand (State)', color: 'var(--accent-primary)' },
+              { label: 'PWA (Service Workers)', color: 'var(--accent-primary)' },
+              { label: 'Chart.js', color: 'var(--accent-primary)' }
+            ].map((tech) => (
+              <span
+                key={tech.label}
+                className="px-6 py-2 rounded-xl text-background font-bold text-sm shadow-sm"
+                style={{ backgroundColor: tech.color }}
+              >
+                {tech.label}
+              </span>
+            ))}
           </div>
         </section>
       </main>

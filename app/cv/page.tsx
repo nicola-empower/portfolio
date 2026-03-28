@@ -37,7 +37,7 @@ export default function CVPage() {
                         &quot;Strategic Systems Architect with 10+ years of experience engineering high-performance digital ecosystems. Specialist in bridging the &apos;Visibility Gap&apos; in automated operations through the design of custom Command & Control planes.&quot;
                     </p>
                     <p className="font-sans text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-                        Proven track record of architecting, valuing, and managing a 30+ project digital estate with a combined valuation of £500k+. Expert in leveraging AI (Gemini/OpenAI) and low-latency frameworks (Next.js/Astro) to drive operational efficiency at scale.
+                        Proven track record of architecting, valuing, and managing a 30+ project digital estate with a combined valuation of £3m+. Expert in leveraging AI (Gemini/OpenAI) and low-latency frameworks (Next.js/Astro) to drive operational efficiency at scale.
                     </p>
                 </motion.div>
             </section>
@@ -131,7 +131,7 @@ export default function CVPage() {
                             <div className="mb-6">
                                 <h5 className="text-lg font-bold text-heading mb-3 flex items-center gap-2">
                                     <Star size={18} className="text-accent-primary" />
-                                    Key Achievement: Architected a £500k+ Integrated Digital Ecosystem
+                                    Key Achievement: Architected a £3m+ Integrated Digital Ecosystem
                                 </h5>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="bg-white/30 dark:bg-black/10 p-4 rounded-lg border border-foreground/5">

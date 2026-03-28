@@ -45,6 +45,12 @@ export function Footer() {
                                 Portfolio
                             </Link>
                             <Link
+                                href="/intelligence"
+                                className="font-sans text-foreground hover:text-accent-primary transition-colors font-semibold"
+                            >
+                                System Intelligence
+                            </Link>
+                            <Link
                                 href="/journal"
                                 className="font-sans text-foreground hover:text-accent-primary transition-colors font-semibold"
                             >
