@@ -4,7 +4,7 @@ import { Project } from "@/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Code, FileText, Zap, Layout, Globe } from "lucide-react";
+import { ArrowUpRight, Code, FileText, Zap, Layout, Globe, Palette } from "lucide-react";
 
 interface ProjectCardProps {
     project: Project;
@@ -17,6 +17,7 @@ const typeIcons = {
     automation: Zap,
     "case-study": FileText,
     website: Globe,
+    webdesign: Palette,
 };
 
 export function ProjectCard({ project }: { project: Project }) {
