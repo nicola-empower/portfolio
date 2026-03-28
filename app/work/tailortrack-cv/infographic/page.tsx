@@ -16,6 +16,7 @@ import {
 } from 'chart.js';
 import { Line, Bar, Doughnut } from 'react-chartjs-2';
 import { Github, Mail, Shield, Zap, Search, Eye, FileText, Layout, Info, UserCheck, Accessibility } from 'lucide-react';
+import { useTheme } from 'next-themes';
 
 ChartJS.register(
   CategoryScale,
@@ -31,6 +32,14 @@ ChartJS.register(
 );
 
 const InfographicPage = () => {
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
+
+  // Dynamic Colors
+  const chartTextColor = isDark ? '#E2E8F0' : '#64748B';
+  const chartGridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)';
+  const chartAccent = isDark ? '#c994a4' : '#5B0024';
+
   // Skill Translation Chart Data
   const skillData = {
     labels: ['Placement Start', 'Month 1', 'Month 2', 'Month 3', 'Final Review'],
@@ -50,7 +59,9 @@ const InfographicPage = () => {
     plugins: {
       legend: { display: false },
       tooltip: {
-        backgroundColor: '#1a1a1a',
+        backgroundColor: chartAccent,
+        titleColor: isDark ? '#120008' : '#ffffff',
+        bodyColor: isDark ? '#120008' : '#ffffff',
         padding: 12,
         cornerRadius: 8
       }
@@ -58,12 +69,12 @@ const InfographicPage = () => {
     scales: {
       y: {
         beginAtZero: true,
-        grid: { color: 'rgba(0,0,0,0.05)' },
-        ticks: { color: '#1a1a1a' }
+        grid: { color: chartGridColor },
+        ticks: { color: chartTextColor }
       },
       x: {
         grid: { display: false },
-        ticks: { color: '#1a1a1a' }
+        ticks: { color: chartTextColor }
       }
     }
   };
@@ -92,10 +103,12 @@ const InfographicPage = () => {
     scales: {
       y: {
         beginAtZero: true,
-        grid: { color: 'rgba(0,0,0,0.05)' }
+        grid: { color: chartGridColor },
+        ticks: { color: chartTextColor }
       },
       x: {
-        grid: { display: false }
+        grid: { display: false },
+        ticks: { color: chartTextColor }
       }
     }
   };
@@ -174,7 +187,7 @@ const InfographicPage = () => {
             Ensuring Special Category Data remains in the user's hands.
           </p>
           <div className="h-[250px] w-full relative">
-            <Doughnut data={sovereigntyData} options={{ cutout: '70%', plugins: { legend: { position: 'bottom', labels: { color: 'currentColor' } } } }} />
+            <Doughnut data={sovereigntyData} options={{ cutout: '70%', plugins: { legend: { position: 'bottom', labels: { color: chartTextColor } } } }} />
           </div>
           <div className="mt-8 space-y-4">
             <div className="flex border-l-4 border-accent-primary pl-4">
@@ -214,7 +227,7 @@ const InfographicPage = () => {
               { step: '04', title: 'Passport', desc: 'Valid skill added to Employment Passport.', color: 'var(--accent-primary)' }
             ].map((item, idx) => (
               <div key={idx} className="bg-background p-6 rounded-2xl shadow-sm border border-card-border relative group hover:border-accent-primary transition-colors">
-                <span className="text-3xl font-black opacity-10 absolute top-4 right-4 group-hover:opacity-20 transition-opacity" style={{ color: item.color }}>{item.step}</span>
+                <span className="text-3xl font-black opacity-30 absolute top-4 right-4 group-hover:opacity-60 transition-opacity" style={{ color: item.color }}>{item.step}</span>
                 <h4 className="font-bold text-lg mb-2" style={{ color: item.color }}>{item.title}</h4>
                 <p className="text-sm text-foreground/60">{item.desc}</p>
               </div>

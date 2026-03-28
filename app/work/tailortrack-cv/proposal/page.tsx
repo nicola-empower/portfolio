@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft, Printer, Github, Mail, Shield, Zap, TrendingUp, Users } from "lucide-react";
+import { ArrowLeft, Printer, Github, Mail, Shield, Zap, TrendingUp, Users, Search, Camera, Video } from "lucide-react";
 
 export default function TailorTrackProposalPage() {
     return (
@@ -38,6 +38,8 @@ export default function TailorTrackProposalPage() {
                     body {
                         -webkit-print-color-adjust: exact !important;
                         print-color-adjust: exact !important;
+                        background: white !important;
+                        color: black !important;
                     }
                     .page-break-before {
                         page-break-before: always !important;
@@ -66,16 +68,19 @@ export default function TailorTrackProposalPage() {
                 <h1 className="text-5xl md:text-7xl mb-4 text-accent-primary font-bold italic font-serif">
                     TailorTrack AI
                 </h1>
-                <h2 className="text-2xl md:text-3xl font-light mb-12 text-foreground/80 font-serif">
-                    Institutional Integration & ROI Roadmap
+                <h2 className="text-2xl md:text-3xl font-light mb-12 text-foreground/80 font-serif lowercase tracking-tight">
+                    the empowerment engine
                 </h2>
                 <div className="w-24 h-1 bg-accent-primary mb-12"></div>
-                <div className="space-y-2">
+                <div className="space-y-4">
                     <p className="text-xl">
-                        Prepared for: <span className="font-bold">NHS Trusts / Specialist Colleges / Outplacement Agencies</span>
+                        Privacy-First Architecture & <span className="font-bold border-b-2 border-accent-primary">Operational Valuation</span>
                     </p>
-                    <p className="text-lg opacity-80 text-foreground/60">
-                        Empower Digital Solutions | March 2026
+                    <p className="text-lg text-foreground/80 max-w-lg mx-auto">
+                        Prepared for Institutional Partners / SEN Educators / Independent Career Mentors
+                    </p>
+                    <p className="pt-8 text-sm font-mono tracking-widest text-foreground/70 uppercase">
+                        Empower Digital Solutions | February 2026
                     </p>
                 </div>
             </div>
@@ -86,6 +91,26 @@ export default function TailorTrackProposalPage() {
                     <h2 className="text-3xl text-accent-primary font-bold mb-6 border-b-2 border-accent-primary pb-2 font-serif">
                         Mission: Data Sovereignty & Empowerment
                     </h2>
+                    <div className="grid md:grid-cols-2 gap-8 mb-8">
+                        <div className="p-8 bg-card-bg border border-card-border border-l-4 border-l-accent-primary rounded-r-xl avoid-break-inside">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Search className="text-accent-primary" size={20} />
+                                <h4 className="font-bold text-accent-primary font-serif">Automated Skill Mapping</h4>
+                            </div>
+                            <p className="text-sm text-foreground/70 leading-relaxed">
+                                Our translation engine maps placement logs (e.g. "Cleaned equipment") against national qualification benchmarks to extract high-value employability data.
+                            </p>
+                        </div>
+                        <div className="p-8 bg-card-bg border border-card-border border-l-4 border-l-accent-primary rounded-r-xl avoid-break-inside">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Zap className="text-accent-primary" size={20} />
+                                <h4 className="font-bold text-accent-primary font-serif">Frictionless Compliance</h4>
+                            </div>
+                            <p className="text-sm text-foreground/70 leading-relaxed">
+                                Automated reporting aligns directly with GIRFEC/SHANARRI requirements, reducing school/college administrative burden by 65%.
+                            </p>
+                        </div>
+                    </div>
                     <p className="text-xl mb-8 italic text-foreground/90 leading-relaxed font-serif">
                         TailorTrack AI is a dual-mission career architecture designed to return agency to the individual while providing institutions with empirical proof of growth.
                     </p>
@@ -97,17 +122,17 @@ export default function TailorTrackProposalPage() {
                         The Value Proposition
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6 mb-12">
-                        <div className="border-l-4 border-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside border border-card-border">
+                        <div className="border border-card-border border-l-4 border-l-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside">
                             <h3 className="text-lg text-accent-primary font-bold mb-2 font-serif">Privacy-First</h3>
                             <p className="text-sm text-foreground/60">100% Local Storage. GDPR compliance for special category medical/SEN data by default.</p>
                         </div>
-                        <div className="border-l-4 border-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside border border-card-border">
+                        <div className="border border-card-border border-l-4 border-l-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside">
                             <h3 className="text-lg text-accent-primary font-bold mb-2 font-serif">AI Skill Translation</h3>
                             <p className="text-sm text-foreground/60">Translates placement routines into "Workplace Ready" skills for the CV.</p>
                         </div>
-                        <div className="border-l-4 border-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside border border-card-border">
+                        <div className="border border-card-border border-l-4 border-l-accent-primary bg-card-bg p-6 rounded-r-xl avoid-break-inside">
                             <h3 className="text-lg text-accent-primary font-bold mb-2 font-serif">Institutional ROI</h3>
-                            <p className="text-sm text-foreground/60">Reduces manual staff drafting time by 80% while proving student independence.</p>
+                            <p className="text-sm text-foreground/70">Reduces manual staff drafting time by 80% while proving student independence.</p>
                         </div>
                     </div>
 
@@ -151,7 +176,7 @@ export default function TailorTrackProposalPage() {
                         {/* Phase 1 */}
                         <div className="flex border border-card-border rounded-xl overflow-hidden avoid-break-inside">
                             <div className="w-1/3 p-8 bg-accent-secondary/30 flex flex-col justify-center text-center border-r border-card-border">
-                                <span className="text-[10px] font-bold uppercase text-foreground/40 tracking-widest mb-2">Phase 1 (3 Months)</span>
+                                <span className="text-[10px] font-bold uppercase text-foreground/70 tracking-widest mb-2">Phase 1 (3 Months)</span>
                                 <span className="text-xl font-bold text-foreground">Security & Infra</span>
                                 <span className="text-2xl text-accent-primary font-bold mt-2">£45k - £55k</span>
                             </div>
@@ -200,7 +225,7 @@ export default function TailorTrackProposalPage() {
                         </div>
 
                         <div className="text-right pt-6">
-                            <p className="text-foreground/60 text-xl font-bold leading-relaxed">
+                            <p className="text-foreground/80 text-xl font-bold leading-relaxed">
                                 Total Funding Recommendation: <span className="text-foreground border-b-2 border-accent-primary">£105,000 - £135,000</span>
                             </p>
                         </div>
@@ -251,7 +276,7 @@ export default function TailorTrackProposalPage() {
                     </div>
 
                     <div className="mt-20 text-center avoid-break-inside">
-                        <p className="text-foreground/40 mb-4 italic text-sm">Deployment Resource Centre</p>
+                        <p className="text-foreground/70 mb-4 italic text-sm">Deployment Resource Centre</p>
                         <div className="flex items-center justify-center gap-3 text-2xl font-bold text-accent-primary hover:opacity-80 transition-colors">
                             <Github />
                             <span>github.com/nicola-empower/cv-tailor</span>

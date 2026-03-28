@@ -3,10 +3,11 @@ import { journals } from "@/data/journals";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ExternalLink, Github, ArrowRight, Layout, Code, Zap, FileText, Globe, Lightbulb } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, ArrowRight, Layout, Code, Zap, FileText, Globe, Lightbulb, Palette } from "lucide-react";
 import { Metadata } from "next";
 import Silk from "@/components/ui/Silk";
 import FadeIn from "@/components/ui/FadeIn";
+import { ProjectGallery } from "@/components/work/ProjectGallery";
 
 // Force static generation for all projects
 export function generateStaticParams() {
@@ -53,6 +54,7 @@ const typeIcons = {
     automation: Zap,
     "case-study": FileText,
     website: Globe,
+    webdesign: Palette,
 };
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -214,24 +216,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     {/* Main Content */}
                     <div className="lg:col-span-8 space-y-16">
 
-                        {/* Hero Image */}
-                        <FadeIn delay={0.3} y={40}>
-                            <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl shadow-charcoal/5 border border-charcoal/5 dark:border-white/5 bg-taupe/10">
-                                {project.thumbnail && !project.thumbnail.includes("placeholder") ? (
-                                    <Image
-                                        src={project.thumbnail}
-                                        alt={project.title}
-                                        fill
-                                        className="object-cover"
-                                        priority
-                                    />
-                                ) : (
-                                    <div className="absolute inset-0 flex items-center justify-center text-charcoal/20">
-                                        <TypeIcon size={64} />
-                                    </div>
-                                )}
-                            </div>
-                        </FadeIn>
+                        {/* Hero Image & Gallery managed by client component */}
+                        <ProjectGallery 
+                            thumbnail={project.thumbnail} 
+                            gallery={project.gallery} 
+                            title={project.title} 
+                        />
 
                         <div className="prose prose-lg dark:prose-invert max-w-none">
                             <FadeIn delay={0.1} y={20}>
@@ -327,33 +317,40 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                         <div className="flex flex-wrap gap-4">
                                             {project.highlights.map((highlight, i) => (
                                                 <div key={i} className="px-5 py-2.5 bg-accent-primary/10 dark:bg-white/10 rounded-full text-sm font-bold border border-accent-primary/20 dark:border-white/5 hover:bg-accent-primary/20 transition-colors">
-                                                    {highlight}
+                                    {highlight}
                                                 </div>
                                             ))}
                                         </div>
                                     </div>
                                 </div>
                             </FadeIn>
+
+                            {/* Roadmap Section */}
+                            {project.roadmap && project.roadmap.length > 0 && (
+                                <FadeIn delay={0.3} y={30}>
+                                    <div className="mt-12 p-10 rounded-4xl bg-rose/5 dark:bg-rose/10 border border-rose/20 dark:border-rose/30 relative overflow-hidden">
+                                        <div className="flex items-center gap-3 mb-8 text-rose">
+                                            <Zap size={24} />
+                                            <span className="uppercase tracking-[0.3em] font-bold text-xs">Future Roadmap</span>
+                                        </div>
+                                        <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream mb-8 font-serif italic text-rose">Upcoming & Possible Upgrades</h3>
+                                        <div className="grid md:grid-cols-2 gap-6">
+                                            {project.roadmap.map((item, i) => (
+                                                <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-white/50 dark:bg-white/5 border border-charcoal/5 dark:border-white/5 shadow-sm">
+                                                    <div className="w-8 h-8 rounded-full bg-rose/10 flex items-center justify-center text-rose shrink-0 font-bold text-sm">
+                                                        {i + 1}
+                                                    </div>
+                                                    <p className="text-charcoal/80 dark:text-cream/80 text-lg leading-snug pt-1">
+                                                        {item}
+                                                    </p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </FadeIn>
+                            )}
                         </div>
 
-                        {/* Gallery */}
-                        {project.gallery && project.gallery.length > 0 && (
-                            <div className="space-y-8 pt-12 border-t border-charcoal/5 dark:border-white/5">
-                                <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream">Gallery</h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-                                    {project.gallery.map((img, idx) => (
-                                        <div key={idx} className="relative aspect-4/3 rounded-xl overflow-hidden border border-charcoal/5 dark:border-white/5 bg-taupe/10 hover:shadow-lg transition-shadow">
-                                            <Image
-                                                src={img}
-                                                alt={`${project.title} gallery image ${idx + 1}`}
-                                                fill
-                                                className="object-cover"
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
                     </div>
                 </div>
 

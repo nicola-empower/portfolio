@@ -28,6 +28,38 @@ export const journals: Journal[] = [
         ]
     },
     {
+        slug: "digital-village-family-calm",
+        relatedProjectSlug: "nourish-tea",
+        title: "The Digital Village: Engineering Calm into the Chaos of Family Life",
+        date: "February 23, 2026",
+        readTime: "5 min read",
+        topic: "Product Strategy",
+        excerpt: "Why the modern household needs a 'social proof' engine to reduce the mental load of meal planning and family wellness.",
+        content: [
+            "Every parent knows the 'invisible load' - the constant, low-grade buzzing of decisions that need to be made before a single ingredient even touches a pan. In the case of meal planning, it's not just about finding a recipe; it's about the social anxiety of wondering what other real families are successfully feeding their own children.",
+            "Nourish was architected to be more than a utility; it's a **Digital Village**. By utilising an Instagram-inspired UI, we lean into familiar social patterns to create a sense of community and social proof. When a mum sees that another real family just 'forked' a recipe for their picky eater, the cognitive load of decision-making drops significantly.",
+            "I implemented a unique **Recipe Forking** mechanic that treats a meal like a software repository. You don't just 'save' a recipe; you fork it, tweak the 'Kid-Friendly' parameters, and share your 'Commit' back to the community. It's a method of capturing the tribal knowledge that usually stays locked behind kitchen doors.",
+            "Safety and inclusivity were also at the core of the build. The **Child-Safe Discovery Mode** is a first-class feature that hides the social noise - the comments and the 'why' - and simply presents the visual delight of food and movement. It allows children to safely make suggestions to their parents, turning a 5 PM crisis into a collaborative family ritual.",
+            "By engineering these features into a high-premium 'Bistro Boutique' aesthetic, we elevate the mundane task of household management into something that feels intentional and calm. We aren't just building a meal planner; we are building a sanctuary for the modern family."
+        ]
+    },
+    {
+        slug: "alchemy-identity-ai-motion",
+        relatedProjectSlug: "pax-visual-engine",
+        title: "The Alchemy of Identity: Bridging Stillness and Motion with AI",
+        date: "February 24, 2026",
+        readTime: "5 min read",
+        topic: "Visual Intelligence",
+        excerpt: "How we use Flux models and Gemini's visual reasoning to transform static digital portraits into cinematic narratives.",
+        content: [
+            "The biggest challenge in generative AI today isn't just making a 'pretty' image; it's maintaining the integrity of an identity across different contexts. In the physical world, your identity is a constant, but in the latent space of AI, it can be frustratingly fluid.",
+            "With PAX, I architected a system that doesn't just 'generate' - it 'remembers.' By utilising Flux model fine-tuning (via Astria), we create a high-fidelity digital twin that remains consistent whether the user is in a neon-lit studio or a rainy London street. It's about preserving the human core within the generative chaos.",
+            "The true breakthrough, however, was in the transition from stillness to motion. Most AI video lacks intent. By integrating Google Gemini 2.0 Flash as a 'Motion Designer,' PAX analyzes the composition of a static image - the lighting, the pose, the physics - and suggests natural, cinematic movement. It's the difference between a random glitch and a directed performance.",
+            "We are also building for a 'Private-First' future. PAX stores session history and meta-prompts locally, ensuring that your digital experiments remain yours until you decide to export them. This hybrid approach to data - cloud-compute for the heavy lifting with local-first persistence for the narrative - is the hallmark of professional-grade AI tools.",
+            "As we move toward Phase 2, the goal is to make these cinematic loops 'live.' Imagine an interface that adapts to your creative mood in real-time, where the gap between imagination and animation is closed to a single click. PAX isn't just a studio; it's the future of visual sovereignty."
+        ]
+    },
+    {
         slug: "engineering-freedom-not-code",
         title: "Why I Don't Write Code: Engineering Freedom in the Age of AI",
         date: "March 20, 2026",

@@ -22,7 +22,6 @@ A high-performance portfolio website showcasing digital solutions across full-st
 
 - **Project Gallery** - Data-driven, filterable grid (Web App, Automation, Case Study, Website)
 - **Project Deep Dives** - Full detail pages per project with problem/solution/tech/gallery sections
-- **Strategic Analysis Page** - Market valuation and demand analysis for the digital estate
 - **CV Page** - Interactive professional CV with experience, education, languages and superpowers
 - **Dark / Light Mode** - Seamless switching with the Diner brand palette (deep maroon dark bg, warm cream light bg)
 - **SEO Structured Data** - Schema.org JSON-LD with `Person`, `Organization`, and `WebSite` nodes, including cross-site `sameAs` entity linking to empower digital properties
@@ -60,7 +59,6 @@ Open [http://localhost:3000](http://localhost:3000).
 app/              # Next.js App Router pages & layouts
   layout.tsx      # Root layout with JSON-LD structured data
   globals.css     # Tailwind v4 @theme tokens + CSS vars
-  analysis/       # Strategic valuation analysis page
   cv/             # Interactive CV page
 components/
   sections/       # Page sections (Hero, Services, Process, Contact…)

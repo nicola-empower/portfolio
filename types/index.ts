@@ -7,7 +7,7 @@ export type Project = {
     thumbnail: string; // image path
     gallery?: string[]; // multiple images for deep dive
     year: string;
-    type: "webapp" | "script" | "automation" | "case-study" | "website";
+    type: "webapp" | "script" | "automation" | "case-study" | "website" | "webdesign";
     techStack: string[]; // e.g. ["Next.js", "Apps Script"]
     status: "live" | "demo" | "internal" | "coming-soon";
     liveUrl?: string;
@@ -26,4 +26,5 @@ export type Project = {
     relatedJournalSlug?: string;
     proposalUrl?: string; // Strategic Funding Roadmap
     infographicUrl?: string; // Component Architecture Infographic
+    roadmap?: string[]; // Future upgrades / Possible additions
 };

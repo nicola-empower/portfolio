@@ -15,6 +15,7 @@ import {
 } from 'chart.js';
 import { Line, Bar } from 'react-chartjs-2';
 import { Github, Mail, Shield, Zap, Search, Eye, FileText, Layout, Info } from 'lucide-react';
+import { useTheme } from 'next-themes';
 
 ChartJS.register(
   CategoryScale,
@@ -29,14 +30,22 @@ ChartJS.register(
 );
 
 const InfographicPage = () => {
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
+
+  // Dynamic Colors
+  const chartTextColor = isDark ? '#E2E8F0' : '#64748B';
+  const chartGridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)';
+  const chartAccent = isDark ? '#c994a4' : '#5B0024';
+
   // Escalation Chart Data
   const escalationData = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [{
       label: 'Reported Incidents',
       data: [1, 2, 2, 4, 5, 8],
-      borderColor: '#5B0024',
-      backgroundColor: 'rgba(91, 0, 36, 0.1)',
+      borderColor: chartAccent,
+      backgroundColor: isDark ? 'rgba(201, 148, 164, 0.2)' : 'rgba(91, 0, 36, 0.1)',
       fill: true,
       tension: 0.3
     }]
@@ -48,7 +57,9 @@ const InfographicPage = () => {
     plugins: {
       legend: { display: false },
       tooltip: {
-        backgroundColor: '#1a1a1a',
+        backgroundColor: chartAccent,
+        titleColor: isDark ? '#120008' : '#ffffff',
+        bodyColor: isDark ? '#120008' : '#ffffff',
         titleFont: { family: 'Inter', weight: 'bold' as const },
         bodyFont: { family: 'Inter' },
         padding: 12,
@@ -58,12 +69,12 @@ const InfographicPage = () => {
     scales: {
       y: {
         beginAtZero: true,
-        grid: { color: 'rgba(0,0,0,0.05)' },
-        ticks: { color: '#1a1a1a', font: { family: 'Inter', weight: 500 } }
+        grid: { color: chartGridColor },
+        ticks: { color: chartTextColor, font: { family: 'Inter', weight: 500 } }
       },
       x: {
         grid: { display: false },
-        ticks: { color: '#1a1a1a', font: { family: 'Inter', weight: 500 } }
+        ticks: { color: chartTextColor, font: { family: 'Inter', weight: 500 } }
       }
     }
   };
@@ -91,7 +102,9 @@ const InfographicPage = () => {
     plugins: {
       legend: { display: false },
       tooltip: {
-        backgroundColor: '#1a1a1a',
+        backgroundColor: chartAccent,
+        titleColor: isDark ? '#120008' : '#ffffff',
+        bodyColor: isDark ? '#120008' : '#ffffff',
         titleFont: { family: 'Inter', weight: 'bold' as const },
         bodyFont: { family: 'Inter' },
         padding: 12,
@@ -101,12 +114,12 @@ const InfographicPage = () => {
     scales: {
       y: {
         beginAtZero: true,
-        grid: { color: 'rgba(0,0,0,0.05)' },
-        ticks: { color: '#1a1a1a', font: { family: 'Inter', weight: 500 } }
+        grid: { color: chartGridColor },
+        ticks: { color: chartTextColor, font: { family: 'Inter', weight: 500 } }
       },
       x: {
         grid: { display: false },
-        ticks: { color: '#1a1a1a', font: { family: 'Inter', weight: 500 } }
+        ticks: { color: chartTextColor, font: { family: 'Inter', weight: 500 } }
       }
     }
   };
@@ -179,7 +192,7 @@ const InfographicPage = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-card-bg rounded-2xl border border-card-border hover:border-accent-primary/30 transition-colors">
-              <p className="font-bold text-foreground/40 uppercase tracking-widest text-[10px] mb-4">User Action</p>
+              <p className="font-bold text-foreground/70 uppercase tracking-widest text-[10px] mb-4">User Action</p>
               <div className="bg-background w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm border border-card-border">
                 <Layout className="text-accent-primary w-6 h-6" />
               </div>
@@ -190,7 +203,7 @@ const InfographicPage = () => {
 
             <div className="text-center p-8 bg-card-bg rounded-2xl border-2 border-accent-primary/20 shadow-lg relative transform hover:-translate-y-1 transition-transform">
               <div className="absolute top-0 right-0 bg-accent-primary text-background text-[10px] font-black px-3 py-1 rounded-bl-xl uppercase tracking-tighter">Secure</div>
-              <p className="font-bold text-foreground/40 uppercase tracking-widest text-[10px] mb-4">User Action</p>
+              <p className="font-bold text-foreground/70 uppercase tracking-widest text-[10px] mb-4">User Action</p>
               <div className="bg-background w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm border border-card-border">
                 <Search className="text-accent-primary w-6 h-6" />
               </div>
@@ -200,7 +213,7 @@ const InfographicPage = () => {
             </div>
 
             <div className="text-center p-8 bg-card-bg rounded-2xl border border-card-border">
-              <p className="font-bold text-foreground/40 uppercase tracking-widest text-[10px] mb-4">User Action</p>
+              <p className="font-bold text-foreground/70 uppercase tracking-widest text-[10px] mb-4">User Action</p>
               <div className="bg-background w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm border border-card-border">
                 <Eye className="text-foreground/40 w-6 h-6" />
               </div>
@@ -230,7 +243,7 @@ const InfographicPage = () => {
             </div>
             <div className="lg:rotate-0 rotate-90 flex justify-center text-background/40"><Zap className="w-8 h-8" /></div>
             <div className="flex-1 bg-background/5 border border-background/10 rounded-2xl p-6 hover:bg-background/10 transition-colors shadow-xl ring-1 ring-background/30">
-              <span className="inline-flex items-center justify-center w-10 h-10 bg-accent-secondary text-accent-primary! rounded-full font-black text-sm mb-4">02</span>
+              <span className="inline-flex items-center justify-center w-10 h-10 bg-accent-secondary text-accent-primary rounded-full font-black text-sm mb-4">02</span>
               <p className="font-bold text-lg mb-2 text-background!">Sensing</p>
               <p className="text-sm text-background/70!">AI detects pattern velocity and risk escalation.</p>
             </div>
@@ -242,7 +255,7 @@ const InfographicPage = () => {
             </div>
             <div className="lg:rotate-0 rotate-90 flex justify-center text-background/40"><Zap className="w-8 h-8" /></div>
             <div className="flex-1 bg-background/10 border-2 border-accent-secondary rounded-2xl p-6 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
-              <span className="inline-flex items-center justify-center w-10 h-10 bg-accent-secondary text-accent-primary! rounded-full font-black text-sm mb-4">04</span>
+              <span className="inline-flex items-center justify-center w-10 h-10 bg-accent-secondary text-accent-primary rounded-full font-black text-sm mb-4">04</span>
               <p className="font-bold text-lg mb-2 text-background!">Forensic Export</p>
               <p className="text-sm text-background/70!">Immutable logs converted to Witness Statements.</p>
             </div>

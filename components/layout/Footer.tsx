@@ -50,12 +50,7 @@ export function Footer() {
                             >
                                 Technical Journal
                             </Link>
-                            <Link
-                                href="/analysis"
-                                className="font-sans text-foreground hover:text-accent-primary transition-colors"
-                            >
-                                Strategic Analysis
-                            </Link>
+
                         </nav>
                     </div>
 
