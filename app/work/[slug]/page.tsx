@@ -107,7 +107,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     <FadeIn delay={0.2}>
                         <h1 className="font-serif text-6xl md:text-8xl font-bold text-charcoal dark:text-cream mb-8 leading-[1.1] tracking-tight">
                             {project.title.split(" ").map((word, i) => (
-                                <span key={i} className={i % 2 === 1 ? "italic text-rose block md:inline" : "block md:inline"}>
+                                <span key={i} className={i % 2 === 1 ? "italic text-accent-primary block md:inline" : "block md:inline"}>
                                     {word}{" "}
                                 </span>
                             ))}
@@ -132,7 +132,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                     href={project.liveUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 px-6 py-4 bg-charcoal text-cream rounded-xl font-bold hover:bg-rose transition-colors shadow-lg shadow-charcoal/5 hover:shadow-rose/20"
+                                    className="flex items-center justify-center gap-2 px-6 py-4 bg-charcoal text-cream rounded-xl font-bold hover:bg-accent-primary transition-colors shadow-lg shadow-charcoal/5 hover:shadow-accent-primary/20"
                                 >
                                     <ExternalLink size={18} />
                                     {project.type === "website" ? "Visit Live Site" : "View Live Demo"}
@@ -153,7 +153,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                  {project.proposalUrl && (
                                      <Link
                                          href={project.proposalUrl}
-                                         className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white dark:bg-white/5 border-2 border-rose-500/20 text-rose-600 dark:text-rose-400 font-bold hover:bg-rose-50 dark:hover:bg-rose-500/10 hover:border-rose-500/40 transition-all shadow-sm group"
+                                         className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white dark:bg-white/5 border-2 border-accent-primary/20 text-accent-primary font-bold hover:bg-accent-primary/5 dark:hover:bg-accent-primary/10 hover:border-accent-primary/40 transition-all shadow-sm group"
                                      >
                                          <FileText size={18} className="group-hover:scale-110 transition-transform" />
                                          <span>View Funding Roadmap</span>
@@ -264,7 +264,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                 {project.problem && (
                                     <div className="p-8 rounded-3xl bg-charcoal/5 dark:bg-white/5 border border-charcoal/5 dark:border-white/5">
                                         <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream mb-6 flex items-center gap-4">
-                                            <span className="w-10 h-10 rounded-full bg-rose/10 flex items-center justify-center text-rose text-base font-bold italic">Challenge</span>
+                                            <span className="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary text-base font-bold italic">Challenge</span>
                                         </h3>
                                         <p className="text-charcoal/70 dark:text-cream/70 leading-relaxed text-lg">
                                             {project.problem}
@@ -275,7 +275,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                 {project.solution && (
                                     <div className="p-8 rounded-3xl bg-rose/5 dark:bg-rose/10 border border-rose/10 dark:border-rose/20">
                                         <h3 className="font-serif text-2xl font-bold text-charcoal dark:text-cream mb-6 flex items-center gap-4">
-                                            <span className="w-10 h-10 rounded-full bg-rose/20 flex items-center justify-center text-rose text-base font-bold italic">Solution</span>
+                                            <span className="w-10 h-10 rounded-full bg-accent-primary/20 flex items-center justify-center text-accent-primary text-base font-bold italic">Solution</span>
                                         </h3>
                                         <p className="text-charcoal/70 dark:text-cream/70 leading-relaxed text-lg">
                                             {project.solution}
@@ -333,7 +333,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                             <Zap size={24} />
                                             <span className="uppercase tracking-[0.3em] font-bold text-xs">Future Roadmap</span>
                                         </div>
-                                        <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream mb-8 font-serif italic text-rose">Upcoming & Possible Upgrades</h3>
+                                        <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream mb-8 font-serif italic text-accent-primary">Upcoming & Possible Upgrades</h3>
                                         <div className="grid md:grid-cols-2 gap-6">
                                             {project.roadmap.map((item, i) => (
                                                 <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-white/50 dark:bg-white/5 border border-charcoal/5 dark:border-white/5 shadow-sm">

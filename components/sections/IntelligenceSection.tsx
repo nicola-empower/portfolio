@@ -3,15 +3,16 @@
 import { intelligenceDossiers } from "@/data/intelligence";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { ArrowRight, Shield, Zap, Layout, Eye } from "lucide-react";
+import { ArrowRight, Shield, Zap, Layout, Eye, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 
-const iconMap = {
+const iconMap: Record<string, React.ReactNode> = {
   Safety: <Shield size={16} />,
   Architecture: <Layout size={16} />,
   Automation: <Zap size={16} />,
   SEN: <Eye size={16} />,
   Privacy: <Shield size={16} />,
+  Operations: <Briefcase size={16} />,
 };
 
 export function IntelligenceSection() {

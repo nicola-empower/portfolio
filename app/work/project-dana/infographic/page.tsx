@@ -345,7 +345,7 @@ const InfographicPage = () => {
               { label: 'Next.js 15', color: 'var(--accent-primary)' },
               { label: 'React 19', color: 'var(--accent-primary)' },
               { label: 'Tailwind v4', color: 'var(--accent-primary)' },
-              { label: 'Gemini 1.5 Pro', color: 'var(--rose)' },
+              { label: 'Gemini 1.5 Pro', color: '#630625' },
               { label: 'Framer Motion', color: 'var(--accent-primary)' },
               { label: 'PWA (Service Workers)', color: 'var(--accent-primary)' }
             ].map((tech) => (

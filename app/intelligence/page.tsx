@@ -3,17 +3,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { intelligenceDossiers } from "@/data/intelligence";
-import { ArrowUpRight, Shield, Zap, Layout, Eye, Search, ArrowLeft } from "lucide-react";
+import { ArrowUpRight, Shield, Zap, Layout, Eye, Search, ArrowLeft, Briefcase } from "lucide-react";
 import Link from "next/link";
 
 import FadeIn from "@/components/ui/FadeIn";
 
-const iconMap = {
+const iconMap: Record<string, React.ReactNode> = {
   Safety: <Shield className="text-accent-primary" size={20} />,
   Architecture: <Layout className="text-accent-primary" size={20} />,
   Automation: <Zap className="text-accent-primary" size={20} />,
   SEN: <Eye className="text-accent-primary" size={20} />,
   Privacy: <Shield className="text-accent-primary" size={20} />,
+  Operations: <Briefcase className="text-accent-primary" size={20} />,
 };
 
 export default function IntelligencePage() {

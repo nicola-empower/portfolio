@@ -47,8 +47,8 @@ const InfographicPage = () => {
     datasets: [{
       label: 'Skills Translated to Workplace-Ready',
       data: [2, 8, 15, 24, 32],
-      borderColor: '#E91E63',
-      backgroundColor: 'rgba(233, 30, 99, 0.1)',
+      borderColor: '#630625',
+      backgroundColor: 'rgba(99, 6, 37, 0.1)',
       fill: true,
       tension: 0.3
     }]
@@ -89,7 +89,7 @@ const InfographicPage = () => {
       backgroundColor: [
         '#64748b',
         '#8E24AA',
-        '#E91E63'
+        '#630625'
       ],
       borderRadius: 12
     }]
@@ -119,7 +119,7 @@ const InfographicPage = () => {
     labels: ['Local Device (User Owned)', 'Optional Inst. Sync', 'Third Party'],
     datasets: [{
       data: [90, 10, 0],
-      backgroundColor: ['#E91E63', '#8E24AA', '#cbd5e1'],
+      backgroundColor: ['#630625', '#8E24AA', '#cbd5e1'],
       borderWidth: 0,
       hoverOffset: 4
     }]
@@ -271,7 +271,7 @@ const InfographicPage = () => {
               { label: 'Next.js 15', color: 'var(--accent-primary)' },
               { label: 'React 19', color: 'var(--accent-primary)' },
               { label: 'Tailwind v4', color: 'var(--accent-primary)' },
-              { label: 'Gemini 1.5 Pro', color: 'var(--rose)' },
+              { label: 'Gemini 1.5 Pro', color: '#630625' },
               { label: 'Zustand (State)', color: 'var(--accent-primary)' },
               { label: 'PWA (Service Workers)', color: 'var(--accent-primary)' },
               { label: 'Chart.js', color: 'var(--accent-primary)' }

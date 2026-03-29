@@ -95,7 +95,7 @@ export default function PaxProposalPage() {
                         Inspired by Katya Varbanova's "Viral Marketing Stars," PAX (the IKEA wardrobe metaphor) was built to bypass the expensive "Prompt Tax" of raw AI generation.
                     </p>
                     <p className="mb-8 leading-relaxed text-lg text-foreground/70">
-                        PAX is a high-fidelity visual engine designed to bridge the gap between static generative art and intentional cinematic motion. By combining the precision of **Flux LoRAs** with the analytical 'vision' of **Google Gemini**, PAX eliminates common AI failure points: "3-armed" generations, warped fingers, and safety compromises. It transforms the complex act of prompt engineering into a "Cher Horowitz" wardrobe experience—where style consistency is a single, surgical button-click away.
+                        PAX is a high-fidelity visual engine designed to bridge the gap between static generative art and intentional cinematic motion. By combining the precision of **Flux LoRAs** with the analytical 'vision' of **Google Gemini**, PAX eliminates common AI failure points: "3-armed" generations, warped fingers, and safety compromises. It transforms the complex act of prompt engineering into a "Cher Horowitz" wardrobe experience, where style consistency is a single, surgical button-click away.
                     </p>
 
                     <h2 className="text-3xl text-accent-primary font-bold mb-8 border-b-2 border-accent-primary pb-2 mt-16 font-serif">
@@ -266,7 +266,7 @@ export default function PaxProposalPage() {
                         <p className="text-sm font-bold uppercase tracking-widest text-accent-primary">Founder · Empower Digital Solutions</p>
                         <div className="flex items-center justify-center gap-2 text-foreground/80 font-medium pt-4">
                             <Mail size={16} />
-                            <span>nicola@empowerdigitalsolutions.co.uk</span>
+                            <a href="mailto:connect@nicolaberry.uk" className="hover:text-rose-500 transition-colors">connect@nicolaberry.uk</a>
                         </div>
                     </div>
                 </section>

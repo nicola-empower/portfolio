@@ -53,7 +53,7 @@ export const journals: Journal[] = [
         excerpt: "How I built a 'Sovereign' alternative to Katya Varbanova's frameworks, leveraging Flux and Gemini to eliminate the AI 'Prompt Tax'.",
         content: [
             "The biggest challenge in generative AI today isn't just making a 'pretty' image; it's maintaining the integrity of an identity across different contexts. Most viral marketing frameworks, like Katya Varbanova's 'Viral Marketing Stars', offer incredible results but often require expensive, nested subscriptions to external AI tools.",
-            "With PAX, I architected a system that doesn't just 'generate' - it 'remembers.' By utilizing Flux model fine-tuning (via Astria), we create a high-fidelity digital twin that remains consistent whether the user is in a neon-lit studio or a rainy London street. It's about preserving the human core within the generative chaos—built for those who want the branding power without the 'prompt tax'.",
+            "With PAX, I architected a system that doesn't just 'generate' - it 'remembers.' By utilizing Flux model fine-tuning (via Astria), we create a high-fidelity digital twin that remains consistent whether the user is in a neon-lit studio or a rainy London street. It's about preserving the human core within the generative chaos, built for those who want the branding power without the 'prompt tax'.",
             "The technical breakthrough, however, was in **Prompt Hygiene**. Standard generators often fail with '3-armed' humans or warped anatomy. PAX automates this away by hard-coding negative anchors and safety guards into every generation, ensuring the output is always professional and safe-for-work (unless I decide otherwise).",
             "I've designed the UX as a 'Cher Horowitz' wardrobe experience. Instead of typing complex, repetitive prompts, the user simply 'clicks to dress' their digital twin. It transforms a high-friction technical task into a seamless, visual intuition tool.",
             "The final layer is the transition from stillness to motion. By integrating Google Gemini 2.0 Flash as a 'Motion Designer,' PAX analyzes the composition of a static image - the lighting, the pose, the physics - and suggests natural, cinematic movement for Luma/Dream Machine exports. It's the difference between a random glitch and a directed performance.",
@@ -184,16 +184,15 @@ export const journals: Journal[] = [
     {
         slug: "enforcing-executive-boundaries",
         relatedProjectSlug: "reclaim",
-        title: "Enforcing Executive Boundaries via API",
+        title: "Enforcing Executive Boundaries: The Director's Pulse",
         date: "July 02, 2025",
-        readTime: "4 min read",
-        topic: "Developer Health",
-        excerpt: "Willpower is a finite resource. When you can't rely on yourself to stop working, you have to architect hard boundaries into your environment.",
+        readTime: "5 min read",
+        topic: "Operational Authority",
+        excerpt: "Willpower is a finite resource. When you can't rely on yourself to stop working late on a Saturday, you have to architect hard boundaries into your environment.",
         content: [
-            "The lie every developer tells themselves is: 'Just five more minutes to fix this bug.' Five minutes turns into five hours, and your fundamental biological needs - sleep, hydration, human connection - are ignored.",
-            "I realised I could not rely on my own willpower to stop working. So, I built a system to enforce my boundaries for me. Using Gemini AI and Google Apps Script, my internal Executive Control Plane audits my calendar and emails to highlight where my energy is draining.",
-            "But more importantly, it enforces a 'Sanctuary Protocol.' As 6 PM approaches, the UI aggressively shifts colours. It physically interrupts my workflow, forcing box breathing exercises and demanding that I engage in life rituals before I am allowed to write another line of code.",
-            "We build automation to force compliance in our deployment pipelines. We must start building automation to force compliance in our own work-life boundaries."
+            "Reclaim isn't just a dashboard; it is the **Central Command** of my digital operations. Born from a mission-critical Apps Script that synthesised high-velocity data into the 'Only Email I Need', it has evolved into a proprietary AI-Native Executive Control Plane.",
+            "The true power of the engine is the **Director's Pulse**, a Gemini 3.1 Pro powered audit that prune's 40+ distractions daily, leaving only the strategic pillars: Market Shift, AI Alpha, and Ops Fuel. It enforces the transition from CEO Mode to Mum Mode with mathematical precision.",
+            "By building automation to force compliance in our work-life boundaries, we reclaim the authority of silence. With a £17,100 valuation, Reclaim proves that technical resilience is the foundation of professional stability."
         ]
     },
     {

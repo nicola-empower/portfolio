@@ -298,7 +298,7 @@ export default function TailorTrackProposalPage() {
                         <p className="font-bold text-xl text-foreground">Empower Digital Solutions</p>
                         <div className="flex items-center justify-center gap-2 text-foreground/60 font-medium">
                             <Mail size={16} />
-                            <span>nicola@empowerdigitalsolutions.co.uk</span>
+                            <a href="mailto:connect@nicolaberry.uk" className="hover:text-accent-primary transition-colors">connect@nicolaberry.uk</a>
                         </div>
                     </div>
                 </section>

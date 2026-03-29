@@ -31,11 +31,11 @@
   --background: #e5d4d6;
   --foreground: #6b7280;
   --heading: #1a1a1a;
-  --accent-primary: #5B0024;
-  --accent-secondary: #feccd5;
-  --card-bg: rgba(255, 255, 255, 0.5);
-  --card-border: #feccd5;
-  --rose: #E91E63;
+  --accent-primary: #630625;
+  --accent-secondary: #F7E7CE;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(99, 6, 37, 0.2);
+  --rose: #8E24AA; /* Deep Purple instead of Pink */
 }
 
 /* ── Dark Mode ───────────────────────────────────────────── */
@@ -44,11 +44,11 @@ html.dark {
   --background: #120008;
   --foreground: #e8dde0;
   --heading: #ffffff;
-  --accent-primary: #c994a4;
-  --accent-secondary: #1e0510;
-  --card-bg: rgba(30, 5, 15, 0.7);
-  --card-border: rgba(255, 255, 255, 0.07);
-  --rose: #f06292;
+  --accent-primary: #950937; /* Vibrant Burgundy for dark mode visibility */
+  --accent-secondary: #2D0412;
+  --card-bg: rgba(45, 4, 18, 0.6);
+  --card-border: rgba(149, 9, 55, 0.2);
+  --rose: #b01b4e;
 }
 
 /* ── Base Styles ─────────────────────────────────────────── */

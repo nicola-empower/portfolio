@@ -21,6 +21,7 @@ export type Project = {
     results?: string;
     contributions: string[];
     highlights: string[];
+    tags?: string[];
     featured?: boolean;
     tier?: number;
     relatedJournalSlug?: string;
@@ -39,5 +40,5 @@ export type IntelligenceDossier = {
     date: string;
     tags: string[];
     featured?: boolean;
-    category: "Safety" | "Architecture" | "Automation" | "SEN" | "Privacy";
+    category: "Safety" | "Architecture" | "Automation" | "SEN" | "Privacy" | "Operations";
 };

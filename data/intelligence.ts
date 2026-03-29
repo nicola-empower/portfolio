@@ -35,5 +35,17 @@ export const intelligenceDossiers: IntelligenceDossier[] = [
     date: "2025-03-05",
     category: "Architecture",
     tags: ["Prompt Hygiene", "SFW Guard", "Motion Design", "Identity Anchoring"],
+  },
+  {
+    slug: "reclaim-executive-ops",
+    projectSlug: "reclaim",
+    title: "Reclaim: Executive Operations",
+    description: "Visualising the AI-Native Control Plane that synthesises calendars, inboxes, and news briefings to enforce elite work-life boundaries.",
+    type: "Technical Infographic",
+    url: "/work/reclaim/infographic",
+    date: "2026-03-28",
+    category: "Operations",
+    tags: ["Executive Audit", "Newsletter Synthesis", "Sanctuary Protocol", "CEO-to-Mum Transition"],
+    featured: true
   }
 ];

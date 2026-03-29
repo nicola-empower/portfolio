@@ -283,7 +283,7 @@ const PaxInfographicPage = () => {
                             { label: 'React 19', color: 'var(--accent-primary)' },
                             { label: 'Flux Shnell', color: 'var(--accent-primary)' },
                             { label: 'Astria.ai API', color: 'var(--accent-primary)' },
-                            { label: 'Gemini 2.0 Flash', color: 'var(--rose)' },
+                            { label: 'Gemini 2.0 Flash', color: '#630625' },
                             { label: 'Luma Dream Machine', color: 'var(--accent-primary)' },
                             { label: 'Chart.js', color: 'var(--accent-primary)' }
                         ].map((tech) => (

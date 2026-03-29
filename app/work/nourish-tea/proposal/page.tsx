@@ -287,7 +287,7 @@ export default function NourishProposalPage() {
                         <p className="text-sm font-bold uppercase tracking-widest text-accent-primary">Founder · Empower Digital Solutions</p>
                         <div className="flex items-center justify-center gap-2 text-foreground/80 font-medium pt-4">
                             <Mail size={16} />
-                            <span>nicola@empowerdigitalsolutions.co.uk</span>
+                            <a href="mailto:connect@nicolaberry.uk" className="hover:text-rose-500 transition-colors">connect@nicolaberry.uk</a>
                         </div>
                     </div>
                 </section>
