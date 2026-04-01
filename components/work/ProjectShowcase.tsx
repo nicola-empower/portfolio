@@ -10,7 +10,7 @@ interface ProjectShowcaseProps {
 
 export function ProjectShowcase({ project }: ProjectShowcaseProps) {
     return (
-        <div className="relative w-full overflow-hidden flex items-center justify-center p-4 md:p-10 font-sans bg-[#0f0f11] min-h-[60vh]">
+        <div className="relative w-full overflow-hidden flex items-center justify-center p-4 md:p-10 font-sans bg-background min-h-[60vh]">
             <style jsx global>{`
                 .perspective-container {
                     perspective: 2000px;
@@ -43,8 +43,8 @@ export function ProjectShowcase({ project }: ProjectShowcaseProps) {
             `}</style>
 
             {/* Ambient Background Elements */}
-            <div className="absolute top-[-20%] left-[-10%] w-[300px] md:w-[800px] h-[300px] md:h-[800px] bg-purple-600/20 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-[-20%] right-[-10%] w-[300px] md:w-[800px] h-[300px] md:h-[800px] bg-blue-600/20 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
+            <div className="absolute top-[-20%] left-[-10%] w-[300px] md:w-[800px] h-[300px] md:h-[800px] bg-accent-primary/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-[-20%] right-[-10%] w-[300px] md:w-[800px] h-[300px] md:h-[800px] bg-accent-secondary/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
 
             {/* 3D Scene Container */}
             <div className="perspective-container w-full max-w-7xl flex flex-col items-center justify-center">
@@ -58,22 +58,22 @@ export function ProjectShowcase({ project }: ProjectShowcaseProps) {
                             className="transform md:rotate-y-0 md:rotate-x-2 md:shadow-2xl md:skew-y-1"
                         >
                             {/* Desktop UI Content */}
-                            <div className="w-full h-full bg-gradient-to-br from-slate-100 to-slate-200 p-8 flex flex-col gap-4">
-                                <div className="w-full h-12 bg-white rounded-lg shadow-sm flex items-center px-4 gap-2">
-                                    <div className="w-20 h-4 bg-slate-200 rounded"></div>
+                            <div className="w-full h-full bg-background p-8 flex flex-col gap-4">
+                                <div className="w-full h-12 bg-card-bg rounded-lg shadow-sm flex items-center px-4 gap-2 border border-foreground/5">
+                                    <div className="w-20 h-4 bg-accent-secondary/20 rounded"></div>
                                     <div className="flex-1"></div>
-                                    <div className="w-8 h-8 bg-blue-500 rounded-full"></div>
+                                    <div className="w-8 h-8 bg-accent-primary rounded-full"></div>
                                 </div>
                                 <div className="flex gap-4 h-full">
-                                    <div className="w-1/4 bg-white rounded-lg shadow-sm h-3/4"></div>
-                                    <div className="flex-1 bg-white rounded-lg shadow-sm h-full relative overflow-hidden group-hover:shadow-md transition-shadow">
-                                        <div className="absolute inset-0 bg-blue-50/50"></div>
+                                    <div className="w-1/4 bg-card-bg/50 rounded-lg border border-foreground/5 h-3/4"></div>
+                                    <div className="flex-1 bg-card-bg rounded-lg shadow-sm h-full border border-foreground/5 relative overflow-hidden group-hover:shadow-md transition-shadow">
+                                        <div className="absolute inset-0 bg-accent-secondary/5"></div>
                                         <div className="p-8">
-                                            <div className="w-3/4 h-8 bg-slate-200 rounded mb-4"></div>
-                                            <div className="w-1/2 h-4 bg-slate-200 rounded mb-8"></div>
+                                            <div className="w-3/4 h-8 bg-accent-primary/10 rounded mb-4"></div>
+                                            <div className="w-1/2 h-4 bg-accent-secondary/10 rounded mb-8"></div>
                                             <div className="grid grid-cols-2 gap-4">
-                                                <div className="h-32 bg-slate-100 rounded"></div>
-                                                <div className="h-32 bg-slate-100 rounded"></div>
+                                                <div className="h-32 bg-background rounded border border-foreground/5"></div>
+                                                <div className="h-32 bg-background rounded border border-foreground/5"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -88,16 +88,16 @@ export function ProjectShowcase({ project }: ProjectShowcaseProps) {
                             device="laptop"
                             className="transform md:-rotate-y-12 md:rotate-x-6 md:shadow-2xl md:skew-y-2"
                         >
-                            <div className="w-full h-full bg-zinc-900 p-6 flex flex-col">
-                                <div className="w-full h-40 bg-gradient-to-r from-accent-secondary to-accent-primary rounded-xl mb-4 relative overflow-hidden flex items-center justify-center">
-                                    <div className="text-white font-bold text-2xl px-4 text-center">
+                            <div className="w-full h-full bg-background p-6 flex flex-col border-t border-foreground/5">
+                                <div className="w-full h-40 bg-linear-to-r from-accent-secondary to-accent-primary rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-foreground/10">
+                                    <div className="text-accent-primary-foreground font-bold text-2xl px-4 text-center">
                                         {project.title}
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-3 gap-4">
-                                    <div className="h-24 bg-zinc-800 rounded-lg"></div>
-                                    <div className="h-24 bg-zinc-800 rounded-lg"></div>
-                                    <div className="h-24 bg-zinc-800 rounded-lg"></div>
+                                    <div className="h-24 bg-card-bg rounded-lg border border-foreground/5"></div>
+                                    <div className="h-24 bg-card-bg rounded-lg border border-foreground/5"></div>
+                                    <div className="h-24 bg-card-bg rounded-lg border border-foreground/5"></div>
                                 </div>
                             </div>
                         </DeviceFrame>
@@ -109,12 +109,12 @@ export function ProjectShowcase({ project }: ProjectShowcaseProps) {
                             device="tablet"
                             className="transform md:rotate-y-12 md:rotate-x-6 md:shadow-2xl md:-skew-y-2"
                         >
-                            <div className="w-full h-full bg-indigo-50 p-4">
-                                <div className="w-full h-full bg-white rounded-2xl shadow-inner p-4 flex flex-col gap-3">
-                                    <div className="w-12 h-12 bg-indigo-500 rounded-xl mb-2"></div>
-                                    <div className="w-full h-4 bg-slate-100 rounded"></div>
-                                    <div className="w-2/3 h-4 bg-slate-100 rounded"></div>
-                                    <div className="mt-auto h-32 bg-indigo-100 rounded-xl"></div>
+                            <div className="w-full h-full bg-background p-4">
+                                <div className="w-full h-full bg-card-bg rounded-2xl shadow-inner p-4 flex flex-col gap-3 border border-foreground/5">
+                                    <div className="w-12 h-12 bg-accent-primary rounded-xl mb-2 shadow-sm"></div>
+                                    <div className="w-full h-4 bg-accent-secondary/10 rounded"></div>
+                                    <div className="w-2/3 h-4 bg-accent-secondary/10 rounded"></div>
+                                    <div className="mt-auto h-32 bg-background rounded-xl border border-foreground/5"></div>
                                 </div>
                             </div>
                         </DeviceFrame>
@@ -126,23 +126,23 @@ export function ProjectShowcase({ project }: ProjectShowcaseProps) {
                             device="mobile"
                             className="transform md:-rotate-x-12 md:shadow-2xl"
                         >
-                            <div className="w-full h-full bg-black p-4 flex flex-col gap-4">
-                                <div className="flex justify-between items-center text-white/50 text-xs">
+                            <div className="w-full h-full bg-background p-4 flex flex-col gap-4 border-t border-foreground/5">
+                                <div className="flex justify-between items-center text-foreground/40 text-[10px] font-bold uppercase tracking-widest">
                                     <span>9:41</span>
-                                    <div className="flex gap-1">
-                                        <div className="w-4 h-2 bg-white/50 rounded-sm"></div>
-                                        <div className="w-3 h-3 border border-white/50 rounded-sm"></div>
+                                    <div className="flex gap-1.5 items-center">
+                                        <div className="w-4 h-2 bg-foreground/30 rounded-sm"></div>
+                                        <div className="w-3 h-3 border border-foreground/30 rounded-full"></div>
                                     </div>
                                 </div>
-                                <div className="w-full h-48 bg-gradient-to-b from-green-400 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg shadow-green-900/50 p-4 text-center">
-                                    <div className="text-white font-bold text-lg">{project.shortTagline}</div>
+                                <div className="w-full h-48 bg-linear-to-b from-accent-primary to-accent-secondary rounded-2xl flex items-center justify-center shadow-lg p-4 text-center border border-foreground/10">
+                                    <div className="text-accent-primary-foreground font-bold text-lg leading-tight">{project.shortTagline}</div>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <div className="w-full h-12 bg-zinc-900 rounded-xl border border-white/10 flex items-center px-4">
-                                        <div className="w-8 h-8 bg-zinc-700 rounded-full"></div>
+                                    <div className="w-full h-12 bg-card-bg rounded-xl border border-foreground/5 flex items-center px-4">
+                                        <div className="w-8 h-8 bg-accent-secondary/20 rounded-full"></div>
                                     </div>
-                                    <div className="w-full h-12 bg-zinc-900 rounded-xl border border-white/10 flex items-center px-4">
-                                        <div className="w-8 h-8 bg-zinc-700 rounded-full"></div>
+                                    <div className="w-full h-12 bg-card-bg rounded-xl border border-foreground/5 flex items-center px-4">
+                                        <div className="w-8 h-8 bg-accent-secondary/20 rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -150,8 +150,8 @@ export function ProjectShowcase({ project }: ProjectShowcaseProps) {
                     </div>
 
                     {/* Floating Elements */}
-                    <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl rotate-12 blur-sm opacity-60 animate-float z-10 pointer-events-none hidden md:block" />
-                    <div className="absolute bottom-40 left-20 w-24 h-24 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full blur-md opacity-50 animate-float-delayed z-10 pointer-events-none hidden md:block" />
+                    <div className="absolute top-20 right-20 w-32 h-32 bg-linear-to-br from-accent-primary/20 to-accent-secondary/20 rounded-2xl rotate-12 blur-sm opacity-60 animate-float z-10 pointer-events-none hidden md:block" />
+                    <div className="absolute bottom-40 left-20 w-24 h-24 bg-linear-to-br from-accent-secondary/20 to-accent-primary/20 rounded-full blur-md opacity-50 animate-float-delayed z-10 pointer-events-none hidden md:block" />
 
                 </div>
             </div>

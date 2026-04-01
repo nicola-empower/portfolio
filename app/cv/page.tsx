@@ -9,7 +9,7 @@ export default function CVPage() {
     return (
         <main className="pt-24 pb-12 bg-background min-h-screen transition-colors duration-500">
             <div className="container mx-auto px-6 mb-8">
-                <Link href="/" className="inline-flex items-center gap-2 text-heading/60 dark:text-heading/60 hover:text-accent-primary transition-colors group">
+                <Link href="/" className="inline-flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors group">
                     <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform text-accent-primary" />
                     <span className="font-medium">Back to Home</span>
                 </Link>
@@ -26,7 +26,7 @@ export default function CVPage() {
                     <h1 className="font-serif text-5xl md:text-7xl font-bold text-heading mb-4">
                         Nicola Berry
                     </h1>
-                    <div className="flex items-center justify-center gap-2 text-heading/60 dark:text-heading/60 mb-6">
+                    <div className="flex items-center justify-center gap-2 text-foreground/60 mb-6">
                         <MapPin size={18} className="text-accent-primary" />
                         <span className="text-lg">Falkirk, Scotland</span>
                     </div>
@@ -44,7 +44,7 @@ export default function CVPage() {
 
             {/* 2. The "About Me" Bio */}
             <section className="container mx-auto px-6 mb-20">
-                <div className="max-w-4xl mx-auto bg-white/50 dark:bg-black/20 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-foreground/5">
+                <div className="max-w-4xl mx-auto bg-card-bg backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-foreground/5">
                     <h3 className="font-serif text-3xl font-bold text-heading mb-8 flex items-center gap-3">
                         <span className="w-8 h-1 bg-accent-primary rounded-full"></span>
                         About Me
@@ -71,7 +71,7 @@ export default function CVPage() {
                         The Toolkit
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-white/50 dark:bg-black/20 p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
+                        <div className="bg-card-bg p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
                             <div className="flex items-center gap-3 mb-4 text-accent-primary">
                                 <Code size={24} />
                                 <h4 className="font-bold text-lg text-heading">Logic & Systems</h4>
@@ -80,7 +80,7 @@ export default function CVPage() {
                                 Next.js, React 19, TypeScript, Astro, Ruby on Rails, Python.
                             </p>
                         </div>
-                        <div className="bg-white/50 dark:bg-black/20 p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
+                        <div className="bg-card-bg p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
                             <div className="flex items-center gap-3 mb-4 text-accent-primary">
                                 <Database size={24} />
                                 <h4 className="font-bold text-lg text-heading">Cloud & Data</h4>
@@ -89,7 +89,7 @@ export default function CVPage() {
                                 Supabase (PostgreSQL), Firebase, Google Apps Script, Vercel, Netlify.
                             </p>
                         </div>
-                        <div className="bg-white/50 dark:bg-black/20 p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
+                        <div className="bg-card-bg p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
                             <div className="flex items-center gap-3 mb-4 text-accent-primary">
                                 <Terminal size={24} />
                                 <h4 className="font-bold text-lg text-heading">Intelligence</h4>
@@ -98,7 +98,7 @@ export default function CVPage() {
                                 LLM Integration, Prompt Engineering, Gemini AI, OpenAI API.
                             </p>
                         </div>
-                        <div className="bg-white/50 dark:bg-black/20 p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
+                        <div className="bg-card-bg p-6 rounded-xl border border-foreground/5 border-accent-primary/30 transition-colors">
                             <div className="flex items-center gap-3 mb-4 text-accent-primary">
                                 <Layout size={24} />
                                 <h4 className="font-bold text-lg text-heading">Systems Monitoring</h4>
@@ -125,7 +125,7 @@ export default function CVPage() {
                             <div className="mb-4">
                                 <span className="text-sm font-bold text-accent-primary uppercase tracking-wider">Feb 2015 – Present</span>
                                 <h4 className="text-2xl font-bold text-heading mt-1">Founder & Principal Architect</h4>
-                                <p className="text-xl text-heading/60 dark:text-heading/60 font-medium">Empower Digital Solutions</p>
+                                <p className="text-xl text-foreground/60 font-medium">Empower Digital Solutions</p>
                             </div>
 
                             <div className="mb-6">
@@ -134,25 +134,25 @@ export default function CVPage() {
                                     Key Achievement: Architected a £3m+ Integrated Digital Ecosystem
                                 </h5>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div className="bg-white/30 dark:bg-black/10 p-4 rounded-lg border border-foreground/5">
+                                    <div className="bg-card-bg/30 p-4 rounded-lg border border-foreground/5">
                                         <p className="text-sm font-bold text-accent-primary mb-2 uppercase tracking-wide">Infrastructure & DevOps</p>
                                         <p className="text-sm text-foreground/70">
                                             Designed the <strong>Empower Control Plane</strong>, a unified Business OS monitoring telemetry and heartbeats for 100+ automation scripts, ensuring 99.9% uptime via automated incident engineering.
                                         </p>
                                     </div>
-                                    <div className="bg-white/30 dark:bg-black/10 p-4 rounded-lg border border-foreground/5">
+                                    <div className="bg-card-bg/30 p-4 rounded-lg border border-foreground/5">
                                         <p className="text-sm font-bold text-accent-primary mb-2 uppercase tracking-wide">SaaS Product Engineering</p>
                                         <p className="text-sm text-foreground/70">
                                             Developed and launched a suite of <strong>Vertical SaaS</strong> solutions for Medical, Dental, and Wellness sectors, implementing modular &quot;Core Engines&quot; for rapid multi-sector deployment.
                                         </p>
                                     </div>
-                                    <div className="bg-white/30 dark:bg-black/10 p-4 rounded-lg border border-foreground/5">
+                                    <div className="bg-card-bg/30 p-4 rounded-lg border border-foreground/5">
                                         <p className="text-sm font-bold text-accent-primary mb-2 uppercase tracking-wide">AI Implementation</p>
                                         <p className="text-sm text-foreground/70">
                                             Engineered custom LLM-based tools (Gemini 1.5/2.0) for automated content generation and travel intelligence, focusing on prompt security and guardrail logic.
                                         </p>
                                     </div>
-                                    <div className="bg-white/30 dark:bg-black/10 p-4 rounded-lg border border-foreground/5">
+                                    <div className="bg-card-bg/30 p-4 rounded-lg border border-foreground/5">
                                         <p className="text-sm font-bold text-accent-primary mb-2 uppercase tracking-wide">Estate Valuation & Exit Strategy</p>
                                         <p className="text-sm text-foreground/70">
                                             Orchestrated the technical audit and valuation of a 32-project portfolio, establishing market-ready &quot;boxing up&quot; procedures for full-exit transfers.
@@ -168,7 +168,7 @@ export default function CVPage() {
                             <div className="mb-2">
                                 <span className="text-sm font-bold text-accent-primary/60 uppercase tracking-wider">2014 – 2020</span>
                                 <h4 className="text-xl font-bold text-heading mt-1">Professional Care & Advocacy</h4>
-                                <p className="text-heading/60 dark:text-heading/60 font-medium">Private & Public Sector</p>
+                                <p className="text-foreground/60 font-medium">Private & Public Sector</p>
                             </div>
                             <ul className="list-disc list-outside ml-4 space-y-1 text-foreground/70 text-sm">
                                 <li>Crisis management, high-pressure decision making and unwavering resilience.</li>
@@ -200,17 +200,17 @@ export default function CVPage() {
                             Education
                         </h3>
                         <div className="space-y-6">
-                            <div className="bg-white/50 dark:bg-black/20 p-6 rounded-xl border border-foreground/5">
+                            <div className="bg-card-bg p-6 rounded-xl border border-foreground/5">
                                 <div className="flex items-start justify-between mb-2">
                                     <h4 className="font-bold text-lg text-heading">HND Business Administration</h4>
                                     <span className="text-xs font-bold bg-accent-primary/10 text-accent-primary px-2 py-1 rounded-full">SCQF Level 8</span>
                                 </div>
-                                <p className="text-sm text-heading/60 dark:text-heading/60 mb-3">Scotland</p>
+                                <p className="text-sm text-foreground/60 mb-3">Scotland</p>
                                 <p className="text-foreground/70 text-sm mb-2">Focus: Business Law, Economics, Financial Management.</p>
                                 <p className="text-foreground/70 text-sm italic">Relevance: Provides the business logic foundation for my software architecture.</p>
                             </div>
 
-                            <div className="bg-white/50 dark:bg-black/20 p-6 rounded-xl border border-foreground/5">
+                            <div className="bg-card-bg p-6 rounded-xl border border-foreground/5">
                                 <div className="flex items-start justify-between mb-2">
                                     <h4 className="font-bold text-lg text-heading">Scottish Highers</h4>
                                     <span className="text-xs font-bold bg-accent-primary/10 text-accent-primary px-2 py-1 rounded-full">SCQF Level 6</span>
@@ -230,7 +230,7 @@ export default function CVPage() {
                             <span className="w-8 h-1 bg-accent-primary rounded-full"></span>
                             Languages
                         </h3>
-                        <div className="bg-white/50 dark:bg-black/20 p-6 rounded-xl border border-foreground/5 h-full">
+                        <div className="bg-card-bg p-6 rounded-xl border border-foreground/5 h-full">
                             <div className="space-y-6">
                                 <div>
                                     <div className="flex justify-between mb-1">

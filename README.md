@@ -23,7 +23,7 @@ A high-performance portfolio website showcasing digital solutions across full-st
 - **Project Gallery** - Data-driven, filterable grid (Web App, Automation, Case Study, Website)
 - **Project Deep Dives** - Full detail pages per project with problem/solution/tech/gallery sections
 - **CV Page** - Interactive professional CV with experience, education, languages and superpowers
-- **Dark / Light Mode** - Seamless switching with the Diner brand palette (deep maroon dark bg, warm cream light bg)
+- **Dark / Light Mode** - Seamless switching with the Champagne/Sage/Burgundy/Cream palette
 - **SEO Structured Data** - Schema.org JSON-LD with `Person`, `Organization`, and `WebSite` nodes, including cross-site `sameAs` entity linking to empower digital properties
 - **Responsive** - Fully adaptive from mobile to widescreen
 
@@ -33,10 +33,12 @@ A high-performance portfolio website showcasing digital solutions across full-st
 
 | Token | Light | Dark |
 |---|---|---|
-| Background | `#e5d4d6` (warm cream) | `#120008` (deep maroon-black) |
-| Heading | `#1a1a1a` | `#ffffff` |
-| Foreground | `#6b7280` | `#e8dde0` |
-| Accent Primary | `#5B0024` (Diner Red) | `#c994a4` (dusty rose) |
+| Background | `#F5F5F0` (Cream) | `#120008` (deep maroon-black) |
+| Heading | `#630625` (Burgundy) | `#ffffff` |
+| Foreground | `#630625` (Burgundy) | `#F5F5F0` (Cream) |
+| Accent Primary | `#728C69` (Sage) | `#728C69` (Sage) |
+| Accent Secondary | `#F7E7CE` (Champagne) | `#2D0412` |
+
 
 ---
 

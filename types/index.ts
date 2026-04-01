@@ -1,4 +1,4 @@
-export type Audience = "dev" | "recruiter" | "client" | "general";
+export type Audience = "dev" | "recruiter" | "client" | "general" | "investor";
 
 export type Project = {
     slug: string;
@@ -7,7 +7,7 @@ export type Project = {
     thumbnail: string; // image path
     gallery?: string[]; // multiple images for deep dive
     year: string;
-    type: "webapp" | "script" | "automation" | "case-study" | "website" | "webdesign";
+    type: "webapp" | "script" | "automation" | "case-study" | "website" | "trades";
     techStack: string[]; // e.g. ["Next.js", "Apps Script"]
     status: "live" | "demo" | "internal" | "coming-soon";
     liveUrl?: string;

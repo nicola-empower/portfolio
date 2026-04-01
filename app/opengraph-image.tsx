@@ -12,7 +12,7 @@ export default function OgImage() {
                 style={{
                     width: "1200px",
                     height: "630px",
-                    background: "linear-gradient(135deg, #120008 0%, #1e0010 100%)",
+                    background: "#561C24", // Deep Burgundy
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -22,25 +22,25 @@ export default function OgImage() {
                     overflow: "hidden",
                 }}
             >
-                {/* Glow blobs */}
-                <div style={{ position: "absolute", top: "-150px", left: "-150px", width: "500px", height: "500px", borderRadius: "50%", background: "radial-gradient(circle, rgba(91,0,36,0.5) 0%, transparent 70%)", display: "flex" }} />
-                <div style={{ position: "absolute", bottom: "-150px", right: "-150px", width: "500px", height: "500px", borderRadius: "50%", background: "radial-gradient(circle, rgba(61,0,24,0.6) 0%, transparent 70%)", display: "flex" }} />
+                {/* Glow blobs (Using Maroon for depth) */}
+                <div style={{ position: "absolute", top: "-150px", left: "-150px", width: "500px", height: "500px", borderRadius: "50%", background: "radial-gradient(circle, rgba(109,41,50,0.4) 0%, transparent 70%)", display: "flex" }} />
+                <div style={{ position: "absolute", bottom: "-150px", right: "-150px", width: "500px", height: "500px", borderRadius: "50%", background: "radial-gradient(circle, rgba(109,41,50,0.3) 0%, transparent 70%)", display: "flex" }} />
 
                 {/* NB Monogram */}
-                <div style={{ color: "#c994a4", fontSize: "24px", fontWeight: "bold", letterSpacing: "3px", marginBottom: "12px", display: "flex" }}>
+                <div style={{ color: "#C7B7A3", fontSize: "24px", fontWeight: "bold", letterSpacing: "3px", marginBottom: "12px", display: "flex" }}>
                     NB
                 </div>
 
                 {/* Accent line */}
-                <div style={{ width: "280px", height: "2px", background: "linear-gradient(90deg, #5B0024, #c994a4, transparent)", marginBottom: "32px", display: "flex" }} />
+                <div style={{ width: "280px", height: "2px", background: "linear-gradient(90deg, #6D2932, #C7B7A3, transparent)", marginBottom: "32px", display: "flex" }} />
 
                 {/* Main name */}
-                <div style={{ color: "#ffffff", fontSize: "88px", fontWeight: "bold", lineHeight: 1, letterSpacing: "-2px", marginBottom: "24px", display: "flex" }}>
+                <div style={{ color: "#E8D8C4", fontSize: "88px", fontWeight: "bold", lineHeight: 1, letterSpacing: "-2px", marginBottom: "24px", display: "flex" }}>
                     Nicola Berry
                 </div>
 
                 {/* Title */}
-                <div style={{ color: "#e8dde0", fontSize: "22px", opacity: 0.75, letterSpacing: "1px", marginBottom: "40px", display: "flex" }}>
+                <div style={{ color: "#C7B7A3", fontSize: "22px", opacity: 0.75, letterSpacing: "1px", marginBottom: "40px", display: "flex" }}>
                     Principal Digital Architect · Technical Founder · Scotland
                 </div>
 
@@ -52,9 +52,9 @@ export default function OgImage() {
                             style={{
                                 padding: "8px 20px",
                                 borderRadius: "999px",
-                                border: "1px solid rgba(201,148,164,0.4)",
-                                background: "rgba(91,0,36,0.4)",
-                                color: "#e8dde0",
+                                border: "1px solid rgba(199,183,163,0.4)",
+                                background: "rgba(109,41,50,0.4)",
+                                color: "#E8D8C4",
                                 fontSize: "14px",
                                 letterSpacing: "1px",
                                 display: "flex",
@@ -66,17 +66,17 @@ export default function OgImage() {
                 </div>
 
                 {/* Domain URL bottom right */}
-                <div style={{ position: "absolute", bottom: "60px", right: "80px", color: "#c994a4", fontSize: "20px", letterSpacing: "2px", display: "flex" }}>
+                <div style={{ position: "absolute", bottom: "60px", right: "80px", color: "#C7B7A3", fontSize: "20px", letterSpacing: "2px", display: "flex" }}>
                     nicolaberry.uk
                 </div>
 
                 {/* PORTFOLIO label top right */}
-                <div style={{ position: "absolute", top: "60px", right: "80px", color: "#c994a4", fontSize: "13px", letterSpacing: "6px", opacity: 0.8, display: "flex" }}>
+                <div style={{ position: "absolute", top: "60px", right: "80px", color: "#C7B7A3", fontSize: "13px", letterSpacing: "6px", opacity: 0.8, display: "flex" }}>
                     PORTFOLIO
                 </div>
 
                 {/* Vertical accent bar */}
-                <div style={{ position: "absolute", right: "80px", top: "120px", width: "2px", height: "180px", background: "linear-gradient(180deg, #c994a4, #5B0024, transparent)", display: "flex" }} />
+                <div style={{ position: "absolute", right: "80px", top: "120px", width: "2px", height: "180px", background: "linear-gradient(180deg, #C7B7A3, #6D2932, transparent)", display: "flex" }} />
             </div>
         ),
         { ...size }

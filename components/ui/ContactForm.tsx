@@ -5,16 +5,16 @@ import { GlassCard } from "@/components/ui/GlassCard";
 
 const inputClass = [
     "w-full rounded-lg px-4 py-3 text-sm transition-all",
-    "bg-white border border-heading/15 text-heading placeholder:text-heading/35",
-    "dark:bg-white/5 dark:border-white/10 dark:text-white dark:placeholder:text-white/30",
+    "bg-background border border-foreground/15 text-foreground placeholder:text-foreground/35",
+    "bg-card-bg border-foreground/5 text-foreground placeholder:text-foreground/30",
     "focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary",
 ].join(" ");
 
-const labelClass = "block text-xs font-bold uppercase tracking-widest text-heading/50 dark:text-white/50 mb-2";
+const labelClass = "block text-xs font-bold uppercase tracking-widest text-heading/50 mb-2";
 
 export function ContactForm() {
     return (
-        <GlassCard className="p-8 md:p-12 bg-white/60 dark:bg-white/3 backdrop-blur-md">
+        <GlassCard className="p-8 md:p-12 bg-card-bg border border-foreground/5 backdrop-blur-md">
             <form action="https://formspree.io/f/mblkwkpp" method="POST" className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -54,7 +54,7 @@ export function ContactForm() {
                             <option value="Automation">Automation</option>
                             <option value="Other">Other</option>
                         </select>
-                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-heading/40 dark:text-white/40">
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-heading/40">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 4L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
@@ -77,7 +77,7 @@ export function ContactForm() {
                     <Button
                         type="submit"
                         size="lg"
-                        className="w-full md:w-auto rounded-full px-10 bg-accent-primary text-white hover:opacity-90 transition-opacity"
+                        className="w-full md:w-auto bg-accent-primary text-accent-primary-foreground hover:opacity-90 transition-opacity"
                     >
                         Send Enquiry
                     </Button>

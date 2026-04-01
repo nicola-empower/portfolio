@@ -27,18 +27,18 @@ export function About() {
                             {/* Decorative Overlay */}
                             <div className="absolute inset-0 bg-linear-to-tr from-accent-primary/10 to-accent-secondary/10 mix-blend-multiply dark:mix-blend-screen opacity-30 group-hover:opacity-10 transition-opacity duration-500" />
 
-                            {/* Border Frame */}
-                            <div className="absolute inset-4 border border-background/50 dark:border-white/10 rounded-xl z-10" />
-                        </div>
+                        {/* Border Frame */}
+                        <div className="absolute inset-4 border border-background/30 rounded-xl z-10" />
+                    </div>
 
-                        {/* Floating Badge */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.4, duration: 0.6 }}
-                            className="absolute -bottom-6 -right-6 bg-white/80 dark:bg-background/80 backdrop-blur-md p-6 rounded-xl shadow-lg border border-white/20 hidden md:block"
-                        >
+                    {/* Floating Badge */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4, duration: 0.6 }}
+                        className="absolute -bottom-6 -right-6 bg-card-bg/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-foreground/10 hidden md:block"
+                    >
                             <div className="flex items-center gap-3 text-heading">
                                 <div className="p-2 bg-accent-primary/10 rounded-full">
                                     <Globe size={20} className="text-accent-primary" />

@@ -38,8 +38,8 @@ export default function NourishProposalPage() {
                     body {
                         -webkit-print-color-adjust: exact !important;
                         print-color-adjust: exact !important;
-                        background: white !important;
-                        color: black !important;
+                        background: #E8D8C4 !important;
+                        color: #561C24 !important;
                     }
                     .page-break-before {
                         page-break-before: always !important;

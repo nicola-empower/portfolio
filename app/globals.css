@@ -4,51 +4,49 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  /* ── Diner Brand Palette ─────────────────────────────── */
-  --color-diner-red: #5B0024;
-  --color-diner-pink: #feccd5;
-  --color-diner-cream: #e5d4d6;
-  --color-diner-dark: #1a1a1a;
-  --color-diner-grey: #6b7280;
+  /* ── User Defined 4-Color Palette ── */
+  --color-deep-burgundy: #561C24;
+  --color-warm-maroon: #6D2932;
+  --color-soft-taupe: #C7B7A3;
+  --color-cream-white: #E8D8C4;
 
-  /* ── Semantic tokens (point at CSS vars for dark-mode switching) ─ */
+  /* ── Semantic tokens ─ */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-heading: var(--heading);
   --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-foreground: var(--accent-primary-foreground);
   --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-foreground: var(--accent-secondary-foreground);
   --color-card-bg: var(--card-bg);
   --color-card-border: var(--card-border);
-  --color-rose: var(--rose);
-
-  /* ── Typography ──────────────────────────────────────── */
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
 }
 
-/* ── Light Mode (default) ────────────────────────────────── */
+/* ── Light Mode (Cream Base) ────────────────────────── */
 :root {
-  --background: #e5d4d6;
-  --foreground: #6b7280;
-  --heading: #1a1a1a;
-  --accent-primary: #630625;
-  --accent-secondary: #F7E7CE;
-  --card-bg: rgba(255, 255, 255, 0.7);
-  --card-border: rgba(99, 6, 37, 0.2);
-  --rose: #8E24AA; /* Deep Purple instead of Pink */
+  --background: #E8D8C4;  /* Cream */
+  --foreground: #6D2932;  /* Warm Maroon */
+  --heading: #561C24;     /* Deep Burgundy */
+  --accent-primary: #561C24;   /* Deep Burgundy (Dark/Auth) */
+  --accent-primary-foreground: #C7B7A3; /* Soft Taupe */
+  --accent-secondary: #6D2932; /* Warm Maroon */
+  --accent-secondary-foreground: #E8D8C4; /* Cream */
+  --card-bg: rgba(199, 183, 163, 0.1); 
+  --card-border: rgba(109, 41, 50, 0.1); 
 }
 
-/* ── Dark Mode ───────────────────────────────────────────── */
+/* ── Dark Mode (Burgundy Base) ─────────────────────── */
 html.dark {
   color-scheme: dark;
-  --background: #120008;
-  --foreground: #e8dde0;
-  --heading: #ffffff;
-  --accent-primary: #950937; /* Vibrant Burgundy for dark mode visibility */
-  --accent-secondary: #2D0412;
-  --card-bg: rgba(45, 4, 18, 0.6);
-  --card-border: rgba(149, 9, 55, 0.2);
-  --rose: #b01b4e;
+  --background: #561C24;  /* Deep Burgundy */
+  --foreground: #C7B7A3;  /* Soft Taupe */
+  --heading: #E8D8C4;     /* Cream */
+  --accent-primary: #E8D8C4;   /* Cream (Light/Auth) */
+  --accent-primary-foreground: #6D2932; /* Warm Maroon */
+  --accent-secondary: #C7B7A3; /* Soft Taupe */
+  --accent-secondary-foreground: #561C24; /* Deep Burgundy */
+  --card-bg: rgba(109, 41, 50, 0.4); 
+  --card-border: rgba(199, 183, 163, 0.2); 
 }
 
 /* ── Base Styles ─────────────────────────────────────────── */
@@ -67,4 +65,14 @@ h5,
 h6 {
   color: var(--heading);
   font-family: var(--font-serif);
+}
+/* -- Accessibility Visibility Overrides ------------------- */
+/* Systemic Contrast Enforcement: Force Color Inversion on Primary Containers */
+.bg-accent-primary h1, .bg-heading h1,
+.bg-accent-primary h2, .bg-heading h2,
+.bg-accent-primary h3, .bg-heading h3,
+.bg-accent-primary h4, .bg-heading h4,
+.bg-accent-primary h5, .bg-heading h5,
+.bg-accent-primary h6, .bg-heading h6 {
+  color: var(--background) !important;
 }

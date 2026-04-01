@@ -41,7 +41,7 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
     const relatedProject = journal.relatedProjectSlug ? projects.find(p => p.slug === journal.relatedProjectSlug) : null;
 
     return (
-        <main className="min-h-screen bg-cream dark:bg-plum-dark transition-colors duration-500 pt-32 pb-24">
+        <main className="min-h-screen bg-background transition-colors duration-500 pt-32 pb-24">
             <article className="container mx-auto px-6 max-w-4xl overflow-hidden">
                 <FadeIn delay={0.1}>
                     <Link href="/journal" className="inline-flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors mb-12 font-medium">
@@ -62,7 +62,7 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
                     </FadeIn>
 
                     <FadeIn delay={0.3} y={20}>
-                        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-heading dark:text-foreground mb-8 leading-tight">
+                        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-heading mb-8 leading-tight">
                             {journal.title}
                         </h1>
                     </FadeIn>
@@ -91,7 +91,7 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
                                     
                                     const boldMatch = part.match(/\*\*(.*?)\*\*/);
                                     if (boldMatch) {
-                                        return <strong key={i} className="font-bold text-slate-900 dark:text-accent-primary underline decoration-accent-primary/20 decoration-2 underline-offset-4">{boldMatch[1]}</strong>;
+                                        return <strong key={i} className="font-bold text-heading dark:text-accent-primary underline decoration-accent-primary/20 decoration-2 underline-offset-4">{boldMatch[1]}</strong>;
                                     }
                                     
                                     return part;
@@ -108,7 +108,7 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
                                 <span className="text-accent-primary text-sm font-bold tracking-widest uppercase mb-2 block">Related Architecture</span>
                                 <h3 className="font-serif text-2xl font-bold text-heading dark:text-foreground leading-tight">{relatedProject.title}</h3>
                             </div>
-                            <Link href={`/work/${relatedProject.slug}`} className="shrink-0 px-6 py-3 bg-accent-primary text-black rounded-lg font-bold hover:bg-accent-primary/90 transition-colors flex items-center gap-2">
+                            <Link href={`/work/${relatedProject.slug}`} className="shrink-0 px-6 py-3 bg-accent-primary text-accent-primary-foreground rounded-lg font-bold hover:bg-accent-primary/90 transition-colors flex items-center gap-2">
                                 View Case Study <ArrowRight size={16} />
                             </Link>
                         </div>
@@ -118,12 +118,12 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
                 <hr className="my-16 border-foreground/10" />
 
                 <FadeIn delay={0.2} y={30}>
-                    <div className="bg-accent-secondary/5 dark:bg-white/5 border border-foreground/10 rounded-2xl p-8 md:p-12 text-center text-balance overflow-hidden">
+                    <div className="bg-card-bg border border-card-border rounded-2xl p-8 md:p-12 text-center text-balance overflow-hidden">
                         <h3 className="font-serif text-3xl font-bold text-heading dark:text-foreground mb-4">Are you facing an operational bottleneck?</h3>
                         <p className="font-sans text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
                             I specialise in tearing down complex administrative debt and replacing it with frictionless, resilient workflows. Let&apos;s engineer your freedom.
                         </p>
-                        <Link href="/#contact" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-accent-primary text-black shadow hover:bg-accent-primary/90 h-12 px-8 py-2">
+                        <Link href="/#contact" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-accent-primary text-accent-primary-foreground shadow hover:bg-accent-primary/90 h-12 px-8 py-2">
                             Start the Conversation
                         </Link>
                     </div>

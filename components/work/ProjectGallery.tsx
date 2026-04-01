@@ -31,7 +31,7 @@ export function ProjectGallery({ thumbnail, gallery = [], title }: ProjectGaller
         {/* Hero Image */}
         <FadeIn delay={0.3} y={40}>
           <div 
-            className="group relative aspect-video w-full rounded-3xl overflow-hidden shadow-2xl shadow-charcoal/10 border border-charcoal/5 dark:border-white/5 bg-taupe/10 cursor-zoom-in"
+            className="group relative aspect-video w-full rounded-3xl overflow-hidden shadow-2xl shadow-foreground/10 border border-foreground/5 bg-accent-secondary/10 cursor-zoom-in"
             onClick={() => handleImageClick(thumbnail)}
           >
             {thumbnail && !thumbnail.includes("placeholder") ? (
@@ -43,12 +43,12 @@ export function ProjectGallery({ thumbnail, gallery = [], title }: ProjectGaller
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   priority
                 />
-                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors flex items-center justify-center">
-                  <Maximize2 className="text-white opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300" size={48} />
+                <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors flex items-center justify-center">
+                  <Maximize2 className="text-secondary-foreground opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300" size={48} />
                 </div>
               </>
             ) : (
-                <div className="absolute inset-0 flex items-center justify-center text-charcoal/20">
+                <div className="absolute inset-0 flex items-center justify-center text-foreground/20">
                     <Camera size={64} />
                 </div>
             )}
@@ -57,10 +57,10 @@ export function ProjectGallery({ thumbnail, gallery = [], title }: ProjectGaller
 
         {/* Gallery Grid */}
         {gallery && gallery.length > 0 && (
-          <div className="space-y-10 pt-12 border-t border-charcoal/5 dark:border-white/5">
+          <div className="space-y-10 pt-12 border-t border-foreground/10">
             <div className="flex items-center justify-between">
-              <h3 className="font-serif text-3xl font-bold text-charcoal dark:text-cream">Design Showcase</h3>
-              <span className="text-sm font-bold uppercase tracking-widest text-charcoal/40 dark:text-cream/40 px-4 py-1 rounded-full bg-charcoal/5 dark:bg-white/5 border border-charcoal/5 dark:border-white/5">
+              <h3 className="font-serif text-3xl font-bold text-heading">Design Showcase</h3>
+              <span className="text-sm font-bold uppercase tracking-widest text-foreground/40 px-4 py-1 rounded-full bg-card-bg border border-foreground/5">
                 {gallery.length} Images
               </span>
             </div>
@@ -69,7 +69,7 @@ export function ProjectGallery({ thumbnail, gallery = [], title }: ProjectGaller
               {gallery.map((img, idx) => (
                 <FadeIn key={idx} delay={0.1 * idx} y={20}>
                   <div 
-                    className="group relative aspect-4/3 rounded-2xl overflow-hidden border border-charcoal/5 dark:border-white/5 bg-taupe/10 hover:shadow-xl transition-all duration-500 cursor-zoom-in"
+                    className="group relative aspect-4/3 rounded-2xl overflow-hidden border border-foreground/5 bg-accent-secondary/10 hover:shadow-xl transition-all duration-500 cursor-zoom-in"
                     onClick={() => handleImageClick(img)}
                   >
                     <Image
@@ -78,8 +78,8 @@ export function ProjectGallery({ thumbnail, gallery = [], title }: ProjectGaller
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors flex items-center justify-center">
-                      <Maximize2 className="text-white opacity-0 group-hover:opacity-100 scale-75 group-hover:scale-100 transition-all duration-300" size={32} />
+                    <div className="absolute inset-0 bg-background/0 group-hover:bg-background/30 transition-colors flex items-center justify-center">
+                      <Maximize2 className="text-secondary-foreground opacity-0 group-hover:opacity-100 scale-75 group-hover:scale-100 transition-all duration-300" size={32} />
                     </div>
                   </div>
                 </FadeIn>

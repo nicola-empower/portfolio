@@ -17,7 +17,7 @@ const typeIcons = {
     automation: Zap,
     "case-study": FileText,
     website: Globe,
-    webdesign: Palette,
+    trades: Palette,
 };
 
 export function ProjectCard({ project }: { project: Project }) {
@@ -79,7 +79,7 @@ export function ProjectCard({ project }: { project: Project }) {
                                 {project.type.replace("-", " ")}
                             </span>
                             {project.status === 'coming-soon' && (
-                                <span className="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-rose/90 dark:bg-rose/80 text-white rounded-full backdrop-blur-md shadow-sm">
+                                <span className="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-accent-primary text-accent-primary-foreground rounded-full backdrop-blur-md shadow-sm">
                                     Coming Soon
                                 </span>
                             )}

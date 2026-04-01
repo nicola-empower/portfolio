@@ -32,7 +32,7 @@ export default function JournalIndex() {
                 <div className="space-y-12">
                     {journals.map((journal, index) => (
                         <FadeIn key={journal.slug} delay={index < 3 ? index * 0.15 + 0.4 : 0.1}>
-                            <article className="group relative bg-white dark:bg-white/5 border border-foreground/10 rounded-2xl p-8 md:p-12 hover:shadow-xl transition-all duration-300">
+                            <article className="group relative bg-card-bg border border-card-border rounded-2xl p-8 md:p-12 hover:shadow-xl transition-all duration-300">
                                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
                                     <div className="md:w-1/4 flex flex-col space-y-2 mt-1">
                                         <span className="text-sm font-bold tracking-wider text-accent-primary uppercase">{journal.topic}</span>
