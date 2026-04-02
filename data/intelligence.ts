@@ -47,5 +47,121 @@ export const intelligenceDossiers: IntelligenceDossier[] = [
     category: "Operations",
     tags: ["Executive Audit", "Newsletter Synthesis", "Sanctuary Protocol", "CEO-to-Mum Transition"],
     featured: true
+  },
+  {
+    slug: "salon-os-vision-architecture",
+    projectSlug: "the-salon",
+    title: "Salon OS: Vision AI & Luxury Operations",
+    description: "Architectural breakdown of the 'SaaS Trap' ROI model and the Astro Island Architecture powering high-performance beauty operations.",
+    type: "Technical Infographic",
+    url: "/work/the-salon/infographic",
+    date: "2025-03-28",
+    category: "Operations",
+    tags: ["Astro Islands", "Vision AI", "ROI Intelligence", "Luxury Tech"],
+    featured: true
+  },
+  {
+    slug: "nourish-holistic-intelligence",
+    projectSlug: "nourish-tea",
+    title: "Nourish: Holistic Systems Architecture",
+    description: "Visualising the 7-point AI engine and the 'Hub-and-Spoke' lifestyle model designed to solve modern domestic overhead.",
+    type: "Technical Infographic",
+    url: "/work/nourish-tea/infographic",
+    date: "2026-03-30",
+    category: "Architecture",
+    tags: ["Next.js 15", "7-Point AI", "PWA Stealth", "Lifestyle Hub"],
+    featured: true
+  },
+  {
+    slug: "tradepro-lifecycle-automation",
+    projectSlug: "trade-pro",
+    title: "TradePro: Intelligent Field Management",
+    description: "A sophisticated, AI-integrated SaaS platform designed to rebuild the operational spine of independent field-service businesses. Automates Natural Language Booking to Professional Document Generation.",
+    type: "Technical Infographic",
+    url: "/work/trade-pro/infographic",
+    date: "2025-04-01",
+    category: "Automation",
+    tags: ["AI Lifecycle", "Field Service", "Gemini AI Automation", "Route Optimisation"],
+    featured: true
+  },
+  {
+    slug: "opscommand-business-os",
+    projectSlug: "ops-command",
+    title: "OpsCommand: The Business OS",
+    description: "A next-generation business operations dashboard designed to provide real-time visibility, automated workflow management, and intelligent resource planning. Replaces SaaS sprawl with a cohesive 'Durable Execution Layer'.",
+    type: "Technical Infographic",
+    url: "/work/ops-command/infographic",
+    date: "2026-03-25",
+    category: "Operations",
+    tags: ["Real-time Visibility", "Operational Feed", "Predictive Resource Planner", "Next.js Architecture"],
+    featured: true
+  },
+  {
+    slug: "empower-automation-infrastructure",
+    projectSlug: "empower-automation",
+    title: "Empower Automation: Strategic Infrastructure",
+    description: "Strategic Automation Infrastructure for high-growth founders. A 'Business OS' framework that moves companies from chaos to deterministic order via a terminal-themed personalisation engine.",
+    type: "Technical Infographic",
+    url: "/empower-automation/empower_automation_infographic_1774881368798.png",
+    date: "2026-03-30",
+    category: "Automation",
+    tags: ["Business OS Framework", "Strategic Blueprint", "Terminal Personalisation", "ROI Calculators"],
+    featured: true
+  },
+  {
+    slug: "empower-digital-master-architect",
+    projectSlug: "empower-digital",
+    title: "Empower Digital Solutions: Master Architect",
+    description: "The parent hub for £25k+ digital transformations. Showcases full-stack web and application development agency infrastructure, featuring secure credential management and real-time asset health checks.",
+    type: "Technical Infographic",
+    url: "/empower-digital/website_value_infographic_digital-solutions.png",
+    date: "2025-06-15",
+    category: "Architecture",
+    tags: ["Digital Transformation", "Full-Stack Agency", "Security Architecture", "Scalable SaaS"],
+    featured: true
+  },
+  {
+    slug: "empower-va-operating-system",
+    projectSlug: "empower-va",
+    title: "Empower VA Services: VA Operating System",
+    description: "A premium service model paired with a bespoke 'VA Operating System'. Features a Command Centre for task triage and a strategic 11-city regional SEO cluster for automated client acquisition.",
+    type: "Technical Infographic",
+    url: "/work/empower-va/infographic",
+    date: "2025-05-20",
+    category: "Operations",
+    tags: ["VA Operating System", "Regional SEO Strategy", "Admin Suite Engineering", "Task Triage"]
+  },
+  {
+    slug: "vaassist-agency-scaling-engine",
+    projectSlug: "va-assist",
+    title: "VAAssist: Agency Scaling Engine",
+    description: "A high-performance productivity portal designed to transform the 'Invisible Admin' of the virtual assistant industry into a scalable agency asset. Centralises client management and automated document synthesis.",
+    type: "Technical Infographic",
+    url: "/work/va-assist/infographic",
+    date: "2025-04-10",
+    category: "Operations",
+    tags: ["Agency Scaling", "SaaS Architecture", "Daily PDF Reports", "Associate Management"]
+  },
+  {
+    slug: "doccontrol-construction-risk-shielding",
+    projectSlug: "construction-doc-hub",
+    title: "DocControl: Construction Risk Shielding",
+    description: "Enterprise-grade document control purpose-built for the construction industry. Replaces 'Data Graveyards' with a proactive, AI-driven 'Strategic Shield' to protect project margins and schedules.",
+    type: "Technical Infographic",
+    url: "/work/construction-doc-hub/infographic",
+    date: "2026-03-31",
+    category: "Architecture",
+    tags: ["Construction AI", "Risk Shielding", "Roadblock Predictor", "Compliance Auditor"]
+  },
+  {
+    slug: "medisync-calm-family-coordination",
+    projectSlug: "medi-sync",
+    title: "Medi-Sync: Calm Family Coordination",
+    description: "A trauma-informed 'Calm Technology' dashboard that acts as a shared family brain. Features immutable logging for medical episodes and medication synchronisation to manage the cognitive load of care.",
+    type: "Technical Infographic",
+    url: "/work/medi-sync/infographic",
+    date: "2025-04-15",
+    category: "Safety",
+    tags: ["Calm Technology", "Family Coordination", "Immutable Logging", "Trauma-Informed UI"]
   }
 ];

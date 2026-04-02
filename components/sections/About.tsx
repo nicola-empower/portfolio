@@ -22,6 +22,7 @@ export function About() {
                                 src="/nicola_professional.jpg"
                                 alt="Nicola Berry - Principal Digital Architect"
                                 fill
+                                priority={true}
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             {/* Decorative Overlay */}

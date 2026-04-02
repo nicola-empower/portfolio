@@ -1,0 +1,16 @@
+{
+  "name": "Nicola Berry | Principal Digital Architect",
+  "short_name": "NB Portfolio",
+  "description": "Strategic Systems Architect specialised in high-performance digital ecosystems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E8D8C4",
+  "theme_color": "#561C24",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

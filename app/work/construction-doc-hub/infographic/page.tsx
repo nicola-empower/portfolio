@@ -155,10 +155,12 @@ const DocControlInfographic = () => {
 
       <header className="bg-card-bg border-b border-card-border overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-accent-primary/2 -skew-x-12 transform translate-x-1/2"></div>
-        <div className="max-w-7xl mx-auto py-24 px-8 text-center relative z-10">
-            <div className="bg-accent-primary p-5 rounded-3xl shadow-xl ring-8 ring-accent-primary/10 rotate-3 group-hover:rotate-0 transition-transform duration-500">
+        <div className="max-w-7xl mx-auto py-24 px-8 text-center relative z-10 group">
+          <div className="flex justify-center mb-12">
+            <div className="bg-accent-primary p-5 rounded-3xl shadow-xl ring-8 ring-accent-primary/10 rotate-3 group-hover:rotate-0 transition-transform duration-500 inline-flex items-center justify-center">
               <HardHat className="text-background w-12 h-12" />
             </div>
+          </div>
           <h1 className="text-5xl md:text-7xl font-serif font-bold italic text-heading mb-6 tracking-tight">
             DocControl <span className="text-accent-primary">Manifesto</span>
           </h1>

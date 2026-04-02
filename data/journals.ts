@@ -148,7 +148,6 @@ export const journals: Journal[] = [
             "There is an obsession in the development community with spinning up complex, paid database clusters for applications that simply do not need that level of infrastructure overhead.",
             "For many of my internal tools and personal lifelines, I utilise a completely serverless, zero-cost architecture using Google Apps Script and Google Sheets. Sheets is not just a spreadsheet; it is an immensely powerful, visually accessible JSON database if queried correctly.",
             "When dealing with medical tracking for teenagers, it allows for 'Silent Syncing.' The teenager interacts with a slick React frontend, while the data pipes directly into a private Google Sheet. The parent has full access to the medical logs without ever having to invade the teenager's digital privacy.",
-            "The best architecture is the one that costs nothing to maintain, scales silently, and empowers the end-user."
         ]
     },
     {
@@ -522,20 +521,34 @@ export const journals: Journal[] = [
         ]
     },
     {
-        slug: "the-optimisation-gap",
-        relatedProjectSlug: "lead-flow",
-        title: "The Optimisation Gap: Why Your Ad Spend is Leaking",
-        date: "April 2, 2026",
-        readTime: "6 min read",
-        topic: "Acquisition Intelligence",
-        excerpt: "Debugging marketing funnels like code: How LeadFlow's physics engine reveals the hidden inefficiencies in your customer journey.",
+        slug: "the-salon-os-architecture",
+        relatedProjectSlug: "the-salon-os",
+        title: "The Salon OS: Architecting Vision AI for Luxury Operations",
+        date: "May 12, 2026",
+        readTime: "7 min read",
+        topic: "Vision AI & Operations",
+        excerpt: "Why custom ownership beats the 'SaaS Trap'. How architecting a £25k integrated operating system generates £100k in 5-year ROI.",
         content: [
-            "Most marketing reports are a cemetery of data - rows of cold numbers that tell you what happened, but never *why*. When ad spend increases but revenue plateaus, typical analytics tools fail to show you where the energy is being lost.",
-            "I built **LeadFlow** to treat marketing not as a spreadsheet, but as a dynamic, interconnected system. By applying a **DAG (Directed Acyclic Graph)** traversal engine to the customer journey, we can visualise the movement of 'capital' through a business in real-time.",
-            "The core innovation is the **Ghost Lead Physics Engine**. By rendering 'Actuals' as phantom-like white particles and 'Simulated Potential' as high-energy coloured streams, we create a visceral visual representation of the **Optimisation Gap**. You don't just see a 12% drop-off; you see the leaks in the pipe.",
-            "With **Recursive Backtracing**, LeadFlow automatically identifies the **Golden Path** - the specific route of high-yield nodes that generates the most ROI. It allows a founder to ask: 'If I double my Facebook spend but fix this specific landing page bottleneck, what does my bank balance look like in 90 days?'",
-            "This isn't just about pretty graphs; it's about **Acquisition Maturity**. Moving from 'guesswork' to 'deterministic simulation' is the hallmark of a high-performance organisation. By surfacing 'Profit Playbooks' directly inside the simulation, we turn insights into immediate, executable code.",
-            "Explore the acquisition roadmap and the £28,000 asset valuation in the [LeadFlow Strategic Proposal](/work/leadflow/proposal)."
+            "In the luxury salon industry, most owners are trapped by 'Administrative Gravity'. They pay high monthly fees to SaaS giants like Phorest or Timely, and then lose 20% of new client revenue to commission platforms like Fresha. They are renting their digital brain, not owning it.",
+            "I architected **The Salon OS** as a high-performance alternative to this 'SaaS Trap'. Built on **Astro's Island Architecture**, it provides the speed of a static site with the complex interactivity of a React dashboard. The commercial result is a platform that generates over £100,000 in savings and captured revenue over a 5-year period.",
+            "The technical innovation is the **Walk-In Triage Dashboard**. By replacing 'paper books' with a traffic-light availability matrix, reception can instantly convert 45-minute gaps into bookings, driving an average of £150 in extra daily revenue.",
+            "We also implemented a **'Gemini Vision' Digital Dermatologist**. This AI tool analyzes client skin/hair via selfies and suggests specific retail products from the salon's inventory. By turning a service booking into a retail sale at the point of entry, we've effectively doubled the average transaction value for luxury clients.",
+            "Ultimately, The Salon OS proves that digital transformation isn't about buying more software; it's about architecting a bespoke Operating System that aggressively protects margins and scales without the 'SaaS tax'."
+        ]
+    },
+    {
+        slug: "the-gym-os-efficiency",
+        relatedProjectSlug: "the-gym-os",
+        title: "The Gym OS: IoT-Driven Efficiency and Retention Architectures",
+        date: "June 1, 2026",
+        readTime: "6 min read",
+        topic: "IoT & Behavioral Economics",
+        excerpt: "Scaling fitness operations via hardware-integrated software. How a 'Durable Execution Layer' manages IoT access and member retention loops.",
+        content: [
+            "A gym is a physical environment that suffers from 'Digital Disconnect.' The software (CRM) rarely knows what the physical hardware (Turnstiles, Machines) is actually doing in real-time.",
+            "I built **The Gym OS** as a **Unified Hardware-Software Bridge**. By integrating directly with IoT access controllers, we created a **Zero-Friction Entry System** that uses facial recognition and secure NFC tokens. But the real architecture lies in the **Retention Feedback Loop**.",
+            "If a high-value member hasn't 'Checked-In' to a physical IoT node in 7 days, the system triggers a **Context-Aware Retention Sequence**. It doesn't just send a generic email; it uses AI to reference their last specific machine usage and suggests an 'Optimised Training Window' based on real-time gym floor heatmaps.",
+            "This level of **Industrial-Grade Efficiency** transforms a gym from a physical space into a data-driven ecosystem. By reducing administrative friction to near-zero, we allow staff to focus on coaching and community, while the 'Architectural Layer' handles the operational gravity of access, billing, and retention."
         ]
     },
     {

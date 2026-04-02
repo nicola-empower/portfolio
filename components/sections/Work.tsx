@@ -33,10 +33,11 @@ export function Work() {
 
                 {/* Featured Grid - More space for each project */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-                    {featuredProjects.map((project) => (
+                    {featuredProjects.map((project, index) => (
                         <ProjectCard
                             key={project.slug}
                             project={project}
+                            priority={index < 2}
                         />
                     ))}
                 </div>

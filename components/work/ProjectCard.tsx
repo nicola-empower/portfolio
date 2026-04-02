@@ -8,7 +8,7 @@ import { ArrowUpRight, Code, FileText, Zap, Layout, Globe, Palette } from "lucid
 
 interface ProjectCardProps {
     project: Project;
-    onClick: () => void;
+    priority?: boolean;
 }
 
 const typeIcons = {
@@ -20,7 +20,7 @@ const typeIcons = {
     trades: Palette,
 };
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, priority = false }: ProjectCardProps) {
     const TypeIcon = typeIcons[project.type] || Layout;
 
     return (
@@ -41,6 +41,7 @@ export function ProjectCard({ project }: { project: Project }) {
                                 src={project.thumbnail}
                                 alt={project.title}
                                 fill
+                                priority={priority}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 onError={(e) => {

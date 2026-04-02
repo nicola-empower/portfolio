@@ -21,6 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   ...sharedMetadata,
   alternates: { canonical: siteConfig.url },
+  manifest: "/manifest.webmanifest",
 };
 
 const jsonLd = {

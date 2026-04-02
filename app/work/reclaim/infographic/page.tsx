@@ -114,9 +114,9 @@ const ReclaimInfographicPage = () => {
             </nav>
 
             <header className="bg-card-bg border-b border-card-border">
-                <div className="max-w-7xl mx-auto py-20 px-8 text-center">
-                    <div className="flex justify-center mb-8">
-                        <div className="bg-accent-primary p-5 rounded-3xl shadow-2xl ring-8 ring-accent-primary/10 rotate-3">
+                <div className="max-w-7xl mx-auto py-20 px-8 text-center group relative z-10">
+                    <div className="flex justify-center mb-12">
+                        <div className="bg-accent-primary p-5 rounded-3xl shadow-2xl ring-8 ring-accent-primary/10 rotate-3 group-hover:rotate-0 transition-transform duration-500 inline-flex items-center justify-center">
                             <Shield className="text-background w-12 h-12" />
                         </div>
                     </div>

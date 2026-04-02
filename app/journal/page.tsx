@@ -2,6 +2,12 @@ import { journals } from "@/data/journals";
 import Link from "next/link";
 import { ArrowRight, BookOpen, ArrowLeft } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Technical Journal | Nicola Berry Portfolio",
+    description: "A collection of thoughts on system architecture, operational bottlenecks, calm technology, and the philosophy of building software.",
+};
 
 export default function JournalIndex() {
     return (

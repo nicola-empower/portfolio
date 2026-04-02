@@ -6,7 +6,7 @@ import { ArrowLeft, Shield, Zap, TrendingUp, Search, Cpu, Lock, Activity, Users,
 
 export default function VAAssistInfographicPage() {
     return (
-        <main className="min-h-screen font-sans bg-background text-foreground transition-colors duration-500 leading-relaxed overflow-x-hidden">
+        <main className="min-h-screen font-sans bg-background text-foreground transition-colors duration-500 leading-relaxed overflow-x-hidden selection:bg-accent-primary selection:text-background">
             {/* Navigation Header */}
             <nav className="no-print sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-card-border px-6 py-4 flex justify-between items-center">
                 <div className="flex items-center gap-4">
@@ -26,19 +26,27 @@ export default function VAAssistInfographicPage() {
                 </div>
             </nav>
 
-            {/* Hero Section */}
-            <div className="relative pt-32 pb-20 px-8 text-center bg-linear-to-b from-accent-primary/5 to-transparent">
-                <span className="inline-block bg-accent-primary/10 text-accent-primary px-6 py-2 rounded-full text-[10px] font-black tracking-[0.4em] uppercase mb-8 border border-accent-primary/20 relative z-10 font-sans">
-                    Productivity Engine v4.0
-                </span>
-                <h1 className="text-6xl md:text-8xl font-black mb-6 text-heading font-serif italic tracking-tighter relative z-10">
-                    VAAssist <span className="text-accent-primary">Intelligence</span>
-                </h1>
-                <p className="text-xl md:text-2xl text-foreground/80 font-bold max-w-3xl mx-auto italic font-serif leading-relaxed mb-12 relative z-10">
-                    The cognitive infrastructure for Virtual Assistants scaling from solo-operators to high-velocity agencies.
-                </p>
-                <div className="w-48 h-1.5 bg-accent-primary/20 mx-auto rounded-full relative z-10 shadow-lg"></div>
-            </div>
+            {/* Hero Section (Standardized Manifesto Pattern) */}
+            <header className="bg-card-bg border-b border-card-border overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-accent-primary/2 -skew-x-12 transform translate-x-1/2"></div>
+                <div className="max-w-7xl mx-auto py-24 px-8 text-center relative z-10 group">
+                    <div className="flex justify-center mb-12">
+                        <div className="bg-accent-primary p-5 rounded-3xl shadow-xl ring-8 ring-accent-primary/10 rotate-3 group-hover:rotate-0 transition-transform duration-500 inline-flex items-center justify-center">
+                            <Users className="text-background w-12 h-12" />
+                        </div>
+                    </div>
+                    <h1 className="text-5xl md:text-7xl font-serif font-bold italic text-heading mb-6 tracking-tight">
+                        VAAssist <span className="text-accent-primary">Intelligence</span>
+                    </h1>
+                    <h2 className="text-xl md:text-2xl font-bold text-accent-primary mb-8 uppercase tracking-[0.3em]">
+                        Cognitive Infrastructure & Agency Scaling
+                    </h2>
+                    <p className="max-w-3xl mx-auto text-xl text-foreground/40 leading-relaxed font-medium italic">
+                        The operational engine for Virtual Assistants scaling from solo-operators 
+                        to high-velocity agencies, built for precision and absolute resilience.
+                    </p>
+                </div>
+            </header>
 
             <div className="max-w-6xl mx-auto px-8 py-20">
                 {/* Core Metrics Grid */}
@@ -79,15 +87,20 @@ export default function VAAssistInfographicPage() {
                             </div>
                         </div>
                         <div className="lg:w-1/2 w-full bg-card-bg p-12 rounded-[4rem] border border-card-border shadow-inner relative">
-                            <div className="flex justify-between items-end gap-4 h-[300px] font-sans">
+                            <div className="flex justify-between items-end gap-6 h-[300px] font-sans">
                                 {[
                                     { h: "85%", l: "Manual Admin", c: "var(--accent-primary)" },
                                     { h: "45%", l: "Context Switching", c: "var(--accent-secondary)" },
                                     { h: "15%", l: "VAAssist Admin", c: "var(--card-border)" }
                                 ].map((bar, i) => (
-                                    <div key={i} className="flex-1 flex flex-col items-center gap-4">
-                                        <div className="w-full rounded-t-2xl shadow-lg transition-all hover:scale-105" style={{ height: bar.h, backgroundColor: bar.c }}></div>
-                                        <span className="text-[10px] font-black uppercase text-center tracking-tighter leading-none opacity-60 h-8 flex items-center">{bar.l}</span>
+                                    <div key={i} className="flex-1 flex flex-col items-end h-full">
+                                        <div 
+                                            className="w-full rounded-t-2xl shadow-lg transition-all hover:scale-105" 
+                                            style={{ height: bar.h, backgroundColor: bar.c }}
+                                        ></div>
+                                        <div className="h-12 w-full flex items-center justify-center mt-4">
+                                            <span className="text-[10px] font-black uppercase text-center tracking-tighter leading-none opacity-60">{bar.l}</span>
+                                        </div>
                                     </div>
                                 ))}
                             </div>
