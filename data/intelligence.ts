@@ -163,5 +163,17 @@ export const intelligenceDossiers: IntelligenceDossier[] = [
     date: "2025-04-15",
     category: "Safety",
     tags: ["Calm Technology", "Family Coordination", "Immutable Logging", "Trauma-Informed UI"]
+  },
+  {
+    slug: "leadflow-acquisition-intelligence",
+    projectSlug: "leadflow",
+    title: "LeadFlow: Acquisition Intelligence Layer",
+    description: "Visualising the 'Optimization Gap' and 'Ghost Lead' physics that transform abstract marketing funnels into deterministic ROI engines.",
+    type: "Technical Infographic",
+    url: "/work/leadflow/infographic",
+    date: "2026-04-05",
+    category: "Automation",
+    tags: ["Funnel Simulation", "ROI Layer", "Zustand State", "Recursive Path-Finding"],
+    featured: true
   }
 ];

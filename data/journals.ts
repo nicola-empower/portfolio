@@ -601,5 +601,21 @@ export const journals: Journal[] = [
             "By productising our internal AI workflows and database schemas, we've created a blueprint for digital excellence. We aren't just an agency; we are the infrastructure of your growth, providing the 'Single Source of Truth' that turns high-intent visions into live, high-performance code.",
             "Explore the master roadmap in our Strategic Proposal."
         ]
+    },
+    {
+        slug: "simulating-the-marketing-digital-twin",
+        relatedProjectSlug: "leadflow",
+        title: "The Digital Twin: Simulating ROI through Ghost Lead Physics",
+        date: "April 05, 2026",
+        readTime: "6 min read",
+        topic: "Data Visualisation",
+        excerpt: "How LeadFlow transforms abstract marketing funnels into physics-driven environments where ROI is deterministic, not anecdotal.",
+        content: [
+            "Marketing funnels are notoriously leaky. But the leaks are often invisible, buried deep within fragmented spreadsheets and optimistic projections. When I built **LeadFlow**, my goal was to move beyond the static report and create a 'Digital Twin' of the business's acquisition engine.",
+            "Utilising **React Flow** and a custom-built physics store in **Zustand**, LeadFlow visualises two distinct realities simultaneously. We have the **Actuals (Ghost Mode)** - white, phantom-like particles representing the current baseline - and the **Simulated Potential**, where bright, energetic particles show the impact of optimised conversion rates or increased ad spend.",
+            "The technical challenge was creating a deterministic simulation that felt alive. I implemented a **Recursive Backtracing** algorithm that identifies the 'Golden Path'—the single most profitable route through the graph. By mapping this path with a high-intensity pulse, we force the user's attention toward the areas of highest ROI.",
+            "One of the standout features is the **AI Profit Playbook**. Instead of just showing a red 'Critical Drop-off' alert, the system suggests specific technical and strategic fixes—like implementing an urgency countdown or refining lead capture forms—and allows the user to 'Apply' the fix to see the simulated revenue lift in real-time.",
+            "LeadFlow isn't just a diagramming tool; it's a high-fidelity business case engine. By allowing marketers to export these simulations as professional PDFs via **html2canvas** and **jsPDF**, we bridge the gap between technical strategy and executive approval. We are turning marketing from a 'spend' into a 'predictable investment'."
+        ]
     }
 ];
