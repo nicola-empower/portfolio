@@ -109,6 +109,42 @@ export const intelligenceDossiers: IntelligenceDossier[] = [
     featured: true
   },
   {
+    slug: "forensic-shield-architecture",
+    projectSlug: "forensic-shield",
+    title: "The Forensic Shield: Defensive Infrastructure",
+    description: "Architectural breakdown of the 14-point 'Digital DNA' capture engine. Visualising how defensive engineering turns a website into a legal witness to prove a course of conduct.",
+    type: "Technical Intelligence",
+    url: "/automation/schematic-hero.png",
+    date: "2026-05-01",
+    category: "Safety",
+    tags: ["Defensive Engineering", "Forensic Logging", "Digital Safeguarding", "Legal Evidence"],
+    featured: true
+  },
+  {
+    slug: "operational-core-architecture",
+    projectSlug: "operational-core",
+    title: "The Operational Core: Financial Orchestration",
+    description: "Technical analysis of the automated document synthesis engine. Visualising the lifecycle from spreadsheet trigger to secure PDF generation and automated client dispatch.",
+    type: "Technical Intelligence",
+    url: "/automation/invoice-automation-hero.png",
+    date: "2026-04-15",
+    category: "Automation",
+    tags: ["Document Synthesis", "Drive API Orchestration", "Serverless Logic", "HTML Templating"],
+    featured: true
+  },
+  {
+    slug: "ai-control-plane-architecture",
+    projectSlug: "ai-control-plane",
+    title: "The AI Control Plane: Context Synthesis",
+    description: "Architectural breakdown of the multi-source context aggregator. Featuring a detailed look at Responsible AI Governance: including API-tier data sovereignty (anti-training logic), secure secrets management, and a deterministic read-only sandbox for safe agentic execution.",
+    type: "Technical Intelligence",
+    url: "/automation/ai-control-plane-hero.png",
+    date: "2026-05-03",
+    category: "Automation",
+    tags: ["Gemini Pro API", "Data Sovereignty", "Secrets Management", "Responsible AI"],
+    featured: true
+  },
+  {
     slug: "empower-digital-master-architect",
     projectSlug: "empower-digital",
     title: "Empower Digital Solutions: Master Architect",

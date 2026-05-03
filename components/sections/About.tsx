@@ -28,18 +28,18 @@ export function About() {
                             {/* Decorative Overlay */}
                             <div className="absolute inset-0 bg-linear-to-tr from-accent-primary/10 to-accent-secondary/10 mix-blend-multiply dark:mix-blend-screen opacity-30 group-hover:opacity-10 transition-opacity duration-500" />
 
-                        {/* Border Frame */}
-                        <div className="absolute inset-4 border border-background/30 rounded-xl z-10" />
-                    </div>
+                            {/* Border Frame */}
+                            <div className="absolute inset-4 border border-background/30 rounded-xl z-10" />
+                        </div>
 
-                    {/* Floating Badge */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4, duration: 0.6 }}
-                        className="absolute -bottom-6 -right-6 bg-card-bg/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-foreground/10 hidden md:block"
-                    >
+                        {/* Floating Badge */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4, duration: 0.6 }}
+                            className="absolute -bottom-6 -right-6 bg-card-bg/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-foreground/10 hidden md:block"
+                        >
                             <div className="flex items-center gap-3 text-heading">
                                 <div className="p-2 bg-accent-primary/10 rounded-full">
                                     <Globe size={20} className="text-accent-primary" />
@@ -69,13 +69,13 @@ export function About() {
 
                         <div className="space-y-6 text-lg text-foreground font-sans leading-relaxed">
                             <p>
-                                Hi, I&apos;m Nicola. I am the founder of <span className="font-bold text-heading">Empower Digital Solutions</span>, but more importantly, I am a builder forced by circumstance to engineer my own solutions.
+                                Hi, I&apos;m Nicola. I am an <span className="text-accent-primary font-bold italic">award-winning</span> Principal Digital Architect and the founder of <span className="font-bold text-heading">Empower Digital Solutions.</span> I was recently named the <strong>SME News Best Digital Systems Architecture Analyst 2026</strong>, a recognition of my work in building high-fidelity operational environments.
                             </p>
                             <p>
-                                Every piece of software I create is born from a genuine need. Whether I am building a &quot;shared brain&quot; to survive the overwhelming cognitive load of being the default family carer, architecting covert evidence-gathering networks for domestic abuse survivors, or automating away 16 hours of a client&apos;s weekly administrative nightmare - I build tools that fundamentally change how people experience their day-to-day lives.
+                                I am a builder forced by circumstance to engineer my own solutions. Every piece of software I create is born from a genuine need. Whether I am building a &quot;shared brain&quot; to survive the overwhelming cognitive load of being the default family carer, architecting covert evidence-gathering networks for domestic abuse survivors, or automating away 16 hours of a client&apos;s weekly administrative nightmare: I build tools that fundamentally change how people experience their day-to-day lives.
                             </p>
                             <p>
-                                I don&apos;t just write sterile corporate code. I leverage advanced technology - from AI translation engines to immutable metadata vaults - to aggressively reclaim time, autonomy, and peace for my clients and myself.
+                                I don&apos;t just write sterile corporate code. I leverage advanced technology: from AI translation engines to immutable metadata vaults: to aggressively reclaim time, autonomy, and peace for my clients and myself.
                             </p>
                         </div>
 

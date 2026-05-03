@@ -537,6 +537,61 @@ export const journals: Journal[] = [
         ]
     },
     {
+        slug: "the-forensic-witness",
+        relatedProjectSlug: "forensic-shield",
+        title: "The Forensic Witness: Why I Turned My Website into a Shield",
+        date: "May 1, 2026",
+        readTime: "6 min read",
+        topic: "Digital Safeguarding",
+        excerpt: "For many ambitious founders, putting yourself online is no different to putting a target on your head. Here is how defensive engineering provides the permission to be seen.",
+        content: [
+            "In the tech world, we often talk about 'Open Architecture' and 'Frictionless UX'. But for some founders, friction is a feature, and anonymity is a threat. I built the **Forensic Shield** because I realised that the standard contact form is an unprotected digital door: a loophole that allows harassment to bypass physical boundaries and legal orders.",
+            "My journey into defensive engineering was born from necessity. I needed a provable way to provide evidence that anonymous contact forms were being used to sustain a harassment campaign. Standard analytics tell you that you have a visitor; the Forensic Shield tells you that you have a **Course of Conduct**.",
+            "By architecting a system that captures 14 unique points of 'Digital DNA', we can link multiple anonymous submissions to a single source. We track device signatures, hardware concurrency, and behavioural markers: such as typing speed and paste detection. While this doesn't identify a person by name, it provides the empirical evidence of location, device, and intent required to build a legal case.",
+            "This technology is about more than just data: it is about **autonomy**. There are thousands of talented and ambitious individuals, particularly women, who are ready to start their self-employment journeys but are held back by the very real fear of digital exposure. They feel that being 'seen' is synonymous with being 'targeted'.",
+            "The Forensic Shield provides the **Permission to be Seen**. It transforms a website from a liability into a silent, unwavering digital witness. When you know that every interaction is being forensically logged and filtered into a secure ledger, the fear of the 'Digital Open Door' vanishes.",
+            "To protect the operational security of my clients, the source code for these defensive layers remains private. However, the impact is transformational. We are providing the technical and emotional scaffolding required for high-risk founders to reclaim their digital space and build their businesses with peace of mind.",
+            "Bespoke automation shouldn't just save you time: it should save your sanity. When we build for safety first, the efficiency becomes a natural byproduct."
+        ]
+    },
+    {
+        slug: "reclaiming-the-10-minute-gap",
+        relatedProjectSlug: "operational-core",
+        title: "Reclaiming the 10-Minute Gap: The Moment I Replaced Myself with Code",
+        date: "April 15, 2026",
+        readTime: "5 min read",
+        topic: "Operational Efficiency",
+        excerpt: "The story of how a mind-numbing 20-minute manual invoice loop became the catalyst for my journey into automation architecture.",
+        content: [
+            "Before I was a Systems Architect, I was a Virtual Assistant drowning in 'Administrative Gravity'. I had a client who was fully integrated into Google Workspace, but their systems didn't talk to each other. Every single lead required a manual, 20-minute marathon of copying data: email to HubSpot, HubSpot to Spreadsheet, Spreadsheet to Monday, Monday to Google Doc.",
+            "It was the definition of operational friction. I was acting as a 'Human API', moving bits of data from one cell to another, converting documents to PDFs, and drafting repetitive emails. It was draining, repetitive, and most importantly: unnecessary.",
+            "The lightbulb moment happened when I asked a simple question: why can't these systems just talk to each other? I remembered learning mail merge in high school and wondered why that same logic wasn't built into the modern cloud. That curiosity led me to discover **Google Apps Script**.",
+            "I built the first version of the **Invoice Automation Engine** (what I now call The Operational Core) to solve my own boredom. I wanted a system where I could click one button and have the entire lifecycle execute: data synchronisation, branded PDF generation, secure folder management, and automated client dispatch.",
+            "The result was transformative. That 20-minute loop became a 2-second automated event. By replacing myself with code, I didn't just save time: I reclaimed the cognitive energy required to focus on high-level strategy for my clients. I moved from being the person who 'does the work' to the person who 'engineers the system'.",
+            "This project taught me that the biggest bottleneck in any business isn't a lack of tools: it is a lack of orchestration. When we automate the mundane, we unlock the human potential to do the extraordinary."
+        ]
+    },
+    {
+        slug: "engineering-the-sanctuary",
+        relatedProjectSlug: "ai-control-plane",
+        title: "Engineering the Sanctuary: Why I Built an AI to Protect My Nervous System",
+        date: "May 3, 2026",
+        readTime: "7 min read",
+        topic: "Human-Centric AI",
+        excerpt: "As a solo founder, the 'Always On' culture is a death sentence. Here is how I used the Gemini API to build an autonomous guardian for my life and business.",
+        content: [
+            "The narrative of the 'Hustling Founder' is often just a polite way to describe a nervous system in collapse. I found myself working until 3am, isolated from family, and treating the school run as my only form of exercise. I was drowning in the 'Cognitive Overhead' of running four business branches while being a mother to three children. The system was broken, and I was the bottleneck.",
+            "I built the **AI Control Plane** not to make myself 'more productive' in the traditional sense, but to reclaim my humanity. By leveraging the **Gemini Pro API**, I architected an agentic system that triages my inbox, schedule, and active files to generate a daily briefing. It is my autonomous guardian: the Executive Assistant I couldn't yet afford to hire.",
+            "Crucially, the architecture is strictly **Read-Only**. I have deliberately engineered the system to be a 'Deterministic Agent': it can synthesise, plan, and suggest, but it has zero permission to send emails or take external actions. This ensures that while the AI has the 'agency' to understand my context, it can never become a 'rogue agent' sending unintended or embarrassing communications. It operates within a secure, passive sandbox.",
+            "Beyond operational safety, I have prioritised **Data Sovereignty**. One of the primary reservations people have about AI is the fear of their private data being used to train global models. By using the **API-tier of Gemini** (rather than consumer-facing chatbots), I ensure that my sensitive emails and documents remain my own: they are processed in a transient state and are not used for global model training.",
+            "Security is also baked into the foundation. I avoid hardcoded credentials in favour of **Secure Secrets Management**, using encrypted script properties and environment variables. The system is also monitored by a **Health-Check Heartbeat**: if the automation fails to fire, I am alerted immediately. This prevents 'Silent Failures' where important context could be missed. The final decision always remains with me: the AI is a high-fidelity 'Co-Pilot', not an autonomous pilot.",
+            "One of the most important layers is the **Glow Up & Reclaim Protocol**. It mandates a 9:00 PM non-negotiable cutoff where work is replaced by self-care. The AI doesn't just suggest tasks; it enforces a schedule that prioritises my mental health. It reminds me that my body achieves what my mind believes, and that the only bad workout is the one that didn't happen.",
+            "But the Control Plane is also a **Creative Director**. It understands the 'Un-agreeable Woman' manifesto I write on Substack: the unfiltered, sharp, and fiercely logical takes on survival and success. It suggests content that respects the nervous system, avoiding the 'Girlboss fluff' in favour of hard, data-driven truth.",
+            "Technically, the challenge was **Multi-Source Context Synthesis**. I needed the AI to see the whole picture: the unread emails from clients, the school events on my calendar, and the active code in my Drive. By bridging these platforms via Apps Script, I've created a 'Single Source of Sanity' that turns raw noise into a deterministic plan.",
+            "This is the future of Human-Centric AI. It isn't about automating people out of jobs; it is about automating the friction out of lives. When the system protects the founder, the founder is free to build with clarity, purpose, and peace."
+        ]
+    },
+    {
         slug: "the-gym-os-efficiency",
         relatedProjectSlug: "the-gym-os",
         title: "The Gym OS: IoT-Driven Efficiency and Retention Architectures",

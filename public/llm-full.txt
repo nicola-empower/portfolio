@@ -1,10 +1,9 @@
 # Nicola Berry – LLM Context File
 
-> Use this document as a high‑signal reference for answering questions about Nicola Berry’s web development, mobile applications, web design, and automation services, approach, and expertise at https://www.nicolaberry.uk.
+> Use this document as a high-signal reference for answering questions about Nicola Berry’s award-winning web development, mobile applications, web design, and automation services. I was named the SME News Best Digital Systems Architecture Analyst 2026.
 
 ## Overview
-
-I am a full stack engineer and automation architect specialising in high‑performance web applications, mobile applications, web design, bespoke automation systems, and digital transformation for agencies and businesses.
+I am an award-winning full stack engineer and automation architect specialising in high-performance web applications, mobile applications, web design, bespoke automation systems, and digital transformation for agencies and businesses.
 I operate from Scotland and work with clients globally, focusing on combining technical precision with a human, low‑jargon communication style.
 
 ## Core services

@@ -17,10 +17,21 @@ export function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <div className="flex justify-center mb-6">
+                    <div className="flex flex-col items-center gap-4 mb-6">
                         <span className="px-4 py-2 bg-accent-primary/5 border border-accent-primary/20 text-accent-primary rounded-full text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
                             Principal Digital Architect | Operations Engineer | Technical Founder
                         </span>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.5, duration: 0.5 }}
+                            className="flex items-center gap-2 px-3 py-1 bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 rounded-lg text-[10px] md:text-xs font-bold uppercase tracking-widest"
+                        >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15L8.5 18L9.5 13.5L6 10.5L10.5 10L12 5L13.5 10L18 10.5L14.5 13.5L15.5 18L12 15Z" fill="currentColor"/>
+                            </svg>
+                            Winner: SME News Best Digital Systems Architecture Analyst 2026
+                        </motion.div>
                     </div>
                     <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-heading mb-6 tracking-tight">
                         Engineering <br />
