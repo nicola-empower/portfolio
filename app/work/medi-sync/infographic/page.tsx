@@ -42,10 +42,10 @@ const MedisyncInfographicPage = () => {
     const isDark = resolvedTheme === 'dark';
 
     // Brand-Aligned Theme Colors (Strict 4-Color Palette)
-    const chartTextColor = isDark ? '#C7B7A3' : '#6D2932'; 
+    const chartTextColor = isDark ? '#C7B7A3' : '#6D2932';
     const chartGridColor = isDark ? 'rgba(199, 183, 163, 0.1)' : 'rgba(109, 41, 50, 0.1)';
-    const accentPrimary = '#561C24'; 
-    const accentSecondary = '#6D2932'; 
+    const accentPrimary = '#561C24';
+    const accentSecondary = '#6D2932';
     const accentMuted = 'rgba(86, 28, 36, 0.1)';
 
     // 1. Cognitive Load Reduction (Recall Audit)
@@ -129,7 +129,7 @@ const MedisyncInfographicPage = () => {
                     <div className="absolute top-10 left-10 w-64 h-64 bg-accent-primary rounded-full blur-3xl"></div>
                     <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-primary rounded-full blur-3xl"></div>
                 </div>
-                
+
                 <div className="max-w-7xl mx-auto py-32 px-8 text-center relative z-10">
                     <div className="flex justify-center mb-10">
                         <div className="bg-accent-primary p-6 rounded-3xl shadow-2xl ring-8 ring-accent-primary/10 transition-transform hover:scale-105 duration-700">
@@ -162,7 +162,7 @@ const MedisyncInfographicPage = () => {
                                 Low-Decibel <br /><span className="text-accent-primary">Care Delivery</span>
                             </h3>
                             <p className="text-foreground/70 text-xl font-medium leading-relaxed mb-12">
-                                Medi-Sync is architected on the principle of <strong className="text-heading">Calm Technology</strong>. In high-cortisol environments, UI friction isn't just a nuisance—it's a trigger. Our system uses a high-contrast, data-centric interface to remove the cognitive load of memory and the emotional drag of verbal updates.
+                                Medi-Sync is architected on the principle of <strong className="text-heading">Calm Technology</strong>. In high-cortisol environments, UI friction isn't just a nuisance - it's a trigger. Our system uses a high-contrast, data-centric interface to remove the cognitive load of memory and the emotional drag of verbal updates.
                             </p>
                             <div className="grid grid-cols-2 gap-8">
                                 <div className="space-y-2">
@@ -178,8 +178,8 @@ const MedisyncInfographicPage = () => {
                         <div className="bg-card-bg/50 backdrop-blur-xl border border-card-border rounded-[3rem] p-10 shadow-inner">
                             <h4 className="text-center font-bold uppercase tracking-widest text-[10px] mb-8 text-foreground/40">The "Memory Trap" Visualization</h4>
                             <div className="h-[400px] w-full">
-                                <Bar 
-                                    data={loadData} 
+                                <Bar
+                                    data={loadData}
                                     options={{
                                         responsive: true,
                                         maintainAspectRatio: false,
@@ -188,7 +188,7 @@ const MedisyncInfographicPage = () => {
                                             y: { grid: { color: chartGridColor }, ticks: { color: chartTextColor } },
                                             x: { grid: { display: false }, ticks: { color: chartTextColor } }
                                         }
-                                    }} 
+                                    }}
                                 />
                             </div>
                         </div>
@@ -271,12 +271,12 @@ const MedisyncInfographicPage = () => {
                 {/* The Outcome Pipeline */}
                 <section className="bg-card-bg rounded-[4rem] p-12 md:p-20 border border-card-border relative overflow-hidden shadow-sm">
                     <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(99,6,37,0.05),transparent)]"></div>
-                    
+
                     <h3 className="text-4xl md:text-5xl font-serif font-bold italic mb-16 flex items-center gap-6 text-heading">
                         <RefreshCcw className="text-accent-primary animate-spin-slow" size={48} />
                         Operational <span className="text-accent-primary">Resilience</span>
                     </h3>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {[
                             { icon: Brain, title: 'Recall Audit', desc: 'Removing the mental strain of data retention.', color: 'accentPrimary' },

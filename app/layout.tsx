@@ -48,6 +48,7 @@ const jsonLd = {
       "@id": "https://empowerdigitalsolutions.co.uk/#organization",
       "name": "Empower Digital Solutions",
       "url": "https://empowerdigitalsolutions.co.uk",
+      "awards": ["SME News Best Digital Systems Architecture Analyst 2026"],
       "founder": { "@id": `${siteConfig.url}/#person` },
       "sameAs": [
         "https://empowerdigitalsolutions.co.uk",
@@ -68,6 +69,14 @@ const jsonLd = {
       "name": "Nicola Berry",
       "url": siteConfig.url,
       "jobTitle": "Principal Digital Architect & Technical Founder",
+      "award": "SME News Best Digital Systems Architecture Analyst 2026",
+      "knowsAbout": [
+        "Agentic AI",
+        "Digital Systems Architecture",
+        "Calm Technology",
+        "Google Apps Script",
+        "Operational Infrastructure"
+      ],
       "description": siteConfig.description,
       "image": siteConfig.ogImage,
       "worksFor": { "@id": "https://empowerdigitalsolutions.co.uk/#organization" },

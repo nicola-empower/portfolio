@@ -42,7 +42,7 @@ export default function VAAssistInfographicPage() {
                         Cognitive Infrastructure & Agency Scaling
                     </h2>
                     <p className="max-w-3xl mx-auto text-xl text-foreground/40 leading-relaxed font-medium italic">
-                        The operational engine for Virtual Assistants scaling from solo-operators 
+                        The operational engine for Virtual Assistants scaling from solo-operators
                         to high-velocity agencies, built for precision and absolute resilience.
                     </p>
                 </div>
@@ -82,7 +82,7 @@ export default function VAAssistInfographicPage() {
                             <div className="p-10 bg-card-bg border-l-12 border-card-border rounded-r-[3rem] shadow-sm transform rotate-1 relative group cursor-default hover:rotate-0 transition-transform font-sans">
                                 <h3 className="text-3xl font-serif italic font-bold text-heading mb-6">The Escape Velocity</h3>
                                 <p className="text-lg text-foreground/80 font-medium leading-relaxed italic">
-                                    VAAssist automates the mundane, allowing operators to step into the "Director's Pulse"—managing systems and associate margins rather than manually tracking time.
+                                    VAAssist automates the mundane, allowing operators to step into the "Director's Pulse"- managing systems and associate margins rather than manually tracking time.
                                 </p>
                             </div>
                         </div>
@@ -94,8 +94,8 @@ export default function VAAssistInfographicPage() {
                                     { h: "15%", l: "VAAssist Admin", c: "var(--card-border)" }
                                 ].map((bar, i) => (
                                     <div key={i} className="flex-1 flex flex-col items-end h-full">
-                                        <div 
-                                            className="w-full rounded-t-2xl shadow-lg transition-all hover:scale-105" 
+                                        <div
+                                            className="w-full rounded-t-2xl shadow-lg transition-all hover:scale-105"
                                             style={{ height: bar.h, backgroundColor: bar.c }}
                                         ></div>
                                         <div className="h-12 w-full flex items-center justify-center mt-4">
@@ -156,7 +156,7 @@ export default function VAAssistInfographicPage() {
                 {/* Call to Action Box */}
                 <div className="bg-accent-primary text-background rounded-[4rem] p-16 text-center shadow-2xl relative overflow-hidden group font-sans">
                     <Sparkles className="absolute top-10 right-10 text-background/10 group-hover:scale-150 transition-transform duration-1000" size={100} />
-                    
+
                     <h2 className="text-4xl md:text-5xl font-black mb-8 font-serif italic tracking-tighter relative z-10">
                         Operational Resilience as a Service
                     </h2>
@@ -164,7 +164,7 @@ export default function VAAssistInfographicPage() {
                         VAAssist is the strategic foundation for virtual enterprises that demand professional precision and absolute scalability.
                     </p>
                     <div className="flex flex-col md:flex-row gap-6 justify-center relative z-10">
-                        <Link 
+                        <Link
                             href="/work/va-assist/proposal"
                             className="bg-background text-accent-primary px-10 py-4 rounded-full font-black uppercase text-xs tracking-[0.3em] hover:scale-105 transition-all shadow-xl active:scale-95 border border-card-border"
                         >

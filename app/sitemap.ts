@@ -25,12 +25,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 
-    const projectPages = projects.map((p) => ({
-        url: `${siteConfig.url}/work/${p.slug}`,
-        lastModified: new Date(),
-        changeFrequency: "yearly" as const,
-        priority: 0.7,
-    }));
+    const projectPages = projects.flatMap((p) => {
+        const pages = [
+            {
+                url: `${siteConfig.url}/work/${p.slug}`,
+                lastModified: new Date(),
+                changeFrequency: "yearly" as const,
+                priority: 0.7,
+            },
+        ];
+
+        if (p.infographicUrl) {
+            pages.push({
+                url: `${siteConfig.url}${p.infographicUrl}`,
+                lastModified: new Date(),
+                changeFrequency: "yearly" as const,
+                priority: 0.6,
+            });
+        }
+
+        if (p.proposalUrl) {
+            pages.push({
+                url: `${siteConfig.url}${p.proposalUrl}`,
+                lastModified: new Date(),
+                changeFrequency: "yearly" as const,
+                priority: 0.6,
+            });
+        }
+
+        return pages;
+    });
 
     const journalPages = journals.map((j) => {
         // Robust date parsing for "Month Day, Year" or "Month Year"

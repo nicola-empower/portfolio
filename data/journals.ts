@@ -522,7 +522,7 @@ export const journals: Journal[] = [
     },
     {
         slug: "the-salon-os-architecture",
-        relatedProjectSlug: "the-salon-os",
+        relatedProjectSlug: "the-salon",
         title: "The Salon OS: Architecting Vision AI for Luxury Operations",
         date: "May 12, 2026",
         readTime: "7 min read",
@@ -593,7 +593,7 @@ export const journals: Journal[] = [
     },
     {
         slug: "the-gym-os-efficiency",
-        relatedProjectSlug: "the-gym-os",
+        relatedProjectSlug: "the-gym",
         title: "The Gym OS: IoT-Driven Efficiency and Retention Architectures",
         date: "June 1, 2026",
         readTime: "6 min read",
@@ -649,7 +649,7 @@ export const journals: Journal[] = [
         topic: "Institutional Strategy",
         excerpt: "Scaling a conglomerate through strategic AI implementation and master-brand coordination.",
         content: [
-            "A digital portfolio is only as powerful as its coordination layer. This is the culmination of my journey—from managing tasks as a VA and building automations as a specialist, to finally learning to code and building the actual infrastructure as a **Master Architect**.",
+            "A digital portfolio is only as powerful as its coordination layer. This is the culmination of my journey - from managing tasks as a VA and building automations as a specialist, to finally learning to code and building the actual infrastructure as a **Master Architect**.",
             "With **Empower Digital Solutions**, I implement **Digital Lifecycles**. By serving as the AI Implementation Partner for specialized assets, I ensure that my projects function as both premium services and high-value digital products that coordinate a cohesive strategy across all platforms.",
             "Our core philosophy is **Stability**. Through custom Gemini AI integrations and secure database architectures, we provide the technical glue that binds fragmented tools into profit engines. Our 'Secure Vault' and 'Client Portal' are more than features - they are the interfaces of trust and technical maturity.",
             "We oversight the end-to-end transformation of our projects, using our own platforms as the ultimate case study in professional evolution and £25k+ digital transformation excellence. It's about demonstrating my capability to build secure, scalable SaaS solutions for others.",
@@ -668,9 +668,144 @@ export const journals: Journal[] = [
         content: [
             "Marketing funnels are notoriously leaky. But the leaks are often invisible, buried deep within fragmented spreadsheets and optimistic projections. When I built **LeadFlow**, my goal was to move beyond the static report and create a 'Digital Twin' of the business's acquisition engine.",
             "Utilising **React Flow** and a custom-built physics store in **Zustand**, LeadFlow visualises two distinct realities simultaneously. We have the **Actuals (Ghost Mode)** - white, phantom-like particles representing the current baseline - and the **Simulated Potential**, where bright, energetic particles show the impact of optimised conversion rates or increased ad spend.",
-            "The technical challenge was creating a deterministic simulation that felt alive. I implemented a **Recursive Backtracing** algorithm that identifies the 'Golden Path'—the single most profitable route through the graph. By mapping this path with a high-intensity pulse, we force the user's attention toward the areas of highest ROI.",
-            "One of the standout features is the **AI Profit Playbook**. Instead of just showing a red 'Critical Drop-off' alert, the system suggests specific technical and strategic fixes—like implementing an urgency countdown or refining lead capture forms—and allows the user to 'Apply' the fix to see the simulated revenue lift in real-time.",
+            "The technical challenge was creating a deterministic simulation that felt alive. I implemented a **Recursive Backtracing** algorithm that identifies the 'Golden Path' - the single most profitable route through the graph. By mapping this path with a high-intensity pulse, we force the user's attention toward the areas of highest ROI.",
+            "One of the standout features is the **AI Profit Playbook**. Instead of just showing a red 'Critical Drop-off' alert, the system suggests specific technical and strategic fixes - like implementing an urgency countdown or refining lead capture forms - and allows the user to 'Apply' the fix to see the simulated revenue lift in real-time.",
             "LeadFlow isn't just a diagramming tool; it's a high-fidelity business case engine. By allowing marketers to export these simulations as professional PDFs via **html2canvas** and **jsPDF**, we bridge the gap between technical strategy and executive approval. We are turning marketing from a 'spend' into a 'predictable investment'."
         ]
-    }
+    },
+    {
+        slug: "infrastructure-as-a-sheet",
+        relatedProjectSlug: "agency-control-plane",
+        title: "Infrastructure-as-a-Sheet: Why Your Automation Needs a Kill Switch",
+        date: "December 22, 2025",
+        readTime: "6 min read",
+        topic: "Systems Governance",
+        excerpt: "Scaling an agency requires more than just code: it requires a governance layer. Here is how I manage 100+ bespoke automations with a single 'Command Centre' sheet.",
+        content: [
+            "One of the biggest mistakes in automation engineering is hardcoding. When you build a bespoke solution for a client, it is tempting to paste their Folder ID or Sheet ID directly into the script. But when you scale to 50 or 100 clients, that technical debt becomes a fatal bottleneck. If a client's status changes: or if you need to pause a script due to a payment issue: you cannot afford to hunt through dozens of standalone scripts.",
+            "I built the **Agency Control Plane** to solve this 'Administrative Gravity'. It is a centralised hub that acts as an **Infrastructure-as-a-Sheet** layer. Every script in my agency's ecosystem is engineered to 'phone home' to this master sheet before executing any task. It retrieves the necessary IDs and, crucially, checks the client's status.",
+            "The integrated **Kill Switch Protocol** is a fundamental piece of business logic. By categorising clients as Active, Suspended, or Unpaid, I can manage my entire service portfolio from a single interface. If a client is marked as 'Suspended', the script deterministicly halts: protecting both my time and the client's data from unintended processing.",
+            "This architectural decoupling is what separates a 'script' from a 'service'. By moving the configuration logic out of the code and into a managed interface, I've created a system that is secure, scalable, and operationally transparent. I code for human nature: ensuring that my work is protected while providing clients with a seamless, high-fidelity experience. It is about having **Operational Sovereignty** over your own technical stack."
+        ]
+    },
+    {
+        slug: "code-that-knows-my-kids",
+        relatedProjectSlug: "triage-engine",
+        title: "Code that Knows My Kids: Why My Automation is Deeply Personal",
+        date: "December 22, 2025",
+        readTime: "7 min read",
+        topic: "Human-Centric Engineering",
+        excerpt: "Building systems that understand the difference between a flight confirmation and a child's school event. Here is the 'Why' behind my human-centric trigger logic.",
+        content: [
+            "Technology is often built to ignore the human element. We are expected to adapt to the machine: to translate our messy, nuanced lives into rigid calendar slots and structured data points. But as a solo founder and a single mother of three, I don't have the luxury of adapting to the machine. I need the machine to adapt to me.",
+            "I built the **Triage Engine** at a time when I was severely overwhelmed but couldn't afford to take a break. I engineered it with a **Human-Centric Priority Layer**. While it handles the industrial logic of parsing airline confirmations, it also scans for the names of my children: **Liam, Dylan, and Robyn**. When it sees those names, it isn't just 'logging data': it is identifying a priority that supersedes everything else.",
+            "This isn't about 'reminders'. It is about building a digital ecosystem that respects the boundaries of my life. The system scans for medical appointments, school trips, and the dreaded 'non-uniform day' mentioned in a school email. It automatically blocks out 3:00 PM for the school run and ensures that I am present for the assemblies, sports days, and showcases that define my kids' lives. No more embarrassment of forgetting a fundraising day; the code carries the mental load so I don't have to.",
+            "Perhaps most importantly, the system identifies clients who ask about my family. Those are the clients I want to respond to first. The kids come first: and I write their names into my code to ensure I am present for them. This is the ultimate goal of my architecture: using technical innovation to protect the human nervous system and ensure that being a high-level architect never comes at the cost of being a present parent."
+        ]
+    },
+    {
+        slug: "beyond-the-pixel",
+        relatedProjectSlug: "vision-expense-tracker",
+        title: "Beyond the Pixel: Reclaiming the Weekend with Computer Vision",
+        date: "December 23, 2025",
+        readTime: "5 min read",
+        topic: "AI Innovation",
+        excerpt: "The 'Shoebox of Receipts' is a classic founder bottleneck. Here is how I used Gemini Vision to turn raw pixels into structured financial truth.",
+        content: [
+            "Administrative debt is silent, but it is heavy. It starts with a single receipt left in a pocket and ends with a weekend lost to manual data entry during tax season. For years, I looked for a tool that could truly 'read' my expenses: not just perform basic OCR, but understand the context of a crumpled receipt.",
+            "When **Gemini 1.5 Flash Vision** was released, I saw the architectural missing link. I built a system that turns a simple Google Drive folder into an **Intelligent Financial Inbox**. You drop a photo or a PDF of a receipt into the folder, and the AI 'sees' the pixel data as a human would: identifying the vendor, the date, the category, and the final total.",
+            "The technical challenge was the **Pixel-to-Data Pipeline**. I needed to bridge the gap between a raw image blob and a structured row in a spreadsheet. By leveraging the Gemini Vision API via Apps Script, I created a deterministic flow that not only logs the data but also archives the original document for compliance.",
+            "The result is the end of the 'Accountant's Weekend'. By automating the capture of financial data at the point of origin, I've eliminated the friction of bookkeeping. It is a perfect example of using high-level AI to solve a low-level, high-friction problem. It is code that sees, so you don't have to."
+        ]
+    },
+    {
+        slug: "the-neural-bridge",
+        relatedProjectSlug: "neural-bridge",
+        title: "The Neural Bridge: Turning Google Sheets into Architectural Middleware",
+        date: "December 23, 2025",
+        readTime: "8 min read",
+        topic: "API Orchestration",
+        excerpt: "Why pay for third-party integration tools when you can build a secure, atomic REST API facade yourself? Here is how I architected the Neural Bridge.",
+        content: [
+            "In the world of 'No-Code' automation, we are often told that we need expensive subscriptions to connect our platforms. But for a Principal Architect, these tools are often too rigid: they lack the custom security, atomic write concurrency, and data transformation logic required for high-fidelity systems.",
+            "I built the **Neural Bridge** to act as the connective tissue for my business ecosystem. It is a custom **REST API Facade** engineered with Google Apps Script. Its primary role is 'Traffic Control': accepting incoming webhooks from website forms, logging them to a central spreadsheet database, and synchronising that data with an external Web App CRM.",
+            "What makes the Neural Bridge technically superior to generic tools is its use of the **LockService**. In a high-traffic environment, you cannot risk 'write-collisions' where two leads arrive at the exact same millisecond. By implementing atomic locks, the system ensures that every piece of data is handled sequentially and securely.",
+            "But the Bridge is also about **Data Sovereignty**. By building my own middleware, I handle my own CORS headers, my own token-based authentication, and my own 'Wow Factor' tagging during transit. It is a zero-cost, high-resilience solution that proves that when you understand the architecture, you don't need the 'glue' - you become the glue."
+        ]
+    },
+    {
+        slug: "outreach-architect-logic",
+        relatedProjectSlug: "recruiter-bot",
+        title: "The Outreach Architect: Engineering Value into Cold Contact",
+        date: "January 15, 2026",
+        readTime: "6 min read",
+        topic: "Strategic Outreach",
+        excerpt: "Outreach isn't a numbers game; it's a technical diagnostic. Here is how I used AI to automate 'Deep Reconnaissance' and build immediate trust.",
+        content: [
+            "In the tech industry, we are all drowning in generic noise. As a founder, I hated receiving 'Hey Nicola' emails that clearly had no idea what I actually do. I built the **Outreach Architect** to be the antidote to that noise. I wanted a system that didn't just 'pitch' - it had to 'provide'.",
+            "The technical core of the system shifted from basic automation to a high-fidelity **Python-based scraping backend**. I engineered a pipeline that didn't just look at LinkedIn profiles, but scanned **Reddit** and technical forums for the specific 'Digital Quicksand' people were complaining about. I was looking for the real-world friction: the broken APIs, the document graveyards, the manual bottlenecks: so I could solve them.",
+            "Using **Playwright** for robust scraping and the **Reddit API** for sentiment listening, the system feeds that raw data into Gemini with a specific persona: 'The Helpful Architect'. The AI identifies the likely bottleneck and drafts a 'Strategic Hook'. It proves I've listened to the industry's pain before I even ask for a meeting.",
+            "The result was a total shift in my agency's growth. I stopped chasing leads and started initiating high-value technical dialogues. It proved my philosophy: that when you use Python to listen and Gemini to respond with architecture value, you don't need a sales pitch. You've already solved the problem."
+        ]
+    },
+    {
+        slug: "the-empathy-engine-subtext",
+        relatedProjectSlug: "sentiment-analysis-engine",
+        title: "The Empathy Engine: Reading the Subtext of Client Stress",
+        date: "January 20, 2026",
+        readTime: "5 min read",
+        topic: "Calm Technology",
+        excerpt: "In high-stakes projects, what isn't said is often more important than what is. Here is how I used Sentiment Analysis to protect the human nervous system.",
+        content: [
+            "In high-fidelity engineering, we often focus on 'hard' data: uptime, latency, and throughput. But the most dangerous bottleneck in any business is actually **Emotional Latency**: the gap between a client's frustration and the founder's awareness of it. I built the **Empathy Engine** because I realised that tone is the hardest thing to convey, and to process, in a digital-first world.",
+            "The core inspiration for this script was my son. As an autistic young man, he has always struggled with the 'hidden subtext' of communication. When I was building my business, I wanted to future-proof my infrastructure so he could one day work alongside me. I needed a system that could 'see' the tone he might miss: translating the nuances of an email into a clear, actionable sentiment signal.",
+            "I engineered a **'Neuro-Inclusive Sentinel'** using the Gemini API. It parses incoming emails and categorises them by their **'Cortisol Signal'**. It looks for the stress, urgency, or dissatisfaction that a neurotypical person might sense, but a neurodivergent person might find invisible. By providing this 'Subtext Layer,' the code allows for a level of communication clarity that protects both the project and the people involved.",
+            "My son is now 19 and has found his own path, but the legacy of the Empathy Engine remains. It proved that technology should be an equaliser: a tool that adapts to how your brain actually works and processes information. It is the ultimate expression of **Calm Tech**: using code to remove the friction of being human."
+        ]
+    },
+    {
+        slug: "the-uptime-guardian-resilience",
+        relatedProjectSlug: "uptime-guardian",
+        title: "The Heartbeat: Defending 51+ Assets with the Uptime Guardian",
+        date: "February 2, 2026",
+        readTime: "4 min read",
+        topic: "Digital Resilience",
+        excerpt: "When you manage a digital estate, silence is rarely golden. Here is how I built the Uptime Guardian to be the 'Mother Ship' for my client's lifelines.",
+        content: [
+            "Managing 50+ websites and APIs is like being the captain of a very large, very dispersed fleet. The nightmare scenario isn't a crash you see; it's the 'Silent Failure': the SSL certificate that expires at 3 AM on a Sunday, or the API endpoint that starts serving blank pages without throwing an error.",
+            "I built the **Uptime Guardian** to be the definitive 'Heartbeat' for my empire. It is a **Serverless Ping Matrix** that pings every asset every 60 seconds from multiple regions. But I wanted more than just a '200 OK'. I engineered **Content Integrity Checks** that look for specific strings on the page to ensure the site is actually rendering correctly.",
+            "One of the most 'Founder-Friendly' features is the **SSL Expiry Sentry**. It tracks the expiry date of every certificate and sends me an SMS 10 days before any action is required. It eliminates the 'Emergency Renewal' scramble and ensures that my clients' trust is never compromised by an administrative oversight.",
+            "The Guardian is my 'Unshakeable Foundation'. It allows me to sleep soundly, knowing that if a single point of failure occurs in my estate, I will be the first to know—and often, the first to fix it before the client even notices. It is the ultimate expression of defensive engineering: maintaining a 99.9% uptime record through active, automated vigilance."
+        ]
+    },
+    {
+        slug: "the-10-minute-quote-surgery",
+        relatedProjectSlug: "smart-pricing-engine",
+        title: "The 10-Minute Quote: Dismantling the Corporate Approval Maze",
+        date: "February 15, 2026",
+        readTime: "7 min read",
+        topic: "Operational Surgery",
+        excerpt: "How I turned a 10-day administrative marathon into a 10-minute automated flow. A case study in 'Technical Surgery' for corporate bottlenecks.",
+        content: [
+            "I've always believed that 'Administrative Debt' is a technical failure. I once worked with a client whose sales team was brilliant, but their **'Quote-to-Contract'** loop was a disaster. It took 10 days to get a single proposal approved because the logic was scattered across six different spreadsheets and three different managers' heads.",
+            "I performed **'Operational Surgery'** on their process. I built the **10-Minute Quote Engine** to act as a centralized 'Pricing Brain'. I encoded their entire financial matrix: discounts, tax rules, margin protections, and regional variations: into a single, deterministic script.",
+            "The technical 'Wow' factor was the **Automated Document Synthesis**. The system takes raw inputs from a simple form and instantly generates a branded, legal-grade PDF proposal. It then triggers a secure, multi-stage approval path. What used to take days of back-and-forth emails now takes minutes of automated processing.",
+            "The impact was transformative. By reducing the turnaround time by 99%, we didn't just save time; we saved deals. Sales momentum is fragile, and this engine protected it. It's a perfect example of how 'small' automation can solve a 'massive' business problem. It turns the 'Maze' into a 'Straight Line'."
+        ]
+    },
+    {
+        slug: "inbox-zero-architecture",
+        relatedProjectSlug: "inbox-triage-engine",
+        title: "The Signal and the Noise: Architecting the Non-Destructive Inbox",
+        date: "March 12, 2024",
+        readTime: "5 min read",
+        topic: "Operational Surgery",
+        excerpt: "How I used Apps Script to solve the 10-year legacy inbox problem without deleting a single email. A masterclass in non-destructive automation.",
+        content: [
+            "In my early days as a Virtual Assistant, I was the 'Inbox Sentinel'. I spent hours every day manually triaging client emails, trying to separate the mission-critical signals from the administrative noise. But as I transitioned into architecture, I realized that manual triage is a technical failure. It is a drain on human focus that can be solved with deterministic logic.",
+            "The challenge with managing a client's inbox is **Trust**. You cannot simply 'delete' what you don't recognise, especially when dealing with a 10-year legacy of communications. Standard Gmail filters are fine for new mail, but they fail to address the 'Digital Clutter' of the past. I built the **Inbox Triage Engine** to solve this specific paradox.",
+            "I engineered a production-grade script that executes **Historical Batch Sorting**. Using custom RegEx rules, the system scans the entire inbox history and categorises threads into secure, labeled folders (Income, Insurance, Technical). Crucially, it does this without archiving or marking as read—it provides a visual structure that allows the human to see the signals without losing the context of the noise.",
+            "What makes this 'Small but Mighty' is the **Non-Destructive Engineering**. By using labels instead of deletion, I built a system that clients can trust. It cleared 10,000+ threads in seconds, reclaiming hours of administrative effort every week. It proved that in architecture, the goal isn't just to save time; it's to protect the integrity of the data while liberating the human from the clutter."
+        ]
+    },
 ];

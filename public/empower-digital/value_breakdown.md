@@ -33,4 +33,4 @@ This document provides a strategic breakdown of why the Empower Digital Solution
 - **Professional Governance**: Built with GDPR and data retention standards (6-year HMRC compliance) baked into the core.
 
 ---
-**Verdict**: This is not just a "website"—it is a full-scale **Operational Engine** and **Sales Machine**.
+**Verdict**: This is not just a "website" - it is a full-scale **Operational Engine** and **Sales Machine**.

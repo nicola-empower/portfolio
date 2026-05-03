@@ -2,13 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ArrowLeft, 
-  Target, 
-  Rocket, 
-  Brain, 
-  ShieldCheck, 
-  Layers, 
+import {
+  ArrowLeft,
+  Target,
+  Rocket,
+  Brain,
+  ShieldCheck,
+  Layers,
   Activity,
   Globe,
   Database,
@@ -27,8 +27,8 @@ export default function EmpowerAutomationProposal() {
       {/* Navigation */}
       <nav className="border-b border-card-border bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between font-sans">
-          <Link 
-            href="/#work" 
+          <Link
+            href="/#work"
             className="flex items-center gap-2 text-foreground/50 hover:text-accent-primary transition-colors group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -47,7 +47,7 @@ export default function EmpowerAutomationProposal() {
       <main className="max-w-4xl mx-auto px-6 pt-20">
         {/* Header Section */}
         <div className="mb-24 relative">
-           <div className="relative z-10">
+          <div className="relative z-10">
             <div className="flex items-center gap-2 text-accent-primary font-bold text-[10px] tracking-widest uppercase mb-6">
               <Target size={16} />
               <span>Investment Thesis & Infrastructure Roadmap</span>
@@ -57,7 +57,7 @@ export default function EmpowerAutomationProposal() {
               The <span className="italic text-accent-primary">Strategic Nexus</span>
             </h1>
             <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl font-sans">
-              A comprehensive proposal for the stewardship and scaling of the 
+              A comprehensive proposal for the stewardship and scaling of the
               primary coordination layer for a 51+ asset digital conglomerate.
             </p>
           </div>
@@ -70,8 +70,8 @@ export default function EmpowerAutomationProposal() {
             <div>
               <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-accent-primary mb-6 font-mono">Infrastructure Moat</h3>
               <p className="text-2xl font-serif leading-snug text-heading">
-                The Nexus is the <span className="font-bold underline decoration-accent-primary underline-offset-8">Central Brain</span> — 
-                coordinating content IP, personalized acquisition, and fleet-wide lead orchestration.
+                The Nexus is the <span className="font-bold underline decoration-accent-primary underline-offset-8">Central Brain</span> -
+                coordinating content IP, personalised acquisition, and fleet-wide lead orchestration.
               </p>
             </div>
             <div className="space-y-6">
@@ -95,7 +95,7 @@ export default function EmpowerAutomationProposal() {
             <Rocket className="text-accent-primary" />
             Nexus Roadmap
           </h2>
-          
+
           <div className="space-y-8">
             {/* Phase 1 */}
             <div className="bg-card-bg p-10 rounded-3xl border border-card-border hover:border-accent-primary/30 transition-all group">
@@ -108,8 +108,8 @@ export default function EmpowerAutomationProposal() {
               </div>
               <h3 className="text-xl font-bold mb-4 font-sans text-heading">Autonomous Lead Orchestration</h3>
               <p className="text-foreground/60 text-sm mb-8 leading-relaxed font-sans">
-                Integrating the **Unified Lead Router** to automatically enrich every contact 
-                submission with technical fingerprinting and behavioral metrics before 
+                Integrating the **Unified Lead Router** to automatically enrich every contact
+                submission with technical fingerprinting and behavioral metrics before
                 routing to Trello/Slack.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -130,8 +130,8 @@ export default function EmpowerAutomationProposal() {
               </div>
               <h3 className="text-xl font-bold mb-4 font-sans text-heading">LTV Prediction & CRM Sync</h3>
               <p className="text-foreground/60 text-sm mb-8 leading-relaxed font-sans">
-                Leveraging historical data from the **Business OS** to predict Client Lifetime Value 
-                in real-time as leads enter the Nexus. Auto-prioritizing high-ticket 
+                Leveraging historical data from the **Business OS** to predict Client Lifetime Value
+                in real-time as leads enter the Nexus. Auto-prioritizing high-ticket
                 &ldquo;Automation Architecture&rdquo; requests.
               </p>
               <ul className="space-y-3 font-sans">
@@ -148,14 +148,14 @@ export default function EmpowerAutomationProposal() {
 
             {/* Phase 3 */}
             <div className="bg-card-bg border border-card-border p-10 rounded-3xl hover:border-accent-primary/30 transition-all">
-               <div className="flex justify-between items-start mb-8">
+              <div className="flex justify-between items-start mb-8">
                 <div className="px-3 py-1 bg-accent-secondary/30 rounded-lg text-[10px] font-bold uppercase tracking-widest text-foreground/60">Phase 03</div>
                 <div className="text-foreground/40 font-bold text-[10px] uppercase tracking-widest leading-none">Global Control</div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-heading font-sans">Proactive Portfolio Stewardship</h3>
               <p className="text-foreground/60 text-sm mb-8 leading-relaxed font-sans">
-                Transforming the Nexus into an **Autonomous Fleet Commander**. The system 
-                monitors health across all 51 assets and proactively reallocates ad-spend 
+                Transforming the Nexus into an **Autonomous Fleet Commander**. The system
+                monitors health across all 51 assets and proactively reallocates ad-spend
                 and server resources based on predictive ROI.
               </p>
               <div className="grid grid-cols-2 gap-4 font-sans">
@@ -177,8 +177,8 @@ export default function EmpowerAutomationProposal() {
           <div>
             <h2 className="text-4xl font-serif font-medium mb-8 leading-tight text-heading">Infrastructure Intellectual <br /> Property Valuation</h2>
             <p className="text-foreground/60 text-sm leading-relaxed mb-8 font-sans">
-              The Nexus appraisal is derived from the **Content IP** (21 high-fidelity strategy 
-              logs), the **Acquisition Engine**, and its crucial role as the coordination 
+              The Nexus appraisal is derived from the **Content IP** (21 high-fidelity strategy
+              logs), the **Acquisition Engine**, and its crucial role as the coordination
               layer for the entire £150,000+ fleet.
             </p>
             <div className="space-y-4">
@@ -192,7 +192,7 @@ export default function EmpowerAutomationProposal() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-accent-primary p-12 rounded-[40px] text-accent-primary-foreground shadow-2xl shadow-accent-primary/20 group hover:scale-[1.02] transition-transform">
             <div className="text-[10px] font-bold uppercase tracking-[0.3em] mb-6 opacity-80 text-accent-primary-foreground font-sans">Nexus Appraisal 2026</div>
             <div className="text-6xl font-serif font-medium mb-4 italic leading-tight text-accent-primary-foreground">£35,000</div>
@@ -204,7 +204,7 @@ export default function EmpowerAutomationProposal() {
 
         {/* Sign-off */}
         <footer className="pt-16 border-t border-card-border flex flex-col md:flex-row items-center justify-between gap-12 font-sans">
-           <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6">
             <div className="w-16 h-16 rounded-full bg-accent-primary flex items-center justify-center font-bold text-xl text-accent-primary-foreground shadow-lg ring-4 ring-accent-primary/10">NB</div>
             <div>
               <div className="font-bold text-lg text-heading">Nicola Berry</div>
@@ -212,7 +212,7 @@ export default function EmpowerAutomationProposal() {
             </div>
           </div>
           <div className="flex gap-4">
-            <Link 
+            <Link
               href="/work/empower-automation/infographic"
               className="px-8 py-4 bg-accent-primary text-accent-primary-foreground rounded-full font-bold hover:scale-105 transition-all text-sm flex items-center gap-2"
             >

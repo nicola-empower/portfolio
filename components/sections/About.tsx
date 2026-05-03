@@ -19,7 +19,7 @@ export function About() {
                     >
                         <div className="aspect-4/5 rounded-2xl overflow-hidden bg-accent-secondary/10 relative group">
                             <Image
-                                src="/nicola_professional.jpg"
+                                src="/nicola_professional.png"
                                 alt="Nicola Berry - Principal Digital Architect"
                                 fill
                                 priority={true}
@@ -52,7 +52,6 @@ export function About() {
                         </motion.div>
                     </motion.div>
 
-                    {/* Text Content Side */}
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}

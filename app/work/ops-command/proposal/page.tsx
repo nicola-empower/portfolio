@@ -2,13 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ArrowLeft, 
-  Target, 
-  Rocket, 
-  Brain, 
-  ShieldCheck, 
-  Layers, 
+import {
+  ArrowLeft,
+  Target,
+  Rocket,
+  Brain,
+  ShieldCheck,
+  Layers,
   Zap,
   TrendingUp,
   Cpu,
@@ -27,8 +27,8 @@ export default function OpsCommandProposal() {
       {/* Navigation */}
       <nav className="border-b border-card-border bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link 
-            href="/#work" 
+          <Link
+            href="/#work"
             className="flex items-center gap-2 text-foreground/50 hover:text-accent-primary transition-colors group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -57,8 +57,8 @@ export default function OpsCommandProposal() {
             Global Enterprises
           </h1>
           <p className="text-xl text-foreground font-medium leading-relaxed max-w-2xl">
-            A strategic funding proposal to transition a high-fidelity operational hub into 
-             a unified, AI-native Business Operating System.
+            A strategic funding proposal to transition a high-fidelity operational hub into
+            a unified, AI-native Business Operating System.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function OpsCommandProposal() {
             <div>
               <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-accent-primary mb-6">Strategic Moat</h3>
               <p className="text-2xl font-serif font-bold italic leading-snug text-heading">
-                OpsCommand addresses the <span className="font-black underline decoration-accent-primary underline-offset-8 text-heading">SaaS Sprawl</span> — 
+                OpsCommand addresses the <span className="font-black underline decoration-accent-primary underline-offset-8 text-heading">SaaS Sprawl</span> -
                 consolidating fragmented operational data into a single, high-resolution execution layer.
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function OpsCommandProposal() {
             <Rocket className="text-accent-primary" />
             Growth Phases
           </h2>
-          
+
           <div className="space-y-8">
             {/* Phase 1 */}
             <div className="bg-card-bg p-10 rounded-[32px] border border-card-border hover:border-accent-primary/30 transition-all shadow-lg">
@@ -107,7 +107,7 @@ export default function OpsCommandProposal() {
               </div>
               <h3 className="text-2xl font-bold mb-4 font-serif italic text-heading">Universal Logic Connectors</h3>
               <p className="text-foreground/70 text-sm font-medium mb-8 leading-relaxed">
-                Implementing standard webhooks for **Stripe, Shopify, and Jira** to feed 
+                Implementing standard webhooks for **Stripe, Shopify, and Jira** to feed
                 the Global Pulse in real-time. Migrating to Supabase for multi-tenant data persistence.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -128,7 +128,7 @@ export default function OpsCommandProposal() {
               </div>
               <h3 className="text-2xl font-bold mb-4 font-serif italic text-heading text-accent-primary">Durable Execution Layer</h3>
               <p className="text-foreground/70 text-sm font-medium mb-8 leading-relaxed">
-                Integrating **Temporal.io** or **Inngest** to handle complex, long-running 
+                Integrating **Temporal.io** or **Inngest** to handle complex, long-running
                 business workflows that survive server restarts and network interruptions.
               </p>
               <ul className="space-y-3">
@@ -145,14 +145,14 @@ export default function OpsCommandProposal() {
 
             {/* Phase 3 (Intelligence) */}
             <div className="bg-card-bg border border-card-border p-10 rounded-[32px] hover:border-accent-primary/30 transition-all shadow-lg">
-               <div className="flex justify-between items-start mb-8">
+              <div className="flex justify-between items-start mb-8">
                 <div className="px-3 py-1 bg-accent-primary/10 rounded-lg text-[10px] font-bold uppercase tracking-widest text-accent-primary">Phase 03</div>
                 <div className="text-foreground/40 font-bold text-[10px] uppercase tracking-widest">Autonomous Ops</div>
               </div>
               <h3 className="text-2xl font-bold mb-4 font-serif italic text-heading">Autonomous Business Intelligence</h3>
               <p className="text-foreground/70 text-sm font-medium mb-8 leading-relaxed">
-                Applying Small Language Models (SLMs) to historical operational data to 
-                **predict the next 3 weeks of resource demand** with 92% accuracy. 
+                Applying Small Language Models (SLMs) to historical operational data to
+                **predict the next 3 weeks of resource demand** with 92% accuracy.
                 Proactive bottleneck resolution without human intervention.
               </p>
               <div className="grid grid-cols-2 gap-4">
@@ -174,8 +174,8 @@ export default function OpsCommandProposal() {
           <div>
             <h2 className="text-4xl font-serif font-bold italic mb-8 leading-tight text-heading">Strategic Enterprise <br /> Valuation</h2>
             <p className="text-foreground font-medium text-sm leading-relaxed mb-8">
-              OpsCommand is not a tool; it is infrastructure. By owning the 'Operational Truth' of a business, 
-              it becomes the most un-installable asset in the stack. 
+              OpsCommand is not a tool; it is infrastructure. By owning the 'Operational Truth' of a business,
+              it becomes the most un-installable asset in the stack.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-accent-primary">
@@ -188,24 +188,24 @@ export default function OpsCommandProposal() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-accent-primary p-12 rounded-[40px] text-accent-primary-foreground shadow-2xl relative overflow-hidden group">
             <div className="absolute top-0 right-0 p-12 text-accent-primary-foreground/5 -rotate-12 group-hover:rotate-0 transition-transform duration-700">
-                <TrendingUp size={120} />
+              <TrendingUp size={120} />
             </div>
             <div className="relative z-10">
-                <div className="text-[10px] font-bold uppercase tracking-[0.3em] mb-6 opacity-80">Current Appraisal</div>
-                <div className="text-6xl font-serif font-bold mb-4 italic leading-tight">£25,000</div>
-                <p className="text-sm font-bold opacity-90 leading-relaxed uppercase tracking-tighter">
+              <div className="text-[10px] font-bold uppercase tracking-[0.3em] mb-6 opacity-80">Current Appraisal</div>
+              <div className="text-6xl font-serif font-bold mb-4 italic leading-tight">£25,000</div>
+              <p className="text-sm font-bold opacity-90 leading-relaxed uppercase tracking-tighter">
                 A comprehensive valuation of the <br /> Unified Business OS Property & <br /> High-Decibel Architecture.
-                </p>
+              </p>
             </div>
           </div>
         </section>
 
         {/* Sign-off */}
         <footer className="pt-16 border-t border-card-border flex flex-col md:flex-row items-center justify-between gap-12">
-           <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6">
             <div className="w-16 h-16 rounded-full bg-accent-primary flex items-center justify-center font-bold text-xl text-accent-primary-foreground shadow-lg ring-4 ring-accent-primary/10">NB</div>
             <div>
               <div className="font-bold text-lg text-heading">Nicola Berry</div>
@@ -213,7 +213,7 @@ export default function OpsCommandProposal() {
             </div>
           </div>
           <div className="flex gap-4">
-            <Link 
+            <Link
               href="/work/ops-command/infographic"
               className="px-8 py-4 bg-accent-primary text-accent-primary-foreground rounded-full font-bold hover:scale-105 transition-all text-sm flex items-center gap-2 shadow-lg"
             >

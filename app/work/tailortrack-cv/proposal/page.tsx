@@ -262,7 +262,7 @@ export default function TailorTrackProposalPage() {
                         <div className="text-right pt-8">
                             <p className="text-foreground/40 text-sm font-bold uppercase tracking-widest mb-2">Total Funding Recommendation</p>
                             <p className="text-4xl font-serif font-bold italic text-heading">
-                                £105,000 — <span className="text-accent-primary">£135,000</span>
+                                £105,000 - <span className="text-accent-primary">£135,000</span>
                             </p>
                         </div>
                     </div>
