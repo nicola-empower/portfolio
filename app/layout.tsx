@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
@@ -113,9 +113,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="fixed top-6 right-6 z-40">
-            <ThemeToggle />
-          </div>
+          <Navbar />
           <a
             href="#main-content"
             className="fixed top-4 left-4 z-50 -translate-y-[150%] focus:translate-y-0 bg-heading text-background px-4 py-2 rounded-md font-bold transition-transform duration-300"

@@ -221,7 +221,7 @@ export default function MedisyncProposalPage() {
                 <section className="mt-32 mb-12 py-24 text-center avoid-break">
                     <div className="max-w-4xl mx-auto bg-card-bg p-20 rounded-[5rem] text-heading leading-relaxed border-2 border-card-border shadow-inner text-4xl mb-20 font-serif font-bold italic relative">
                         <div className="absolute top-8 left-10 text-9xl text-accent-primary/10 font-serif font-bold italic">"</div>
-                        Technology hasn't failed the care crisis; it has simply focused on the wrong users. Medi-Sync fixes the bottleneck of human exhaustion.
+                        Technology hasn't failed the care crisis; it has simply focused on the wrong users. Medi-Sync fixes the bottleneck of mental exhaustion.
                         <div className="absolute bottom-4 right-10 text-9xl text-accent-primary/10 font-serif font-bold italic">"</div>
                     </div>
                     <div className="space-y-6">

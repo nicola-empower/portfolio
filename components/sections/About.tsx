@@ -32,13 +32,30 @@ export function About() {
                             <div className="absolute inset-4 border border-background/30 rounded-xl z-10" />
                         </div>
 
-                        {/* Floating Badge */}
+                        {/* Floating Accreditation Badge */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2, duration: 0.6 }}
+                            className="absolute -top-4 -left-4 z-20 flex items-center gap-3 px-4 py-2 bg-[#4A0E0E] dark:bg-[#4A0E0E]/90 backdrop-blur-md border border-[#D4A84F]/50 dark:border-[#D4A84F]/40 rounded-xl shadow-xl"
+                        >
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#D4A84F]">
+                                <path d="M10 19C10 19 8.5 17.5 7 14C5.5 10.5 6 7 6 7M6 7C6 7 8 8.5 9 11C10 13.5 10 16 10 16M6 7C6 7 4.5 8.5 4 11C3.5 13.5 4 16 4 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                            <div className="flex flex-col">
+                                <span className="text-[#D4A84F] text-[8px] font-bold uppercase tracking-[0.2em] leading-tight">Winner 2026</span>
+                                <span className="text-white/95 text-[10px] font-serif font-bold leading-tight">SME News Award</span>
+                            </div>
+                        </motion.div>
+
+                        {/* Floating Badge (Serving Globally) */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4, duration: 0.6 }}
-                            className="absolute -bottom-6 -right-6 bg-card-bg/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-foreground/10 hidden md:block"
+                            className="absolute -bottom-6 -right-6 bg-card-bg/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-foreground/10 hidden md:block z-20"
                         >
                             <div className="flex items-center gap-3 text-heading">
                                 <div className="p-2 bg-accent-primary/10 rounded-full">

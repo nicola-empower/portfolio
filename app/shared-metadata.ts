@@ -73,6 +73,6 @@ export const sharedMetadata: Metadata = {
         },
     },
     icons: {
-        icon: "/favicon.ico",
+        icon: "/logo.png",
     },
 };

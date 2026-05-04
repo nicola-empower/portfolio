@@ -257,7 +257,7 @@ export default function PaxProposalPage() {
                         <h2 className="text-4xl font-serif font-bold italic text-heading">The Empower Commitment</h2>
                         <div className="bg-card-bg border border-card-border p-12 rounded-[2.5rem] shadow-sm relative italic text-2xl md:text-3xl text-heading font-serif leading-relaxed">
                             <span className="text-6xl font-serif text-accent-primary/20 absolute top-4 left-4">"</span>
-                            PAX: Restoring the human core to generative vision. Identity isn't a prompt; it's a constant.
+                            PAX: Restoring the authentic core to generative vision. Identity isn't a prompt; it's a constant.
                             <span className="text-6xl font-serif text-accent-primary/20 absolute bottom-4 right-4">"</span>
                         </div>
                     </div>

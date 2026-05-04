@@ -41,10 +41,10 @@ const ReclaimInfographicPage = () => {
     const isDark = resolvedTheme === 'dark';
 
     // Dynamic Theme Colors (Strict 4-Color Palette)
-    const chartTextColor = isDark ? '#C7B7A3' : '#6D2932'; 
+    const chartTextColor = isDark ? '#C7B7A3' : '#6D2932';
     const chartGridColor = isDark ? 'rgba(199, 183, 163, 0.1)' : 'rgba(109, 41, 50, 0.1)';
-    const burgundyAccent = '#561C24'; 
-    const maroonAccent = '#6D2932'; 
+    const burgundyAccent = '#561C24';
+    const maroonAccent = '#6D2932';
     const taupeAccent = '#C7B7A3';
     const creamAccent = '#E8D8C4';
 
@@ -74,7 +74,7 @@ const ReclaimInfographicPage = () => {
         labels: ['Pruned Distractions', 'Strategic Pillars', 'Executive Slack'],
         datasets: [{
             data: [42, 12, 5],
-            backgroundColor: [burgundyAccent, maroonAccent, taupeAccent], 
+            backgroundColor: [burgundyAccent, maroonAccent, taupeAccent],
             borderWidth: 0,
             hoverOffset: 10
         }]
@@ -128,7 +128,7 @@ const ReclaimInfographicPage = () => {
                     </h2>
                     <p className="max-w-3xl mx-auto text-xl text-foreground font-medium leading-relaxed">
                         "Authority is built in the silence between decisions." <br />
-                        Architecting the transition from global deep-work to human rituals.
+                        Architecting the transition from global deep-work to personal rituals.
                     </p>
                 </div>
             </header>
@@ -215,7 +215,7 @@ const ReclaimInfographicPage = () => {
                             <Bar data={bioData} options={bioOptions} />
                         </div>
                         <p className="text-sm text-foreground font-bold leading-relaxed italic border-l-4 border-accent-secondary pl-6">
-                            Executive authority requires baseline stability. Reclaim tracks hydration, food intake, and oxygen quotas to ensure the human element remains as resilient as the architecture.
+                            Executive authority requires baseline stability. Reclaim tracks hydration, food intake, and oxygen quotas to ensure the client remains as resilient as the architecture.
                         </p>
                     </section>
                 </div>
@@ -230,7 +230,7 @@ const ReclaimInfographicPage = () => {
                             { step: '01', title: 'Director Scan', desc: 'Synthesising inbox, calendar, and 40+ newsletters via Gemini 3 Pro.', color: 'accent-primary' },
                             { step: '02', title: 'Context Audit', desc: 'Pruning high-decibel noise into strategic operational pillars.', color: 'accent-primary' },
                             { step: '03', title: '5:30 Boundary', desc: 'The "Hard Switch" from CEO Mode to Mum Mode ritual.', color: 'accent-primary' },
-                            { step: '04', title: 'Sanctuary Sync', desc: 'Transitioning to human rituals and bio-metric restoration.', color: 'accent-primary' }
+                            { step: '04', title: 'Sanctuary Sync', desc: 'Transitioning to personal rituals and bio-metric restoration.', color: 'accent-primary' }
                         ].map((item, idx) => (
                             <div key={idx} className="bg-background border border-card-border group hover:border-accent-primary/50 transition-all relative overflow-hidden p-8 rounded-[2.5rem]">
                                 <span className="text-5xl font-black text-accent-primary/10 absolute top-4 right-6 group-hover:text-accent-primary/20 transition-colors font-serif">{item.step}</span>
@@ -264,7 +264,7 @@ const ReclaimInfographicPage = () => {
                                     <div className="w-8 h-px bg-accent-primary/50"></div>
                                 </div>
                             </div>
-                             {/* Step 2: Filter */}
+                            {/* Step 2: Filter */}
                             <div className="bg-accent-primary/5 border-2 border-accent-primary/20 p-8 rounded-[2.5rem] relative shadow-lg">
                                 <div className="bg-accent-primary w-12 h-12 rounded-2xl flex items-center justify-center mb-6 text-background shadow-lg">
                                     <Lock size={24} />

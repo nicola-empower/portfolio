@@ -34,7 +34,7 @@ export default function CVPage() {
                         Nicola Berry - Principal Digital Architect | Operations Engineer | Technical Founder
                     </h2>
                     <p className="font-serif italic text-xl text-foreground/80 mb-8 max-w-3xl mx-auto">
-                        &quot;Strategic Systems Architect with 10+ years of experience engineering high-performance digital ecosystems. Specialist in bridging the &apos;Visibility Gap&apos; in automated operations through the design of custom Command & Control planes.&quot;
+                        &quot;Strategic Systems Architect with 10+ years of experience engineering high-performance digital ecosystems. Specialist in Digital Safeguarding and the design of custom Command & Control planes that eliminate operational friction.&quot;
                     </p>
                     <p className="font-sans text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
                         Proven track record of architecting, valuing, and managing a 30+ project digital estate with a combined valuation of £3m+. Expert in leveraging AI (Gemini/OpenAI) and low-latency frameworks (Next.js/Astro) to drive operational efficiency at scale.
@@ -54,10 +54,10 @@ export default function CVPage() {
                             &quot;My path to software engineering wasn&apos;t traditional and that is my greatest asset. With over a decade spent in high-pressure care environments and direct sales, I learned to anticipate needs, manage crises, and communicate clearly long before I wrote my first line of code.
                         </p>
                         <p>
-                            After founding <strong className="text-heading">Empower Virtual Assistant Services</strong> to help businesses streamline their operations, I realised that the true bottleneck wasn&apos;t just administration; it was the lack of bespoke, intelligent software; none currently meet the full needs of every business. I pivoted to engineering to build the solutions my clients couldn&apos;t find.
+                            After founding <strong className="text-heading">Empower Digital Solutions</strong> to architect the operational autonomy of scaling enterprises, I identified a systemic failure in off-the-shelf software; none currently meet the complex needs of high-velocity businesses. I pivoted to engineering to build the deterministic solutions my clients couldn&apos;t find.
                         </p>
                         <p>
-                            Today, I combine that deep operational logic with a modern tech stack (React, TypeScript, Next.js). I don&apos;t just build websites; I build platforms like <strong className="text-heading">VowSuite</strong>: resilient, intuitive, and designed with a level of empathy and efficiency that you only get from living a life fully lived. As a mum of three, I know that time is our most valuable currency, so I build software that saves it.&quot;
+                            Today, I combine that deep operational logic with a modern tech stack (React, TypeScript, Next.js). I don&apos;t just build websites; I build platforms like <strong className="text-heading">VowSuite</strong>: resilient, intuitive, and designed with a level of empathy and efficiency that you only get from a life fully lived. As a mother of three, I know that time is our most valuable currency, so I build software that aggressively protects it."
                         </p>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ export default function CVPage() {
                                 <h4 className="font-bold text-lg text-heading">Systems Monitoring</h4>
                             </div>
                             <p className="text-foreground/70 leading-relaxed">
-                                Real-time heartbeats, custom telemetry dashboards, automated incident responses.
+                                Real-time heartbeats, custom telemetry dashboards, automated incident responses, and Digital Safeguarding.
                             </p>
                         </div>
                     </div>
@@ -275,7 +275,43 @@ export default function CVPage() {
                 </div>
             </section>
 
-            {/* 6. The "Superpowers" (Soft Skills) */}
+            {/* 6. Governance & CPD */}
+            <section className="container mx-auto px-6 mb-20">
+                <div className="max-w-4xl mx-auto">
+                    <h3 className="font-serif text-3xl font-bold text-heading mb-8 flex items-center gap-3">
+                        <span className="w-8 h-1 bg-accent-primary rounded-full"></span>
+                        Governance & CPD
+                    </h3>
+                    <div className="bg-card-bg p-8 rounded-xl border border-accent-primary/20 shadow-sm relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-8 opacity-5">
+                            <Star size={80} className="text-accent-primary" />
+                        </div>
+                        <p className="text-foreground/70 text-lg leading-relaxed mb-6 font-medium italic">
+                            &quot;I maintain a rigorous schedule of Continuous Professional Development (CPD) to ensure my architectural decisions are governed by the latest UK standards in digital security, enterprise logic, and operational ethics.&quot;
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="flex items-center gap-3 p-4 bg-background/50 rounded-lg border border-foreground/5">
+                                <div className="w-2 h-2 rounded-full bg-accent-primary"></div>
+                                <span className="text-sm font-bold text-heading uppercase tracking-wider">Accredited Enterprise Strategy</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-4 bg-background/50 rounded-lg border border-foreground/5">
+                                <div className="w-2 h-2 rounded-full bg-accent-primary"></div>
+                                <span className="text-sm font-bold text-heading uppercase tracking-wider">Advanced Digital Governance Briefings</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-4 bg-background/50 rounded-lg border border-foreground/5">
+                                <div className="w-2 h-2 rounded-full bg-accent-primary"></div>
+                                <span className="text-sm font-bold text-heading uppercase tracking-wider">Industrial Modernisation Symposiums</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-4 bg-background/50 rounded-lg border border-foreground/5">
+                                <div className="w-2 h-2 rounded-full bg-accent-primary"></div>
+                                <span className="text-sm font-bold text-heading uppercase tracking-wider">Strategic Business Resilience CPD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 7. The "Superpowers" (Soft Skills) */}
             <section className="container mx-auto px-6 mb-24">
                 <div className="max-w-4xl mx-auto">
                     <h3 className="font-serif text-3xl font-bold text-heading mb-8 flex items-center gap-3">

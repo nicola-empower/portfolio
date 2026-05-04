@@ -157,7 +157,7 @@ export default function LeadFlowProposal() {
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-4 bg-background rounded-2xl border border-card-border text-center shadow-sm">
-                  <div className="text-[10px] font-black text-foreground/30 uppercase tracking-widest mb-1">Human Effort Reduction</div>
+                  <div className="text-[10px] font-black text-foreground/30 uppercase tracking-widest mb-1">Manual Effort Reduction</div>
                   <div className="text-3xl font-serif text-accent-primary italic font-bold leading-none">-85%</div>
                 </div>
                 <div className="p-4 bg-background rounded-2xl border border-card-border text-center shadow-sm">

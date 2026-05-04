@@ -155,7 +155,7 @@ export default function EmpowerVAProposal() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-background italic">Managed Digital Stewardship</h3>
               <p className="text-inherit opacity-70 text-sm mb-8 leading-relaxed italic">
-                The final tier of human-in-the-loop coordination. Empower VA acts as the
+                The final tier of expert-in-the-loop coordination. Empower VA acts as the
                 managed operational layer for entire digital fleets, ensuring that
                 infrastructure is used to its full commercial potential.
               </p>
@@ -180,7 +180,7 @@ export default function EmpowerVAProposal() {
             <p className="text-foreground/50 text-sm leading-relaxed mb-8 font-sans">
               The Empower VA valuation reflects the **Operational Intellectual Property**
               (35+ logs), the **Client Acquisition System** (Regional SEO), and its unique
-              positioning as the human implementation layer for high-end technology.
+              positioning as the strategic implementation layer for high-end technology.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-foreground/40 font-sans">

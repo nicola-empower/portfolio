@@ -302,7 +302,7 @@ export default function TailorTrackProposalPage() {
                         <div className="p-10 bg-card-bg border-t-4 border-accent-primary rounded-xl avoid-break-inside border border-card-border shadow-sm">
                             <h4 className="font-serif font-bold italic text-xl mb-6 text-heading">Digital Sovereignty</h4>
                             <p className="text-sm text-foreground/50 font-medium italic leading-relaxed">
-                                The user (student/professional) owns their data. Local storage is the default; cloud sync is an optional, institutional opt-in.
+                                The Professional (Student or Expert) owns their data. Local storage is the default; cloud sync is an optional, institutional opt-in.
                             </p>
                         </div>
                         <div className="p-10 bg-card-bg border-t-4 border-accent-primary rounded-xl avoid-break-inside border border-card-border shadow-sm">

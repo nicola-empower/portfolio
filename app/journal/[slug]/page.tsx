@@ -3,7 +3,7 @@ import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight, RefreshCw, Terminal } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
 
 export async function generateStaticParams() {
@@ -111,6 +111,30 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
                             <Link href={`/work/${relatedProject.slug}`} className="shrink-0 px-6 py-3 bg-accent-primary text-accent-primary-foreground rounded-lg font-bold hover:bg-accent-primary/90 transition-colors flex items-center gap-2">
                                 View Case Study <ArrowRight size={16} />
                             </Link>
+                        </div>
+                    </FadeIn>
+                )}
+
+                {/* Living Infrastructure Note - Only for AI-Native Projects */}
+                {journal.isAINative && (
+                    <FadeIn delay={0.8} y={20}>
+                        <div className="max-w-4xl mx-auto mt-16">
+                            <div className="bg-[#D4A84F]/5 border border-[#D4A84F]/20 rounded-3xl p-8 md:p-10 relative overflow-hidden group hover:bg-[#D4A84F]/10 transition-colors">
+                                <div className="absolute top-0 right-0 p-8 opacity-5">
+                                    <Terminal size={80} className="text-[#D4A84F]" />
+                                </div>
+                                <div className="flex flex-col md:flex-row gap-6 items-start relative">
+                                    <div className="p-3 bg-[#D4A84F]/20 rounded-xl text-[#D4A84F]">
+                                        <Terminal size={24} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-serif text-lg font-bold text-heading mb-1">Living Infrastructure Note</h4>
+                                        <p className="text-foreground/60 text-sm leading-relaxed max-w-2xl italic">
+                                            Architect&apos;s Record: While this entry documents the initial implementation using the models available at the time of writing, this project remains a core component of my living infrastructure. All systems are systematically upgraded to the latest production-grade APIs (currently maintaining Gemini 2.0/3.0 parity) to ensure absolute performance, security, and technical sovereignty.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </FadeIn>
                 )}

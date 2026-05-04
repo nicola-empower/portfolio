@@ -153,7 +153,7 @@ export default function OpsCommandProposal() {
               <p className="text-foreground/70 text-sm font-medium mb-8 leading-relaxed">
                 Applying Small Language Models (SLMs) to historical operational data to
                 **predict the next 3 weeks of resource demand** with 92% accuracy.
-                Proactive bottleneck resolution without human intervention.
+                Proactive bottleneck resolution without manual intervention.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-4 bg-background/50 rounded-2xl border border-card-border text-center">
@@ -161,7 +161,7 @@ export default function OpsCommandProposal() {
                   <div className="text-2xl font-serif font-bold text-accent-primary">92%</div>
                 </div>
                 <div className="p-4 bg-background/50 rounded-2xl border border-card-border text-center">
-                  <div className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest mb-1">Human Intervention</div>
+                  <div className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest mb-1">Manual Intervention</div>
                   <div className="text-2xl font-serif font-bold text-accent-primary">-70%</div>
                 </div>
               </div>

@@ -35,7 +35,7 @@ const InfographicPage = () => {
   const isDark = resolvedTheme === 'dark';
 
   // Dynamic Colors (Strict 4-Color Palette)
-  const chartTextColor = isDark ? '#C7B7A3' : '#6D2932'; 
+  const chartTextColor = isDark ? '#C7B7A3' : '#6D2932';
   const chartGridColor = isDark ? 'rgba(199, 183, 163, 0.05)' : 'rgba(109, 41, 50, 0.05)';
   const chartAccent = '#561C24';
 
@@ -251,7 +251,7 @@ const InfographicPage = () => {
           </h3>
           <p className="text-background/80 mb-12 text-lg leading-relaxed max-w-3xl font-medium">
             The app bridges the "translation gap" between a survivor's raw experience and the objective
-            language required by courts. It uses AI for suggestions, but prioritises human agency.
+            language required by courts. It uses AI for suggestions, but prioritises the survivors agency.
           </p>
           <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6 pb-6 text-background">
             <div className="flex-1 bg-background/5 border border-background/10 rounded-2xl p-6 hover:bg-background/10 transition-colors">

@@ -31,7 +31,7 @@ export default function IntelligencePage() {
             <p className="text-xl md:text-2xl text-foreground/70 max-w-3xl leading-relaxed font-sans">
               Detailed briefings on the architecture, psychology, and operational reasoning 
               behind my core digital systems. These dossiers move beyond code to document 
-              the structural intelligence of human-centric technical solutions.
+              the structural intelligence of executive-led technical solutions.
             </p>
           </FadeIn>
         </header>
