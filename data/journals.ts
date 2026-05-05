@@ -138,7 +138,7 @@ export const journals: Journal[] = [
         date: "March 12, 2026",
         readTime: "2 min read",
         topic: "Vision AI & Operations",
-        excerpt: "Why custom ownership beats the 'SaaS Trap'. How architecting a £25k integrated operating system generates £100k in 5-year ROI.",
+        excerpt: "Why custom ownership beats the 'SaaS Trap'. How architecting a high-performance integrated operating system generates significant 5-year ROI.",
         content: [
             "In the luxury salon industry, most owners are trapped by 'Administrative Gravity'. They pay high monthly fees to SaaS giants like Phorest or Timely, and then lose 20% of new client revenue to commission platforms like Fresha. They are renting their digital brain, not owning it.",
             "I architected **The Salon OS** as a high-performance alternative to this 'SaaS Trap'. Built on **Astro's Island Architecture**, it provides the speed of a static site with the complex interactivity of a React dashboard. The commercial result is a platform that generates over £100,000 in savings and captured revenue over a 5-year period.",
