@@ -19,7 +19,7 @@ export function IntelligenceSection() {
     const featuredDossiers = intelligenceDossiers.slice(0, 3);
 
     return (
-        <section id="intelligence" className="py-32 bg-background transition-colors duration-500 relative overflow-hidden">
+        <section id="intelligence" className="section-padding bg-background transition-colors duration-500 relative overflow-hidden">
             {/* Architectural Background Detail */}
             <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none">
                 <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)', backgroundSize: '40px 40px' }} />

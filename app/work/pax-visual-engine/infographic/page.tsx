@@ -40,7 +40,7 @@ const PaxInfographicPage = () => {
     // Dynamic Colors based on semantic tokens (Strict 4-Color Palette)
     const chartTextColor = isDark ? "#C7B7A3" : "#6D2932";
     const chartGridColor = isDark ? "rgba(199, 183, 163, 0.1)" : "rgba(109, 41, 50, 0.05)";
-    const chartAccent = "#561C24"; 
+    const chartAccent = "#561C24";
 
     // Prompt Alignment Chart Data
     const alignmentData = {
@@ -141,13 +141,13 @@ const PaxInfographicPage = () => {
             <header className="relative bg-card-bg border-b border-card-border overflow-hidden py-24 md:py-32">
                 <div className="absolute inset-0 bg-gradient-to-b from-accent-primary/5 to-transparent opacity-50"></div>
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-primary/5 rounded-full blur-[120px] -mr-64 -mt-64"></div>
-                
+
                 <div className="max-w-7xl mx-auto px-8 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-primary/10 border border-accent-primary/20 text-accent-primary text-xs font-black uppercase tracking-widest mb-8 animate-fade-in">
                         <Sparkles size={14} />
                         <span>Visual Intelligence Architecture</span>
                     </div>
-                    
+
                     <h1 className="text-5xl md:text-8xl font-serif font-bold italic text-heading mb-6 tracking-tight">
                         PAX <span className="text-accent-primary not-italic">Engine</span>
                     </h1>
@@ -176,7 +176,7 @@ const PaxInfographicPage = () => {
                                 </p>
                             </div>
                             <div className="shrink-0">
-                                <Link 
+                                <Link
                                     href="/work/pax-visual-engine/proposal"
                                     className="inline-flex items-center gap-3 px-8 py-4 bg-background text-accent-primary rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl"
                                 >
@@ -240,21 +240,21 @@ const PaxInfographicPage = () => {
                                 <span className="text-4xl font-serif font-bold italic text-accent-primary leading-none">93%</span>
                                 <span className="text-[10px] font-black uppercase tracking-widest text-foreground/40">Efficiency Gain</span>
                             </div>
-                            <Doughnut 
-                                data={motionData} 
-                                options={{ 
-                                    cutout: "75%", 
-                                    plugins: { 
-                                        legend: { 
-                                            position: "bottom", 
-                                            labels: { 
-                                                color: chartTextColor, 
+                            <Doughnut
+                                data={motionData}
+                                options={{
+                                    cutout: "75%",
+                                    plugins: {
+                                        legend: {
+                                            position: "bottom",
+                                            labels: {
+                                                color: chartTextColor,
                                                 font: { family: "serif", weight: "bold", size: 10 },
                                                 padding: 20
-                                            } 
-                                        } 
-                                    } 
-                                }} 
+                                            }
+                                        }
+                                    }
+                                }}
                             />
                         </div>
                     </section>
@@ -262,7 +262,7 @@ const PaxInfographicPage = () => {
                     {/* Workflow Workflow - Full Width Mobile, Half Desktop */}
                     <section className="md:col-span-2 bg-card-bg rounded-[2rem] p-8 md:p-16 border border-card-border shadow-2xl relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent-primary to-transparent opacity-30"></div>
-                        
+
                         <div className="max-w-4xl">
                             <h3 className="text-4xl font-serif font-bold italic text-heading mb-6 flex items-center gap-4">
                                 <Zap className="w-10 h-10 text-accent-primary" />
@@ -278,7 +278,7 @@ const PaxInfographicPage = () => {
                                 { step: "01", title: "Style Selection", desc: "Select 'wardrobe' presets via the dashboard (Cher Horowitz style)." },
                                 { step: "02", title: "Hygiene Injection", desc: "Hard-coded negative anchors ensure quality and 100% SFW compliance." },
                                 { step: "03", title: "Flux Synthesis", desc: "Astria API processes 4 identity-consistent variations." },
-                                { step: "04", title: "Motion Analysis", desc: "Vision AI analyzes composition for realistic cinematic prompts." }
+                                { step: "04", title: "Motion Analysis", desc: "Vision AI analyses composition for realistic cinematic prompts." }
                             ].map((item, idx) => (
                                 <div key={idx} className="bg-background/40 p-8 rounded-2xl border border-card-border relative group hover:border-accent-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                                     <span className="text-6xl font-serif font-bold italic opacity-5 absolute -top-4 -right-4 text-accent-primary group-hover:opacity-10 transition-opacity">
@@ -309,22 +309,22 @@ const PaxInfographicPage = () => {
                             <Line data={driftData} options={{
                                 responsive: true,
                                 maintainAspectRatio: false,
-                                plugins: { 
-                                    legend: { 
-                                        position: "top", 
-                                        labels: { color: chartTextColor, font: { family: "serif", weight: "bold" }, usePointStyle: true, padding: 20 } 
-                                    } 
+                                plugins: {
+                                    legend: {
+                                        position: "top",
+                                        labels: { color: chartTextColor, font: { family: "serif", weight: "bold" }, usePointStyle: true, padding: 20 }
+                                    }
                                 },
-                                scales: { 
-                                    y: { 
-                                        beginAtZero: true, 
-                                        title: { display: true, text: "% Deviation from Source", color: chartTextColor, font: { family: "serif", weight: "bold" } }, 
-                                        ticks: { color: chartTextColor }, 
-                                        grid: { color: chartGridColor } 
+                                scales: {
+                                    y: {
+                                        beginAtZero: true,
+                                        title: { display: true, text: "% Deviation from Source", color: chartTextColor, font: { family: "serif", weight: "bold" } },
+                                        ticks: { color: chartTextColor },
+                                        grid: { color: chartGridColor }
                                     },
-                                    x: { 
-                                        ticks: { color: chartTextColor, font: { family: "serif", weight: "bold" } }, 
-                                        grid: { display: false } 
+                                    x: {
+                                        ticks: { color: chartTextColor, font: { family: "serif", weight: "bold" } },
+                                        grid: { display: false }
                                     }
                                 }
                             }} />
@@ -334,20 +334,20 @@ const PaxInfographicPage = () => {
                     {/* Final Core Pillars */}
                     <section className="md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
                         {[
-                            { 
-                                icon: <Shield size={24} />, 
-                                title: "Prompt Hygiene", 
-                                desc: "Automated injection of negative prompts to prune hallucinated limbs and ensure compliance." 
+                            {
+                                icon: <Shield size={24} />,
+                                title: "Prompt Hygiene",
+                                desc: "Automated injection of negative prompts to prune hallucinated limbs and ensure compliance."
                             },
-                            { 
-                                icon: <Camera size={24} />, 
-                                title: "Latent Anchoring", 
-                                desc: "Hard-coding skeletal structures into the Flux pipeline to prevent identity drift." 
+                            {
+                                icon: <Camera size={24} />,
+                                title: "Latent Anchoring",
+                                desc: "Hard-coding skeletal structures into the Flux pipeline to prevent identity drift."
                             },
-                            { 
-                                icon: <Sparkles size={24} />, 
-                                title: "Motion Vectors", 
-                                desc: "Gemini 2.0 analyzes image weights to suggest realistic motion patterns for Luma exports." 
+                            {
+                                icon: <Sparkles size={24} />,
+                                title: "Motion Vectors",
+                                desc: "Gemini 2.0 analyses image weights to suggest realistic motion patterns for Luma exports."
                             }
                         ].map((pillar, i) => (
                             <div key={i} className="bg-card-bg p-10 rounded-[2rem] border border-card-border shadow-lg hover:border-accent-primary/30 transition-all text-center group">

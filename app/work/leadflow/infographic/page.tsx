@@ -2,16 +2,16 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ArrowLeft, 
-  Target, 
-  Activity, 
-  TrendingUp, 
-  Zap, 
-  Search, 
-  Layers, 
-  BarChart3, 
-  MousePointer2, 
+import {
+  ArrowLeft,
+  Target,
+  Activity,
+  TrendingUp,
+  Zap,
+  Search,
+  Layers,
+  BarChart3,
+  MousePointer2,
   Coins,
   Sparkles,
   ArrowRight
@@ -23,8 +23,8 @@ export default function LeadFlowInfographic() {
       {/* Navigation */}
       <nav className="border-b border-card-border bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link 
-            href="/#work" 
+          <Link
+            href="/#work"
             className="flex items-center gap-2 text-foreground/50 hover:text-accent-primary transition-colors group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -49,7 +49,7 @@ export default function LeadFlowInfographic() {
             The Flow of <span className="text-accent-primary italic underline decoration-accent-primary/30 underline-offset-8">Capital.</span>
           </h1>
           <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto font-medium italic">
-            Stop guessing. Start simulating. LeadFlow transforms marketing pipelines into 
+            Stop guessing. Start simulating. LeadFlow transforms marketing pipelines into
             physics-driven environments where ROI is deterministic, not anecdotal.
           </p>
         </header>
@@ -58,14 +58,14 @@ export default function LeadFlowInfographic() {
         <section className="mb-32">
           <div className="bg-card-bg border border-card-border rounded-[40px] p-8 md:p-16 relative overflow-hidden shadow-sm">
             <div className="absolute top-0 right-0 p-12 text-accent-primary/5 rotate-12"><BarChart3 size={160} /></div>
-            
+
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-3xl font-serif mb-6 text-heading font-medium italic">The Optimization Gap</h2>
                 <p className="text-foreground/70 text-sm leading-relaxed mb-8 font-medium">
-                  By mapping **Actual Results** against **Simulated Potential**, LeadFlow reveals 
-                  the hidden leaks in your customer journey. We visualize the energy lost between 
-                  raw traffic and realized revenue.
+                  By mapping **Actual Results** against **Simulated Potential**, LeadFlow reveals
+                  the hidden leaks in your customer journey. We visualize the energy lost between
+                  raw traffic and realised revenue.
                 </p>
                 <div className="space-y-4">
                   <div className="p-4 bg-background rounded-2xl border border-card-border flex items-center justify-between group hover:border-accent-primary/30 transition-all cursor-default shadow-sm font-sans">
@@ -81,17 +81,17 @@ export default function LeadFlowInfographic() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="relative h-64 flex items-center justify-center">
                 {/* SVG Particle Simulation Mockup */}
                 <svg width="100%" height="100%" className="opacity-90">
                   <path d="M10,120 Q150,120 300,50" fill="none" stroke="rgba(86, 28, 36, 0.1)" strokeWidth="8" />
                   <path d="M10,120 Q150,120 300,50" fill="none" stroke="url(#golden-path)" strokeWidth="4" className="animate-[dash_3s_linear_infinite]" strokeDasharray="10,10" />
-                  
+
                   {/* Actuals particles */}
                   <circle cx="50" cy="120" r="3" fill="currentColor" className="text-foreground/20 animate-[fadeMove_4s_ease-in-out_infinite]" />
                   <circle cx="120" cy="120" r="3" fill="currentColor" className="text-foreground/20 animate-[fadeMove_4s_ease-in-out_infinite_1s]" />
-                  
+
                   {/* Simulated particles */}
                   <circle cx="180" cy="90" r="4" fill="#561C24" className="animate-[fadeMove_2s_linear_infinite] shadow-[0_0_12px_#561C24]" />
                   <circle cx="240" cy="65" r="4" fill="#561C24" className="animate-[fadeMove_2s_linear_infinite_0.5s] shadow-[0_0_12px_#561C24]" />
@@ -122,9 +122,9 @@ export default function LeadFlowInfographic() {
               <h3 className="text-xl font-serif text-heading italic font-bold">Ghost Lead Physics</h3>
             </div>
             <p className="text-foreground/70 text-sm leading-relaxed mb-12 font-medium">
-               Visualizing the movement of customers through your system. LeadFlow calculates the 
-               `velocity` and `mass` of your pipeline, allowing you to identify the physical 
-               constraints of your conversion engine.
+              Visualizing the movement of customers through your system. LeadFlow calculates the
+              `velocity` and `mass` of your pipeline, allowing you to identify the physical
+              constraints of your conversion engine.
             </p>
             <div className="flex items-end gap-2 h-20">
               {[40, 70, 45, 90, 65, 30].map((h, i) => (
@@ -138,14 +138,14 @@ export default function LeadFlowInfographic() {
           </div>
 
           <div className="p-12 border border-card-border rounded-[40px] bg-card-bg hover:bg-background/4 transition-all relative overflow-hidden shadow-sm">
-             <div className="absolute top-0 right-0 p-8 opacity-10 text-accent-primary"><Sparkles size={48} /></div>
-             <div className="flex items-center gap-4 mb-8">
+            <div className="absolute top-0 right-0 p-8 opacity-10 text-accent-primary"><Sparkles size={48} /></div>
+            <div className="flex items-center gap-4 mb-8">
               <div className="w-10 h-10 rounded-xl bg-foreground/10 text-foreground/40 flex items-center justify-center"><Search size={20} /></div>
               <h3 className="text-xl font-serif text-heading italic font-bold">Recursive Backtracing</h3>
             </div>
             <p className="text-foreground/70 text-sm leading-relaxed mb-8 font-medium">
-              Our proprietary algorithm traces the highest-value conversion route backward 
-              from the final checkout. It tells you exactly which landing page or ad set 
+              Our proprietary algorithm traces the highest-value conversion route backward
+              from the final checkout. It tells you exactly which landing page or ad set
               is responsible for your most profitable customers.
             </p>
             <div className="space-y-2">
@@ -166,19 +166,19 @@ export default function LeadFlowInfographic() {
             <h2 className="text-3xl font-serif mb-4 font-medium text-heading italic px-4 py-1 inline-block border-b-2 border-accent-primary/30">The Strategic Stack</h2>
             <p className="text-foreground/40 text-[10px] font-black uppercase tracking-[0.4em] mt-4">Acquisition Intelligence Pipeline</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-             <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
+            <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
               <div className="w-12 h-12 rounded-2xl bg-accent-primary/10 text-accent-primary flex items-center justify-center mx-auto mb-6 shadow-md"><Layers size={21} /></div>
               <h4 className="font-black mb-3 text-[10px] uppercase tracking-[0.3em] text-heading">Zustand Simulation</h4>
               <p className="text-foreground/50 text-xs leading-relaxed font-medium italic">Centralized simulation store for ultra-responsive ROI updates without re-renders.</p>
             </div>
-             <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
+            <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
               <div className="w-12 h-12 rounded-2xl bg-accent-primary/10 text-accent-primary flex items-center justify-center mx-auto mb-6 shadow-md"><MousePointer2 size={21} /></div>
               <h4 className="font-black mb-3 text-[10px] uppercase tracking-[0.3em] text-heading">Interactive DAGs</h4>
               <p className="text-foreground/50 text-xs leading-relaxed font-medium italic">Drag-and-drop funnel logic with instant mathematical propagation.</p>
             </div>
-             <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
+            <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
               <div className="w-12 h-12 rounded-2xl bg-accent-primary/10 text-accent-primary flex items-center justify-center mx-auto mb-6 shadow-md"><Coins size={21} /></div>
               <h4 className="font-black mb-3 text-[10px] uppercase tracking-[0.3em] text-heading">Profit Playbooks</h4>
               <p className="text-foreground/50 text-xs leading-relaxed font-medium italic">AI-suggested improvements for every node identified as a bottleneck.</p>
@@ -189,10 +189,10 @@ export default function LeadFlowInfographic() {
         {/* Final CTA */}
         <footer className="text-center">
           <div className="inline-block p-1 bg-card-border rounded-full mb-12 border border-card-border backdrop-blur-3xl shadow-2xl">
-             <Link 
-                href="/work/leadflow/proposal"
-                className="flex items-center gap-6 pl-8 pr-2 py-2 group hover:gap-8 transition-all"
-              >
+            <Link
+              href="/work/leadflow/proposal"
+              className="flex items-center gap-6 pl-8 pr-2 py-2 group hover:gap-8 transition-all"
+            >
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-heading">Review Strategy Portfolio</span>
               <div className="w-12 h-12 rounded-full bg-accent-primary flex items-center justify-center text-background group-hover:scale-110 transition-all shadow-xl shadow-accent-primary/20">
                 <ArrowRight size={20} />

@@ -10,7 +10,7 @@ export function Work() {
     const featuredProjects = projects.filter(p => p.featured).slice(0, 10);
 
     return (
-        <section id="work" className="py-32 bg-background dark:bg-[#0d0d0d] transition-colors duration-500">
+        <section id="work" className="section-padding bg-background dark:bg-[#0d0d0d] transition-colors duration-500">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
                     <div className="max-w-2xl">

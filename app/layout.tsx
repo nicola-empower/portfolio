@@ -54,7 +54,7 @@ const jsonLd = {
         "https://empowerdigitalsolutions.co.uk",
         "https://empowerautomation.co.uk",
         "https://empowervaservices.co.uk",
-        "https://www.linkedin.com/in/empowervaservices",
+        "www.linkedin.com/in/nicola-berry-a58b60373",
         "https://www.instagram.com/digital_solutions.empower/",
         "https://www.instagram.com/empower_va",
         "https://www.instagram.com/empower_automation",

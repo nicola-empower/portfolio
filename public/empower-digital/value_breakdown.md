@@ -4,7 +4,7 @@ This document provides a strategic breakdown of why the Empower Digital Solution
 
 ## 1. High-Performance Hybrid Architecture
 - **Astro/React Stack**: Using a "Metal-Ready" hybrid architecture that delivers near-instant page loads (99+ Lighthouse scores) while maintaining complex interactivity where it matters.
-- **Enterprise-Grade SEO**: Specialized, high-conversion landing pages for multiple niches (Trades, Falkirk Regional, Digital Planning).
+- **Enterprise-Grade SEO**: Specialised, high-conversion landing pages for multiple niches (Trades, Falkirk Regional, Digital Planning).
 - **Core Web Vitals Optimized**: Zero layout shifts and lightning-fast Time to First Byte (TTFB).
 
 ## 2. Proprietary Portal Ecosystem
@@ -20,7 +20,7 @@ This document provides a strategic breakdown of why the Empower Digital Solution
 ## 4. Strategic Intelligence & Security
 - **Advanced Fingerprinting**: High-resolution tracking and bot detection to secure the platform and verify lead authenticity.
 - **AI-Powered Workflows**: Integration with Google Gemini for smart content generation, recipe finding (ChefAI), and witness statement alignment (Project DANA).
-- **Stealth Logic (SafeHaven)**: Proprietary "Hidden in Plain Sight" mechanisms, a unique value add for specialized safety-tech solutions.
+- **Stealth Logic (SafeHaven)**: Proprietary "Hidden in Plain Sight" mechanisms, a unique value add for specialised safety-tech solutions.
 
 ## 5. Visual Excellence & Motion Design
 - **Custom Circuit/Flow Graphics**: Not stock imagery—bespoke React-based animations (HeroCircuit, OrbitalFlow) that create a high-end, futuristic impression.

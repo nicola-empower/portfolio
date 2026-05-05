@@ -132,7 +132,7 @@ export default function EmpowerVAProposal() {
               <h3 className="text-xl font-bold mb-4 text-heading italic">Operations-as-a-Service (OaaS)</h3>
               <p className="text-foreground/50 text-sm mb-8 leading-relaxed italic">
                 Packaging our **Command Centre** and "Operations Architecture" methodology into
-                a licensable framework for other specialized agencies. Providing the
+                a licensable framework for other specialised agencies. Providing the
                 infrastructure for professional service delivery.
               </p>
               <ul className="space-y-3 font-sans">

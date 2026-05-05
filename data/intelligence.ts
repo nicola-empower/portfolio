@@ -2,6 +2,30 @@ import { IntelligenceDossier } from "@/types";
 
 export const intelligenceDossiers: IntelligenceDossier[] = [
   {
+    slug: "nano-brand-orchestration-intelligence",
+    projectSlug: "nano-brand",
+    title: "Nano Brand: Multi-Brand AI Orchestration",
+    description: "Architectural analysis of the £35k 'Agency-in-a-Box' suite. Visualising the Trello API inventory mirroring, Nicola-Bot grounding protocols, and auditory brand proofing logic.",
+    type: "Technical Intelligence",
+    url: "/work/nano-brand/proposal",
+    date: "2026-05-05",
+    category: "Architecture",
+    tags: ["API Orchestration", "Brand DNA Grounding", "Trello Integration", "ROI Intelligence"],
+    featured: true
+  },
+  {
+    slug: "independence-navigator-ai-governance",
+    projectSlug: "independence-navigator",
+    title: "Independence Navigator: Neurodivergent AI Governance",
+    description: "Architectural analysis of the calm, privacy-first AI ecosystem designed for executive function support. Visualising the stateless decoder and local-first data model.",
+    type: "Technical Intelligence",
+    url: "/work/independence-navigator/proposal",
+    date: "2026-05-05",
+    category: "Architecture",
+    tags: ["AI Governance", "Accessibility", "Privacy-First", "Neurodivergent Tech"],
+    featured: true
+  },
+  {
     slug: "dana-safety-architecture",
     projectSlug: "project-dana",
     title: "DANA: Forensic Safety Architecture",

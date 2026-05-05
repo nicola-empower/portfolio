@@ -11,7 +11,7 @@ I operate from Scotland and work with clients globally, focusing on combining te
 
 ### Custom architecture
 - Strategic systems engineering that solves "Business Problems" rather than just "Industry Problems."
-- Examples: Encoding pricing logic to reduce quote turnaround by 99% (10 days to 10 minutes) and architecting self-governing document hubs for 10,000+ files.
+- Examples: Encoding pricing logic to reduce quote turnaround by 99% (10 days to 10 minutes), architecting self-governing document hubs for 10,000+ files, and building "DesignForge AI"—a collaborative discovery engine that automates technical blueprint generation and secures client alignment.
 
 ### Web applications
 - Robust, scalable web applications built with Next.js, Astro, and Ruby on Rails 8.
@@ -20,7 +20,7 @@ I operate from Scotland and work with clients globally, focusing on combining te
 ### Automation and safeguarding
 - Bespoke automation that "builds freedom" and protects the founder’s nervous system.
 - Expertise in Google Apps Script for orchestrating Workspace ecosystems (Sheets, Gmail, Drive).
-- Includes "Forensic Shield" defensive infrastructure and read-only agentic AI assistants for mental health protection.
+- Includes "Forensic Shield" defensive infrastructure, "Independence Navigator" specialist copilot for neurodivergent autonomy, "Nano Brand" multi-brand AI orchestration engine (£35k strategic suite), and read-only agentic AI assistants for mental health protection.
 
 ## How I work
 

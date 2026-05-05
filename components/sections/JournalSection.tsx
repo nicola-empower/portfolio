@@ -9,7 +9,7 @@ export function JournalSection() {
     const recentJournals = journals.slice(0, 3);
 
     return (
-        <section id="journal" className="py-32 bg-accent-secondary/5 dark:bg-[#0d0d0d] transition-colors duration-500">
+        <section id="journal" className="section-padding bg-accent-secondary/5 dark:bg-[#0d0d0d] transition-colors duration-500">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
                     <div className="max-w-2xl">

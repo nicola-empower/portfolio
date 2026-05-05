@@ -33,7 +33,7 @@ const steps = [
 
 export function Process() {
     return (
-        <section id="process" className="py-24 bg-background transition-colors duration-500">
+        <section id="process" className="section-padding bg-background transition-colors duration-500">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="font-serif text-4xl md:text-5xl font-bold text-heading mb-4">

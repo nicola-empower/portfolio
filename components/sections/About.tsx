@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function About() {
     return (
-        <section id="about" className="py-24 bg-background transition-colors duration-500 overflow-hidden">
+        <section id="about" className="section-padding bg-background transition-colors duration-500 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
                     {/* Image Placeholder Side */}
@@ -17,7 +17,7 @@ export function About() {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2 relative"
                     >
-                        <div className="aspect-4/5 rounded-2xl overflow-hidden bg-accent-secondary/10 relative group">
+                        <div className="aspect-square md:aspect-4/5 rounded-2xl overflow-hidden bg-accent-secondary/10 relative group">
                             <Image
                                 src="/nicola_professional.png"
                                 alt="Nicola Berry - Principal Digital Architect"
@@ -38,7 +38,7 @@ export function About() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2, duration: 0.6 }}
-                            className="absolute -top-4 -left-4 z-20 flex items-center gap-3 px-4 py-2 bg-[#4A0E0E] dark:bg-[#4A0E0E]/90 backdrop-blur-md border border-[#D4A84F]/50 dark:border-[#D4A84F]/40 rounded-xl shadow-xl"
+                            className="absolute -top-4 left-4 md:-left-4 z-20 flex items-center gap-3 px-4 py-2 bg-[#4A0E0E] dark:bg-[#4A0E0E]/90 backdrop-blur-md border border-[#D4A84F]/50 dark:border-[#D4A84F]/40 rounded-xl shadow-xl"
                         >
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#D4A84F]">
                                 <path d="M10 19C10 19 8.5 17.5 7 14C5.5 10.5 6 7 6 7M6 7C6 7 8 8.5 9 11C10 13.5 10 16 10 16M6 7C6 7 4.5 8.5 4 11C3.5 13.5 4 16 4 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -76,14 +76,14 @@ export function About() {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2"
                     >
-                        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-heading mb-8 leading-tight">
+                        <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-heading mb-8 leading-tight">
                             Built from <br />
                             <span className="text-accent-primary">
                                 Visceral Necessity.
                             </span>
                         </h2>
 
-                        <div className="space-y-6 text-lg text-foreground font-sans leading-relaxed">
+                        <div className="space-y-6 text-base md:text-lg text-foreground font-sans leading-relaxed">
                             <p>
                                 Hi, I&apos;m Nicola. I am an <span className="text-accent-primary font-bold italic">award-winning</span> Principal Digital Architect and the founder of <span className="font-bold text-heading">Empower Digital Solutions.</span> I was recently named the <strong>SME News Best Digital Systems Architecture Analyst 2026</strong>, a recognition of my work in building high-fidelity operational environments.
                             </p>

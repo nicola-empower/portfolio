@@ -29,19 +29,19 @@ export function Navbar() {
     }, []);
 
     return (
-        <header className="fixed top-4 left-0 right-0 z-50 px-6 pointer-events-none">
+        <header className="fixed top-4 left-0 right-0 z-50 px-4 md:px-6 pointer-events-none">
             <motion.nav
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                className={`max-w-7xl mx-auto flex items-center justify-between px-8 py-4 rounded-full border transition-all duration-500 pointer-events-auto
+                className={`max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-3 md:py-4 rounded-full border transition-all duration-500 pointer-events-auto
                     ${isScrolled 
-                        ? "bg-[#4A0E0E]/90 backdrop-blur-md border-[#D4A84F]/20 shadow-lg py-3" 
-                        : "bg-[#4A0E0E]/60 backdrop-blur-sm border-[#D4A84F]/10 py-4"
+                        ? "bg-[#4A0E0E]/95 backdrop-blur-md border-[#D4A84F]/30 shadow-lg py-2.5 md:py-3" 
+                        : "bg-[#4A0E0E]/70 backdrop-blur-sm border-[#D4A84F]/10 py-3 md:py-4"
                     }`}
             >
                 {/* Logo Anchor */}
-                <Link href="/" className="group flex items-center gap-3">
-                    <div className="relative w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
+                <Link href="/" className="group flex items-center gap-2 md:gap-3">
+                    <div className="relative w-8 h-8 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
                         <img 
                             src="/logo.png" 
                             alt="Nicola Berry Signature" 
@@ -71,7 +71,8 @@ export function Navbar() {
                     <ThemeToggle />
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="p-2 text-heading"
+                        className="p-2 text-[#D4A84F]"
+                        aria-label="Toggle Menu"
                     >
                         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>

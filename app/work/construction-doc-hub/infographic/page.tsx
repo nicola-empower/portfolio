@@ -168,7 +168,7 @@ const DocControlInfographic = () => {
             Proactive Intelligence & Risk Shielding
           </h2>
           <p className="max-w-3xl mx-auto text-xl text-foreground/40 leading-relaxed font-medium italic">
-            Transforming construction document control from a simple utility into a 
+            Transforming construction document control from a simple utility into a
             strategic shield that protects project margins and schedules.
           </p>
         </div>
@@ -252,13 +252,13 @@ const DocControlInfographic = () => {
             Intelligent Infrastructure
           </h3>
           <p className="text-foreground/70 mb-12 text-lg max-w-3xl font-medium italic leading-relaxed">
-            Actionable Intelligence is more valuable than simple storage. DocControl acts as a 
+            Actionable Intelligence is more valuable than simple storage. DocControl acts as a
             <span className="text-accent-primary font-bold"> Proactive Operating System</span> that shifts document control from passive to predictive.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 relative">
             {[
-              { step: '01', title: 'Roadblock Predictor', desc: 'Analyzing RFI sentiment to predict potential schedule delays.' },
+              { step: '01', title: 'Roadblock Predictor', desc: 'Analysing RFI sentiment to predict potential schedule delays.' },
               { step: '02', title: 'Compliance Auditor', desc: 'Real-time verification of submittals against project requirements.' },
               { step: '03', title: 'Health Index', desc: 'Executive dashboard surfacing aggregated project risk KPIs.' },
               { step: '04', title: 'Data Moat', desc: 'Shielding proprietary intelligence for long-term firm valuation.' }

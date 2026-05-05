@@ -27,7 +27,7 @@ const services = [
 
 export function Services() {
     return (
-        <section id="services" className="py-24 bg-background transition-colors duration-500 relative overflow-hidden">
+        <section id="services" className="section-padding bg-background transition-colors duration-500 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="font-serif text-4xl md:text-5xl font-bold text-heading mb-4">

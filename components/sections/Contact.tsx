@@ -8,7 +8,7 @@ import { ContactForm } from "@/components/ui/ContactForm";
 
 export function Contact() {
     return (
-        <section id="contact" className="py-24 bg-background transition-colors duration-500 relative overflow-hidden">
+        <section id="contact" className="section-padding bg-background transition-colors duration-500 relative overflow-hidden">
             {/* Background Decor */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent-secondary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />

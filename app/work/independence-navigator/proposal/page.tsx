@@ -2,16 +2,16 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft, Printer, Mail, Shield, Zap, TrendingUp, Users, Layout, Globe, Search, Camera, Video, Sparkles } from "lucide-react";
+import { ArrowLeft, Printer, Mail, Shield, Zap, TrendingUp, Heart, Layout, Globe, Search, Battery, ListChecks, MessageSquare, Sparkles } from "lucide-react";
 
-export default function PaxProposalPage() {
+export default function NavigatorProposalPage() {
     return (
         <main className="min-h-screen bg-background text-foreground font-medium transition-colors duration-500 leading-relaxed overflow-x-hidden selection:bg-accent-primary/30">
             {/* Navigation Header (Hidden in Print) */}
             <nav className="no-print sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-card-border px-6 py-4 flex justify-between items-center transition-all duration-300">
                 <div className="flex items-center gap-4">
                     <Link
-                        href="/work/pax-visual-engine"
+                        href="/work/independence-navigator"
                         className="flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-all duration-300 font-bold border-r border-card-border pr-4 group"
                     >
                         <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -19,7 +19,7 @@ export default function PaxProposalPage() {
                     </Link>
                     <div className="hidden md:flex items-center gap-2 text-foreground/40 text-[10px] font-black uppercase tracking-widest">
                         <Shield size={14} className="text-accent-primary" />
-                        <span>Confidential Strategic Document</span>
+                        <span>Strategic Accessibility Document</span>
                     </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -41,8 +41,8 @@ export default function PaxProposalPage() {
                     body { 
                         -webkit-print-color-adjust: exact !important; 
                         print-color-adjust: exact !important;
-                        background: #E8D8C4 !important;
-                        color: #561C24 !important;
+                        background: #F8F9FA !important;
+                        color: #1A1A1A !important;
                     }
                     .content-wrapper { padding: 2cm !important; }
                     .avoid-break { break-inside: avoid !important; page-break-inside: avoid !important; }
@@ -57,15 +57,15 @@ export default function PaxProposalPage() {
 
                 <div className="relative z-10 max-w-4xl">
                     <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-accent-primary/10 border border-accent-primary/20 text-accent-primary text-xs font-black uppercase tracking-[0.2em] mb-12 animate-fade-in">
-                        <Zap size={16} />
-                        <span>Commercial Intelligence Suite</span>
+                        <Heart size={16} />
+                        <span>Neurodivergent Autonomy Suite</span>
                     </div>
 
                     <h1 className="text-7xl md:text-9xl font-serif font-bold italic text-heading mb-4 tracking-tighter leading-none">
-                        PAX<span className="text-accent-primary not-italic">.</span>
+                        Navigator<span className="text-accent-primary not-italic">.</span>
                     </h1>
                     <h2 className="text-2xl md:text-4xl font-light text-foreground/60 font-serif italic mb-12 tracking-tight">
-                        the visual creation architecture
+                        the autonomy architecture
                     </h2>
 
                     <div className="w-32 h-2 bg-accent-primary mb-12 rounded-full"></div>
@@ -73,19 +73,19 @@ export default function PaxProposalPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
                         <div className="space-y-6">
                             <div className="space-y-1">
-                                <p className="text-[10px] font-black uppercase tracking-[0.3em] text-accent-primary">Proprietary Framework</p>
-                                <p className="text-2xl font-serif italic text-heading">Flux-Powered Identity & Persistence</p>
+                                <p className="text-[10px] font-black uppercase tracking-[0.3em] text-accent-primary">Specialist Framework</p>
+                                <p className="text-2xl font-serif italic text-heading">AI-Driven Executive Support</p>
                             </div>
                             <div className="space-y-1">
                                 <p className="text-[10px] font-black uppercase tracking-[0.3em] text-accent-primary">Valuation Model</p>
-                                <p className="text-2xl font-serif italic text-heading">£5,250 Strategic Implementation</p>
+                                <p className="text-2xl font-serif italic text-heading">£6,850 Strategic Implementation</p>
                             </div>
                         </div>
                         <div className="flex flex-col justify-end md:items-end md:text-right space-y-4">
                             <div className="space-y-1">
                                 <p className="text-[10px] font-black uppercase tracking-[0.3em] text-foreground/40">Prepared For</p>
-                                <p className="text-lg font-bold text-heading">Creative Tech Stakeholders</p>
-                                <p className="text-sm text-foreground/60 italic font-serif">Enterprise AI Production Hubs</p>
+                                <p className="text-lg font-bold text-heading">Accessibility Stakeholders</p>
+                                <p className="text-sm text-foreground/60 italic font-serif">Independent Living Foundations</p>
                             </div>
                             <p className="text-xs font-black uppercase tracking-widest text-accent-primary pt-4 border-t border-card-border inline-block">
                                 Empower Digital Solutions | 2026
@@ -100,25 +100,25 @@ export default function PaxProposalPage() {
                 <section className="mb-32 space-y-12">
                     <div className="space-y-4">
                         <h2 className="text-4xl md:text-5xl font-serif font-bold italic text-heading leading-tight underline decoration-accent-primary/30 decoration-8 underline-offset-8">
-                            Mission: Sovereignty in the Generative Age
+                            Mission: Dismantling Administrative Gravity
                         </h2>
                     </div>
 
                     <div className="bg-card-bg border border-card-border p-12 rounded-[2rem] shadow-2xl relative overflow-hidden group">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full -mr-16 -mt-16 blur-2xl"></div>
                         <p className="text-2xl md:text-3xl italic text-heading leading-relaxed font-serif mb-8 relative z-10 border-l-4 border-accent-primary pl-8">
-                            "Inspired by Katya Varbanova's 'Viral Marketing Stars,' PAX (the IKEA wardrobe metaphor) was built to bypass the expensive 'Prompt Tax' of raw AI generation."
+                            "Independence Navigator was architected to solve the cognitive load of adulting for those who find standard productivity tools sensory-aggressive and overwhelming."
                         </p>
                         <p className="text-lg text-foreground/60 leading-relaxed font-medium">
-                            PAX is a high-fidelity visual engine designed to bridge the gap between static generative art and intentional cinematic motion. By combining the precision of **Flux LoRAs** with the analytical 'vision' of **Google Gemini**, PAX eliminates common AI failure points: "hallucinated limbs," warped identifiers, and safety compromises. It transforms the complex act of prompt engineering into a "Cher Horowitz" wardrobe experience, where style consistency is a single, surgical button-click away.
+                            Independence Navigator is a specialist PWA designed to bridge the executive function gap. By combining <strong className="text-heading">Stateless AI</strong> for communication decoding with <strong className="text-heading">Spoon Theory</strong> logic for energy management, it transforms a chaotic world of instructions into a calm, predictable sequence of micro-actions. It is not just a tool; it is a technical safety net for autonomy.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
-                            { icon: <TrendingUp className="w-5 h-5" />, title: "Precision", sub: "Flux + Astria", desc: "Fine-tuned identity-consistent LoRAs that anchor facial features across variables." },
-                            { icon: <Shield className="w-5 h-5" />, title: "Hygiene", sub: "Automated Sanitisation", desc: "Hard-coded negative prompting and safety guards to eliminate hallucinations." },
-                            { icon: <Video className="w-5 h-5" />, title: "Motion", sub: "Gemini Vision", desc: "Intelligent analysis of image physics to suggest natural, cinematic movement." }
+                            { icon: <MessageSquare className="w-5 h-5" />, title: "Decoder", sub: "Stateless AI", desc: "Translates complex, high-jargon emails into clear, sensory-neutral action items." },
+                            { icon: <ListChecks className="w-5 h-5" />, title: "Magic Tasks", sub: "Atomic Breakdown", desc: "Decomposes monumental projects into manageable, 5-minute achievable steps." },
+                            { icon: <Battery className="w-5 h-5" />, title: "Energy", sub: "Spoon Theory Logic", desc: "Visualises cognitive capacity to prevent burnout through predictive planning." }
                         ].map((item, i) => (
                             <div key={i} className="bg-card-bg border border-card-border p-8 rounded-2xl hover:border-accent-primary/30 transition-all group avoid-break">
                                 <div className="text-accent-primary mb-6 group-hover:scale-110 transition-transform">{item.icon}</div>
@@ -133,57 +133,57 @@ export default function PaxProposalPage() {
                 {/* Technical Strategy */}
                 <section className="mb-32 space-y-12 page-break">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold italic text-heading underline decoration-accent-primary/30 decoration-8 underline-offset-8">
-                        The "Visual Intelligence" Layer
+                        The "Calm Architecture" Layer
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="p-10 bg-card-bg border border-card-border rounded-[2rem] shadow-xl relative overflow-hidden group hover:border-accent-primary/30 transition-all avoid-break">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="w-12 h-12 bg-accent-primary/10 rounded-2xl flex items-center justify-center text-accent-primary">
-                                    <Camera size={24} />
+                                    <Shield size={24} />
                                 </div>
-                                <h4 className="text-2xl font-serif font-bold italic text-heading">Identity Consistency</h4>
+                                <h4 className="text-2xl font-serif font-bold italic text-heading">Data Sovereignty</h4>
                             </div>
                             <p className="text-lg text-foreground/60 leading-relaxed font-serif italic mb-6">
-                                "85% reduction in identity drift compared to standard diffusion models."
+                                "100% Stateless AI processing with local-first encrypted storage."
                             </p>
                             <p className="text-sm text-foreground/40 leading-relaxed">
-                                Unlike standard generators, PAX utilises a persistent configuration engine that maps user-selected parameters to complex model seeds, ensuring absolute character integrity across 100+ frames.
+                                Unlike generic AI assistants, Navigator never uses personal data for model training. All context is processed in transient memory and persisted only in the user's secure browser environment.
                             </p>
                         </div>
 
                         <div className="p-10 bg-card-bg border border-card-border rounded-[2rem] shadow-xl relative overflow-hidden group hover:border-accent-primary/30 transition-all avoid-break">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="w-12 h-12 bg-accent-primary/10 rounded-2xl flex items-center justify-center text-accent-primary">
-                                    <Video size={24} />
+                                    <Layout size={24} />
                                 </div>
-                                <h4 className="text-2xl font-serif font-bold italic text-heading">Context-Aware Animation</h4>
+                                <h4 className="text-2xl font-serif font-bold italic text-heading">Sensory UI Design</h4>
                             </div>
                             <p className="text-lg text-foreground/60 leading-relaxed font-serif italic mb-6">
-                                "95% prompt alignment in 1-click video transitions."
+                                "Atkinson Hyperlegible typography and Nordic-neutral palettes."
                             </p>
                             <p className="text-sm text-foreground/40 leading-relaxed">
-                                Gemini 2.0 Flash acts as the 'Director,' analysing lighting vectors in a generated frame to craft unique motion prompts for Luma/Runway exports.
+                                Every pixel is calibrated to reduce visual stress, using low-contrast shadows and high-legibility fonts to ensure the interface never contributes to sensory overload.
                             </p>
                         </div>
                     </div>
                 </section>
 
-                {/* Development Cost Breakdown */}
+                {/* Investment Breakdown */}
                 <section className="mb-32 space-y-16 page-break">
                     <div className="text-center space-y-4">
                         <h2 className="text-4xl md:text-6xl font-serif font-bold italic text-heading tracking-tight">
                             Strategic <span className="text-accent-primary not-italic">Investment</span>
                         </h2>
-                        <p className="text-foreground/40 font-black uppercase tracking-[0.3em] text-[10px]">Technical Project Valuation • v1.0</p>
+                        <p className="text-foreground/40 font-black uppercase tracking-[0.3em] text-[10px]">Technical Implementation Value • v1.0</p>
                     </div>
 
                     <div className="space-y-6">
                         {[
-                            { phase: "Phase 1", title: "Foundation Architecture", price: "£1,050", features: ["Next.js 15 / React 19 Core Engine", "'Virtual Studio' Interface Design", "Local Persistence & Session History"] },
-                            { phase: "Phase 2", title: "Flux Visual Engine", price: "£1,750", highlight: true, features: ["Flux Fine-Tuning & Astria API", "Precision Wardrobe Mapping", "Simultaneous 4-Variation Logic"] },
-                            { phase: "Phase 3", title: "Motion Intelligence", price: "£1,400", features: ["Gemini 2.0 Flash Visual Layer", "Automated Motion Vectors", "1-Click MP4 Transformation"] },
-                            { phase: "Phase 4", title: "Prompt Hygiene", price: "£1,050", highlight: true, features: ["Safety Guard Negative Anchoring", "Cher Horowitz Style Mapping", "Facemark Verification Logic"] }
+                            { phase: "Phase 1", title: "Autonomy Core", price: "£1,450", features: ["React 18 / Vite PWA Architecture", "Local-First Persistence Layer", "Nordic-Neutral Design System"] },
+                            { phase: "Phase 2", title: "AI Decoder Engine", price: "£2,100", highlight: true, features: ["Gemini 2.5 Flash Integration", "Stateless Context Processing", "Tone & Intent Extraction Logic"] },
+                            { phase: "Phase 3", title: "Task Decomposition", price: "£1,750", features: ["Magic Task Logic & Energy Mapping", "Atomic Goal Decomposition", "Sensory-Aware Step Guides"] },
+                            { phase: "Phase 4", title: "Energy Guardian", price: "£1,550", highlight: true, features: ["Visual Battery Tracker", "Spoon Theory Logic Model", "Predictive Burnout Triage"] }
                         ].map((item, i) => (
                             <div key={i} className={`flex flex-col md:flex-row border rounded-[1.5rem] overflow-hidden transition-all duration-300 avoid-break ${item.highlight ? 'border-accent-primary bg-accent-primary/5 shadow-lg' : 'border-card-border bg-card-bg'}`}>
                                 <div className={`w-full md:w-1/3 p-8 flex flex-col justify-center text-center ${item.highlight ? 'bg-accent-primary text-background' : 'bg-accent-secondary/10 text-heading border-r border-card-border'}`}>
@@ -208,14 +208,14 @@ export default function PaxProposalPage() {
                     <div className="bg-heading text-background rounded-[2.5rem] p-12 md:p-16 text-center md:text-right relative overflow-hidden group shadow-2xl avoid-break">
                         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-accent-primary/20 to-transparent"></div>
                         <div className="relative z-10">
-                            <p className="text-background font-black uppercase tracking-[0.4em] text-xs mb-4">Total Implementation Value</p>
+                            <p className="text-background font-black uppercase tracking-[0.4em] text-xs mb-4">Total v1.0 Value</p>
                             <p className="text-6xl md:text-8xl font-serif font-bold italic tracking-tighter text-background mb-6">
-                                £5,250
+                                £6,850
                             </p>
                             <div className="flex flex-col md:flex-row justify-end items-center gap-4 text-background/40 text-sm">
-                                <span className="flex items-center gap-2"><Zap size={14} className="text-background" /> Delivered in 15 Dev Days</span>
+                                <span className="flex items-center gap-2"><Zap size={14} className="text-background" /> Delivered in 18 Dev Days</span>
                                 <span className="hidden md:block text-background">•</span>
-                                <span>Zero-Recurring Agency Fees</span>
+                                <span>100% Ownership & Zero SaaS Fees</span>
                             </div>
                         </div>
                     </div>
@@ -224,22 +224,22 @@ export default function PaxProposalPage() {
                 {/* ROI Analysis */}
                 <section className="mb-32 space-y-12 page-break">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold italic text-heading underline decoration-accent-primary/30 decoration-8 underline-offset-8">
-                        ROI (Return on Impact)
+                        ROI (Return on Independence)
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="p-12 bg-card-bg border border-accent-primary/30 rounded-[2rem] shadow-xl text-center flex flex-col justify-center gap-6 relative group border-t-8 avoid-break">
-                            <div className="text-6xl font-serif font-bold italic text-accent-primary tracking-tighter group-hover:scale-105 transition-transform">85%</div>
+                            <div className="text-6xl font-serif font-bold italic text-accent-primary tracking-tighter group-hover:scale-105 transition-transform">60%</div>
                             <div className="space-y-2">
-                                <p className="text-xs font-black uppercase tracking-[0.2em] text-heading leading-tight">Consistency Optimization</p>
-                                <p className="text-sm text-foreground/40 font-serif italic">Eliminating the 'prompt tax' of failed generations through persistent identity seeds.</p>
+                                <p className="text-xs font-black uppercase tracking-[0.2em] text-heading leading-tight">Cognitive Friction Reduction</p>
+                                <p className="text-sm text-foreground/40 font-serif italic">Eliminating the 'wall of text' fatigue through automated decoding and tone analysis.</p>
                             </div>
                         </div>
                         <div className="p-12 bg-card-bg border border-accent-primary/30 rounded-[2rem] shadow-xl text-center flex flex-col justify-center gap-6 relative group border-t-8 avoid-break">
-                            <div className="text-6xl font-serif font-bold italic text-accent-primary tracking-tighter group-hover:scale-105 transition-transform">1-Click</div>
+                            <div className="text-6xl font-serif font-bold italic text-accent-primary tracking-tighter group-hover:scale-105 transition-transform">2hr</div>
                             <div className="space-y-2">
-                                <p className="text-xs font-black uppercase tracking-[0.2em] text-heading leading-tight">Production Pipeline</p>
-                                <p className="text-sm text-foreground/40 font-serif italic">Instant transformation from static latent frames to high-fidelity cinematic motion.</p>
+                                <p className="text-xs font-black uppercase tracking-[0.2em] text-heading leading-tight">Daily Triage Recovery</p>
+                                <p className="text-sm text-foreground/40 font-serif italic">Automated goal decomposition allows users to start tasks instantly without decision paralysis.</p>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@ export default function PaxProposalPage() {
                         <h2 className="text-4xl font-serif font-bold italic text-heading">The Empower Commitment</h2>
                         <div className="bg-card-bg border border-card-border p-12 rounded-[2.5rem] shadow-sm relative italic text-2xl md:text-3xl text-heading font-serif leading-relaxed">
                             <span className="text-6xl font-serif text-accent-primary/20 absolute top-4 left-4">"</span>
-                            PAX: Restoring the authentic core to generative vision. Identity isn't a prompt; it's a constant.
+                            Independence Navigator: Reclaiming the right to a calm digital life. Autonomy is architected, not just enabled.
                             <span className="text-6xl font-serif text-accent-primary/20 absolute bottom-4 right-4">"</span>
                         </div>
                     </div>
@@ -273,7 +273,7 @@ export default function PaxProposalPage() {
                                 <span className="text-sm">connect@nicolaberry.uk</span>
                             </div>
                             <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] opacity-40">
-                                <span>Securing the Future of Digital Identity</span>
+                                <span>Architecting the Future of Accessibility</span>
                             </div>
                         </div>
                     </div>
@@ -282,4 +282,3 @@ export default function PaxProposalPage() {
         </main>
     );
 }
-

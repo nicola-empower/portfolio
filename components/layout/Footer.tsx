@@ -28,11 +28,11 @@ export function Footer() {
                                     Code. Automation. Freedom.
                                 </p>
                             </div>
-                            <div className="pt-4">
+                            <div className="pt-4 flex justify-center md:justify-start">
                                 <img 
                                     src="/smefooter.png" 
                                     alt="SME News Award 2026" 
-                                    className="w-64 md:w-80 h-auto opacity-100 transition-opacity duration-300 mx-auto md:mx-0 brightness-110"
+                                    className="w-full max-w-[280px] md:max-w-xs h-auto opacity-100 transition-opacity duration-300 brightness-110"
                                 />
                             </div>
                         </div>
@@ -111,7 +111,7 @@ export function Footer() {
                     <p className="font-sans text-sm text-white/40">
                         &copy; Nicola Berry. {currentYear}
                     </p>
-                    <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#D4A84F]/30">
+                    <p className="font-sans text-[9px] md:text-[10px] uppercase tracking-[0.1em] md:tracking-[0.2em] text-[#D4A84F]/30 leading-relaxed max-w-md mx-auto">
                         ICO Registered: ZC102381 | Professional Indemnity Insurance by PolicyBee | 
                         <Link href="/privacy" className="hover:text-[#D4A84F] transition-colors ml-1 underline decoration-[#D4A84F]/20 underline-offset-4">
                             Privacy & Terms
