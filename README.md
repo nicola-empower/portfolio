@@ -5,6 +5,7 @@ A high-performance portfolio website showcasing digital solutions across full-st
 🌐 **Live:** [nicolaberry.uk](https://nicolaberry.uk)
 
 ---
+<img width="2800" height="1486" alt="image" src="https://github.com/user-attachments/assets/ec55aad8-dded-4c01-b032-df29dcdec9e9" />
 
 ## Tech Stack
 
