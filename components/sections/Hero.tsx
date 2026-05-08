@@ -3,13 +3,27 @@
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Hero() {
     return (
-        <section className="relative min-h-[90vh] md:min-h-screen flex flex-col pt-24 md:pt-32 lg:pt-40 items-center justify-center overflow-hidden bg-background transition-colors duration-500">
-            {/* Clean Premium Background */}
-            <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_0%,rgba(208,2,27,0.05),transparent_70%)] pointer-events-none" />
-            <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_80%_80%,rgba(208,2,27,0.03),transparent_50%)] pointer-events-none" />
+        <section className="relative min-h-[90vh] md:min-h-screen flex flex-col pt-24 md:pt-32 lg:pt-40 items-center justify-center overflow-hidden bg-[#561C24] transition-colors duration-500 dark">
+            {/* Background Image - With Brand-Aligned Burgundy Overlay */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/hero-falkirk.png"
+                    alt="Falkirk Wheel at Sunset"
+                    fill
+                    priority
+                    className="object-cover object-[center_25%] md:object-center opacity-100"
+                />
+                {/* Burgundy "Brand Filter" Overlay */}
+                <div className="absolute inset-0 bg-[#561C24]/30" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#561C24]/40 via-transparent to-[#561C24]" />
+                
+                {/* Atmospheric "Light Well" - Subtle glow behind text */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(86,28,36,0.6),transparent_70%)] pointer-events-none" />
+            </div>
 
             <div className="relative z-10 container mx-auto px-6 text-center">
                 <motion.div
@@ -31,7 +45,7 @@ export function Hero() {
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#D4A84F] opacity-90 group-hover:opacity-100 transition-opacity shrink-0">
                                 <path d="M10 19C10 19 8.5 17.5 7 14C5.5 10.5 6 7 6 7M6 7C6 7 8 8.5 9 11C10 13.5 10 16 10 16M6 7C6 7 4.5 8.5 4 11C3.5 13.5 4 16 4 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-<span className="text-[#D4A84F] text-[9px] md:text-xs font-bold uppercase tracking-[0.15em] md:tracking-[0.25em] drop-shadow-sm text-center">
+                            <span className="text-[#D4A84F] text-[9px] md:text-xs font-bold uppercase tracking-[0.15em] md:tracking-[0.25em] drop-shadow-sm text-center">
                                 Winner: SME News Best Digital Systems Architecture Analyst 2026
                             </span>
 
@@ -44,17 +58,17 @@ export function Hero() {
                             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-[#D4A84F]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none" />
                         </motion.div>
                     </div>
-                    <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-heading mb-6 tracking-tight">
+                    <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold !text-[#E8D8C4] mb-6 tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
                         Engineering <br />
-                        <span className="italic text-accent-primary">
+                        <span className="italic !text-[#E8D8C4]">
                             Total Freedom.
                         </span>
                         <br />
-                        <span className="text-xl sm:text-2xl md:text-4xl block mt-4 md:mt-6 font-normal opacity-80 text-heading text-balance max-w-4xl mx-auto leading-tight">
+                        <span className="text-xl sm:text-2xl md:text-4xl block mt-4 md:mt-6 font-normal opacity-90 !text-[#E8D8C4]/90 text-balance max-w-4xl mx-auto leading-tight drop-shadow-md">
                             I build software out of sheer necessity to solve profound business bottlenecks.
                         </span>
                     </h1>
-                    <p className="font-sans text-lg md:text-xl text-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
+                    <p className="font-sans text-lg md:text-xl !text-[#E8D8C4]/80 max-w-3xl mx-auto mb-10 leading-relaxed drop-shadow-md">
                         From automating away 16-hour administrative nightmares to architecting secure lifelines for those who need them most, I don't just write code - I engineer time, autonomy, and peace.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
@@ -62,7 +76,7 @@ export function Hero() {
                             <Button size="lg" className="w-full sm:w-auto">Start Your Project</Button>
                         </Link>
                         <Link href="#work" className="w-full sm:w-auto">
-                            <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                            <Button variant="outline" size="lg" className="w-full sm:w-auto !border-white/30 !text-white hover:!bg-white/10">
                                 View My Work
                             </Button>
                         </Link>

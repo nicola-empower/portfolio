@@ -16,6 +16,35 @@ export function generateStaticParams() {
     }));
 }
 
+// Helper to turn URLs in text into clickable links
+function TextWithLinks({ text }: { text?: string }) {
+    if (!text) return null;
+    return (
+        <>
+            {text.split(' ').map((word, i) => {
+                const isUrl = word.includes('http://') || word.includes('https://') || word.includes('www.');
+                if (isUrl) {
+                    const cleanUrl = word.replace(/[).,]+$/, '');
+                    const punctuation = word.slice(cleanUrl.length);
+                    return (
+                        <span key={i}>
+                            <a
+                                href={cleanUrl.startsWith('http') ? cleanUrl : `https://${cleanUrl}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent-primary underline hover:opacity-80 break-all"
+                            >
+                                {cleanUrl}
+                            </a>
+                            {punctuation}{' '}
+                        </span>
+                    );
+                }
+                return word + ' ';
+            })}
+        </>
+    );
+}
 
 import { sharedMetadata, siteConfig } from "@/app/shared-metadata";
 
@@ -225,7 +254,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                             <FadeIn delay={0.1} y={20}>
                                 <h3 className="font-serif font-bold text-heading mb-8 opacity-40 uppercase tracking-[0.2em] text-sm">Overview</h3>
                                 <p className="text-foreground leading-relaxed text-xl font-light mb-16">
-                                    {project.overview}
+                                    <TextWithLinks text={project.overview} />
                                 </p>
                             </FadeIn>
 
@@ -236,7 +265,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                         <div className="absolute -left-5 -top-4 text-accent-secondary opacity-20 font-serif text-8xl leading-none select-none">"</div>
                                         <h3 className="font-serif text-3xl font-bold text-heading mb-6">The Origin Story</h3>
                                         <p className="text-foreground/70 leading-relaxed text-xl italic font-serif">
-                                            {project.theWhy}
+                                            <TextWithLinks text={project.theWhy} />
                                         </p>
                                     </div>
                                 </FadeIn>
@@ -264,7 +293,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                             <span className="w-10 h-10 rounded-full bg-accent-secondary/20 flex items-center justify-center text-accent-secondary text-base font-bold italic">Challenge</span>
                                         </h3>
                                         <p className="text-foreground/70 leading-relaxed text-lg">
-                                            {project.problem}
+                                            <TextWithLinks text={project.problem} />
                                         </p>
                                     </div>
                                 )}
@@ -275,7 +304,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                             <span className="w-10 h-10 rounded-full bg-accent-secondary/20 flex items-center justify-center text-accent-secondary text-base font-bold italic">Solution</span>
                                         </h3>
                                         <p className="text-foreground/70 leading-relaxed text-lg">
-                                            {project.solution}
+                                            <TextWithLinks text={project.solution} />
                                         </p>
                                     </div>
                                 )}

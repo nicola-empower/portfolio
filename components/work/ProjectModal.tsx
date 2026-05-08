@@ -12,6 +12,38 @@ interface ProjectModalProps {
     onClose: () => void;
 }
 
+// Helper to turn URLs in text into clickable links
+function TextWithLinks({ text }: { text?: string }) {
+    if (!text) return null;
+    
+    return (
+        <>
+            {text.split(' ').map((word, i) => {
+                const isUrl = word.includes('http://') || word.includes('https://') || word.includes('www.');
+                if (isUrl) {
+                    // Clean the word of trailing punctuation like ) or . or ,
+                    const cleanUrl = word.replace(/[).,]+$/, '');
+                    const punctuation = word.slice(cleanUrl.length);
+                    return (
+                        <span key={i}>
+                            <a
+                                href={cleanUrl.startsWith('http') ? cleanUrl : `https://${cleanUrl}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent-primary underline hover:opacity-80 break-all"
+                            >
+                                {cleanUrl}
+                            </a>
+                            {punctuation}{' '}
+                        </span>
+                    );
+                }
+                return word + ' ';
+            })}
+        </>
+    );
+}
+
 export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
     const [currentImage, setCurrentImage] = useState(0);
 
@@ -151,20 +183,26 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                                 {/* The "Why" - Using your Problem/Solution data */}
                                 <div>
                                     <h3 className="text-base font-bold text-heading mb-2">Overview</h3>
-                                    <p className="text-foreground/80 leading-relaxed text-sm">{project.overview}</p>
+                                    <p className="text-foreground/80 leading-relaxed text-sm">
+                                        <TextWithLinks text={project.overview} />
+                                    </p>
                                 </div>
 
                                 {project.problem && (
                                     <div>
                                         <h3 className="text-base font-bold text-heading mb-2">The Challenge</h3>
-                                        <p className="text-foreground/80 leading-relaxed text-sm">{project.problem}</p>
+                                        <p className="text-foreground/80 leading-relaxed text-sm">
+                                            <TextWithLinks text={project.problem} />
+                                        </p>
                                     </div>
                                 )}
 
                                 {project.solution && (
                                     <div>
                                         <h3 className="text-base font-bold text-heading mb-2">The Solution</h3>
-                                        <p className="text-foreground/80 leading-relaxed text-sm">{project.solution}</p>
+                                        <p className="text-foreground/80 leading-relaxed text-sm">
+                                            <TextWithLinks text={project.solution} />
+                                        </p>
                                     </div>
                                 )}
 
