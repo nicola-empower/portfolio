@@ -85,6 +85,11 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
                                     Coming Soon
                                 </span>
                             )}
+                            {project.acquisitionAvailable && (
+                                <span className="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-accent-secondary text-background rounded-full backdrop-blur-md shadow-sm">
+                                    Acquisition
+                                </span>
+                            )}
                         </div>
                     </div>
 

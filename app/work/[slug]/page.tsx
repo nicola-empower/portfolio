@@ -156,6 +156,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                             <span className="text-foreground/20">•</span>
                             <span className="font-mono text-sm font-bold text-foreground/40 uppercase tracking-widest">{project.year}</span>
                         </div>
+                        {project.acquisitionAvailable && (
+                            <div className="mb-6 inline-flex items-center gap-2 px-3 py-1 bg-accent-secondary/10 border border-accent-secondary/30 text-accent-secondary rounded-lg">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-secondary opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-secondary"></span>
+                                </span>
+                                <span className="text-[10px] font-bold uppercase tracking-widest">Commercial Acquisition Available</span>
+                            </div>
+                        )}
                     </FadeIn>
 
                     <FadeIn delay={0.2}>
@@ -233,6 +242,24 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                     </a>
                                 )}
                             </div>
+
+                            {project.demoNote && (
+                                <div className="mt-4 p-5 rounded-2xl bg-accent-secondary/5 border border-accent-secondary/20 shadow-sm">
+                                    <div className="flex items-center gap-2 text-accent-secondary mb-3">
+                                        <Zap size={14} className="animate-pulse" />
+                                        <span className="text-[10px] font-bold uppercase tracking-widest">Restricted Access Protocol</span>
+                                    </div>
+                                    <p className="text-xs text-foreground/80 leading-relaxed italic">
+                                        <TextWithLinks text={project.demoNote} />
+                                    </p>
+                                    <a 
+                                        href={`mailto:connect@nicolaberry.uk?subject=Technical Walkthrough Request: ${project.title}&body=Hi Nicola,%0D%0A%0D%0AI'm interested in a technical walkthrough of ${project.title} for acquisition/institutional purposes.%0D%0A%0D%0APlease let me know when you might be available to demonstrate the restricted features.`}
+                                        className="mt-4 w-full py-2 px-4 rounded-lg bg-accent-secondary text-background text-[10px] font-bold uppercase tracking-wider hover:opacity-90 transition-opacity text-center block"
+                                    >
+                                        Request Walkthrough
+                                    </a>
+                                </div>
+                            )}
                         </div>
 
                          {/* Tech Stack */}

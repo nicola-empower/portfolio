@@ -29,6 +29,8 @@ export type Project = {
     featured?: boolean;
     tier?: number;
     relatedJournalSlug?: string;
+    demoNote?: string;
+    acquisitionAvailable?: boolean;
     roadmap?: string[];
     stats?: { label: string; value: string }[]; // New: for ROI metrics
     details?: {
