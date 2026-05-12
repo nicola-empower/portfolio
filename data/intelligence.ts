@@ -240,11 +240,11 @@ export const intelligenceDossiers: IntelligenceDossier[] = [
   },
   {
     slug: "doccontrol-construction-risk-shielding",
-    projectSlug: "construction-doc-hub",
+    projectSlug: "vitalise",
     title: "DocControl: Construction Risk Shielding",
     description: "Enterprise-grade document control purpose-built for the construction industry. Replaces 'Data Graveyards' with a proactive, AI-driven 'Strategic Shield' to protect project margins and schedules.",
     type: "Technical Infographic",
-    url: "/work/construction-doc-hub/infographic",
+    url: "/work/vitalise/infographic",
     date: "2026-03-31",
     category: "Architecture",
     tags: ["Construction AI", "Risk Shielding", "Roadblock Predictor", "Compliance Auditor"]

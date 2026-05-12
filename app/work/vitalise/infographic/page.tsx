@@ -138,7 +138,7 @@ const DocControlInfographic = () => {
       <nav className="no-print sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-card-border px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Link
-            href="/work/construction-doc-hub"
+            href="/work/vitalise"
             className="flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors font-medium border-r border-card-border pr-4"
           >
             <ArrowLeft size={18} />
@@ -162,7 +162,7 @@ const DocControlInfographic = () => {
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-bold italic text-heading mb-6 tracking-tight">
-            DocControl <span className="text-accent-primary">Manifesto</span>
+            Vitalise <span className="text-accent-primary">Manifesto</span>
           </h1>
           <h2 className="text-xl md:text-2xl font-bold text-accent-primary mb-8 uppercase tracking-[0.3em]">
             Proactive Intelligence & Risk Shielding
@@ -201,7 +201,7 @@ const DocControlInfographic = () => {
               </div>
               <div className="bg-background/10 backdrop-blur-md border border-background/20 rounded-3xl p-10 transition-all hover:bg-background/20">
                 <h4 className="font-serif font-bold italic text-background text-4xl mb-4">60%</h4>
-                <p className="text-sm font-bold text-background/60 uppercase tracking-widest">Reduction in manual tracking using DocControl AI.</p>
+                <p className="text-sm font-bold text-background/60 uppercase tracking-widest">Reduction in manual tracking using Vitalise AI.</p>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ const DocControlInfographic = () => {
             Intelligent Infrastructure
           </h3>
           <p className="text-foreground/70 mb-12 text-lg max-w-3xl font-medium italic leading-relaxed">
-            Actionable Intelligence is more valuable than simple storage. DocControl acts as a
+            Actionable Intelligence is more valuable than simple storage. Vitalise acts as a
             <span className="text-accent-primary font-bold"> Proactive Operating System</span> that shifts document control from passive to predictive.
           </p>
 
@@ -302,7 +302,7 @@ const DocControlInfographic = () => {
 
       <footer className="text-center py-24 border-t border-card-border bg-card-bg text-foreground/20 text-[10px] font-bold tracking-[0.5em] uppercase">
         <p className="italic mb-6">
-          DocControl Manifesto | The Strategic Shield Roadmap | © Empower 2026
+          Vitalise Manifesto | The Strategic Shield Roadmap | © Empower 2026
         </p>
         <div className="flex justify-center gap-8">
           <Mail className="w-5 h-5 opacity-50 cursor-pointer hover:opacity-100 transition-opacity hover:text-accent-primary" />
