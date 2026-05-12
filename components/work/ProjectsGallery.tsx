@@ -10,19 +10,23 @@ export function ProjectsGallery() {
     const [selectedCategory, setSelectedCategory] = useState<string>("all");
     const [searchQuery, setSearchQuery] = useState("");
 
-    // Extract unique categories (types)
-    const categories = ["all", ...Array.from(new Set(projects.map((p) => p.type)))];
+    // Extract unique categories (supporting both type and category)
+    const categories = useMemo(() => {
+        const allTypes = projects.map((p) => p.type || p.category);
+        return ["all", ...Array.from(new Set(allTypes.filter((t): t is string => !!t)))];
+    }, []);
 
     // Filter Logic
     const filteredProjects = useMemo(() => {
         return projects.filter((project) => {
+            const projectType = project.type || project.category;
             const matchesCategory =
-                selectedCategory === "all" || project.type === selectedCategory;
+                selectedCategory === "all" || projectType === selectedCategory;
             const matchesSearch =
                 project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                project.techStack.some((tech) =>
+                (project.techStack?.some((tech) =>
                     tech.toLowerCase().includes(searchQuery.toLowerCase())
-                );
+                ) ?? false);
 
             return matchesCategory && matchesSearch;
         });

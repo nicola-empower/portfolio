@@ -87,13 +87,14 @@ h6 {
   color: var(--heading);
   font-family: var(--font-serif);
 }
+
 /* -- Accessibility Visibility Overrides ------------------- */
 /* Systemic Contrast Enforcement: Force Color Inversion on Primary Containers */
-.bg-accent-primary h1, .bg-heading h1,
-.bg-accent-primary h2, .bg-heading h2,
-.bg-accent-primary h3, .bg-heading h3,
-.bg-accent-primary h4, .bg-heading h4,
-.bg-accent-primary h5, .bg-heading h5,
-.bg-accent-primary h6, .bg-heading h6 {
+.bg-accent-primary h1, .bg-heading h1, .bg-deep-burgundy h1, .bg-warm-maroon h1,
+.bg-accent-primary h2, .bg-heading h2, .bg-deep-burgundy h2, .bg-warm-maroon h2,
+.bg-accent-primary h3, .bg-heading h3, .bg-deep-burgundy h3, .bg-warm-maroon h3,
+.bg-accent-primary h4, .bg-heading h4, .bg-deep-burgundy h4, .bg-warm-maroon h4,
+.bg-accent-primary h5, .bg-heading h5, .bg-deep-burgundy h5, .bg-warm-maroon h5,
+.bg-accent-primary h6, .bg-heading h6, .bg-deep-burgundy h6, .bg-warm-maroon h6 {
   color: var(--background) !important;
 }

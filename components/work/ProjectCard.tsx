@@ -21,7 +21,8 @@ const typeIcons = {
 };
 
 export function ProjectCard({ project, priority = false }: ProjectCardProps) {
-    const TypeIcon = typeIcons[project.type] || Layout;
+    const TypeIcon = (project.type ? typeIcons[project.type] : null) || Layout;
+    const label = project.type || project.category || "Project";
 
     return (
         <motion.div
@@ -77,7 +78,7 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
                         <div className="absolute top-3 left-3 flex gap-2">
                             <span className="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-white/90 dark:bg-black/70 text-accent-primary rounded-full backdrop-blur-md shadow-sm flex items-center gap-1.5">
                                 <TypeIcon size={10} />
-                                {project.type.replace("-", " ")}
+                                {label.replace("-", " ")}
                             </span>
                             {project.status === 'coming-soon' && (
                                 <span className="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-accent-primary text-accent-primary-foreground rounded-full backdrop-blur-md shadow-sm">
@@ -93,13 +94,13 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
                             {project.title}
                         </h3>
                         <p className="text-sm text-foreground line-clamp-2 mb-4">
-                            {project.shortTagline}
+                            {project.shortTagline || project.description}
                         </p>
 
                         {/* Tech Stack & Action */}
                         <div className="flex items-center justify-between pt-4 border-t border-heading/5">
                             <div className="flex -space-x-2 overflow-hidden">
-                                {project.techStack.slice(0, 3).map((tech, i) => (
+                                {project.techStack?.slice(0, 3).map((tech, i) => (
                                     <div
                                         key={i}
                                         className="w-6 h-6 rounded-full bg-accent-secondary/30 dark:bg-foreground/10 border border-white dark:border-white/10 flex items-center justify-center text-[8px] font-bold text-heading/60"
@@ -108,7 +109,7 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
                                         {tech[0]}
                                     </div>
                                 ))}
-                                {project.techStack.length > 3 && (
+                                {project.techStack && project.techStack.length > 3 && (
                                     <div className="w-6 h-6 rounded-full bg-accent-secondary/30 dark:bg-foreground/10 border border-white dark:border-white/10 flex items-center justify-center text-[8px] font-bold text-heading/60">
                                         +{project.techStack.length - 3}
                                     </div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { ArrowLeft, Calendar, Clock, ArrowRight, RefreshCw, Terminal } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
+import { siteConfig } from "@/app/shared-metadata";
 
 export async function generateStaticParams() {
     return journals.map((journal) => ({
@@ -38,10 +39,32 @@ export default async function JournalPost(props: { params: Promise<{ slug: strin
         notFound();
     }
 
+    const journalJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": journal.title,
+        "description": journal.excerpt,
+        "datePublished": journal.date,
+        "author": {
+            "@id": `${siteConfig.url}/#person`
+        },
+        "publisher": {
+            "@id": "https://empowerdigitalsolutions.co.uk/#organization"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `${siteConfig.url}/journal/${journal.slug}`
+        }
+    };
+
     const relatedProject = journal.relatedProjectSlug ? projects.find(p => p.slug === journal.relatedProjectSlug) : null;
 
     return (
         <main className="min-h-screen bg-background transition-colors duration-500 pt-32 pb-24">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(journalJsonLd) }}
+            />
             <article className="container mx-auto px-6 max-w-4xl overflow-hidden">
                 <FadeIn delay={0.1}>
                     <Link href="/journal" className="inline-flex items-center gap-2 text-foreground/60 hover:text-accent-primary transition-colors mb-12 font-medium">

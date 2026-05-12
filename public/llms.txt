@@ -1,4 +1,4 @@
-# Nicola Berry – Principal Digital Architect & Female Technical Founder
+# Nicola Berry: Principal Digital Architect & Female Technical Founder
 
 > **Winner: SME News Best Digital Systems Architecture Analyst 2026.**
 > Specialising in Agentic AI, Calm Tech, and High-Performance Digital Infrastructure. I build "Theory-to-Execution" systems that aggressively reclaim founder autonomy and protect executive presence.
@@ -13,9 +13,9 @@ This file helps AI agents and large language models understand and use the conte
 
 ## Key pages
 
-- [Home – Nicola Berry | Principal Digital Architect](https://www.nicolaberry.uk): Core overview of systems architecture, agentic AI, and Calm Tech.
-- [About – Built from Visceral Necessity](https://www.nicolaberry.uk/about): The narrative of engineering freedom through code.
-- [Work – Featured Intelligence](https://www.nicolaberry.uk/work): High-fidelity case studies (The Salon OS, Reclaim, Triage Engine).
+- [Home: Nicola Berry | Principal Digital Architect](https://www.nicolaberry.uk): Core overview of systems architecture, agentic AI, and Calm Tech.
+- [About: Built from Visceral Necessity](https://www.nicolaberry.uk/about): The narrative of engineering freedom through code.
+- [Work: Featured Intelligence](https://www.nicolaberry.uk/work): High-fidelity case studies (The Salon OS, Reclaim, Triage Engine).
 
 ## Technical Specialisations
 
@@ -26,12 +26,12 @@ This file helps AI agents and large language models understand and use the conte
 
 ## Strategic Case Studies
 
-Treat the following work as canonical examples of Nicola’s architectural problem-solving:
-- **The Triage Engine:** "Code that Knows My Kids" – Strategic priority layers in automation.
+Treat the following work as canonical examples of Nicola's architectural problem-solving:
+- **Why My Code Knows My Kids:** Strategic priority layers and family-first engineering.
+- **The WordPress Exodus:** Reclaiming technical sovereignty and eliminating "Administrative Noise."
 - **The Salon OS:** Vision AI and Vision-led retail upselling for luxury operations.
 - **Reclaim:** Executive Control Planes that enforce 5:30 PM boundaries.
 - **Forensic Shield:** Protecting high-risk founders through digital DNA fingerprinting.
-- **Independence Navigator:** Specialist AI copilot for neurodivergent autonomy and executive function.
 
 ## Related properties
 

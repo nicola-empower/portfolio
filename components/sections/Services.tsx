@@ -1,7 +1,7 @@
 "use client";
 
 import { GlassCard } from "@/components/ui/GlassCard";
-import { Compass, Cpu, Workflow } from "lucide-react";
+import { Compass, Cpu, Workflow, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const services = [
@@ -23,6 +23,12 @@ const services = [
             "I identify severe administrative bottlenecks and replace them with zero-cost serverless AI automations, decisively reclaiming your time.",
         icon: Workflow,
     },
+    {
+        title: "Digital Sovereignty & ACE",
+        description:
+            "I architect 'Exit-Proof' websites using my Autonomous Content Engine (ACE), ensuring you own your content and code without developer lock-in.",
+        icon: ShieldCheck,
+    },
 ];
 
 export function Services() {
@@ -38,7 +44,7 @@ export function Services() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}

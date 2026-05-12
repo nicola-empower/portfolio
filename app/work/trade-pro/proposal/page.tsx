@@ -2,13 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ArrowLeft, 
-  Target, 
-  Rocket, 
-  Brain, 
-  ShieldCheck, 
-  Layers, 
+import {
+  ArrowLeft,
+  Target,
+  Rocket,
+  Brain,
+  ShieldCheck,
+  Layers,
   Zap,
   TrendingUp,
   Cpu,
@@ -26,8 +26,8 @@ export default function TradeProProposal() {
       {/* Navigation */}
       <nav className="border-b border-card-border bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between font-sans">
-          <Link 
-            href="/#work" 
+          <Link
+            href="/#work"
             className="flex items-center gap-2 text-foreground/50 hover:text-accent-primary transition-colors group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -56,7 +56,7 @@ export default function TradeProProposal() {
             Field Enterprises
           </h1>
           <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl italic font-medium">
-            A strategic funding proposal to transition a high-performance solo-operator tool 
+            A strategic funding proposal to transition a high-performance solo-operator tool
             into a multi-crew, AI-native field service ecosystem.
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function TradeProProposal() {
             <div>
               <h3 className="text-xs font-black uppercase tracking-widest text-accent-primary mb-4">Immediate Capacity</h3>
               <p className="text-2xl font-serif leading-snug text-heading">
-                TradePro currently absorbs <span className="font-bold underline decoration-accent-primary underline-offset-8 decoration-4">16 hours</span> of 
+                TradePro currently absorbs <span className="font-bold underline decoration-accent-primary underline-offset-8 decoration-4">16 hours</span> of
                 back-office administration per week, effectively acting as a digital workforce of 0.4 FTE.
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function TradeProProposal() {
             <Rocket className="text-accent-primary" />
             Growth Phases
           </h2>
-          
+
           <div className="space-y-6">
             {/* Phase 1 */}
             <div className="group bg-card-bg p-8 rounded-3xl border border-card-border hover:border-accent-primary/30 transition-all duration-500 shadow-sm">
@@ -145,7 +145,7 @@ export default function TradeProProposal() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-heading">Proprietary Field Intelligence</h3>
               <p className="text-foreground/70 text-sm leading-relaxed mb-6 italic">
-                Training Small Language Models (SLMs) on localized trade job data to predict 
+                Training Small Language Models (SLMs) on localised trade job data to predict
                 project duration and material costs with 95% confidence before the van even arrives.
               </p>
               <div className="flex gap-4">
@@ -167,7 +167,7 @@ export default function TradeProProposal() {
           <div>
             <h2 className="text-3xl font-serif font-medium mb-6 leading-tight text-heading italic">Strategic Valuation</h2>
             <p className="text-foreground/70 mb-8 leading-relaxed font-medium">
-              TradePro is positioned as a high-value asset because it addresses a fundamental friction in the 
+              TradePro is positioned as a high-value asset because it addresses a fundamental friction in the
               £100bn+ UK trade services market: administrative inefficiency.
             </p>
             <div className="p-6 bg-accent-primary/5 border-l-8 border-accent-primary rounded-r-3xl shadow-xl">
@@ -178,7 +178,7 @@ export default function TradeProProposal() {
               </p>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 gap-4">
             {[
               { icon: <Cpu />, label: "Compute", val: "Optimised" },
@@ -205,7 +205,7 @@ export default function TradeProProposal() {
                 <div className="text-[10px] text-foreground/40 uppercase tracking-[0.4em] font-black">Systems Architect</div>
               </div>
             </div>
-            <Link 
+            <Link
               href="/work/trade-pro/infographic"
               className="px-8 py-4 bg-background border-2 border-card-border text-foreground hover:bg-card-bg rounded-full font-black hover:scale-105 transition-all text-xs uppercase tracking-widest shadow-sm"
             >

@@ -7,7 +7,7 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-[#4A0E0E] transition-colors duration-500 border-t border-[#D4A84F]/10 pt-20 pb-8 text-white">
+        <footer className="bg-deep-burgundy transition-colors duration-500 border-t border-[#D4A84F]/10 pt-20 pb-8 text-cream-white">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16">
                     {/* Left: Brand */}
@@ -21,7 +21,7 @@ export function Footer() {
                         </Link>
                         <div className="space-y-6 text-center md:text-left">
                             <div className="space-y-2">
-                                <h3 className="font-serif text-3xl font-bold text-white">
+                                <h3 className="font-serif text-3xl font-bold text-cream-white">
                                     Empower Digital Solutions
                                 </h3>
                                 <p className="font-sans text-sm font-medium tracking-widest uppercase text-[#D4A84F]">

@@ -4,7 +4,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Project } from "@/types";
+import { journals } from "@/data/journals";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectModalProps {
     project: Project | null;
@@ -142,7 +144,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                             <div className="flex justify-between items-start mb-6">
                                 <div>
                                     <h2 className="text-3xl font-bold text-heading mb-2 font-serif">{project.title}</h2>
-                                    <p className="text-accent-primary font-medium text-sm tracking-tight">{project.shortTagline}</p>
+                                    <p className="text-accent-primary font-medium text-sm tracking-tight">{project.shortTagline || project.description}</p>
                                 </div>
                                 {/* Close Button (Desktop) */}
                                 <button
@@ -163,7 +165,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 px-4 py-2 bg-accent-primary text-accent-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity text-sm"
                                         >
-                                            <ExternalLink size={14} /> {project.type === "website" ? "View Live Site" : "Live Demo"}
+                                            <ExternalLink size={14} /> {(project.type || project.category) === "website" ? "View Live Site" : "Live Demo"}
                                         </a>
                                     )}
                                     {project.demoUrl && (
@@ -184,25 +186,55 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                                 <div>
                                     <h3 className="text-base font-bold text-heading mb-2">Overview</h3>
                                     <p className="text-foreground/80 leading-relaxed text-sm">
-                                        <TextWithLinks text={project.overview} />
+                                        <TextWithLinks text={project.overview || project.description} />
                                     </p>
                                 </div>
 
-                                {project.problem && (
+                                {(project.problem || project.details?.problem) && (
                                     <div>
                                         <h3 className="text-base font-bold text-heading mb-2">The Challenge</h3>
                                         <p className="text-foreground/80 leading-relaxed text-sm">
-                                            <TextWithLinks text={project.problem} />
+                                            <TextWithLinks text={project.problem || project.details?.problem} />
                                         </p>
                                     </div>
                                 )}
 
-                                {project.solution && (
+                                {(project.solution || project.details?.solution) && (
                                     <div>
                                         <h3 className="text-base font-bold text-heading mb-2">The Solution</h3>
                                         <p className="text-foreground/80 leading-relaxed text-sm">
-                                            <TextWithLinks text={project.solution} />
+                                            <TextWithLinks text={project.solution || project.details?.solution} />
                                         </p>
+                                    </div>
+                                )}
+
+                                {/* Related Journals (Multiple) */}
+                                {project.details?.relatedJournals && project.details.relatedJournals.length > 0 && (
+                                    <div className="pt-2">
+                                        <h3 className="text-[10px] font-bold text-foreground/50 uppercase tracking-widest mb-3">Technical Intelligence</h3>
+                                        <div className="space-y-3">
+                                            {project.details.relatedJournals.map((slug) => {
+                                                const journal = journals.find(j => j.slug === slug);
+                                                if (!journal) return null;
+                                                return (
+                                                    <Link
+                                                        key={slug}
+                                                        href={`/journal/${slug}`}
+                                                        className="block p-3 rounded-xl bg-card-bg border border-foreground/5 hover:border-accent-secondary/30 transition-all group"
+                                                    >
+                                                        <div className="flex items-center justify-between">
+                                                            <div className="flex items-center gap-2 text-accent-secondary mb-1">
+                                                                <span className="text-[10px] font-bold tracking-widest uppercase">Journal</span>
+                                                            </div>
+                                                            <span className="text-[10px] text-foreground/40 font-mono">{journal.date}</span>
+                                                        </div>
+                                                        <h4 className="text-sm font-bold text-heading leading-tight group-hover:text-accent-secondary transition-colors line-clamp-1">
+                                                            {journal.title}
+                                                        </h4>
+                                                    </Link>
+                                                );
+                                            })}
+                                        </div>
                                     </div>
                                 )}
 
@@ -210,7 +242,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                                 <div className="pt-2">
                                     <h3 className="text-[10px] font-bold text-foreground/50 uppercase tracking-widest mb-3">Technologies</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        {project.techStack.map((tech) => (
+                                        {(project.techStack || project.details?.technicalStack)?.map((tech) => (
                                             <span
                                                 key={tech}
                                                 className="px-2 py-1 bg-accent-secondary/10 text-foreground/80 text-[10px] uppercase font-bold tracking-wider rounded-md border border-foreground/5"

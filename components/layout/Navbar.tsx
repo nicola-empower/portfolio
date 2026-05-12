@@ -35,8 +35,8 @@ export function Navbar() {
                 animate={{ y: 0, opacity: 1 }}
                 className={`max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-3 md:py-4 rounded-full border transition-all duration-500 pointer-events-auto
                     ${isScrolled 
-                        ? "bg-[#4A0E0E]/95 backdrop-blur-md border-[#D4A84F]/30 shadow-lg py-2.5 md:py-3" 
-                        : "bg-[#4A0E0E]/70 backdrop-blur-sm border-[#D4A84F]/10 py-3 md:py-4"
+                        ? "bg-deep-burgundy/95 backdrop-blur-md border-[#D4A84F]/30 shadow-lg py-2.5 md:py-3" 
+                        : "bg-deep-burgundy/70 backdrop-blur-sm border-[#D4A84F]/10 py-3 md:py-4"
                     }`}
             >
                 {/* Logo Anchor */}
@@ -86,7 +86,7 @@ export function Navbar() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
-                        className="fixed inset-x-6 top-24 bg-[#4A0E0E]/95 backdrop-blur-xl border border-[#D4A84F]/20 rounded-3xl p-8 shadow-2xl z-50 md:hidden pointer-events-auto"
+                        className="fixed inset-x-6 top-24 bg-deep-burgundy/95 backdrop-blur-xl border border-[#D4A84F]/20 rounded-3xl p-8 shadow-2xl z-50 md:hidden pointer-events-auto"
                     >
                         <div className="flex flex-col gap-6 items-center">
                             {navLinks.map((link) => (

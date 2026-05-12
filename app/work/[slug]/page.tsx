@@ -60,11 +60,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
         ...sharedMetadata,
         title: `${project.title} | Nicola Berry Portfolio`,
-        description: project.shortTagline,
+        description: project.shortTagline || project.description,
         openGraph: {
             ...sharedMetadata.openGraph,
             title: project.title,
-            description: project.shortTagline,
+            description: project.shortTagline || project.description,
             images: [
                 {
                     url: ogImage,
@@ -94,18 +94,45 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         notFound();
     }
 
-    const relatedJournal = project.relatedJournalSlug ? journals.find(j => j.slug === project.relatedJournalSlug) : null;
-
     // Find next project for navigation
     const currentIndex = projects.findIndex((p) => p.slug === slug);
     const nextProject = currentIndex !== -1 && currentIndex < projects.length - 1
         ? projects[currentIndex + 1]
         : projects[0]; // Loop back to start
 
-    const TypeIcon = typeIcons[project.type] || Layout;
+    // Get all related journals (supporting both old single and new array format)
+    const relatedJournalSlugs = project.details?.relatedJournals || (project.relatedJournalSlug ? [project.relatedJournalSlug] : []);
+    const relatedJournalEntries = relatedJournalSlugs.map(slug => journals.find(j => j.slug === slug)).filter((j): j is any => !!j);
+
+    const TypeIcon = (project.type ? typeIcons[project.type] : null) || Layout;
+
+    const projectJsonLd = {
+        "@context": "https://schema.org",
+        "@type": project.type === "webapp" || project.type === "script" ? "SoftwareApplication" : "CreativeWork",
+        "name": project.title,
+        "description": project.description,
+        "url": `${siteConfig.url}/work/${project.slug}`,
+        "applicationCategory": project.category,
+        "operatingSystem": "Web",
+        "author": {
+            "@id": `${siteConfig.url}/#person`
+        },
+        "datePublished": project.year,
+        "image": project.thumbnail?.startsWith("/") ? `${siteConfig.url}${project.thumbnail}` : project.thumbnail,
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock"
+        }
+    };
 
     return (
         <main id="main-content" className="min-h-screen bg-background transition-colors duration-500 pt-24 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }}
+            />
             {/* Navigation Bar */}
             <div className="container mx-auto px-6 mb-12">
                 <Link
@@ -124,7 +151,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                         <div className="flex items-center gap-3 mb-8">
                             <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] bg-background border border-foreground/10 text-foreground rounded-full flex items-center gap-2 shadow-sm">
                                 <TypeIcon size={14} />
-                                {project.type.replace("-", " ")}
+                                {(project.type || project.category || "Project").replace("-", " ")}
                             </span>
                             <span className="text-foreground/20">•</span>
                             <span className="font-mono text-sm font-bold text-foreground/40 uppercase tracking-widest">{project.year}</span>
@@ -142,7 +169,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     </FadeIn>
                     <FadeIn delay={0.3}>
                         <p className="font-sans text-xl md:text-3xl text-foreground/80 max-w-3xl leading-relaxed font-light">
-                            {project.shortTagline}
+                            {project.shortTagline || project.description}
                         </p>
                     </FadeIn>
                 </header>
@@ -162,7 +189,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                     className="flex items-center justify-center gap-2 px-6 py-4 bg-heading text-background rounded-xl font-bold hover:bg-accent-secondary transition-all shadow-lg hover:shadow-accent-secondary/20"
                                 >
                                     <ExternalLink size={18} />
-                                    {project.type === "website" ? "Visit Live Site" : "View Live Demo"}
+                                    {(project.type || project.category) === "website" ? "Visit Live Site" : "View Live Demo"}
                                 </a>
                             )}
 
@@ -214,7 +241,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                 Technologies
                             </h3>
                             <div className="flex flex-wrap gap-2">
-                                {project.techStack.map((tech) => (
+                                {(project.techStack || project.details?.technicalStack || []).map((tech) => (
                                     <span key={tech} className="px-3 py-1.5 bg-accent-primary/20 text-foreground text-sm rounded-md font-medium">
                                         {tech}
                                     </span>
@@ -229,7 +256,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                     My Role
                                 </h3>
                                 <ul className="space-y-3">
-                                    {project.contributions.map((item, i) => (
+                                    {(project.contributions || []).map((item, i) => (
                                         <li key={i} className="flex items-start gap-3 text-foreground/80 text-sm leading-relaxed">
                                             <span className="w-1.5 h-1.5 mt-1.5 rounded-full bg-accent-secondary shrink-0" />
                                             {item}
@@ -254,7 +281,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                             <FadeIn delay={0.1} y={20}>
                                 <h3 className="font-serif font-bold text-heading mb-8 opacity-40 uppercase tracking-[0.2em] text-sm">Overview</h3>
                                 <p className="text-foreground leading-relaxed text-xl font-light mb-16">
-                                    <TextWithLinks text={project.overview} />
+                                    <TextWithLinks text={project.overview || project.description} />
                                 </p>
                             </FadeIn>
 
@@ -287,46 +314,53 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                             )}
 
                              <div className="grid md:grid-cols-2 gap-12 mt-20">
-                                {project.problem && (
+                                {(project.problem || project.details?.problem) && (
                                     <div className="p-8 rounded-3xl bg-accent-primary/10 border border-heading/10">
                                         <h3 className="font-serif text-2xl font-bold text-heading mb-6 flex items-center gap-4">
                                             <span className="w-10 h-10 rounded-full bg-accent-secondary/20 flex items-center justify-center text-accent-secondary text-base font-bold italic">Challenge</span>
                                         </h3>
                                         <p className="text-foreground/70 leading-relaxed text-lg">
-                                            <TextWithLinks text={project.problem} />
+                                            <TextWithLinks text={project.problem || project.details?.problem} />
                                         </p>
                                     </div>
                                 )}
 
-                                {project.solution && (
+                                {(project.solution || project.details?.solution) && (
                                     <div className="p-8 rounded-3xl bg-accent-secondary/5 border border-accent-secondary/10">
                                         <h3 className="font-serif text-2xl font-bold text-heading mb-6 flex items-center gap-4">
                                             <span className="w-10 h-10 rounded-full bg-accent-secondary/20 flex items-center justify-center text-accent-secondary text-base font-bold italic">Solution</span>
                                         </h3>
                                         <p className="text-foreground/70 leading-relaxed text-lg">
-                                            <TextWithLinks text={project.solution} />
+                                            <TextWithLinks text={project.solution || project.details?.solution} />
                                         </p>
                                     </div>
                                 )}
                             </div>
 
-
-                            {relatedJournal && (
+                             {relatedJournalEntries.length > 0 && (
                                 <FadeIn delay={0.1}>
-                                    <div className="mt-12 mb-8 p-8 rounded-3xl bg-card-bg border border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-6 hover:shadow-lg transition-shadow">
-                                        <div>
-                                            <div className="flex items-center gap-2 text-accent-secondary mb-3">
-                                                <FileText size={16} />
-                                                <span className="text-xs font-bold tracking-widest uppercase">Technical Journal</span>
+                                    <div className="mt-12 space-y-6">
+                                        <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-foreground/60 mb-6 border-b border-foreground/5 pb-2">
+                                            Technical Intelligence
+                                        </h3>
+                                        {relatedJournalEntries.map((journal) => (
+                                            <div key={journal.slug} className="p-8 rounded-3xl bg-card-bg border border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-6 hover:shadow-lg transition-shadow">
+                                                <div>
+                                                    <div className="flex items-center gap-2 text-accent-secondary mb-3">
+                                                        <FileText size={16} />
+                                                        <span className="text-xs font-bold tracking-widest uppercase">Journal</span>
+                                                    </div>
+                                                    <h3 className="font-serif text-2xl font-bold text-heading leading-tight">{journal.title}</h3>
+                                                </div>
+                                                <Link href={`/journal/${journal.slug}`} className="shrink-0 px-6 py-3 bg-heading text-background rounded-xl font-bold hover:bg-accent-secondary transition-colors flex items-center gap-2">
+                                                    Read Briefing <ArrowRight size={16} />
+                                                </Link>
                                             </div>
-                                            <h3 className="font-serif text-2xl font-bold text-heading leading-tight">{relatedJournal.title}</h3>
-                                        </div>
-                                        <Link href={`/journal/${relatedJournal.slug}`} className="shrink-0 px-6 py-3 bg-heading text-background rounded-xl font-bold hover:bg-accent-secondary transition-colors flex items-center gap-2">
-                                            Read Journal <ArrowRight size={16} />
-                                        </Link>
+                                        ))}
                                     </div>
                                 </FadeIn>
                             )}
+
                              {/* Strategic Value Section */}
                             <FadeIn delay={0.2} y={30}>
                                 <div className="mt-20 p-10 rounded-4xl bg-accent-primary text-accent-primary-foreground relative overflow-hidden group border border-accent-primary-foreground/10 shadow-xl">
@@ -338,10 +372,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                                         </div>
                                         <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-background! italic leading-tight">Business Impact & Scalability</h3>
                                         <p className="text-inherit opacity-90 text-lg md:text-xl leading-relaxed max-w-3xl mb-10 font-medium">
-                                            This project isn&apos;t just code; it&apos;s a strategic asset designed to eliminate operational friction and drive measurable conversion. By focusing on {project.techStack[0]} {project.techStack[1] ? `and ${project.techStack[1]}` : ""}, we ensured a foundation that scales with enterprise demand.
+                                            This project isn&apos;t just code; it&apos;s a strategic asset designed to eliminate operational friction and drive measurable conversion. {(project.techStack || project.details?.technicalStack) && `By focusing on ${(project.techStack || project.details?.technicalStack)?.[0]} ${(project.techStack || project.details?.technicalStack)?.[1] ? `and ${(project.techStack || project.details?.technicalStack)?.[1]}` : ""}, we ensured a foundation that scales with enterprise demand.`}
                                         </p>
                                         <div className="flex flex-wrap gap-4">
-                                            {project.highlights.map((highlight, i) => (
+                                            {(project.highlights || []).map((highlight, i) => (
                                                 <div key={i} className="px-5 py-2.5 bg-background/10 rounded-full text-sm font-bold border border-background/20 hover:bg-background hover:text-accent-primary transition-all shadow-sm">
                                                     {highlight}
                                                 </div>

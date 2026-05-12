@@ -23,7 +23,7 @@ This document provides a strategic breakdown of why the Empower Digital Solution
 - **Stealth Logic (SafeHaven)**: Proprietary "Hidden in Plain Sight" mechanisms, a unique value add for specialised safety-tech solutions.
 
 ## 5. Visual Excellence & Motion Design
-- **Custom Circuit/Flow Graphics**: Not stock imagery—bespoke React-based animations (HeroCircuit, OrbitalFlow) that create a high-end, futuristic impression.
+- **Custom Circuit/Flow Graphics**: Not stock imagery - bespoke React-based animations (HeroCircuit, OrbitalFlow) that create a high-end, futuristic impression.
 - **Premium Glassmorphism**: Modern, consistent design system across 50+ pages and components.
 - **Motion-Engineered UX**: Framer Motion integration for smooth, interactive transitions that command attention.
 
