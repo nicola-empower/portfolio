@@ -11,7 +11,7 @@ export function Hero() {
             {/* Background Image - With Brand-Aligned Burgundy Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/hero-falkirk.png"
+                    src="/hero-falkirk.webp"
                     alt="Falkirk Wheel at Sunset"
                     fill
                     priority

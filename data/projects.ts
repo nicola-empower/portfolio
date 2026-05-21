@@ -7,7 +7,7 @@ export const projects: Project[] = [
     category: "Systems Engineering",
     year: "2026",
     description: "A stateless CMS architecture that decouples content management from the frontend using a serverless data-sync pipeline.",
-    thumbnail: "/images/blog/sovereignty.png",
+    thumbnail: "/images/blog/sovereignty.webp",
     tags: ["Astro", "Next.js", "Google Apps Script", "Stateless Architecture"],
     stats: [
       { label: "Data Latency", value: "0ms" },
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-salon-os-architecture",
     title: "The Salon OS",
     shortTagline: "The Salon OS: Vision-AI Driven Enterprise Operations & Triage",
-    thumbnail: "/the-salon/thesalon-new.png",
+    thumbnail: "/the-salon/thesalon-new.webp",
     gallery: [
       "/the-salon/the-salon-og.png",
       "/the-salon/upcoming-appointments.png",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-gym-os-efficiency",
     title: "The Gym OS",
     shortTagline: "IoT-Driven Operational Infrastructure",
-    thumbnail: "/the-gym/thegymthumnail-new.png",
+    thumbnail: "/the-gym/thegymthumnail-new.webp",
     gallery: [
       "/the-gym/thegymthumnail-new.png",
       "/the-gym/gym-os-schematic.png",
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "technical-sovereignty-safety-net",
     title: "The Script Vault",
     shortTagline: "Sovereign Intelligence Repository & Client Safety-Net",
-    thumbnail: "/script-vault/scriptvaultthumbnail-new.png",
+    thumbnail: "/script-vault/scriptvaultthumbnail-new.webp",
     gallery: [
       "/script-vault/scriptvaultthumbnail-new.png",
       "/script-vault/script-vault-main.png",
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-end-of-creative-friction",
     title: "Aesthetic Vault (DesignForge AI)",
     shortTagline: "Collaborative Design Intelligence & Zero-Misalignment Briefing",
-    thumbnail: "/designforge-ai/design-forge-thumbnail-33.png",
+    thumbnail: "/designforge-ai/design-forge-thumbnail-33.webp",
     gallery: [
       "/designforge-ai/design-forge-thumbnail-33.png",
       "/designforge-ai/forge1.png",
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "engineering-the-sanctuary",
     title: "Reclaim Sanctuary",
     shortTagline: "Reclaim: Principal-Grade Executive Sanctuary & Operational Shield",
-    thumbnail: "/reclaim/reclaimthumbnail-new.png",
+    thumbnail: "/reclaim/reclaimthumbnail-new.webp",
     gallery: [
       "/reclaim/reclaim1.png",
       "/reclaim/reclaim2.png",
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-silicon-valet-tradepro-automation",
     title: "TradePro: Intelligent Field Management",
     shortTagline: "The Silicon Valet for Field-Service Enterprises",
-    thumbnail: "/trade-pro/TradeProthumbnail-new.png",
+    thumbnail: "/trade-pro/TradeProthumbnail-new.webp",
     gallery: [
       "/trade-pro/TradeProthumbnail-new.png",
       "/trade-pro/Tradesprodashboard.png",
@@ -243,7 +243,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-digital-command-centre",
     title: "OpsCommand: The Business OS",
     shortTagline: "Strategic Enterprise Operating System",
-    thumbnail: "/ops-command/opscommandthumbnail-new.png",
+    thumbnail: "/ops-command/opscommandthumbnail-new.webp",
     gallery: [
       "/ops-command/opscommandthumbnail.png",
       "/ops-command/opscommand1.png",
@@ -274,7 +274,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-forensic-witness",
     title: "The Forensic Shield",
     shortTagline: "Protective Lead Infrastructure & Defensive Engineering",
-    thumbnail: "/automation/schematic-hero.png",
+    thumbnail: "/automation/schematic-hero.webp",
     gallery: [
       "/automation/schematic-hero.png"
     ],
@@ -298,7 +298,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "reclaiming-the-10-minute-gap",
     title: "The Operational Core",
     shortTagline: "Automated Financial Orchestration & Document Generation",
-    thumbnail: "/automation/invoice-automation-hero.png",
+    thumbnail: "/automation/invoice-automation-hero.webp",
     gallery: [
       "/automation/invoice-automation-hero.png"
     ],
@@ -322,7 +322,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "engineering-the-sanctuary",
     title: "The AI Control Plane",
     shortTagline: "Strategic AI Orchestration & Life Protection Protocol",
-    thumbnail: "/automation/ai-control-plane-hero.png",
+    thumbnail: "/automation/ai-control-plane-hero.webp",
     gallery: [
       "/automation/ai-control-plane-hero.png"
     ],
@@ -345,7 +345,7 @@ export const projects: Project[] = [
     slug: "vowsuite",
     title: "VowSuite: SaaS Planner Ecosystem",
     shortTagline: "The White-Label Operating System for the Luxury Wedding Industry",
-    thumbnail: "/vowsuite/vowsuitethumbnail-new.png",
+    thumbnail: "/vowsuite/vowsuitethumbnail-new.webp",
     gallery: [
       "/vowsuite/vowsuitethumbnail-new.png",
       "/vowsuite/vowsuite-schematic.png",
@@ -373,7 +373,7 @@ export const projects: Project[] = [
     slug: "leadflow",
     title: "LeadFlow: Marketing Pipeline Simulator",
     shortTagline: "High-Fidelity Funnel Visualisation & ROI Simulation Engine",
-    thumbnail: "/lead-flow/leadflowthumbnail.png",
+    thumbnail: "/lead-flow/leadflowthumbnail.webp",
     gallery: [
       "/lead-flow/leadflowthumbnail.png",
       "/lead-flow/leadflowmain.png",
@@ -402,7 +402,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "automating-discovery-to-pdf",
     title: "Smart Proposal Builder",
     shortTagline: "Internal Generative AI Sales Engine",
-    thumbnail: "/smart-proposal-builder/proposalthumbnail-new.png",
+    thumbnail: "/smart-proposal-builder/proposalthumbnail-new.webp",
     gallery: [
       "/smart-proposal-builder/proposalthumbnail-new.png",
       "/smart-proposal-builder/proposal-builder-schematic.png",
@@ -429,7 +429,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-architecture-of-empowerment",
     title: "Empower Automation",
     shortTagline: "Strategic Automation Infrastructure",
-    thumbnail: "/empower-automation/empowerautomationthumbnail-new.png",
+    thumbnail: "/empower-automation/empowerautomationthumbnail-new.webp",
     gallery: [
       "/empower-automation/empowerautothumbnail.png",
       "/empower-automation/autoroithumbnail.png"
@@ -463,7 +463,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-high-fidelity-nexus",
     title: "Empower Digital Solutions",
     shortTagline: "The Operational Command Centre: Engineering Technical Trust at Scale",
-    thumbnail: "/empower-digital/empowerdigitalsolutionsthumbnail-new.png",
+    thumbnail: "/empower-digital/empowerdigitalsolutionsthumbnail-new.webp",
     gallery: [
       "/empower-digital/empowerdigitalthumbnail.png",
       "/empower-digital/empowerdigitalithumbnail.png"
@@ -489,7 +489,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "the-expert-in-the-loop-advantage",
     title: "Empower VA Services",
     shortTagline: "The 'Operations OS': Engineering Elite Executive Logistics",
-    thumbnail: "/empower-va/empowervaservicesthumbnail-new.png",
+    thumbnail: "/empower-va/empowervaservicesthumbnail-new.webp",
     gallery: [
       "/empower-va/empowervathumbnail.png",
       "/empower-va/vaonboarding.png",
@@ -517,7 +517,7 @@ export const projects: Project[] = [
     relatedJournalSlug: "vaassist-freelancer-to-agency",
     title: "VAAssist",
     shortTagline: "The Agency Scaling Engine for Operational Specialist Teams",
-    thumbnail: "/va-assist/vaassistthumbnail-new.png",
+    thumbnail: "/va-assist/vaassistthumbnail-new.webp",
     gallery: [
       "/va-assist/vaassistthumbnail-new.png",
       "/va-assist/Vaassistthumbnail.png",

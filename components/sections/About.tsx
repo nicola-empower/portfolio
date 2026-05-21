@@ -19,7 +19,7 @@ export function About() {
                     >
                         <div className="aspect-square md:aspect-4/5 rounded-2xl overflow-hidden bg-accent-secondary/10 relative group">
                             <Image
-                                src="/nicola_professional.png"
+                                src="/nicola_professional.webp"
                                 alt="Nicola Berry - Principal Digital Architect"
                                 fill
                                 priority={true}

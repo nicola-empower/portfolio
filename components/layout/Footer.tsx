@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Script from "next/script";
 
@@ -14,9 +15,11 @@ export function Footer() {
                     {/* Left: Brand */}
                     <div className="flex flex-col items-center md:items-start space-y-8">
                         <Link href="/" className="group transition-transform hover:scale-105 duration-300">
-                            <img 
-                                src="/logo.png" 
+                            <Image 
+                                src="/logo.webp" 
                                 alt="Nicola Berry Signature" 
+                                width={112}
+                                height={112}
                                 className="w-24 h-24 md:w-28 md:h-28 object-contain brightness-110"
                             />
                         </Link>
@@ -30,9 +33,11 @@ export function Footer() {
                                 </p>
                             </div>
                             <div className="pt-4 flex justify-center md:justify-start">
-                                <img 
-                                    src="/smefooter.png" 
+                                <Image 
+                                    src="/smefooter.webp" 
                                     alt="SME News Award 2026" 
+                                    width={320}
+                                    height={213}
                                     className="w-full max-w-[280px] md:max-w-xs h-auto opacity-100 transition-opacity duration-300 brightness-110"
                                 />
                             </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Menu, X } from "lucide-react";
@@ -42,9 +43,12 @@ export function Navbar() {
                 {/* Logo Anchor */}
                 <Link href="/" className="group flex items-center gap-2 md:gap-3">
                     <div className="relative w-8 h-8 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
-                        <img 
-                            src="/logo.png" 
+                        <Image 
+                            src="/logo.webp" 
                             alt="Nicola Berry Signature" 
+                            width={48}
+                            height={48}
+                            priority
                             className="object-contain w-full h-full brightness-110"
                         />
                     </div>
