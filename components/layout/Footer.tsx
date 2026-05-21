@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Script from "next/script";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -107,18 +108,27 @@ export function Footer() {
                 </div>
 
                 {/* Bottom: Copyright */}
-                <div className="pt-8 border-t border-[#D4A84F]/10 text-center space-y-2">
-                    <p className="font-sans text-sm text-white/40">
-                        &copy; Nicola Berry. {currentYear}
-                    </p>
-                    <p className="font-sans text-[9px] md:text-[10px] uppercase tracking-[0.1em] md:tracking-[0.2em] text-[#D4A84F]/30 leading-relaxed max-w-md mx-auto">
-                        ICO Registered: ZC102381 | Professional Indemnity Insurance by PolicyBee | 
-                        <Link href="/privacy" className="hover:text-[#D4A84F] transition-colors ml-1 underline decoration-[#D4A84F]/20 underline-offset-4">
-                            Privacy & Terms
-                        </Link>
-                    </p>
+                <div className="pt-8 border-t border-[#D4A84F]/10 text-center space-y-4 flex flex-col items-center">
+                    <div className="space-y-2">
+                        <p className="font-sans text-sm text-white/40">
+                            &copy; Nicola Berry. {currentYear}
+                        </p>
+                        <p className="font-sans text-[9px] md:text-[10px] uppercase tracking-[0.1em] md:tracking-[0.2em] text-[#D4A84F]/30 leading-relaxed max-w-md mx-auto">
+                            ICO Registered: ZC102381 | Professional Indemnity Insurance by PolicyBee | 
+                            <Link href="/privacy" className="hover:text-[#D4A84F] transition-colors ml-1 underline decoration-[#D4A84F]/20 underline-offset-4">
+                                Privacy & Terms
+                            </Link>
+                        </p>
+                    </div>
+                    <div className="flex justify-center">
+                        <div id="wcb" className="carbonbadge wcb-d" />
+                    </div>
                 </div>
             </div>
+            <Script 
+                src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" 
+                strategy="afterInteractive"
+            />
         </footer>
     );
 }
