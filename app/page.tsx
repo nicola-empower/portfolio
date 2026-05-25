@@ -1,12 +1,14 @@
 import { Hero } from "@/components/sections/Hero";
-import { TechStack } from "@/components/sections/TechStack";
-import { Services } from "@/components/sections/Services";
-import { Work } from "@/components/sections/Work";
-import { IntelligenceSection } from "@/components/sections/IntelligenceSection";
-import { Process } from "@/components/sections/Process";
-import { About } from "@/components/sections/About";
-import { JournalSection } from "@/components/sections/JournalSection";
-import { Contact } from "@/components/sections/Contact";
+import dynamic from "next/dynamic";
+
+const TechStack = dynamic(() => import("@/components/sections/TechStack").then(mod => mod.TechStack));
+const Services = dynamic(() => import("@/components/sections/Services").then(mod => mod.Services));
+const Work = dynamic(() => import("@/components/sections/Work").then(mod => mod.Work));
+const IntelligenceSection = dynamic(() => import("@/components/sections/IntelligenceSection").then(mod => mod.IntelligenceSection));
+const Process = dynamic(() => import("@/components/sections/Process").then(mod => mod.Process));
+const About = dynamic(() => import("@/components/sections/About").then(mod => mod.About));
+const JournalSection = dynamic(() => import("@/components/sections/JournalSection").then(mod => mod.JournalSection));
+const Contact = dynamic(() => import("@/components/sections/Contact").then(mod => mod.Contact));
 
 export default function Home() {
   return (

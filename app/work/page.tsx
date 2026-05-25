@@ -6,6 +6,9 @@ import { ArrowLeft } from "lucide-react";
 export const metadata = {
     title: "Project Catalog | Nicola Berry Portfolio",
     description: "Full directory of technical platforms, AI agents, and digital solutions.",
+    alternates: {
+        canonical: "https://nicolaberry.uk/work",
+    },
 };
 
 export default function WorkPage() {

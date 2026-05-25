@@ -59,10 +59,10 @@ export function Contact() {
                             </div>
 
                             <div className="flex gap-4 pt-8">
-                                <a href="https://www.linkedin.com/in/empowervaservices" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center text-heading hover:bg-accent-primary hover:text-accent-primary-foreground hover:border-accent-primary transition-all duration-300">
+                                <a href="https://www.linkedin.com/in/empowervaservices" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center text-heading hover:bg-accent-primary hover:text-accent-primary-foreground hover:border-accent-primary transition-all duration-300">
                                     <Linkedin size={20} />
                                 </a>
-                                <a href="https://github.com/nicola-empower" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center text-heading hover:bg-accent-primary hover:text-accent-primary-foreground hover:border-accent-primary transition-all duration-300">
+                                <a href="https://github.com/nicola-empower" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center text-heading hover:bg-accent-primary hover:text-accent-primary-foreground hover:border-accent-primary transition-all duration-300">
                                     <Github size={20} />
                                 </a>
                             </div>

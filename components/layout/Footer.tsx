@@ -132,7 +132,7 @@ export function Footer() {
             </div>
             <Script 
                 src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" 
-                strategy="afterInteractive"
+                strategy="lazyOnload"
             />
         </footer>
     );

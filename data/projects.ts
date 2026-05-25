@@ -79,10 +79,10 @@ export const projects: Project[] = [
     shortTagline: "IoT-Driven Operational Infrastructure",
     thumbnail: "/the-gym/thegymthumnail-new.webp",
     gallery: [
-      "/the-gym/thegymthumnail-new.png",
+      "/the-gym/thegymthumnail-new.webp",
       "/the-gym/gym-os-schematic.png",
-      "/the-gym/gym-dashboard.png",
-      "/the-gym/gym-access-control.png"
+      "/the-gym/gym-dashboard.webp",
+      "/the-gym/gym-access-control.webp"
     ],
     year: "2026",
     type: "webapp",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     shortTagline: "Sovereign Intelligence Repository & Client Safety-Net",
     thumbnail: "/script-vault/scriptvaultthumbnail-new.webp",
     gallery: [
-      "/script-vault/scriptvaultthumbnail-new.png",
+      "/script-vault/scriptvaultthumbnail-new.webp",
       "/script-vault/script-vault-main.png",
       "/script-vault/script-vault-internal.png"
     ],
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     shortTagline: "Collaborative Design Intelligence & Zero-Misalignment Briefing",
     thumbnail: "/designforge-ai/design-forge-thumbnail-33.webp",
     gallery: [
-      "/designforge-ai/design-forge-thumbnail-33.png",
+      "/designforge-ai/design-forge-thumbnail-33.webp",
       "/designforge-ai/forge1.png",
       "/designforge-ai/forge2.png",
       "/designforge-ai/forge3.png",
@@ -213,7 +213,7 @@ export const projects: Project[] = [
     shortTagline: "The Silicon Valet for Field-Service Enterprises",
     thumbnail: "/trade-pro/TradeProthumbnail-new.webp",
     gallery: [
-      "/trade-pro/TradeProthumbnail-new.png",
+      "/trade-pro/TradeProthumbnail-new.webp",
       "/trade-pro/Tradesprodashboard.png",
       "/trade-pro/Tradesprodashboard (3).png",
       "/trade-pro/Tradesprodashboard (4).png",
@@ -276,7 +276,7 @@ export const projects: Project[] = [
     shortTagline: "Protective Lead Infrastructure & Defensive Engineering",
     thumbnail: "/automation/schematic-hero.webp",
     gallery: [
-      "/automation/schematic-hero.png"
+      "/automation/schematic-hero.webp"
     ],
     year: "2026",
     type: "automation",
@@ -300,7 +300,7 @@ export const projects: Project[] = [
     shortTagline: "Automated Financial Orchestration & Document Generation",
     thumbnail: "/automation/invoice-automation-hero.webp",
     gallery: [
-      "/automation/invoice-automation-hero.png"
+      "/automation/invoice-automation-hero.webp"
     ],
     year: "2015",
     type: "automation",
@@ -324,7 +324,7 @@ export const projects: Project[] = [
     shortTagline: "Strategic AI Orchestration & Life Protection Protocol",
     thumbnail: "/automation/ai-control-plane-hero.webp",
     gallery: [
-      "/automation/ai-control-plane-hero.png"
+      "/automation/ai-control-plane-hero.webp"
     ],
     year: "2026",
     type: "automation",
@@ -347,11 +347,11 @@ export const projects: Project[] = [
     shortTagline: "The White-Label Operating System for the Luxury Wedding Industry",
     thumbnail: "/vowsuite/vowsuitethumbnail-new.webp",
     gallery: [
-      "/vowsuite/vowsuitethumbnail-new.png",
-      "/vowsuite/vowsuite-schematic.png",
-      "/vowsuite/vowsuite-planner-dash.png",
-      "/vowsuite/vowsuite-client-dash.png",
-      "/vowsuite/vowsuite-venue-dash.png"
+      "/vowsuite/vowsuitethumbnail-new.webp",
+      "/vowsuite/vowsuite-schematic.webp",
+      "/vowsuite/vowsuite-planner-dash.webp",
+      "/vowsuite/vowsuite-client-dash.webp",
+      "/vowsuite/vowsuite-venue-dash.webp"
     ],
     year: "2026",
     type: "webapp",
@@ -375,7 +375,7 @@ export const projects: Project[] = [
     shortTagline: "High-Fidelity Funnel Visualisation & ROI Simulation Engine",
     thumbnail: "/lead-flow/leadflowthumbnail.webp",
     gallery: [
-      "/lead-flow/leadflowthumbnail.png",
+      "/lead-flow/leadflowthumbnail.webp",
       "/lead-flow/leadflowmain.png",
       "/lead-flow/leadflow2.png",
       "/lead-flow/leadflow3.png"
@@ -404,7 +404,7 @@ export const projects: Project[] = [
     shortTagline: "Internal Generative AI Sales Engine",
     thumbnail: "/smart-proposal-builder/proposalthumbnail-new.webp",
     gallery: [
-      "/smart-proposal-builder/proposalthumbnail-new.png",
+      "/smart-proposal-builder/proposalthumbnail-new.webp",
       "/smart-proposal-builder/proposal-builder-schematic.png",
       "/smart-proposal-builder/proposal-dashboard.png",
       "/smart-proposal-builder/proposal-create.png",
@@ -454,7 +454,7 @@ export const projects: Project[] = [
       "Phase 4: Growth Engines (20% Milestone): ROI Calculators & Lead Capture",
       "Phase 5: Ecosystem Evolution (10% Milestone): SEO Audit & Compliance"
     ],
-    infographicUrl: "/empower-automation/empower_automation_infographic_1774881368798.png",
+    infographicUrl: "/empower-automation/empower_automation_infographic_1774881368798.webp",
     featured: true,
     tier: 1,
   },
@@ -519,7 +519,7 @@ export const projects: Project[] = [
     shortTagline: "The Agency Scaling Engine for Operational Specialist Teams",
     thumbnail: "/va-assist/vaassistthumbnail-new.webp",
     gallery: [
-      "/va-assist/vaassistthumbnail-new.png",
+      "/va-assist/vaassistthumbnail-new.webp",
       "/va-assist/Vaassistthumbnail.png",
       "/va-assist/Vaassisttclients.png",
       "/va-assist/Vaassisttcontentplanner.png",
@@ -798,7 +798,6 @@ export const projects: Project[] = [
       "/medi-sync/Medisyncdashboard.png",
       "/medi-sync/Medisyncfall.png",
       "/medi-sync/Medisyncseizure.png",
-      "/medi-sync/medISync-schematic.png",
       "/medi-sync/medisyncthumbnail-new.png",
       "/medi-sync/medisyncdashboard1.png",
       "/medi-sync/medi-sync-schematic.png"

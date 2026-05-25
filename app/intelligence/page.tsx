@@ -9,6 +9,9 @@ import { IntelligenceGrid } from "@/components/intelligence/IntelligenceGrid";
 export const metadata: Metadata = {
   title: "System Intelligence | Nicola Berry Portfolio",
   description: "Detailed briefings on the architecture, psychology, and operational reasoning behind core digital systems.",
+  alternates: {
+    canonical: "https://nicolaberry.uk/intelligence",
+  },
 };
 
 export default function IntelligencePage() {

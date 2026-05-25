@@ -28,6 +28,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
             type: "article",
             publishedTime: journal.date,
         },
+        alternates: {
+            canonical: `${siteConfig.url}/journal/${journal.slug}`,
+        },
     };
 }
 

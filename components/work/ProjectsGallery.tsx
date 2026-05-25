@@ -59,6 +59,7 @@ export function ProjectsGallery() {
                     <input
                         type="text"
                         placeholder="Search projects..."
+                        aria-label="Search projects"
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="w-full pl-10 pr-4 py-2 rounded-full bg-white/50 dark:bg-white/5 border border-heading/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-accent-primary/50 text-heading dark:text-foreground placeholder:text-heading/40 dark:placeholder:text-foreground/40 transition-all"

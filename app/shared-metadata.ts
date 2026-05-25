@@ -73,6 +73,6 @@ export const sharedMetadata: Metadata = {
         },
     },
     icons: {
-        icon: "/logo.png",
+        icon: "/logo.webp",
     },
 };

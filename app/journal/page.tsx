@@ -7,6 +7,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Technical Journal | Nicola Berry Portfolio",
     description: "A collection of thoughts on system architecture, operational bottlenecks, calm technology, and the philosophy of building software.",
+    alternates: {
+        canonical: "https://nicolaberry.uk/journal",
+    },
 };
 
 export default function JournalIndex() {
