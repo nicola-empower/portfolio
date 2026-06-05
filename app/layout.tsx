@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import { sharedMetadata, siteConfig } from "./shared-metadata";
+import { projects } from "@/data/projects";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
@@ -23,6 +24,51 @@ export const metadata: Metadata = {
   alternates: { canonical: siteConfig.url },
   manifest: "/manifest.webmanifest",
 };
+
+// Dynamically generate project schema nodes to link Nicola Berry as creator of each work
+const projectGraphNodes = projects.map((project) => {
+  const isSoftware = project.type === "webapp" || project.type === "script";
+  const projectUrl = `${siteConfig.url}/work/${project.slug}`;
+  const imageUrl = project.thumbnail?.startsWith("/")
+    ? `${siteConfig.url}${project.thumbnail}`
+    : project.thumbnail;
+
+  const sameAsList: string[] = [];
+  if (project.liveUrl && project.liveUrl !== "#") {
+    sameAsList.push(project.liveUrl);
+  }
+  if (project.demoUrl && project.demoUrl !== "#" && project.demoUrl !== project.liveUrl) {
+    sameAsList.push(project.demoUrl);
+  }
+  if (project.repoUrl) {
+    sameAsList.push(project.repoUrl);
+  }
+
+  const node: any = {
+    "@type": isSoftware ? "SoftwareApplication" : "CreativeWork",
+    "@id": `${projectUrl}#project`,
+    "name": project.title,
+    "description": project.shortTagline || project.description,
+    "url": projectUrl,
+    "creator": { "@id": `${siteConfig.url}/#person` },
+    "author": { "@id": `${siteConfig.url}/#person` },
+    "publisher": { "@id": `${siteConfig.url}/#person` },
+    "datePublished": project.year,
+  };
+
+  if (imageUrl) {
+    node.image = imageUrl;
+  }
+  if (sameAsList.length > 0) {
+    node.sameAs = sameAsList;
+  }
+  if (isSoftware) {
+    node.applicationCategory = project.category || "BusinessApplication";
+    node.operatingSystem = "Web";
+  }
+
+  return node;
+});
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -52,15 +98,39 @@ const jsonLd = {
       "founder": { "@id": `${siteConfig.url}/#person` },
       "sameAs": [
         "https://empowerdigitalsolutions.co.uk",
-        "https://empowerautomation.co.uk",
-        "https://empowervaservices.co.uk",
-        "www.linkedin.com/in/nicola-berry-a58b60373",
+        "https://empowerdigitalsolutions.co.uk/case-studies",
         "https://www.instagram.com/digital_solutions.empower/",
-        "https://www.instagram.com/empower_va",
-        "https://www.instagram.com/empower_automation",
-        "https://www.facebook.com/p/Empower-Virtual-Assistant-Services-61577917603562/",
+        "https://www.instagram.com/digital_solutions.empower",
+        "https://www.facebook.com/people/Empower-Digital-Solutions/61577425409413/",
         "https://www.bark.com/en/gb/company/empower-digital-solutions/4XPD2p/",
         "https://maps.app.goo.gl/9amYiQY4XCVV5gZX6"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://empowerautomation.co.uk/#organization",
+      "name": "Empower Automation",
+      "url": "https://empowerautomation.co.uk",
+      "founder": { "@id": `${siteConfig.url}/#person` },
+      "sameAs": [
+        "https://empowerautomation.co.uk",
+        "https://empowerautomation.co.uk/case-studies",
+        "https://www.instagram.com/empower_automation",
+        "https://www.facebook.com/people/Empower-Automation/61590429031736/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://empowervaservices.co.uk/#organization",
+      "name": "Empower VA Services",
+      "url": "https://empowervaservices.co.uk",
+      "founder": { "@id": `${siteConfig.url}/#person` },
+      "sameAs": [
+        "https://empowervaservices.co.uk",
+        "https://empowervaservices.co.uk/portfolio",
+        "https://portfolio.empowervaservices.co.uk",
+        "https://www.instagram.com/empower_va",
+        "https://www.facebook.com/p/Empower-Virtual-Assistant-Services-61577917603562/"
       ]
     },
     {
@@ -82,18 +152,16 @@ const jsonLd = {
       "worksFor": { "@id": "https://empowerdigitalsolutions.co.uk/#organization" },
       "sameAs": [
         siteConfig.url,
-        "https://empowerdigitalsolutions.co.uk",
-        "https://empowerautomation.co.uk",
-        "https://empowervaservices.co.uk",
         "https://github.com/nicola-empower",
+        "https://www.linkedin.com/in/nicola-berry-a58b60373",
         "https://www.linkedin.com/in/empowervaservices",
         "https://www.facebook.com/nicola.berry.39",
+        "https://www.facebook.com/nicola.berry.39/",
         "https://www.instagram.com/nicolllaaaaa",
-        "https://contra.com/nicola_berry_g6tufqdn",
-        "https://portfolio.empowervaservices.co.uk",
-        "https://empowervaservices.co.uk/portfolio"
+        "https://contra.com/nicola_berry_g6tufqdn"
       ]
-    }
+    },
+    ...projectGraphNodes
   ]
 };
 

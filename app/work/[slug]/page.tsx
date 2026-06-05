@@ -109,15 +109,30 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
     const TypeIcon = (project.type ? typeIcons[project.type] : null) || Layout;
 
-    const projectJsonLd = {
+    const sameAsList: string[] = [];
+    if (project.liveUrl && project.liveUrl !== "#") {
+        sameAsList.push(project.liveUrl);
+    }
+    if (project.demoUrl && project.demoUrl !== "#" && project.demoUrl !== project.liveUrl) {
+        sameAsList.push(project.demoUrl);
+    }
+    if (project.repoUrl) {
+        sameAsList.push(project.repoUrl);
+    }
+
+    const projectJsonLd: any = {
         "@context": "https://schema.org",
         "@type": project.type === "webapp" || project.type === "script" ? "SoftwareApplication" : "CreativeWork",
         "name": project.title,
-        "description": project.description,
+        "description": project.shortTagline || project.description,
         "url": `${siteConfig.url}/work/${project.slug}`,
-        "applicationCategory": project.category,
-        "operatingSystem": "Web",
         "author": {
+            "@id": `${siteConfig.url}/#person`
+        },
+        "creator": {
+            "@id": `${siteConfig.url}/#person`
+        },
+        "publisher": {
             "@id": `${siteConfig.url}/#person`
         },
         "datePublished": project.year,
@@ -129,6 +144,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             "availability": "https://schema.org/InStock"
         }
     };
+
+    if (sameAsList.length > 0) {
+        projectJsonLd.sameAs = sameAsList;
+    }
+
+    if (project.type === "webapp" || project.type === "script") {
+        projectJsonLd.applicationCategory = project.category || "BusinessApplication";
+        projectJsonLd.operatingSystem = "Web";
+    }
 
     return (
         <main id="main-content" className="min-h-screen bg-background transition-colors duration-500 pt-24 pb-20">
