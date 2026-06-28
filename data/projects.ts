@@ -871,6 +871,30 @@ export const projects: Project[] = [
     highlights: ["AI-Powered Itineraries", "Flexible Multi-Airport Search", "Real-time JSON Parsing", "Cost & Rating Estimates"],
     tier: 3,
   },
+  {
+    slug: "signaldesk",
+    title: "SignalDesk",
+    shortTagline: "DevOps Alert Aggregation & Noise Reduction Command",
+    thumbnail: "/signaldesk.png",
+    gallery: [
+      "/signaldesk.png",
+      "/signaldesk/warroom.png"
+    ],
+    year: "2026",
+    type: "webapp",
+    techStack: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Recharts", "Radix UI"],
+    status: "live",
+    liveUrl: "https://signal-desk-rho.vercel.app/",
+    demoUrl: "https://signal-desk-rho.vercel.app/",
+    audiences: ["dev", "client"],
+    overview: "An intelligent alert aggregation and operations triage platform designed to sit directly between cloud monitoring tools and engineering teams. It ingests telemetry data from 50+ sources, normalizes event streams, and applies mathematical severity scoring to reduce alert noise.",
+    problem: "DevOps and infrastructure environments generate massive volumes of telemetry, causing alert fatigue and engineer burnout. 99%+ of alerts are transient spikes or duplicate notifications, making it easy to miss critical cascading outages.",
+    solution: "A unified command plane with a real-time event simulator, a collaborative incident war room, and a dynamic severity scoring engine ($S = \\frac{\\text{Event Count}}{\\text{Time Window}} \\times \\text{Importance Factor}$) that aggregates hundreds of noisy events into high-context, routed notifications.",
+    contributions: ["UI/UX Design System & Custom Dark Theme", "Interactive Live Webhook Event Simulator", "Collaborative Incident War Room Timeline", "Dynamic Severity Scoring Calculator Visualisation"],
+    highlights: ["99%+ Automated Alert Noise Reduction", "Interactive Event Processing Simulator", "Collaborative Incident Room & Live Log Stream", "Visual Routing Rule Builder", "Escalation Policy Flow Engine"],
+    tier: 3,
+    relatedJournalSlug: "workflow-incident-response"
+  },
 
   // --- TIER 4: LIVE UTILITIES & CALCULATORS ---
   {
