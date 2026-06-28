@@ -36,11 +36,11 @@ export default function PrivacyPage() {
                             <p className="text-foreground/80 leading-relaxed">
                                 As a Principal Digital Architect, I operate a <strong>Forensic Shield</strong> protocol across this estate. This is a proactive security measure designed to protect my infrastructure, my clients, and my professional integrity from malicious actors and persistent harassment.
                             </p>
-                            
+
                             <div className="space-y-4">
                                 <h3 className="font-sans text-sm font-bold uppercase tracking-wider text-accent-primary">The Forensic Shield Protocol</h3>
                                 <p className="text-foreground/70 text-sm leading-relaxed">
-                                    When you interact with the contact form, I capture a <strong>Digital Fingerprint</strong>. This technical dossier includes your browser type, platform, resolution, and connection metrics. This data is logged as a forensic audit trail to provide evidence-based protection against unauthorised access or malicious intent. 
+                                    When you interact with the contact form, I capture a <strong>Digital Fingerprint</strong>. This technical dossier includes your browser type, platform, resolution, and connection metrics. This data is logged as a forensic audit trail to provide evidence-based protection against unauthorised access or malicious intent.
                                 </p>
                                 <p className="text-foreground/70 text-xs italic leading-relaxed">
                                     Note: This protocol has zero impact on genuine clients and enquiries; it exists solely as a protective layer to ensure a secure, accountable environment for professional engagement.
@@ -68,7 +68,7 @@ export default function PrivacyPage() {
                                 <div className="space-y-3">
                                     <h3 className="font-sans text-sm font-bold uppercase tracking-wider text-accent-primary">Security by Design</h3>
                                     <p className="text-foreground/70 text-xs leading-relaxed">
-                                        This estate avoids the use of third-party tracking pixels (e.g., Meta, Google Analytics). Instead, I utilize a custom-engineered, private <strong>Google Cloud Sentry</strong> to ensure your interaction remains confidential and sovereign.
+                                        This estate avoids the use of third-party tracking pixels (e.g., Meta, Google Analytics). Instead, I utilise a custom-engineered, private <strong>Google Cloud Sentry</strong> to ensure your interaction remains confidential and sovereign.
                                     </p>
                                 </div>
                                 <div className="space-y-3">
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
 
                         <section className="pt-8 text-center border-t border-foreground/5">
                             <p className="text-foreground/40 text-sm italic">
-                                For any enquiries regarding these terms, please contact: 
+                                For any enquiries regarding these terms, please contact:
                                 <a href="mailto:connect@nicolaberry.uk" className="text-accent-primary hover:underline ml-1">
                                     connect@nicolaberry.uk
                                 </a>

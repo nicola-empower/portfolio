@@ -2,14 +2,14 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ArrowLeft, 
-  Activity, 
-  LayoutDashboard, 
-  Zap, 
-  Target, 
-  Cpu, 
-  ShieldCheck, 
+import {
+  ArrowLeft,
+  Activity,
+  LayoutDashboard,
+  Zap,
+  Target,
+  Cpu,
+  ShieldCheck,
   Layers,
   CircleDot,
   BarChart3,
@@ -23,8 +23,8 @@ export default function OpsCommandInfographic() {
       {/* Navigation */}
       <nav className="border-b border-card-border bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link 
-            href="/#work" 
+          <Link
+            href="/#work"
             className="flex items-center gap-2 text-foreground/50 hover:text-accent-primary transition-colors group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -50,7 +50,7 @@ export default function OpsCommandInfographic() {
             <span className="text-accent-primary italic">One Truth.</span>
           </h1>
           <p className="text-lg text-foreground font-medium leading-relaxed">
-            Consolidating the SaaS sprawl into a unified operational intelligence layer. 
+            Consolidating the SaaS sprawl into a unified operational intelligence layer.
             OpsCommand provides the high-resolution visibility required for the modern, high-decibel enterprise.
           </p>
         </header>
@@ -74,7 +74,7 @@ export default function OpsCommandInfographic() {
               </div>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { label: "Sales", status: "emerald", val: "94%" },
@@ -104,8 +104,8 @@ export default function OpsCommandInfographic() {
             <div className="absolute top-0 right-0 p-8 text-accent-primary/20"><Activity size={64} /></div>
             <h3 className="text-3xl font-serif font-bold italic mb-8 text-heading">The Pulse Feed</h3>
             <p className="text-foreground font-medium text-sm mb-12 leading-relaxed">
-              A real-time, deterministic stream of operational events. From fulfillment spikes 
-              to infrastructure alerts, every meaningful action is indexed and visualized.
+              A real-time, deterministic stream of operational events. From fulfillment spikes
+              to infrastructure alerts, every meaningful action is indexed and visualised.
             </p>
             <div className="space-y-4">
               {[
@@ -136,7 +136,7 @@ export default function OpsCommandInfographic() {
                   <div className="h-full bg-linear-to-r from-emerald-500 to-accent-primary w-[82%]"></div>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-6">
                 <div className="p-6 bg-background/50 rounded-2xl border border-card-border shadow-sm">
                   <div className="text-accent-primary mb-2"><BarChart3 size={18} /></div>
@@ -150,7 +150,7 @@ export default function OpsCommandInfographic() {
                 </div>
               </div>
             </div>
-            
+
             <div className="mt-12 p-6 bg-accent-primary/10 border border-accent-primary/20 rounded-2xl flex items-center gap-4">
               <Zap size={20} className="text-accent-primary" />
               <div className="text-xs text-foreground font-bold leading-tight">
@@ -167,23 +167,23 @@ export default function OpsCommandInfographic() {
             <h2 className="text-4xl font-serif font-bold italic mb-4 text-heading">Under the Command Center</h2>
             <p className="text-foreground/50 text-sm font-bold uppercase tracking-widest">The High-Performance Stack</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { 
-                icon: <Cpu className="text-accent-primary" />, 
-                title: "Next.js Core", 
-                desc: "Server-side orchestration for sub-100ms dashboard responsiveness." 
+              {
+                icon: <Cpu className="text-accent-primary" />,
+                title: "Next.js Core",
+                desc: "Server-side orchestration for sub-100ms dashboard responsiveness."
               },
-              { 
-                icon: <Network className="text-accent-primary" />, 
-                title: "Durable Webhooks", 
-                desc: "Real-time integration layer connecting Stripe, Shopify, and Slack." 
+              {
+                icon: <Network className="text-accent-primary" />,
+                title: "Durable Webhooks",
+                desc: "Real-time integration layer connecting Stripe, Shopify, and Slack."
               },
-              { 
-                icon: <ShieldCheck className="text-accent-primary" />, 
-                title: "RBAC Controls", 
-                desc: "Enterprise-grade role-based access for department-specific views." 
+              {
+                icon: <ShieldCheck className="text-accent-primary" />,
+                title: "RBAC Controls",
+                desc: "Enterprise-grade role-based access for department-specific views."
               }
             ].map((tech, i) => (
               <div key={i} className="p-8 bg-card-bg border border-card-border rounded-3xl group hover:border-accent-primary/50 transition-all shadow-lg">
@@ -198,7 +198,7 @@ export default function OpsCommandInfographic() {
         {/* Final CTA */}
         <footer className="text-center">
           <div className="inline-block p-1 bg-card-bg rounded-full mb-12 border border-card-border shadow-2xl">
-             <Link 
+            <Link
               href="/work/ops-command/proposal"
               className="flex items-center gap-6 pl-8 pr-2 py-2 group hover:gap-8 transition-all"
             >

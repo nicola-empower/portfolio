@@ -64,7 +64,7 @@ export default function LeadFlowInfographic() {
                 <h2 className="text-3xl font-serif mb-6 text-heading font-medium italic">The Optimization Gap</h2>
                 <p className="text-foreground/70 text-sm leading-relaxed mb-8 font-medium">
                   By mapping **Actual Results** against **Simulated Potential**, LeadFlow reveals
-                  the hidden leaks in your customer journey. We visualize the energy lost between
+                  the hidden leaks in your customer journey. We visualise the energy lost between
                   raw traffic and realised revenue.
                 </p>
                 <div className="space-y-4">
@@ -171,7 +171,7 @@ export default function LeadFlowInfographic() {
             <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
               <div className="w-12 h-12 rounded-2xl bg-accent-primary/10 text-accent-primary flex items-center justify-center mx-auto mb-6 shadow-md"><Layers size={21} /></div>
               <h4 className="font-black mb-3 text-[10px] uppercase tracking-[0.3em] text-heading">Zustand Simulation</h4>
-              <p className="text-foreground/50 text-xs leading-relaxed font-medium italic">Centralized simulation store for ultra-responsive ROI updates without re-renders.</p>
+              <p className="text-foreground/50 text-xs leading-relaxed font-medium italic">Centralised simulation store for ultra-responsive ROI updates without re-renders.</p>
             </div>
             <div className="p-8 border border-card-border rounded-3xl bg-card-bg/50 group hover:border-accent-primary/30 transition-all shadow-sm">
               <div className="w-12 h-12 rounded-2xl bg-accent-primary/10 text-accent-primary flex items-center justify-center mx-auto mb-6 shadow-md"><MousePointer2 size={21} /></div>
