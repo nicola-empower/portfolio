@@ -601,5 +601,20 @@ export const journals: Journal[] = [
             "Before I was a Systems Architect, I was a Virtual Assistant drowning in 'Administrative Gravity'. Every single lead required a manual, 20-minute marathon of copying data between fragmented tools.",
             "The result of discovering **Google Apps Script** was transformative. That 20-minute loop became a 2-second automated event. By replacing myself with code, I reclaimed the cognitive energy required to focus on high-level strategy for my clients."
         ]
+    },
+    {
+        slug: "oracle-predictive-intelligence",
+        relatedProjectSlug: "oracle",
+        title: "Oracle AI: Architecting Predictive Intelligence for Student Success",
+        date: "October 18, 2024",
+        readTime: "4 min read",
+        topic: "Data Engineering",
+        excerpt: "How we engineered a predictive analytics platform for educational institutions—combining interactive SVGs, data-dense Recharts, and a 14-table Supabase schema.",
+        content: [
+            "Traditional student support in educational institutions is inherently reactive. Advisors typically intervene only after a student has missed multiple lectures or failed examinations, which is often too late to prevent attrition. Oracle AI was engineered to bridge this gap, converting raw educational telemetry into proactive, predictive triage. By centralising data from login heatmaps, cohort progression, and system interactions, the system allows advisors to identify risk vectors weeks before they manifest as academic failure.",
+            "The front-end design is built on a custom 'Predictive Intelligence' aesthetic. It features a deep navy interface with cyan and teal accents, using glassmorphic panels to layer dense datasets without creating visual overload. A circular SVG Health Gauge provides an instantaneous executive summary of cohort wellbeing, dynamically calculating real-time engagement indexes. The core geographic element is an interactive SVG Campus Map rendered as a node network, complete with responsive hover states and tooltips detailing real-time location metrics.",
+            "To enable granular investigation without cognitive fatigue, the dashboard integrates a custom-wrapped Recharts suite, displaying multi-line timelines, skill radar charts, and login frequency matrices. Each data node is wired to a custom 'click-to-inspect' popover. This popover interfaces with an AI agent layer, generating a natural language summary of the student's status, contextualising their behaviour patterns, and drafting immediate advisor recommendation playbooks.",
+            "The persistent backbone is a Supabase-backed PostgreSQL database schema composed of 14 tables, mapping students, cohorts, campuses, logins, and conversations. Crucially, the architecture secures sensitive student records using row-level security (RLS) policies. By mapping profiles to specific system roles—admin, manager, analyst, and viewer—we ensure that student privacy is strictly guarded at the database layer while providing stakeholders with the specific administrative visibility required to coordinate campus-wide retention initiatives."
+        ]
     }
 ];

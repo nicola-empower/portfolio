@@ -895,6 +895,41 @@ export const projects: Project[] = [
     tier: 3,
     relatedJournalSlug: "workflow-incident-response"
   },
+  {
+    slug: "oracle",
+    title: "Oracle AI",
+    shortTagline: "Predictive Student Analytics & Strategic Intelligence Dashboard",
+    thumbnail: "/oraclethumbnail.png",
+    gallery: [
+      "/oraclethumbnail.png",
+      "/oracle/map.png"
+    ],
+    year: "2026",
+    type: "webapp",
+    techStack: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Recharts", "Framer Motion", "jsPDF", "Supabase"],
+    status: "live",
+    liveUrl: "https://oracle-ai-insights.vercel.app/",
+    demoUrl: "https://oracle-ai-insights.vercel.app/",
+    audiences: ["dev", "client"],
+    overview: "Oracle AI is a predictive analytics dashboard designed for educational institutions and enterprise clients, delivering real-time student engagement insights, risk detection, and AI-powered strategic recommendations. It features a complete Supabase-ready 14-table database schema with secure role-based access controls.",
+    problem: "Educational institutions struggle to proactively address student attrition due to fragmented data and delayed reporting. Identifying at-risk students manually is slow and resource-intensive, resulting in costly retention failures.",
+    solution: "A data-dense analytics command plane featuring login heatmaps, radar skill analysis, and an interactive SVG campus map. It integrates a circular SVG Health Gauge and an 'Ask the Oracle' AI chat companion, allowing advisors to surface context-aware recommendations.",
+    contributions: [
+      "Predictive Intelligence Dark Mode Design System",
+      "Interactive SVG Campus Network Map & Circular Health Gauge",
+      "Data-Dense Recharts Heatmap & Radar Integrations",
+      "Supabase 14-Table Database Schema & RLS Policies Design"
+    ],
+    highlights: [
+      "Predictive Analytics Circular Health Gauge",
+      "Interactive SVG Campus Network Map with Hover Intelligence",
+      "Ask the Oracle AI Chatbot & Context Popovers",
+      "Client-Side PDF Report Generation Utility (jsPDF)",
+      "Supabase Schema with Role-Based RLS Policies"
+    ],
+    tier: 3,
+    relatedJournalSlug: "oracle-predictive-intelligence"
+  },
 
   // --- TIER 4: LIVE UTILITIES & CALCULATORS ---
   {
